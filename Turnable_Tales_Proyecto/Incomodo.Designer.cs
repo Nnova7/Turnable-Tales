@@ -180,7 +180,7 @@
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             label9.ForeColor = Color.White;
-            label9.Location = new Point(775, 290);
+            label9.Location = new Point(775, 284);
             label9.Name = "label9";
             label9.Size = new Size(73, 20);
             label9.TabIndex = 223;
@@ -301,7 +301,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(688, 286);
+            label5.Location = new Point(688, 280);
             label5.Name = "label5";
             label5.Size = new Size(90, 25);
             label5.TabIndex = 213;
