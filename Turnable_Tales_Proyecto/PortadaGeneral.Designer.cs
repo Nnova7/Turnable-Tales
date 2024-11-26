@@ -115,6 +115,7 @@
             labelTitulo = new Label();
             labelFrase = new Label();
             label1 = new Label();
+            buttonSiguiente = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogoUAA).BeginInit();
             SuspendLayout();
             // 
@@ -1143,12 +1144,26 @@
             label1.Size = new Size(0, 25);
             label1.TabIndex = 118;
             // 
+            // buttonSiguiente
+            // 
+            buttonSiguiente.BackColor = Color.Transparent;
+            buttonSiguiente.FlatStyle = FlatStyle.Flat;
+            buttonSiguiente.Font = new Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonSiguiente.Image = (Image)resources.GetObject("buttonSiguiente.Image");
+            buttonSiguiente.Location = new Point(1224, 271);
+            buttonSiguiente.Name = "buttonSiguiente";
+            buttonSiguiente.Size = new Size(66, 85);
+            buttonSiguiente.TabIndex = 204;
+            buttonSiguiente.UseVisualStyleBackColor = true;
+            buttonSiguiente.Click += buttonSiguiente_Click;
+            // 
             // PortadaGeneral
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1302, 633);
+            Controls.Add(buttonSiguiente);
             Controls.Add(pictureBoxLogoUAA);
             Controls.Add(label83);
             Controls.Add(label82);
@@ -1332,5 +1347,6 @@
         private Label labelTitulo;
         private Label labelFrase;
         private Label label1;
+        private Button buttonSiguiente;
     }
 }
