@@ -38,8 +38,8 @@
             labelTitulo = new Label();
             labelFrase = new Label();
             label3 = new Label();
-            button2 = new Button();
-            button1 = new Button();
+            buttonSad = new Button();
+            buttonIncomodo = new Button();
             label8 = new Label();
             label10 = new Label();
             label7 = new Label();
@@ -154,25 +154,25 @@
             label3.Size = new Size(0, 42);
             label3.TabIndex = 165;
             // 
-            // button2
+            // buttonSad
             // 
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Image = Properties.Resources.Sad;
-            button2.Location = new Point(741, 319);
-            button2.Name = "button2";
-            button2.Size = new Size(270, 244);
-            button2.TabIndex = 183;
-            button2.UseVisualStyleBackColor = true;
+            buttonSad.FlatStyle = FlatStyle.Popup;
+            buttonSad.Image = Properties.Resources.Sad;
+            buttonSad.Location = new Point(741, 319);
+            buttonSad.Name = "buttonSad";
+            buttonSad.Size = new Size(270, 244);
+            buttonSad.TabIndex = 183;
+            buttonSad.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // buttonIncomodo
             // 
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Image = Properties.Resources.Incomodo;
-            button1.Location = new Point(208, 319);
-            button1.Name = "button1";
-            button1.Size = new Size(264, 244);
-            button1.TabIndex = 182;
-            button1.UseVisualStyleBackColor = true;
+            buttonIncomodo.FlatStyle = FlatStyle.Popup;
+            buttonIncomodo.Image = Properties.Resources.Incomodo;
+            buttonIncomodo.Location = new Point(208, 319);
+            buttonIncomodo.Name = "buttonIncomodo";
+            buttonIncomodo.Size = new Size(264, 244);
+            buttonIncomodo.TabIndex = 182;
+            buttonIncomodo.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -249,8 +249,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 633);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(buttonSad);
+            Controls.Add(buttonIncomodo);
             Controls.Add(label8);
             Controls.Add(label10);
             Controls.Add(label7);
@@ -284,8 +284,8 @@
         private Label labelTitulo;
         private Label labelFrase;
         private Label label3;
-        private Button button2;
-        private Button button1;
+        private Button buttonSad;
+        private Button buttonIncomodo;
         private Label label8;
         private Label label10;
         private Label label7;

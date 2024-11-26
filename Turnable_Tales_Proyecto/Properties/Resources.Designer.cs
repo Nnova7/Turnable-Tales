@@ -63,6 +63,16 @@ namespace Turnable_Tales_Proyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BtsSEGUNDO {
+            get {
+                object obj = ResourceManager.GetObject("BtsSEGUNDO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cafe {
             get {
                 object obj = ResourceManager.GetObject("cafe", resourceCulture);
@@ -246,6 +256,26 @@ namespace Turnable_Tales_Proyecto.Properties {
         internal static System.Drawing.Bitmap Sad {
             get {
                 object obj = ResourceManager.GetObject("Sad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap the_world {
+            get {
+                object obj = ResourceManager.GetObject("the world", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap the_worldPRIMERO {
+            get {
+                object obj = ResourceManager.GetObject("the worldPRIMERO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
