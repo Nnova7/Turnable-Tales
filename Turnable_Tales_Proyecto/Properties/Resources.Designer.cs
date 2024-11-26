@@ -173,6 +173,16 @@ namespace Turnable_Tales_Proyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap grande {
+            get {
+                object obj = ResourceManager.GetObject("grande", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Imagen1_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("Imagen1-removebg-preview", resourceCulture);
@@ -256,6 +266,16 @@ namespace Turnable_Tales_Proyecto.Properties {
         internal static System.Drawing.Bitmap Sad {
             get {
                 object obj = ResourceManager.GetObject("Sad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sad1 {
+            get {
+                object obj = ResourceManager.GetObject("Sad1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

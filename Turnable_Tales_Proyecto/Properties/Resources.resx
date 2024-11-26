@@ -148,8 +148,14 @@
   <data name="Rock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rock.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="usuariosinfondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\usuariosinfondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="the worldPRIMERO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\the worldPRIMERO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sad1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sad1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Clasicoprimero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clasicoprimero.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Clasicosegundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Clasicosegundo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,14 +175,14 @@
   <data name="Clasico2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Clasico2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="the worldPRIMERO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\the worldPRIMERO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="IZQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IZQ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logo(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo(1).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtsSEGUNDO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtsSEGUNDO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,10 +193,10 @@
   <data name="PortadaClasica1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PortadaClasica.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Clasicoprimero" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Clasicoprimero.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="usuariosinfondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\usuariosinfondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BtsSEGUNDO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BtsSEGUNDO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="grande" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grande.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
