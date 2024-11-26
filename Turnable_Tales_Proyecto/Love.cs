@@ -16,5 +16,10 @@ namespace Turnable_Tales_Proyecto
         {
             InitializeComponent();
         }
+
+        private void buttonUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

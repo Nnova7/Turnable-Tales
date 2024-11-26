@@ -96,6 +96,7 @@
             buttonUsuario.Size = new Size(93, 89);
             buttonUsuario.TabIndex = 204;
             buttonUsuario.UseVisualStyleBackColor = false;
+            buttonUsuario.Click += buttonUsuario_Click;
             // 
             // labelTitulo
             // 
