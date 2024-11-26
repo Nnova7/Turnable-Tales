@@ -173,6 +173,16 @@ namespace Turnable_Tales_Proyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Incomodo {
+            get {
+                object obj = ResourceManager.GetObject("Incomodo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IZQ {
             get {
                 object obj = ResourceManager.GetObject("IZQ", resourceCulture);
@@ -226,6 +236,16 @@ namespace Turnable_Tales_Proyecto.Properties {
         internal static System.Drawing.Bitmap Rock {
             get {
                 object obj = ResourceManager.GetObject("Rock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sad {
+            get {
+                object obj = ResourceManager.GetObject("Sad", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
