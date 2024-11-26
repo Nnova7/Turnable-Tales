@@ -36,8 +36,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Name = "PortadaProyecto";
-            Text = "Form2";
-            Load += PortadaProyecto_Load;
+            Text = "PortadaProyecto";
             ResumeLayout(false);
         }
 

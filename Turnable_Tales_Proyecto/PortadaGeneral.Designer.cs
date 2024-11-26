@@ -106,14 +106,14 @@
             label11 = new Label();
             label10 = new Label();
             label9 = new Label();
-            label7 = new Label();
+            labelSlogan2 = new Label();
             label6 = new Label();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             labelTitulo = new Label();
-            labelFrase = new Label();
+            labelSlogan = new Label();
             label1 = new Label();
             buttonSiguiente = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogoUAA).BeginInit();
@@ -1038,17 +1038,17 @@
             label9.Text = resources.GetString("label9.Text");
             label9.TextAlign = ContentAlignment.TopCenter;
             // 
-            // label7
+            // labelSlogan2
             // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(571, 290);
-            label7.Name = "label7";
-            label7.Size = new Size(205, 32);
-            label7.TabIndex = 126;
-            label7.Text = "T U  V I N I L O.\"";
+            labelSlogan2.AutoSize = true;
+            labelSlogan2.BackColor = Color.Transparent;
+            labelSlogan2.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labelSlogan2.ForeColor = Color.White;
+            labelSlogan2.Location = new Point(571, 290);
+            labelSlogan2.Name = "labelSlogan2";
+            labelSlogan2.Size = new Size(205, 32);
+            labelSlogan2.TabIndex = 126;
+            labelSlogan2.Text = "T U  V I N I L O.\"";
             // 
             // label6
             // 
@@ -1124,17 +1124,17 @@
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
             // 
-            // labelFrase
+            // labelSlogan
             // 
-            labelFrase.AutoSize = true;
-            labelFrase.BackColor = Color.Transparent;
-            labelFrase.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            labelFrase.ForeColor = Color.White;
-            labelFrase.Location = new Point(477, 254);
-            labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(384, 32);
-            labelFrase.TabIndex = 120;
-            labelFrase.Text = "\"T U  V I D A,  T U  M Ú S I C A, ";
+            labelSlogan.AutoSize = true;
+            labelSlogan.BackColor = Color.Transparent;
+            labelSlogan.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labelSlogan.ForeColor = Color.White;
+            labelSlogan.Location = new Point(477, 254);
+            labelSlogan.Name = "labelSlogan";
+            labelSlogan.Size = new Size(384, 32);
+            labelSlogan.TabIndex = 120;
+            labelSlogan.Text = "\"T U  V I D A,  T U  M Ú S I C A, ";
             // 
             // label1
             // 
@@ -1241,14 +1241,14 @@
             Controls.Add(label11);
             Controls.Add(label10);
             Controls.Add(label9);
-            Controls.Add(label7);
+            Controls.Add(labelSlogan2);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(labelTitulo);
-            Controls.Add(labelFrase);
+            Controls.Add(labelSlogan);
             Controls.Add(label1);
             Margin = new Padding(4);
             Name = "PortadaGeneral";
@@ -1338,14 +1338,14 @@
         private Label label11;
         private Label label10;
         private Label label9;
-        private Label label7;
+        private Label labelSlogan2;
         private Label label6;
         private Label label5;
         private Label label4;
         private Label label3;
         private Label label2;
         private Label labelTitulo;
-        private Label labelFrase;
+        private Label labelSlogan;
         private Label label1;
         private Button buttonSiguiente;
     }
