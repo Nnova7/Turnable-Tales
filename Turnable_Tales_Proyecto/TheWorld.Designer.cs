@@ -36,7 +36,27 @@
             buttonUsuario = new Button();
             labelTitulo = new Label();
             labelFrase = new Label();
+            pictureBox2 = new PictureBox();
+            label11 = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
+            buttonAgregar = new Button();
+            textBoxNumero = new TextBox();
+            label7 = new Label();
+            domainUpDownCantidad = new DomainUpDown();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label2 = new Label();
+            buttonAtras = new Button();
+            label3 = new Label();
+            label12 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -96,6 +116,7 @@
             buttonUsuario.Size = new Size(93, 89);
             buttonUsuario.TabIndex = 204;
             buttonUsuario.UseVisualStyleBackColor = false;
+            buttonUsuario.Click += buttonUsuario_Click;
             // 
             // labelTitulo
             // 
@@ -120,12 +141,256 @@
             labelFrase.TabIndex = 203;
             labelFrase.Text = "\"TU VIDA, TU MÚSICA, TU VINILO.\"\r\n";
             // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.Location = new Point(222, 184);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(398, 401);
+            pictureBox2.TabIndex = 226;
+            pictureBox2.TabStop = false;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = Color.Transparent;
+            label11.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(721, 177);
+            label11.Name = "label11";
+            label11.Size = new Size(54, 20);
+            label11.TabIndex = 225;
+            label11.Text = "18956";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = Color.Transparent;
+            label10.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.ForeColor = Color.White;
+            label10.Location = new Point(781, 228);
+            label10.Name = "label10";
+            label10.Size = new Size(52, 20);
+            label10.TabIndex = 224;
+            label10.Text = "Ateez";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.Transparent;
+            label9.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(770, 281);
+            label9.Name = "label9";
+            label9.Size = new Size(55, 20);
+            label9.TabIndex = 223;
+            label9.Text = "K-Pop";
+            label9.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(673, 314);
+            label8.Name = "label8";
+            label8.Size = new Size(382, 61);
+            label8.TabIndex = 222;
+            label8.Text = "THE WORLD EP.1";
+            label8.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(128, 64, 0);
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.ForeColor = SystemColors.ButtonHighlight;
+            button3.Location = new Point(1013, 547);
+            button3.Name = "button3";
+            button3.Size = new Size(173, 38);
+            button3.TabIndex = 221;
+            button3.Text = "PAGO EN EFECTIVO";
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(128, 64, 0);
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = SystemColors.ButtonHighlight;
+            button2.Location = new Point(1101, 488);
+            button2.Name = "button2";
+            button2.Size = new Size(173, 38);
+            button2.TabIndex = 220;
+            button2.Text = "PAGO EN OXXO";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(128, 64, 0);
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(907, 488);
+            button1.Name = "button1";
+            button1.Size = new Size(173, 38);
+            button1.TabIndex = 219;
+            button1.Text = "PAGO CON TARJETA";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // buttonAgregar
+            // 
+            buttonAgregar.BackColor = Color.Maroon;
+            buttonAgregar.FlatStyle = FlatStyle.Popup;
+            buttonAgregar.Font = new Font("Segoe UI Black", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonAgregar.ForeColor = Color.WhiteSmoke;
+            buttonAgregar.Location = new Point(930, 416);
+            buttonAgregar.Name = "buttonAgregar";
+            buttonAgregar.Size = new Size(317, 46);
+            buttonAgregar.TabIndex = 218;
+            buttonAgregar.Text = "AGREGAR AL CARRITO";
+            buttonAgregar.UseVisualStyleBackColor = false;
+            // 
+            // textBoxNumero
+            // 
+            textBoxNumero.BackColor = SystemColors.InactiveCaptionText;
+            textBoxNumero.Enabled = false;
+            textBoxNumero.ForeColor = SystemColors.MenuBar;
+            textBoxNumero.Location = new Point(692, 566);
+            textBoxNumero.Name = "textBoxNumero";
+            textBoxNumero.Size = new Size(81, 31);
+            textBoxNumero.TabIndex = 217;
+            textBoxNumero.Text = "8";
+            textBoxNumero.TextAlign = HorizontalAlignment.Center;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(683, 538);
+            label7.Name = "label7";
+            label7.Size = new Size(149, 25);
+            label7.TabIndex = 216;
+            label7.Text = "EN EXISTENCIA:";
+            // 
+            // domainUpDownCantidad
+            // 
+            domainUpDownCantidad.BackColor = SystemColors.InactiveCaptionText;
+            domainUpDownCantidad.ForeColor = SystemColors.InactiveBorder;
+            domainUpDownCantidad.Location = new Point(692, 475);
+            domainUpDownCantidad.Name = "domainUpDownCantidad";
+            domainUpDownCantidad.Size = new Size(81, 31);
+            domainUpDownCantidad.TabIndex = 215;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(683, 437);
+            label6.Name = "label6";
+            label6.Size = new Size(111, 25);
+            label6.TabIndex = 214;
+            label6.Text = "CANTIDAD:";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(683, 277);
+            label5.Name = "label5";
+            label5.Size = new Size(90, 25);
+            label5.TabIndex = 213;
+            label5.Text = "GÉNERO:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(683, 224);
+            label4.Name = "label4";
+            label4.Size = new Size(92, 25);
+            label4.TabIndex = 212;
+            label4.Text = "ARTISTA:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(683, 173);
+            label2.Name = "label2";
+            label2.Size = new Size(36, 25);
+            label2.TabIndex = 211;
+            label2.Text = "ID:";
+            // 
+            // buttonAtras
+            // 
+            buttonAtras.FlatStyle = FlatStyle.Popup;
+            buttonAtras.Image = Properties.Resources.IZQ;
+            buttonAtras.Location = new Point(17, 305);
+            buttonAtras.Name = "buttonAtras";
+            buttonAtras.Size = new Size(76, 79);
+            buttonAtras.TabIndex = 210;
+            buttonAtras.UseVisualStyleBackColor = true;
+            buttonAtras.Click += buttonAtras_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Consolas", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(589, 184);
+            label3.Name = "label3";
+            label3.Size = new Size(0, 42);
+            label3.TabIndex = 209;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = Color.Transparent;
+            label12.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.ForeColor = Color.White;
+            label12.Location = new Point(689, 375);
+            label12.Name = "label12";
+            label12.Size = new Size(81, 38);
+            label12.TabIndex = 228;
+            label12.Text = "$900";
+            // 
             // TheWorld
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 633);
+            Controls.Add(label12);
+            Controls.Add(pictureBox2);
+            Controls.Add(label11);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(buttonAgregar);
+            Controls.Add(textBoxNumero);
+            Controls.Add(label7);
+            Controls.Add(domainUpDownCantidad);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label2);
+            Controls.Add(buttonAtras);
+            Controls.Add(label3);
             Controls.Add(label1);
             Controls.Add(labelLinea);
             Controls.Add(pictureBox1);
@@ -136,6 +401,7 @@
             Name = "TheWorld";
             Text = "TheWorld";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -149,5 +415,24 @@
         private Button buttonUsuario;
         private Label labelTitulo;
         private Label labelFrase;
+        private PictureBox pictureBox2;
+        private Label label11;
+        private Label label10;
+        private Label label9;
+        private Label label8;
+        private Button button3;
+        private Button button2;
+        private Button button1;
+        private Button buttonAgregar;
+        private TextBox textBoxNumero;
+        private Label label7;
+        private DomainUpDown domainUpDownCantidad;
+        private Label label6;
+        private Label label5;
+        private Label label4;
+        private Label label2;
+        private Button buttonAtras;
+        private Label label3;
+        private Label label12;
     }
 }
