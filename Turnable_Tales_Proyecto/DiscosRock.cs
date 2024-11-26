@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Turnable_Tales_Proyecto
 {
-    public partial class DiscosClasicos : Form
+    public partial class DiscosRock : Form
     {
-        public DiscosClasicos()
+        public DiscosRock()
         {
             InitializeComponent();
         }
@@ -23,11 +23,6 @@ namespace Turnable_Tales_Proyecto
             this.Hide();
             mostrar.Show(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
-        }
-
-        private void DiscosClasicos_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonAtras_Click(object sender, EventArgs e)

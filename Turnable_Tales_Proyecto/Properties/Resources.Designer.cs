@@ -143,6 +143,16 @@ namespace Turnable_Tales_Proyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap flechaizq1 {
+            get {
+                object obj = ResourceManager.GetObject("flechaizq1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Fondo {
             get {
                 object obj = ResourceManager.GetObject("Fondo", resourceCulture);
@@ -156,6 +166,16 @@ namespace Turnable_Tales_Proyecto.Properties {
         internal static System.Drawing.Bitmap Imagen1_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("Imagen1-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IZQ {
+            get {
+                object obj = ResourceManager.GetObject("IZQ", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
