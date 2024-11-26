@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Turnable_Tales_Proyecto
 {
-    public partial class Form2 : Form
+    public partial class PortadaProyecto : Form
     {
-        public Form2()
+        public PortadaProyecto()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace Turnable_Tales_Proyecto
 {
-    partial class Form1
+    partial class PortadaGeneral
     {
         /// <summary>
         ///  Required designer variable.
