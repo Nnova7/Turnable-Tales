@@ -46,6 +46,7 @@
             buttonAtras.Size = new Size(68, 72);
             buttonAtras.TabIndex = 49;
             buttonAtras.UseVisualStyleBackColor = false;
+            buttonAtras.Click += buttonAtras_Click;
             // 
             // buttonUsuario
             // 
@@ -58,6 +59,7 @@
             buttonUsuario.TabIndex = 48;
             buttonUsuario.Text = "U S U A R I O";
             buttonUsuario.UseVisualStyleBackColor = true;
+            buttonUsuario.Click += buttonUsuario_Click;
             // 
             // buttonInvitado
             // 
@@ -83,6 +85,7 @@
             buttonAdministrador.TabIndex = 46;
             buttonAdministrador.Text = "A D M I N I S T R A D O R";
             buttonAdministrador.UseVisualStyleBackColor = false;
+            buttonAdministrador.Click += buttonAdministrador_Click;
             // 
             // label3
             // 

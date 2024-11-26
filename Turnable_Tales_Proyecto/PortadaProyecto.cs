@@ -41,9 +41,8 @@ namespace Turnable_Tales_Proyecto
             PortadaGeneral port1 = (PortadaGeneral)Application.OpenForms["PortadaGeneral"];
             if (port1 != null)
             {
-                this.Hide();
-                port1.Show();
-                this.Close();
+                port1.Show();//Se muestra
+                this.Close();//cierra
             }
         }
 
