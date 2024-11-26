@@ -107,11 +107,11 @@
             label10 = new Label();
             label9 = new Label();
             labelSlogan2 = new Label();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
+            labelFecha = new Label();
+            labelNombres = new Label();
+            labelIntegrantes = new Label();
+            labelMestra = new Label();
+            labelMateria = new Label();
             labelTitulo = new Label();
             labelSlogan = new Label();
             label1 = new Label();
@@ -1050,66 +1050,66 @@
             labelSlogan2.TabIndex = 126;
             labelSlogan2.Text = "T U  V I N I L O.\"";
             // 
-            // label6
+            // labelFecha
             // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = SystemColors.ButtonFace;
-            label6.Location = new Point(405, 589);
-            label6.Name = "label6";
-            label6.Size = new Size(544, 30);
-            label6.TabIndex = 125;
-            label6.Text = "AGS. AGUASCALIENTES A 15 DE DICIEMBRE DEL 2024";
+            labelFecha.AutoSize = true;
+            labelFecha.BackColor = Color.Transparent;
+            labelFecha.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            labelFecha.ForeColor = SystemColors.ButtonFace;
+            labelFecha.Location = new Point(405, 589);
+            labelFecha.Name = "labelFecha";
+            labelFecha.Size = new Size(544, 30);
+            labelFecha.TabIndex = 125;
+            labelFecha.Text = "AGS. AGUASCALIENTES A 15 DE DICIEMBRE DEL 2024";
             // 
-            // label5
+            // labelNombres
             // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = SystemColors.ButtonFace;
-            label5.Location = new Point(477, 473);
-            label5.Name = "label5";
-            label5.Size = new Size(402, 100);
-            label5.TabIndex = 124;
-            label5.Text = "DULCE MARIANA ANDRADE OLVERA \nELIA GUADALUPE ARTEAGA DELGADO\nGEORGINA GUADALUPE CALZADA GONZÁLEZ \nVALERIA RAMOS LÓPEZ";
-            label5.TextAlign = ContentAlignment.MiddleCenter;
+            labelNombres.AutoSize = true;
+            labelNombres.BackColor = Color.Transparent;
+            labelNombres.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            labelNombres.ForeColor = SystemColors.ButtonFace;
+            labelNombres.Location = new Point(477, 473);
+            labelNombres.Name = "labelNombres";
+            labelNombres.Size = new Size(402, 100);
+            labelNombres.TabIndex = 124;
+            labelNombres.Text = "DULCE MARIANA ANDRADE OLVERA \nELIA GUADALUPE ARTEAGA DELGADO\nGEORGINA GUADALUPE CALZADA GONZÁLEZ \nVALERIA RAMOS LÓPEZ";
+            labelNombres.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // labelIntegrantes
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = SystemColors.ButtonFace;
-            label4.Location = new Point(547, 441);
-            label4.Name = "label4";
-            label4.Size = new Size(243, 32);
-            label4.TabIndex = 123;
-            label4.Text = "I N T E G R A N T E S:";
+            labelIntegrantes.AutoSize = true;
+            labelIntegrantes.BackColor = Color.Transparent;
+            labelIntegrantes.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labelIntegrantes.ForeColor = SystemColors.ButtonFace;
+            labelIntegrantes.Location = new Point(547, 441);
+            labelIntegrantes.Name = "labelIntegrantes";
+            labelIntegrantes.Size = new Size(243, 32);
+            labelIntegrantes.TabIndex = 123;
+            labelIntegrantes.Text = "I N T E G R A N T E S:";
             // 
-            // label3
+            // labelMestra
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.ButtonFace;
-            label3.Location = new Point(447, 395);
-            label3.Name = "label3";
-            label3.Size = new Size(438, 25);
-            label3.TabIndex = 122;
-            label3.Text = "PROFESORA:  DRA.  GEORGINA  SALAZAR  PARTIDA";
+            labelMestra.AutoSize = true;
+            labelMestra.BackColor = Color.Transparent;
+            labelMestra.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            labelMestra.ForeColor = SystemColors.ButtonFace;
+            labelMestra.Location = new Point(447, 395);
+            labelMestra.Name = "labelMestra";
+            labelMestra.Size = new Size(438, 25);
+            labelMestra.TabIndex = 122;
+            labelMestra.Text = "PROFESORA:  DRA.  GEORGINA  SALAZAR  PARTIDA";
             // 
-            // label2
+            // labelMateria
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(567, 367);
-            label2.Name = "label2";
-            label2.Size = new Size(193, 28);
-            label2.TabIndex = 121;
-            label2.Text = "PROGRAMACIÓN  II";
+            labelMateria.AutoSize = true;
+            labelMateria.BackColor = Color.Transparent;
+            labelMateria.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            labelMateria.ForeColor = SystemColors.ButtonHighlight;
+            labelMateria.Location = new Point(567, 367);
+            labelMateria.Name = "labelMateria";
+            labelMateria.Size = new Size(193, 28);
+            labelMateria.TabIndex = 121;
+            labelMateria.Text = "PROGRAMACIÓN  II";
             // 
             // labelTitulo
             // 
@@ -1242,11 +1242,11 @@
             Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(labelSlogan2);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(labelFecha);
+            Controls.Add(labelNombres);
+            Controls.Add(labelIntegrantes);
+            Controls.Add(labelMestra);
+            Controls.Add(labelMateria);
             Controls.Add(labelTitulo);
             Controls.Add(labelSlogan);
             Controls.Add(label1);
@@ -1339,11 +1339,11 @@
         private Label label10;
         private Label label9;
         private Label labelSlogan2;
-        private Label label6;
-        private Label label5;
-        private Label label4;
-        private Label label3;
-        private Label label2;
+        private Label labelFecha;
+        private Label labelNombres;
+        private Label labelIntegrantes;
+        private Label labelMestra;
+        private Label labelMateria;
         private Label labelTitulo;
         private Label labelSlogan;
         private Label label1;
