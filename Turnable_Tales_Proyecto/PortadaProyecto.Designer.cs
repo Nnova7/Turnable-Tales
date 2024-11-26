@@ -1,4 +1,5 @@
-﻿namespace Turnable_Tales_Proyecto
+﻿
+namespace Turnable_Tales_Proyecto
 {
     partial class PortadaProyecto
     {
@@ -32,7 +33,6 @@
             label2 = new Label();
             label83 = new Label();
             label82 = new Label();
-            label81 = new Label();
             label80 = new Label();
             label79 = new Label();
             label78 = new Label();
@@ -151,18 +151,6 @@
             label82.TabIndex = 279;
             label82.Text = "  ";
             label82.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // label81
-            // 
-            label81.AutoSize = true;
-            label81.BackColor = Color.White;
-            label81.Font = new Font("Consolas", 1F, FontStyle.Regular, GraphicsUnit.Point);
-            label81.Location = new Point(484, 392);
-            label81.Name = "label81";
-            label81.Size = new Size(4, 3);
-            label81.TabIndex = 278;
-            label81.Text = "  ";
-            label81.TextAlign = ContentAlignment.TopCenter;
             // 
             // label80
             // 
@@ -1129,7 +1117,6 @@
             Controls.Add(label2);
             Controls.Add(label83);
             Controls.Add(label82);
-            Controls.Add(label81);
             Controls.Add(label80);
             Controls.Add(label79);
             Controls.Add(label78);
@@ -1209,9 +1196,21 @@
             Controls.Add(label1);
             Name = "PortadaProyecto";
             Text = "PortadaProyecto";
+            Load += PortadaProyecto_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is PortadaProyecto proyecto &&
+                   EqualityComparer<Label>.Default.Equals(Label81, proyecto.Label81);
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Label81);
         }
 
         #endregion
@@ -1300,5 +1299,8 @@
         private PictureBox pictureBoxLogo;
         private Button buttonUsuario;
         private Button buttonSalir;
+
+        public Label Label81 { get => label81; set => label81 = value; }
+        public Label Label811 { get => label81; set => label81 = value; }
     }
 }

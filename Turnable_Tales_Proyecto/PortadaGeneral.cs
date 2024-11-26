@@ -47,6 +47,7 @@ namespace Turnable_Tales_Proyecto
         private void buttonSiguiente_Click(object sender, EventArgs e)
         {
             PortadaProyecto segundaPortada = new PortadaProyecto();
+            this.Hide();
             segundaPortada.ShowDialog();
             this.Show();
         }
