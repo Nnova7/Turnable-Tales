@@ -27,7 +27,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonAtras_Click(object sender, EventArgs e)
         {
-            DiscosCorridos discos = new DiscosCorridos();
+            DiscosK_pop discos = new DiscosK_pop();
             this.Hide();
             discos.Show();
             this.Close();

@@ -16,5 +16,21 @@ namespace Turnable_Tales_Proyecto
         {
             InitializeComponent();
         }
+
+        private void buttonUsuario_Click(object sender, EventArgs e)
+        {
+            MostrarNombre mostrar = new MostrarNombre(); //se crea instancia
+            this.Hide();
+            mostrar.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
+
+        private void buttonAtras_Click(object sender, EventArgs e)
+        {
+            DiscosClasicos discos = new DiscosClasicos();
+            this.Hide();
+            discos.Show();
+            this.Close();
+        }
     }
 }
