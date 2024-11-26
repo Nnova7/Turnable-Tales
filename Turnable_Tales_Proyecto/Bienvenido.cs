@@ -16,5 +16,16 @@ namespace Turnable_Tales_Proyecto
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Con el boton siguiente nos dirige a la lista de Generos.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonSiguiente_Click(object sender, EventArgs e)
+        {
+            ListaGeneros listaGeneros = new ListaGeneros(); //Crear instancia de ListaGeneros
+            listaGeneros.Show(); //Mostrar el formulario ListaGeneros
+            this.Close(); //Cerrar el formulario actual (Bienvenido)
+        }
     }
 }

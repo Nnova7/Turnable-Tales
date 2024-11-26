@@ -226,6 +226,7 @@
             buttonUsuario.Size = new Size(93, 89);
             buttonUsuario.TabIndex = 108;
             buttonUsuario.UseVisualStyleBackColor = false;
+            buttonUsuario.Click += buttonUsuario_Click;
             // 
             // label2
             // 
@@ -282,11 +283,11 @@
             labelFrase.AutoSize = true;
             labelFrase.BackColor = Color.Transparent;
             labelFrase.ForeColor = Color.White;
-            labelFrase.Location = new Point(506, 64);
+            labelFrase.Location = new Point(508, 70);
             labelFrase.Name = "labelFrase";
             labelFrase.Size = new Size(288, 25);
             labelFrase.TabIndex = 107;
-            labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
+            labelFrase.Text = "\"TU VIDA, TU MÚSICA, TU VINILO.\"\r\n";
             // 
             // label3
             // 

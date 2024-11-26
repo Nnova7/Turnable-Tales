@@ -16,5 +16,13 @@ namespace Turnable_Tales_Proyecto
         {
             InitializeComponent();
         }
+
+        private void buttonUsuario_Click(object sender, EventArgs e)
+        {
+            MostrarNombre mostrar = new MostrarNombre(); //se crea instancia
+            this.Hide();
+            mostrar.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
     }
 }

@@ -98,6 +98,7 @@
             buttonSiguiente.Size = new Size(66, 85);
             buttonSiguiente.TabIndex = 370;
             buttonSiguiente.UseVisualStyleBackColor = true;
+            buttonSiguiente.Click += buttonSiguiente_Click;
             // 
             // buttonBienvenido
             // 
