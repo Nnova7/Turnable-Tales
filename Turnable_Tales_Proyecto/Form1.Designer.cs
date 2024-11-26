@@ -32,6 +32,7 @@
             button3 = new Button();
             button2 = new Button();
             button4 = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -71,11 +72,21 @@
             button4.Text = "button4";
             button4.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(97, 319);
+            label1.Name = "label1";
+            label1.Size = new Size(76, 20);
+            label1.TabIndex = 6;
+            label1.Text = "motopero";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(button4);
             Controls.Add(button2);
             Controls.Add(button3);
@@ -84,6 +95,7 @@
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -92,5 +104,6 @@
         private Button button3;
         private Button button2;
         private Button button4;
+        private Label label1;
     }
 }
