@@ -336,7 +336,7 @@
             // 
             buttonAtras.FlatStyle = FlatStyle.Popup;
             buttonAtras.Image = Properties.Resources.IZQ;
-            buttonAtras.Location = new Point(36, 311);
+            buttonAtras.Location = new Point(12, 311);
             buttonAtras.Name = "buttonAtras";
             buttonAtras.Size = new Size(76, 79);
             buttonAtras.TabIndex = 214;
