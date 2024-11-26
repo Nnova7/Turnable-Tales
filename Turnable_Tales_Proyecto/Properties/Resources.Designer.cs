@@ -69,5 +69,15 @@ namespace Turnable_Tales_Proyecto.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usuariosinfondo {
+            get {
+                object obj = ResourceManager.GetObject("usuariosinfondo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
