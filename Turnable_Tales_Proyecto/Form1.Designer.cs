@@ -28,69 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button4 = new Button();
+            label2 = new Label();
             label1 = new Label();
+            btnCambio = new Button();
+            lblFoto = new Label();
             SuspendLayout();
             // 
-            // button1
+            // label2
             // 
-            button1.Location = new Point(348, 185);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(331, 246);
-            button3.Name = "button3";
-            button3.Size = new Size(152, 28);
-            button3.TabIndex = 3;
-            button3.Text = "Botton de Prueba";
-            button3.TextAlign = ContentAlignment.MiddleRight;
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(348, 118);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 4;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.Location = new Point(77, 118);
-            button4.Name = "button4";
-            button4.Size = new Size(94, 29);
-            button4.TabIndex = 5;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
+            label2.AutoSize = true;
+            label2.Font = new Font("Snap ITC", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.HotTrack;
+            label2.Location = new Point(292, 421);
+            label2.Name = "label2";
+            label2.Size = new Size(416, 27);
+            label2.TabIndex = 7;
+            label2.Text = "Dulce Mariana Andrade Olvera 3-C";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(97, 319);
+            label1.BackColor = Color.FromArgb(255, 192, 192);
+            label1.Font = new Font("SimSun", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(349, 132);
             label1.Name = "label1";
-            label1.Size = new Size(76, 20);
+            label1.Size = new Size(297, 28);
             label1.TabIndex = 6;
-            label1.Text = "motopero";
+            label1.Text = "Cambiar de Imagenes";
+            // 
+            // btnCambio
+            // 
+            btnCambio.BackColor = Color.FromArgb(192, 192, 255);
+            btnCambio.ForeColor = SystemColors.ButtonHighlight;
+            btnCambio.Location = new Point(397, 307);
+            btnCambio.Name = "btnCambio";
+            btnCambio.Size = new Size(194, 56);
+            btnCambio.TabIndex = 5;
+            btnCambio.Text = "Enviar Imagen";
+            btnCambio.UseVisualStyleBackColor = false;
+            // 
+            // lblFoto
+            // 
+            lblFoto.ImageIndex = 0;
+            lblFoto.Location = new Point(325, 114);
+            lblFoto.Name = "lblFoto";
+            lblFoto.Size = new Size(321, 258);
+            lblFoto.TabIndex = 4;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1000, 562);
+            Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(button4);
-            Controls.Add(button2);
-            Controls.Add(button3);
-            Controls.Add(button1);
+            Controls.Add(btnCambio);
+            Controls.Add(lblFoto);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -100,10 +94,9 @@
 
         #endregion
 
-        private Button button1;
-        private Button button3;
-        private Button button2;
-        private Button button4;
+        private Label label2;
         private Label label1;
+        private Button btnCambio;
+        private Label lblFoto;
     }
 }
