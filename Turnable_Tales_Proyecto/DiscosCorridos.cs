@@ -32,5 +32,21 @@ namespace Turnable_Tales_Proyecto
             mostrar.Show(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
+
+        private void buttonIncomodo_Click(object sender, EventArgs e)
+        {
+            Incomodo mostrar = new Incomodo(); //se crea instancia
+            this.Hide();
+            mostrar.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
+
+        private void buttonSad_Click(object sender, EventArgs e)
+        {
+            Sad mostrar = new Sad(); //se crea instancia
+            this.Hide();
+            mostrar.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
     }
 }

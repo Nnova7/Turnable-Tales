@@ -188,6 +188,7 @@
             buttonLove.Size = new Size(266, 245);
             buttonLove.TabIndex = 202;
             buttonLove.UseVisualStyleBackColor = true;
+            buttonLove.Click += buttonLove_Click;
             // 
             // buttonWorld
             // 
@@ -198,6 +199,7 @@
             buttonWorld.Size = new Size(266, 267);
             buttonWorld.TabIndex = 201;
             buttonWorld.UseVisualStyleBackColor = true;
+            buttonWorld.Click += buttonWorld_Click;
             // 
             // label8
             // 

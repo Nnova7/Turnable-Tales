@@ -32,5 +32,21 @@ namespace Turnable_Tales_Proyecto
             lista.Show();
             this.Close();
         }
+
+        private void buttonEureka_Click(object sender, EventArgs e)
+        {
+            Eureka mostrar = new Eureka(); //se crea instancia
+            this.Hide();
+            mostrar.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
+
+        private void buttonCaifanes_Click(object sender, EventArgs e)
+        {
+            Silencio mostrar = new Silencio(); //se crea instancia
+            this.Hide();
+            mostrar.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
     }
 }

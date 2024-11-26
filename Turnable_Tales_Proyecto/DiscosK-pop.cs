@@ -32,5 +32,21 @@ namespace Turnable_Tales_Proyecto
             lista.Show();
             this.Close();
         }
+
+        private void buttonWorld_Click(object sender, EventArgs e)
+        {
+            TheWorld mostrar = new TheWorld(); //se crea instancia
+            this.Hide();
+            mostrar.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
+
+        private void buttonLove_Click(object sender, EventArgs e)
+        {
+            Love mostrar = new Love(); //se crea instancia
+            this.Hide();
+            mostrar.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
     }
 }

@@ -186,6 +186,7 @@
             buttonCaifanes.Size = new Size(264, 261);
             buttonCaifanes.TabIndex = 164;
             buttonCaifanes.UseVisualStyleBackColor = true;
+            buttonCaifanes.Click += buttonCaifanes_Click;
             // 
             // buttonEureka
             // 
@@ -196,6 +197,7 @@
             buttonEureka.Size = new Size(264, 277);
             buttonEureka.TabIndex = 163;
             buttonEureka.UseVisualStyleBackColor = true;
+            buttonEureka.Click += buttonEureka_Click;
             // 
             // label8
             // 

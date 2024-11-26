@@ -163,6 +163,7 @@
             buttonSad.Size = new Size(270, 244);
             buttonSad.TabIndex = 183;
             buttonSad.UseVisualStyleBackColor = true;
+            buttonSad.Click += buttonSad_Click;
             // 
             // buttonIncomodo
             // 
@@ -173,6 +174,7 @@
             buttonIncomodo.Size = new Size(264, 244);
             buttonIncomodo.TabIndex = 182;
             buttonIncomodo.UseVisualStyleBackColor = true;
+            buttonIncomodo.Click += buttonIncomodo_Click;
             // 
             // label8
             // 

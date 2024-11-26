@@ -69,6 +69,7 @@
             buttonVestila.Size = new Size(266, 245);
             buttonVestila.TabIndex = 139;
             buttonVestila.UseVisualStyleBackColor = true;
+            buttonVestila.Click += buttonVestila_Click;
             // 
             // buttonCarmen
             // 
@@ -79,6 +80,7 @@
             buttonCarmen.Size = new Size(266, 245);
             buttonCarmen.TabIndex = 138;
             buttonCarmen.UseVisualStyleBackColor = true;
+            buttonCarmen.Click += buttonCarmen_Click;
             // 
             // label8
             // 

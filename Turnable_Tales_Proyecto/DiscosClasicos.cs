@@ -37,5 +37,21 @@ namespace Turnable_Tales_Proyecto
             lista.Show();
             this.Close();
         }
+
+        private void buttonCarmen_Click(object sender, EventArgs e)
+        {
+            Carmen mostrar = new Carmen(); //se crea instancia
+            this.Hide();
+            mostrar.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
+
+        private void buttonVestila_Click(object sender, EventArgs e)
+        {
+            Vestila mostrar = new Vestila(); //se crea instancia
+            this.Hide();
+            mostrar.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
     }
 }
