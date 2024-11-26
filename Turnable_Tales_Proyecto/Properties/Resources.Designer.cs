@@ -83,6 +83,36 @@ namespace Turnable_Tales_Proyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Clasico2 {
+            get {
+                object obj = ResourceManager.GetObject("Clasico2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Clasicoprimero {
+            get {
+                object obj = ResourceManager.GetObject("Clasicoprimero", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Clasicosegundo {
+            get {
+                object obj = ResourceManager.GetObject("Clasicosegundo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap corridos {
             get {
                 object obj = ResourceManager.GetObject("corridos", resourceCulture);
@@ -136,6 +166,16 @@ namespace Turnable_Tales_Proyecto.Properties {
         internal static System.Drawing.Bitmap K_pop {
             get {
                 object obj = ResourceManager.GetObject("K-pop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_1_ {
+            get {
+                object obj = ResourceManager.GetObject("Logo(1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
