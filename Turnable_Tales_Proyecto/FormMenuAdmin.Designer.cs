@@ -176,7 +176,7 @@
             // 
             buttonEliminaDisco.FlatStyle = FlatStyle.Popup;
             buttonEliminaDisco.Image = (Image)resources.GetObject("buttonEliminaDisco.Image");
-            buttonEliminaDisco.Location = new Point(840, 254);
+            buttonEliminaDisco.Location = new Point(841, 254);
             buttonEliminaDisco.Name = "buttonEliminaDisco";
             buttonEliminaDisco.Size = new Size(245, 102);
             buttonEliminaDisco.TabIndex = 25;
@@ -217,7 +217,7 @@
             labelMenu.TabIndex = 23;
             labelMenu.Text = "MENU";
             // 
-            // MenuAdmin
+            // FormMenuAdmin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -239,7 +239,7 @@
             Controls.Add(buttonAgregarDisco);
             Controls.Add(labelMenu);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "MenuAdmin";
+            Name = "FormMenuAdmin";
             Text = "Form1";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
