@@ -34,6 +34,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.fondoEfectivo;
             ClientSize = new Size(1286, 594);
             Name = "Efectivo";
             Text = "Efectivo";
