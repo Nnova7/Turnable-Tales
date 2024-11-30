@@ -44,6 +44,7 @@
             buttonVentasTotales = new Button();
             buttonAgregarDisco = new Button();
             labelMenu = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -84,7 +85,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(421, 97);
+            label2.Location = new Point(421, 103);
             label2.Name = "label2";
             label2.Size = new Size(455, 50);
             label2.TabIndex = 35;
@@ -97,7 +98,7 @@
             label1.BackColor = Color.White;
             label1.Font = new Font("Consolas", 1.2F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(193, 168);
+            label1.Location = new Point(193, 174);
             label1.Name = "label1";
             label1.Size = new Size(893, 3);
             label1.TabIndex = 34;
@@ -110,7 +111,7 @@
             labelLinea.BackColor = Color.White;
             labelLinea.Font = new Font("Consolas", 1.2F, FontStyle.Regular, GraphicsUnit.Point);
             labelLinea.ForeColor = Color.White;
-            labelLinea.Location = new Point(193, 77);
+            labelLinea.Location = new Point(193, 89);
             labelLinea.Name = "labelLinea";
             labelLinea.Size = new Size(893, 3);
             labelLinea.TabIndex = 33;
@@ -204,6 +205,7 @@
             buttonAgregarDisco.TabIndex = 22;
             buttonAgregarDisco.Text = "button3";
             buttonAgregarDisco.UseVisualStyleBackColor = true;
+            buttonAgregarDisco.Click += buttonAgregarDisco_Click;
             // 
             // labelMenu
             // 
@@ -211,17 +213,30 @@
             labelMenu.BackColor = Color.Transparent;
             labelMenu.Font = new Font("Consolas", 18F, FontStyle.Regular, GraphicsUnit.Point);
             labelMenu.ForeColor = Color.White;
-            labelMenu.Location = new Point(601, 178);
+            labelMenu.Location = new Point(603, 191);
             labelMenu.Name = "labelMenu";
             labelMenu.Size = new Size(79, 36);
             labelMenu.TabIndex = 23;
             labelMenu.Text = "MENU";
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Image = Properties.Resources.Imagen1_removebg_preview;
+            button1.Location = new Point(1176, 30);
+            button1.Margin = new Padding(2);
+            button1.Name = "button1";
+            button1.Size = new Size(97, 89);
+            button1.TabIndex = 188;
+            button1.UseVisualStyleBackColor = false;
+            // 
             // FormMenuAdmin
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(1284, 586);
+            ClientSize = new Size(1302, 633);
+            Controls.Add(button1);
             Controls.Add(buttonMusica);
             Controls.Add(buttonUsuario);
             Controls.Add(pictureBox1);
@@ -263,5 +278,6 @@
         private Button buttonVentasTotales;
         private Button buttonAgregarDisco;
         private Label labelMenu;
+        private Button button1;
     }
 }

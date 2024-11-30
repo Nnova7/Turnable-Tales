@@ -26,5 +26,10 @@ namespace Turnable_Tales_Proyecto
         {
 
         }
+
+        private void buttonAgregarDisco_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
