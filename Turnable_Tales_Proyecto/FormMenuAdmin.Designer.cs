@@ -254,6 +254,7 @@
             Controls.Add(labelMenu);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormMenuAdmin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
