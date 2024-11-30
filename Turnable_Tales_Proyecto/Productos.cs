@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Turnable_Tales_Proyecto
 {
-    internal class Productos
+    public class Productos
     {
         private int id;
         private string artista;
