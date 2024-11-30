@@ -71,7 +71,7 @@
             // 
             buttonSalir.FlatStyle = FlatStyle.Popup;
             buttonSalir.Image = (Image)resources.GetObject("buttonSalir.Image");
-            buttonSalir.Location = new Point(1080, 516);
+            buttonSalir.Location = new Point(1080, 563);
             buttonSalir.Name = "buttonSalir";
             buttonSalir.Size = new Size(194, 58);
             buttonSalir.TabIndex = 72;
@@ -81,7 +81,7 @@
             // 
             buttonActualiza.FlatStyle = FlatStyle.Popup;
             buttonActualiza.Image = (Image)resources.GetObject("buttonActualiza.Image");
-            buttonActualiza.Location = new Point(9, 516);
+            buttonActualiza.Location = new Point(9, 563);
             buttonActualiza.Name = "buttonActualiza";
             buttonActualiza.Size = new Size(263, 58);
             buttonActualiza.TabIndex = 71;
@@ -92,7 +92,7 @@
             labeltxtId.AutoSize = true;
             labeltxtId.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             labeltxtId.ForeColor = Color.White;
-            labeltxtId.Location = new Point(266, 244);
+            labeltxtId.Location = new Point(272, 271);
             labeltxtId.Name = "labeltxtId";
             labeltxtId.Size = new Size(58, 41);
             labeltxtId.TabIndex = 62;
@@ -104,7 +104,7 @@
             labeltxtExistencias.AutoSize = true;
             labeltxtExistencias.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             labeltxtExistencias.ForeColor = Color.White;
-            labeltxtExistencias.Location = new Point(661, 433);
+            labeltxtExistencias.Location = new Point(667, 460);
             labeltxtExistencias.Name = "labeltxtExistencias";
             labeltxtExistencias.Size = new Size(215, 41);
             labeltxtExistencias.TabIndex = 61;
@@ -116,7 +116,7 @@
             labeltxtPrecio.AutoSize = true;
             labeltxtPrecio.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             labeltxtPrecio.ForeColor = Color.White;
-            labeltxtPrecio.Location = new Point(193, 433);
+            labeltxtPrecio.Location = new Point(199, 460);
             labeltxtPrecio.Name = "labeltxtPrecio";
             labeltxtPrecio.Size = new Size(132, 41);
             labeltxtPrecio.TabIndex = 60;
@@ -128,7 +128,7 @@
             labeltxtGenero.AutoSize = true;
             labeltxtGenero.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             labeltxtGenero.ForeColor = Color.White;
-            labeltxtGenero.Location = new Point(730, 344);
+            labeltxtGenero.Location = new Point(736, 371);
             labeltxtGenero.Name = "labeltxtGenero";
             labeltxtGenero.Size = new Size(146, 41);
             labeltxtGenero.TabIndex = 59;
@@ -140,7 +140,7 @@
             labeltxtArtista.AutoSize = true;
             labeltxtArtista.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             labeltxtArtista.ForeColor = Color.White;
-            labeltxtArtista.Location = new Point(728, 258);
+            labeltxtArtista.Location = new Point(734, 285);
             labeltxtArtista.Name = "labeltxtArtista";
             labeltxtArtista.Size = new Size(148, 41);
             labeltxtArtista.TabIndex = 58;
@@ -152,7 +152,7 @@
             labeltxtTitulo.AutoSize = true;
             labeltxtTitulo.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             labeltxtTitulo.ForeColor = Color.White;
-            labeltxtTitulo.Location = new Point(193, 344);
+            labeltxtTitulo.Location = new Point(199, 371);
             labeltxtTitulo.Name = "labeltxtTitulo";
             labeltxtTitulo.Size = new Size(131, 41);
             labeltxtTitulo.TabIndex = 57;
@@ -278,7 +278,7 @@
             // textBoxId
             // 
             textBoxId.BackColor = SystemColors.InactiveCaptionText;
-            textBoxId.Location = new Point(330, 258);
+            textBoxId.Location = new Point(336, 285);
             textBoxId.Name = "textBoxId";
             textBoxId.PlaceholderText = "INTRODUZCA UN DATO";
             textBoxId.Size = new Size(221, 27);
@@ -289,7 +289,7 @@
             // textBoxArtista
             // 
             textBoxArtista.BackColor = SystemColors.InactiveCaptionText;
-            textBoxArtista.Location = new Point(882, 271);
+            textBoxArtista.Location = new Point(888, 298);
             textBoxArtista.Name = "textBoxArtista";
             textBoxArtista.PlaceholderText = "INTRODUZCA UN DATO";
             textBoxArtista.Size = new Size(221, 27);
@@ -300,7 +300,7 @@
             // textBoxGenero
             // 
             textBoxGenero.BackColor = SystemColors.InactiveCaptionText;
-            textBoxGenero.Location = new Point(882, 358);
+            textBoxGenero.Location = new Point(888, 385);
             textBoxGenero.Name = "textBoxGenero";
             textBoxGenero.PlaceholderText = "INTRODUZCA UN DATO";
             textBoxGenero.Size = new Size(221, 27);
@@ -311,7 +311,7 @@
             // textBoxExistencias
             // 
             textBoxExistencias.BackColor = SystemColors.InactiveCaptionText;
-            textBoxExistencias.Location = new Point(882, 447);
+            textBoxExistencias.Location = new Point(888, 474);
             textBoxExistencias.Name = "textBoxExistencias";
             textBoxExistencias.PlaceholderText = "INTRODUZCA UN DATO";
             textBoxExistencias.Size = new Size(221, 27);
@@ -322,7 +322,7 @@
             // textBoxTitulo
             // 
             textBoxTitulo.BackColor = SystemColors.InactiveCaptionText;
-            textBoxTitulo.Location = new Point(330, 358);
+            textBoxTitulo.Location = new Point(336, 385);
             textBoxTitulo.Name = "textBoxTitulo";
             textBoxTitulo.PlaceholderText = "INTRODUZCA UN DATO";
             textBoxTitulo.Size = new Size(221, 27);
@@ -333,7 +333,7 @@
             // textBoxPrecio
             // 
             textBoxPrecio.BackColor = SystemColors.InactiveCaptionText;
-            textBoxPrecio.Location = new Point(331, 447);
+            textBoxPrecio.Location = new Point(337, 474);
             textBoxPrecio.Name = "textBoxPrecio";
             textBoxPrecio.PlaceholderText = "INTRODUZCA UN DATO";
             textBoxPrecio.Size = new Size(221, 27);
@@ -345,7 +345,7 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(1284, 586);
+            ClientSize = new Size(1302, 633);
             Controls.Add(textBoxPrecio);
             Controls.Add(textBoxTitulo);
             Controls.Add(textBoxExistencias);
