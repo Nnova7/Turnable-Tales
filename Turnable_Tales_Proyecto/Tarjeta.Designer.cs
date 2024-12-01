@@ -168,7 +168,7 @@
             button2.FlatStyle = FlatStyle.Popup;
             button2.Location = new Point(255, 221);
             button2.Name = "button2";
-            button2.Size = new Size(98, 76);
+            button2.Size = new Size(96, 76);
             button2.TabIndex = 204;
             button2.UseVisualStyleBackColor = true;
             // 
@@ -176,7 +176,7 @@
             // 
             button3.BackgroundImage = Properties.Resources.visa;
             button3.FlatStyle = FlatStyle.Popup;
-            button3.Location = new Point(390, 221);
+            button3.Location = new Point(357, 221);
             button3.Name = "button3";
             button3.Size = new Size(129, 68);
             button3.TabIndex = 205;
