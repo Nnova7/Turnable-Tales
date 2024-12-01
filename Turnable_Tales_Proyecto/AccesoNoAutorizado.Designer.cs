@@ -62,11 +62,11 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ButtonFace;
-            label3.Location = new Point(197, 126);
+            label3.Location = new Point(205, 126);
             label3.Name = "label3";
-            label3.Size = new Size(280, 23);
+            label3.Size = new Size(423, 23);
             label3.TabIndex = 78;
-            label3.Text = "I N I C I A R  S E S I Ó N  C O M O:";
+            label3.Text = "I N T R O D U C E   U N A   C U E N T A   V A L I D A ";
             label3.Click += label3_Click;
             // 
             // AccesoNoAutorizado
