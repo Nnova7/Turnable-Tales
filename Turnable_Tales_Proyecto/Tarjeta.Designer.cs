@@ -42,6 +42,8 @@
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -192,12 +194,21 @@
             button4.TabIndex = 206;
             button4.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(808, 206);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(342, 286);
+            pictureBox1.TabIndex = 207;
+            pictureBox1.TabStop = false;
+            // 
             // Tarjeta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(pictureBox1);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -213,6 +224,7 @@
             Controls.Add(buttonRegresar);
             Name = "Tarjeta";
             Text = "Tarjeta";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -232,5 +244,6 @@
         private Button button2;
         private Button button3;
         private Button button4;
+        private PictureBox pictureBox1;
     }
 }
