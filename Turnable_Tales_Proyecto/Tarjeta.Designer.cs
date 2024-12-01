@@ -43,6 +43,11 @@
             button3 = new Button();
             button4 = new Button();
             pictureBox1 = new PictureBox();
+            textBoxNPedido = new TextBox();
+            textBoxSub = new TextBox();
+            textBoxImp = new TextBox();
+            textBoxTot = new TextBox();
+            textBoxCosEnvio = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -197,11 +202,66 @@
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = Properties.Resources.resumenpedido;
-            pictureBox1.Location = new Point(872, 203);
+            pictureBox1.Location = new Point(850, 203);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(386, 286);
+            pictureBox1.Size = new Size(408, 286);
             pictureBox1.TabIndex = 207;
             pictureBox1.TabStop = false;
+            // 
+            // textBoxNPedido
+            // 
+            textBoxNPedido.BackColor = Color.Black;
+            textBoxNPedido.Enabled = false;
+            textBoxNPedido.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxNPedido.Location = new Point(1083, 280);
+            textBoxNPedido.Name = "textBoxNPedido";
+            textBoxNPedido.Size = new Size(151, 26);
+            textBoxNPedido.TabIndex = 208;
+            textBoxNPedido.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBoxSub
+            // 
+            textBoxSub.BackColor = Color.Black;
+            textBoxSub.Enabled = false;
+            textBoxSub.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxSub.Location = new Point(1083, 361);
+            textBoxSub.Name = "textBoxSub";
+            textBoxSub.Size = new Size(151, 26);
+            textBoxSub.TabIndex = 209;
+            textBoxSub.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBoxImp
+            // 
+            textBoxImp.BackColor = Color.Black;
+            textBoxImp.Enabled = false;
+            textBoxImp.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxImp.Location = new Point(1083, 401);
+            textBoxImp.Name = "textBoxImp";
+            textBoxImp.Size = new Size(151, 26);
+            textBoxImp.TabIndex = 210;
+            textBoxImp.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBoxTot
+            // 
+            textBoxTot.BackColor = Color.Black;
+            textBoxTot.Enabled = false;
+            textBoxTot.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxTot.Location = new Point(1083, 446);
+            textBoxTot.Name = "textBoxTot";
+            textBoxTot.Size = new Size(151, 26);
+            textBoxTot.TabIndex = 211;
+            textBoxTot.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBoxCosEnvio
+            // 
+            textBoxCosEnvio.BackColor = Color.Black;
+            textBoxCosEnvio.Enabled = false;
+            textBoxCosEnvio.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxCosEnvio.Location = new Point(1083, 316);
+            textBoxCosEnvio.Name = "textBoxCosEnvio";
+            textBoxCosEnvio.Size = new Size(151, 26);
+            textBoxCosEnvio.TabIndex = 212;
+            textBoxCosEnvio.TextAlign = HorizontalAlignment.Center;
             // 
             // Tarjeta
             // 
@@ -209,6 +269,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(textBoxCosEnvio);
+            Controls.Add(textBoxTot);
+            Controls.Add(textBoxImp);
+            Controls.Add(textBoxSub);
+            Controls.Add(textBoxNPedido);
             Controls.Add(pictureBox1);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -246,5 +311,10 @@
         private Button button3;
         private Button button4;
         private PictureBox pictureBox1;
+        private TextBox textBoxNPedido;
+        private TextBox textBoxSub;
+        private TextBox textBoxImp;
+        private TextBox textBoxTot;
+        private TextBox textBoxCosEnvio;
     }
 }
