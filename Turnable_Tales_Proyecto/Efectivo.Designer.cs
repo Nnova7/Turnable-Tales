@@ -33,7 +33,8 @@
             // Efectivo
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1837, 990);
+            BackgroundImage = Properties.Resources.fondoEfectivo;
+            ClientSize = new Size(1370, 749);
             Margin = new Padding(4, 5, 4, 5);
             Name = "Efectivo";
             Text = "Efectivo";
