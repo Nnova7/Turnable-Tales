@@ -46,9 +46,11 @@
             textBoxValor = new TextBox();
             textBoxFechaCrea = new TextBox();
             label2 = new Label();
+            pictureBoxLogo = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCuadInfo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxInstruction).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -242,12 +244,24 @@
             label2.TabIndex = 209;
             label2.Text = "NUMERO DEL PEDIDO";
             // 
+            // pictureBoxLogo
+            // 
+            pictureBoxLogo.BackgroundImageLayout = ImageLayout.None;
+            pictureBoxLogo.Image = (Image)resources.GetObject("pictureBoxLogo.Image");
+            pictureBoxLogo.Location = new Point(12, 13);
+            pictureBoxLogo.Name = "pictureBoxLogo";
+            pictureBoxLogo.Size = new Size(175, 174);
+            pictureBoxLogo.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxLogo.TabIndex = 210;
+            pictureBoxLogo.TabStop = false;
+            // 
             // Oxxo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(pictureBoxLogo);
             Controls.Add(label2);
             Controls.Add(textBoxFechaCrea);
             Controls.Add(textBoxValor);
@@ -270,6 +284,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxCuadInfo).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxInstruction).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -293,5 +308,6 @@
         private TextBox textBoxValor;
         private TextBox textBoxFechaCrea;
         private Label label2;
+        private PictureBox pictureBoxLogo;
     }
 }
