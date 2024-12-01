@@ -28,7 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tarjeta));
+            buttonRegresar = new Button();
+            buttonMusica = new Button();
+            buttonUsuario = new Button();
+            buttonTicket = new Button();
             SuspendLayout();
+            // 
+            // buttonRegresar
+            // 
+            buttonRegresar.BackColor = Color.Transparent;
+            buttonRegresar.BackgroundImage = Properties.Resources.flechaizq;
+            buttonRegresar.FlatStyle = FlatStyle.Popup;
+            buttonRegresar.Location = new Point(202, 291);
+            buttonRegresar.Margin = new Padding(0);
+            buttonRegresar.Name = "buttonRegresar";
+            buttonRegresar.Size = new Size(60, 67);
+            buttonRegresar.TabIndex = 2;
+            buttonRegresar.UseVisualStyleBackColor = false;
+            // 
+            // buttonMusica
+            // 
+            buttonMusica.BackColor = Color.Transparent;
+            buttonMusica.FlatStyle = FlatStyle.Popup;
+            buttonMusica.Image = (Image)resources.GetObject("buttonMusica.Image");
+            buttonMusica.Location = new Point(613, 48);
+            buttonMusica.Name = "buttonMusica";
+            buttonMusica.Size = new Size(84, 86);
+            buttonMusica.TabIndex = 194;
+            buttonMusica.UseVisualStyleBackColor = false;
+            // 
+            // buttonUsuario
+            // 
+            buttonUsuario.BackColor = Color.Transparent;
+            buttonUsuario.FlatStyle = FlatStyle.Popup;
+            buttonUsuario.Image = Properties.Resources.Imagen1_removebg_preview;
+            buttonUsuario.Location = new Point(720, 68);
+            buttonUsuario.Margin = new Padding(2);
+            buttonUsuario.Name = "buttonUsuario";
+            buttonUsuario.Size = new Size(92, 78);
+            buttonUsuario.TabIndex = 195;
+            buttonUsuario.UseVisualStyleBackColor = false;
+            // 
+            // buttonTicket
+            // 
+            buttonTicket.BackColor = Color.Transparent;
+            buttonTicket.BackgroundImage = Properties.Resources.descargarticket;
+            buttonTicket.Location = new Point(556, 268);
+            buttonTicket.Name = "buttonTicket";
+            buttonTicket.Size = new Size(175, 58);
+            buttonTicket.TabIndex = 197;
+            buttonTicket.UseVisualStyleBackColor = false;
             // 
             // Tarjeta
             // 
@@ -36,11 +86,20 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(buttonTicket);
+            Controls.Add(buttonUsuario);
+            Controls.Add(buttonMusica);
+            Controls.Add(buttonRegresar);
             Name = "Tarjeta";
             Text = "Tarjeta";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button buttonRegresar;
+        private Button buttonMusica;
+        private Button buttonUsuario;
+        private Button buttonTicket;
     }
 }
