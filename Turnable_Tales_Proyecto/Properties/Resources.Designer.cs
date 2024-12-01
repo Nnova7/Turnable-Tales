@@ -63,6 +63,16 @@ namespace Turnable_Tales_Proyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap americanexpress {
+            get {
+                object obj = ResourceManager.GetObject("americanexpress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BtsSEGUNDO {
             get {
                 object obj = ResourceManager.GetObject("BtsSEGUNDO", resourceCulture);

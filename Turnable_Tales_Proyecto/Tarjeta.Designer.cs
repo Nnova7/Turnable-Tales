@@ -174,11 +174,11 @@
             // 
             // button3
             // 
-            button3.BackgroundImage = Properties.Resources.visa;
+            button3.BackgroundImage = Properties.Resources.americanexpress;
             button3.FlatStyle = FlatStyle.Popup;
             button3.Location = new Point(357, 221);
             button3.Name = "button3";
-            button3.Size = new Size(129, 68);
+            button3.Size = new Size(75, 68);
             button3.TabIndex = 205;
             button3.UseVisualStyleBackColor = true;
             // 
