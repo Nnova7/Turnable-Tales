@@ -48,7 +48,7 @@
             textBoxImp = new TextBox();
             textBoxTot = new TextBox();
             textBoxCosEnvio = new TextBox();
-            button5 = new Button();
+            buttonGuardar = new Button();
             labelNTarjeta = new Label();
             labelFCaducidad = new Label();
             labelCSeguridad = new Label();
@@ -271,15 +271,15 @@
             textBoxCosEnvio.TabIndex = 212;
             textBoxCosEnvio.TextAlign = HorizontalAlignment.Center;
             // 
-            // button5
+            // buttonGuardar
             // 
-            button5.BackColor = Color.Transparent;
-            button5.BackgroundImage = Properties.Resources.finalizar;
-            button5.Location = new Point(850, 515);
-            button5.Name = "button5";
-            button5.Size = new Size(226, 47);
-            button5.TabIndex = 213;
-            button5.UseVisualStyleBackColor = false;
+            buttonGuardar.BackColor = Color.Transparent;
+            buttonGuardar.BackgroundImage = Properties.Resources.guardar;
+            buttonGuardar.Location = new Point(850, 515);
+            buttonGuardar.Name = "buttonGuardar";
+            buttonGuardar.Size = new Size(112, 58);
+            buttonGuardar.TabIndex = 213;
+            buttonGuardar.UseVisualStyleBackColor = false;
             // 
             // labelNTarjeta
             // 
@@ -378,7 +378,7 @@
             Controls.Add(labelCSeguridad);
             Controls.Add(labelFCaducidad);
             Controls.Add(labelNTarjeta);
-            Controls.Add(button5);
+            Controls.Add(buttonGuardar);
             Controls.Add(textBoxCosEnvio);
             Controls.Add(textBoxTot);
             Controls.Add(textBoxImp);
@@ -426,7 +426,7 @@
         private TextBox textBoxImp;
         private TextBox textBoxTot;
         private TextBox textBoxCosEnvio;
-        private Button button5;
+        private Button buttonGuardar;
         private Label labelNTarjeta;
         private Label labelFCaducidad;
         private Label labelCSeguridad;
