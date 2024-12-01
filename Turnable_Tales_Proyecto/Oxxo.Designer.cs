@@ -163,7 +163,8 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(793, 221);
+            pictureBox2.BackgroundImage = Properties.Resources.instruccionoxxo;
+            pictureBox2.Location = new Point(495, 310);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(470, 272);
             pictureBox2.TabIndex = 203;

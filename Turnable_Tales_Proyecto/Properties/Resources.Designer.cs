@@ -353,6 +353,16 @@ namespace Turnable_Tales_Proyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap instruccionoxxo {
+            get {
+                object obj = ResourceManager.GetObject("instruccionoxxo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IZQ {
             get {
                 object obj = ResourceManager.GetObject("IZQ", resourceCulture);
