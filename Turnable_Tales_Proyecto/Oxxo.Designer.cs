@@ -128,11 +128,11 @@
             labelNomDiap.BackColor = Color.Transparent;
             labelNomDiap.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             labelNomDiap.ForeColor = Color.White;
-            labelNomDiap.Location = new Point(474, 112);
+            labelNomDiap.Location = new Point(505, 111);
             labelNomDiap.Name = "labelNomDiap";
-            labelNomDiap.Size = new Size(293, 41);
+            labelNomDiap.Size = new Size(240, 41);
             labelNomDiap.TabIndex = 200;
-            labelNomDiap.Text = "PAGO EN EFECTIVO";
+            labelNomDiap.Text = "PAGO EN OXXO";
             labelNomDiap.TextAlign = ContentAlignment.TopCenter;
             // 
             // labelLinea
