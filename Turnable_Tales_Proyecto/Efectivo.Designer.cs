@@ -191,44 +191,49 @@
             // 
             textBoxSub.BackColor = Color.Black;
             textBoxSub.Enabled = false;
+            textBoxSub.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxSub.Location = new Point(647, 284);
             textBoxSub.Name = "textBoxSub";
-            textBoxSub.Size = new Size(151, 23);
+            textBoxSub.Size = new Size(151, 26);
             textBoxSub.TabIndex = 197;
             // 
             // textBoxImp
             // 
             textBoxImp.BackColor = Color.Black;
             textBoxImp.Enabled = false;
+            textBoxImp.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxImp.Location = new Point(647, 319);
             textBoxImp.Name = "textBoxImp";
-            textBoxImp.Size = new Size(151, 23);
+            textBoxImp.Size = new Size(151, 26);
             textBoxImp.TabIndex = 198;
             // 
             // textBoxTot
             // 
             textBoxTot.BackColor = Color.Black;
             textBoxTot.Enabled = false;
+            textBoxTot.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxTot.Location = new Point(647, 357);
             textBoxTot.Name = "textBoxTot";
-            textBoxTot.Size = new Size(151, 23);
+            textBoxTot.Size = new Size(151, 26);
             textBoxTot.TabIndex = 199;
             // 
             // textBoxCam
             // 
             textBoxCam.BackColor = Color.Black;
             textBoxCam.Enabled = false;
+            textBoxCam.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxCam.Location = new Point(647, 534);
             textBoxCam.Name = "textBoxCam";
-            textBoxCam.Size = new Size(151, 23);
+            textBoxCam.Size = new Size(151, 26);
             textBoxCam.TabIndex = 200;
             // 
             // textBoxPagoCon
             // 
             textBoxPagoCon.BackColor = Color.Black;
+            textBoxPagoCon.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxPagoCon.Location = new Point(647, 441);
             textBoxPagoCon.Name = "textBoxPagoCon";
-            textBoxPagoCon.Size = new Size(151, 23);
+            textBoxPagoCon.Size = new Size(151, 26);
             textBoxPagoCon.TabIndex = 201;
             // 
             // Efectivo
