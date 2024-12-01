@@ -38,6 +38,7 @@
             label1 = new Label();
             labelNomDiap = new Label();
             labelLinea = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -148,12 +149,22 @@
             labelLinea.Text = resources.GetString("labelLinea.Text");
             labelLinea.TextAlign = ContentAlignment.TopCenter;
             // 
+            // button1
+            // 
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Location = new Point(154, 232);
+            button1.Name = "button1";
+            button1.Size = new Size(103, 66);
+            button1.TabIndex = 203;
+            button1.UseVisualStyleBackColor = true;
+            // 
             // Tarjeta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(button1);
             Controls.Add(labelLinea);
             Controls.Add(labelNomDiap);
             Controls.Add(label1);
@@ -180,5 +191,6 @@
         private Label label1;
         private Label labelNomDiap;
         private Label labelLinea;
+        private Button button1;
     }
 }
