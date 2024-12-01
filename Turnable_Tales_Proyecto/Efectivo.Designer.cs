@@ -186,6 +186,7 @@
             textBoxNPedido.Name = "textBoxNPedido";
             textBoxNPedido.Size = new Size(151, 26);
             textBoxNPedido.TabIndex = 196;
+            textBoxNPedido.TextAlign = HorizontalAlignment.Center;
             // 
             // textBoxSub
             // 
@@ -196,6 +197,7 @@
             textBoxSub.Name = "textBoxSub";
             textBoxSub.Size = new Size(151, 26);
             textBoxSub.TabIndex = 197;
+            textBoxSub.TextAlign = HorizontalAlignment.Center;
             // 
             // textBoxImp
             // 
@@ -206,6 +208,7 @@
             textBoxImp.Name = "textBoxImp";
             textBoxImp.Size = new Size(151, 26);
             textBoxImp.TabIndex = 198;
+            textBoxImp.TextAlign = HorizontalAlignment.Center;
             // 
             // textBoxTot
             // 
@@ -216,6 +219,7 @@
             textBoxTot.Name = "textBoxTot";
             textBoxTot.Size = new Size(151, 26);
             textBoxTot.TabIndex = 199;
+            textBoxTot.TextAlign = HorizontalAlignment.Center;
             // 
             // textBoxCam
             // 
@@ -226,6 +230,7 @@
             textBoxCam.Name = "textBoxCam";
             textBoxCam.Size = new Size(151, 26);
             textBoxCam.TabIndex = 200;
+            textBoxCam.TextAlign = HorizontalAlignment.Center;
             // 
             // textBoxPagoCon
             // 
@@ -235,6 +240,7 @@
             textBoxPagoCon.Name = "textBoxPagoCon";
             textBoxPagoCon.Size = new Size(151, 26);
             textBoxPagoCon.TabIndex = 201;
+            textBoxPagoCon.TextAlign = HorizontalAlignment.Center;
             // 
             // Efectivo
             // 
