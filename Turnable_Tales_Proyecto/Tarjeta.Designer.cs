@@ -48,6 +48,7 @@
             textBoxImp = new TextBox();
             textBoxTot = new TextBox();
             textBoxCosEnvio = new TextBox();
+            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -263,12 +264,23 @@
             textBoxCosEnvio.TabIndex = 212;
             textBoxCosEnvio.TextAlign = HorizontalAlignment.Center;
             // 
+            // button5
+            // 
+            button5.BackColor = Color.Transparent;
+            button5.BackgroundImage = Properties.Resources.finalizar;
+            button5.Location = new Point(850, 515);
+            button5.Name = "button5";
+            button5.Size = new Size(226, 47);
+            button5.TabIndex = 213;
+            button5.UseVisualStyleBackColor = false;
+            // 
             // Tarjeta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(button5);
             Controls.Add(textBoxCosEnvio);
             Controls.Add(textBoxTot);
             Controls.Add(textBoxImp);
@@ -316,5 +328,6 @@
         private TextBox textBoxImp;
         private TextBox textBoxTot;
         private TextBox textBoxCosEnvio;
+        private Button button5;
     }
 }
