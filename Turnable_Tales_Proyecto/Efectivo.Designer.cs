@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Efectivo));
             buttonRegresar = new Button();
             labelTitulo = new Label();
             labelFrase = new Label();
+            labelLinea = new Label();
+            label1 = new Label();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -50,7 +53,7 @@
             labelTitulo.BackColor = Color.Transparent;
             labelTitulo.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             labelTitulo.ForeColor = Color.White;
-            labelTitulo.Location = new Point(433, 9);
+            labelTitulo.Location = new Point(400, 10);
             labelTitulo.Name = "labelTitulo";
             labelTitulo.Size = new Size(398, 41);
             labelTitulo.TabIndex = 57;
@@ -62,17 +65,45 @@
             labelFrase.AutoSize = true;
             labelFrase.BackColor = Color.Transparent;
             labelFrase.ForeColor = Color.White;
-            labelFrase.Location = new Point(518, 59);
+            labelFrase.Location = new Point(521, 65);
             labelFrase.Name = "labelFrase";
             labelFrase.Size = new Size(190, 15);
             labelFrase.TabIndex = 58;
             labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
+            // 
+            // labelLinea
+            // 
+            labelLinea.AutoSize = true;
+            labelLinea.BackColor = Color.White;
+            labelLinea.Font = new Font("Consolas", 1.2F, FontStyle.Regular, GraphicsUnit.Point);
+            labelLinea.ForeColor = Color.White;
+            labelLinea.Location = new Point(193, 184);
+            labelLinea.Name = "labelLinea";
+            labelLinea.Size = new Size(893, 3);
+            labelLinea.TabIndex = 60;
+            labelLinea.Text = resources.GetString("labelLinea.Text");
+            labelLinea.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.White;
+            label1.Font = new Font("Consolas", 1.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(193, 93);
+            label1.Name = "label1";
+            label1.Size = new Size(893, 3);
+            label1.TabIndex = 61;
+            label1.Text = resources.GetString("label1.Text");
+            label1.TextAlign = ContentAlignment.TopCenter;
             // 
             // Efectivo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(label1);
+            Controls.Add(labelLinea);
             Controls.Add(labelFrase);
             Controls.Add(labelTitulo);
             Controls.Add(buttonRegresar);
@@ -88,5 +119,7 @@
         private Button buttonRegresar;
         private Label labelTitulo;
         private Label labelFrase;
+        private Label labelLinea;
+        private Label label1;
     }
 }
