@@ -46,6 +46,7 @@
             // labelTitulo
             // 
             labelTitulo.AutoSize = true;
+            labelTitulo.BackColor = Color.Transparent;
             labelTitulo.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(432, 21);
