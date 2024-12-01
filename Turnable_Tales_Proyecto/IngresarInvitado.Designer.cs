@@ -31,8 +31,8 @@
             label4 = new Label();
             label5 = new Label();
             buttonSiguiente = new Button();
-            textBoxContraA = new TextBox();
-            textBoxCuentaA = new TextBox();
+            textBoxContraI = new TextBox();
+            textBoxCuentaI = new TextBox();
             buttonAtras = new Button();
             label2 = new Label();
             label1 = new Label();
@@ -70,39 +70,40 @@
             buttonSiguiente.BackgroundImageLayout = ImageLayout.Center;
             buttonSiguiente.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             buttonSiguiente.ForeColor = SystemColors.ButtonHighlight;
-            buttonSiguiente.Location = new Point(203, 532);
+            buttonSiguiente.Location = new Point(203, 521);
             buttonSiguiente.Name = "buttonSiguiente";
             buttonSiguiente.Size = new Size(198, 36);
             buttonSiguiente.TabIndex = 84;
             buttonSiguiente.Text = "SIGUIENTE";
             buttonSiguiente.UseVisualStyleBackColor = false;
             // 
-            // textBoxContraA
+            // textBoxContraI
             // 
-            textBoxContraA.BackColor = Color.Silver;
-            textBoxContraA.Location = new Point(141, 434);
-            textBoxContraA.Name = "textBoxContraA";
-            textBoxContraA.PlaceholderText = "Ingresa la contraseña";
-            textBoxContraA.Size = new Size(341, 27);
-            textBoxContraA.TabIndex = 83;
-            textBoxContraA.TextAlign = HorizontalAlignment.Center;
+            textBoxContraI.BackColor = Color.Silver;
+            textBoxContraI.Location = new Point(141, 423);
+            textBoxContraI.Name = "textBoxContraI";
+            textBoxContraI.PlaceholderText = "Ingresa la contraseña";
+            textBoxContraI.Size = new Size(341, 27);
+            textBoxContraI.TabIndex = 83;
+            textBoxContraI.TextAlign = HorizontalAlignment.Center;
+            textBoxContraI.TextChanged += textBoxContraA_TextChanged;
             // 
-            // textBoxCuentaA
+            // textBoxCuentaI
             // 
-            textBoxCuentaA.BackColor = Color.Silver;
-            textBoxCuentaA.Location = new Point(141, 305);
-            textBoxCuentaA.Name = "textBoxCuentaA";
-            textBoxCuentaA.PlaceholderText = "Ingresa tu cuenta";
-            textBoxCuentaA.Size = new Size(341, 27);
-            textBoxCuentaA.TabIndex = 82;
-            textBoxCuentaA.TextAlign = HorizontalAlignment.Center;
+            textBoxCuentaI.BackColor = Color.Silver;
+            textBoxCuentaI.Location = new Point(141, 294);
+            textBoxCuentaI.Name = "textBoxCuentaI";
+            textBoxCuentaI.PlaceholderText = "Ingresa tu cuenta";
+            textBoxCuentaI.Size = new Size(341, 27);
+            textBoxCuentaI.TabIndex = 82;
+            textBoxCuentaI.TextAlign = HorizontalAlignment.Center;
             // 
             // buttonAtras
             // 
             buttonAtras.BackColor = Color.Transparent;
             buttonAtras.FlatStyle = FlatStyle.Popup;
             buttonAtras.Image = Properties.Resources.flechaizq;
-            buttonAtras.Location = new Point(10, 291);
+            buttonAtras.Location = new Point(10, 280);
             buttonAtras.Name = "buttonAtras";
             buttonAtras.Size = new Size(68, 72);
             buttonAtras.TabIndex = 81;
@@ -114,7 +115,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(141, 392);
+            label2.Location = new Point(141, 381);
             label2.Name = "label2";
             label2.Size = new Size(150, 20);
             label2.TabIndex = 80;
@@ -126,7 +127,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(141, 264);
+            label1.Location = new Point(141, 253);
             label1.Name = "label1";
             label1.Size = new Size(93, 20);
             label1.TabIndex = 79;
@@ -137,11 +138,11 @@
             button1.BackgroundImage = Properties.Resources.cafe;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(134, 130);
+            button1.Location = new Point(134, 119);
             button1.Name = "button1";
             button1.Size = new Size(364, 78);
             button1.TabIndex = 78;
-            button1.Text = "A D M I N I S T R A D O R";
+            button1.Text = "I N V I T A D O";
             button1.UseVisualStyleBackColor = true;
             // 
             // label3
@@ -150,7 +151,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 7F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ButtonFace;
-            label3.Location = new Point(141, 35);
+            label3.Location = new Point(189, 67);
             label3.Name = "label3";
             label3.Size = new Size(186, 15);
             label3.TabIndex = 77;
@@ -175,8 +176,8 @@
             BackgroundImage = Properties.Resources.cafe;
             ClientSize = new Size(585, 633);
             Controls.Add(buttonSiguiente);
-            Controls.Add(textBoxContraA);
-            Controls.Add(textBoxCuentaA);
+            Controls.Add(textBoxContraI);
+            Controls.Add(textBoxCuentaI);
             Controls.Add(buttonAtras);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -185,6 +186,7 @@
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
+            Location = new Point(189, 67);
             Name = "IngresarInvitado";
             Text = "IngresarInvitado";
             ResumeLayout(false);
@@ -196,8 +198,8 @@
         private Label label4;
         private Label label5;
         private Button buttonSiguiente;
-        private TextBox textBoxContraA;
-        private TextBox textBoxCuentaA;
+        private TextBox textBoxContraI;
+        private TextBox textBoxCuentaI;
         private Button buttonAtras;
         private Label label2;
         private Label label1;

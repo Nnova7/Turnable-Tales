@@ -21,5 +21,10 @@ namespace Turnable_Tales_Proyecto
         {
 
         }
+
+        private void textBoxContraA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
