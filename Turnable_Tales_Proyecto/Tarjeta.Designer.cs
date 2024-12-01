@@ -196,9 +196,10 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(808, 206);
+            pictureBox1.BackgroundImage = Properties.Resources.resumenpedido;
+            pictureBox1.Location = new Point(872, 203);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(342, 286);
+            pictureBox1.Size = new Size(386, 286);
             pictureBox1.TabIndex = 207;
             pictureBox1.TabStop = false;
             // 
