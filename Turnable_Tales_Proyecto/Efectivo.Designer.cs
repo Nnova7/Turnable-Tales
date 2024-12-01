@@ -36,6 +36,7 @@
             label1 = new Label();
             labelNomDiap = new Label();
             button1 = new Button();
+            buttonMusica = new Button();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -116,7 +117,7 @@
             // button1
             // 
             button1.BackColor = Color.Transparent;
-            button1.FlatStyle = FlatStyle.Flat;
+            button1.FlatStyle = FlatStyle.Popup;
             button1.Image = Properties.Resources.Imagen1_removebg_preview;
             button1.Location = new Point(994, 2);
             button1.Margin = new Padding(2);
@@ -125,11 +126,23 @@
             button1.TabIndex = 191;
             button1.UseVisualStyleBackColor = false;
             // 
+            // buttonMusica
+            // 
+            buttonMusica.BackColor = Color.Transparent;
+            buttonMusica.FlatStyle = FlatStyle.Popup;
+            buttonMusica.Image = (Image)resources.GetObject("buttonMusica.Image");
+            buttonMusica.Location = new Point(905, -2);
+            buttonMusica.Name = "buttonMusica";
+            buttonMusica.Size = new Size(84, 86);
+            buttonMusica.TabIndex = 192;
+            buttonMusica.UseVisualStyleBackColor = false;
+            // 
             // Efectivo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(buttonMusica);
             Controls.Add(button1);
             Controls.Add(labelNomDiap);
             Controls.Add(label1);
@@ -153,5 +166,6 @@
         private Label label1;
         private Label labelNomDiap;
         private Button button1;
+        private Button buttonMusica;
     }
 }
