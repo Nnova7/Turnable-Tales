@@ -42,6 +42,9 @@
             pictureBoxInstruction = new PictureBox();
             pictureBox1 = new PictureBox();
             textBoxNPedido = new TextBox();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCuadInfo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxInstruction).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -192,12 +195,45 @@
             textBoxNPedido.Size = new Size(179, 26);
             textBoxNPedido.TabIndex = 205;
             // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.Black;
+            textBox1.Enabled = false;
+            textBox1.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox1.Location = new Point(566, 255);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(179, 26);
+            textBox1.TabIndex = 206;
+            // 
+            // textBox2
+            // 
+            textBox2.BackColor = Color.Black;
+            textBox2.Enabled = false;
+            textBox2.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox2.Location = new Point(151, 255);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(179, 26);
+            textBox2.TabIndex = 207;
+            // 
+            // textBox3
+            // 
+            textBox3.BackColor = Color.Black;
+            textBox3.Enabled = false;
+            textBox3.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox3.Location = new Point(359, 255);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(179, 26);
+            textBox3.TabIndex = 208;
+            // 
             // Oxxo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(textBox3);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
             Controls.Add(textBoxNPedido);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBoxInstruction);
@@ -235,5 +271,8 @@
         private PictureBox pictureBoxInstruction;
         private PictureBox pictureBox1;
         private TextBox textBoxNPedido;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private TextBox textBox3;
     }
 }
