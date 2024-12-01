@@ -52,6 +52,7 @@
             labelNTarjeta = new Label();
             labelFCaducidad = new Label();
             labelCSeguridad = new Label();
+            textBoxNTarjeta = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -295,7 +296,7 @@
             labelFCaducidad.BackColor = Color.Transparent;
             labelFCaducidad.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             labelFCaducidad.ForeColor = Color.White;
-            labelFCaducidad.Location = new Point(127, 369);
+            labelFCaducidad.Location = new Point(127, 387);
             labelFCaducidad.Name = "labelFCaducidad";
             labelFCaducidad.Size = new Size(183, 18);
             labelFCaducidad.TabIndex = 215;
@@ -307,11 +308,22 @@
             labelCSeguridad.BackColor = Color.Transparent;
             labelCSeguridad.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             labelCSeguridad.ForeColor = Color.White;
-            labelCSeguridad.Location = new Point(127, 430);
+            labelCSeguridad.Location = new Point(127, 454);
             labelCSeguridad.Name = "labelCSeguridad";
             labelCSeguridad.Size = new Size(193, 18);
             labelCSeguridad.TabIndex = 216;
             labelCSeguridad.Text = "CODIGO DE SEGURIDAD*";
+            // 
+            // textBoxNTarjeta
+            // 
+            textBoxNTarjeta.BackColor = Color.Black;
+            textBoxNTarjeta.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxNTarjeta.Location = new Point(127, 337);
+            textBoxNTarjeta.Name = "textBoxNTarjeta";
+            textBoxNTarjeta.PlaceholderText = "XXXX XXXX XXXX XXXX";
+            textBoxNTarjeta.Size = new Size(266, 26);
+            textBoxNTarjeta.TabIndex = 217;
+            textBoxNTarjeta.TextAlign = HorizontalAlignment.Center;
             // 
             // Tarjeta
             // 
@@ -319,6 +331,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(textBoxNTarjeta);
             Controls.Add(labelCSeguridad);
             Controls.Add(labelFCaducidad);
             Controls.Add(labelNTarjeta);
@@ -374,5 +387,6 @@
         private Label labelNTarjeta;
         private Label labelFCaducidad;
         private Label labelCSeguridad;
+        private TextBox textBoxNTarjeta;
     }
 }
