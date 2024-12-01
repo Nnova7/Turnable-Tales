@@ -28,24 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            buttonRegresar = new Button();
             SuspendLayout();
             // 
-            // button1
+            // buttonRegresar
             // 
-            button1.Location = new Point(14, 396);
-            button1.Name = "button1";
-            button1.Size = new Size(48, 56);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            buttonRegresar.BackColor = Color.Transparent;
+            buttonRegresar.FlatStyle = FlatStyle.Popup;
+            buttonRegresar.Location = new Point(14, 396);
+            buttonRegresar.Margin = new Padding(0);
+            buttonRegresar.Name = "buttonRegresar";
+            buttonRegresar.Size = new Size(48, 56);
+            buttonRegresar.TabIndex = 0;
+            buttonRegresar.UseVisualStyleBackColor = false;
             // 
             // Efectivo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.fondoEfectivo;
             ClientSize = new Size(1370, 749);
-            Controls.Add(button1);
+            Controls.Add(buttonRegresar);
             Margin = new Padding(4, 5, 4, 5);
             Name = "Efectivo";
             Text = "Efectivo";
@@ -54,6 +56,6 @@
 
         #endregion
 
-        private Button button1;
+        private Button buttonRegresar;
     }
 }
