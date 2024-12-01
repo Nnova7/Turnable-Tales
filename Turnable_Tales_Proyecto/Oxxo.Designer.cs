@@ -40,8 +40,10 @@
             labelLinea = new Label();
             pictureBoxCuadInfo = new PictureBox();
             pictureBoxInstruction = new PictureBox();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCuadInfo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxInstruction).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -170,12 +172,21 @@
             pictureBoxInstruction.TabIndex = 203;
             pictureBoxInstruction.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(871, 215);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(188, 90);
+            pictureBox1.TabIndex = 204;
+            pictureBox1.TabStop = false;
+            // 
             // Oxxo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(pictureBox1);
             Controls.Add(pictureBoxInstruction);
             Controls.Add(pictureBoxCuadInfo);
             Controls.Add(labelLinea);
@@ -191,6 +202,7 @@
             Text = "Oxxo";
             ((System.ComponentModel.ISupportInitialize)pictureBoxCuadInfo).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxInstruction).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -208,5 +220,6 @@
         private Label labelLinea;
         private PictureBox pictureBoxCuadInfo;
         private PictureBox pictureBoxInstruction;
+        private PictureBox pictureBox1;
     }
 }
