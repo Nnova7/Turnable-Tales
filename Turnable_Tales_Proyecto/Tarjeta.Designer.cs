@@ -91,7 +91,7 @@
             labelTitulo.BackColor = Color.Transparent;
             labelTitulo.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             labelTitulo.ForeColor = Color.White;
-            labelTitulo.Location = new Point(376, 60);
+            labelTitulo.Location = new Point(400, 10);
             labelTitulo.Name = "labelTitulo";
             labelTitulo.Size = new Size(398, 41);
             labelTitulo.TabIndex = 198;
@@ -103,7 +103,7 @@
             labelFrase.AutoSize = true;
             labelFrase.BackColor = Color.Transparent;
             labelFrase.ForeColor = Color.White;
-            labelFrase.Location = new Point(470, 120);
+            labelFrase.Location = new Point(521, 65);
             labelFrase.Name = "labelFrase";
             labelFrase.Size = new Size(190, 15);
             labelFrase.TabIndex = 199;
@@ -115,7 +115,7 @@
             label1.BackColor = Color.White;
             label1.Font = new Font("Consolas", 1.2F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(156, 148);
+            label1.Location = new Point(193, 93);
             label1.Name = "label1";
             label1.Size = new Size(893, 3);
             label1.TabIndex = 200;
@@ -128,7 +128,7 @@
             labelNomDiap.BackColor = Color.Transparent;
             labelNomDiap.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             labelNomDiap.ForeColor = Color.White;
-            labelNomDiap.Location = new Point(453, 162);
+            labelNomDiap.Location = new Point(505, 111);
             labelNomDiap.Name = "labelNomDiap";
             labelNomDiap.Size = new Size(240, 41);
             labelNomDiap.TabIndex = 201;
@@ -141,7 +141,7 @@
             labelLinea.BackColor = Color.White;
             labelLinea.Font = new Font("Consolas", 1.2F, FontStyle.Regular, GraphicsUnit.Point);
             labelLinea.ForeColor = Color.White;
-            labelLinea.Location = new Point(197, 296);
+            labelLinea.Location = new Point(193, 184);
             labelLinea.Name = "labelLinea";
             labelLinea.Size = new Size(893, 3);
             labelLinea.TabIndex = 202;
