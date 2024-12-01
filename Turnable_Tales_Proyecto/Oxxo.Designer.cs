@@ -41,6 +41,7 @@
             pictureBoxCuadInfo = new PictureBox();
             pictureBoxInstruction = new PictureBox();
             pictureBox1 = new PictureBox();
+            textBoxNPedido = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCuadInfo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxInstruction).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -181,12 +182,23 @@
             pictureBox1.TabIndex = 204;
             pictureBox1.TabStop = false;
             // 
+            // textBoxNPedido
+            // 
+            textBoxNPedido.BackColor = Color.Black;
+            textBoxNPedido.Enabled = false;
+            textBoxNPedido.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxNPedido.Location = new Point(953, 371);
+            textBoxNPedido.Name = "textBoxNPedido";
+            textBoxNPedido.Size = new Size(179, 26);
+            textBoxNPedido.TabIndex = 205;
+            // 
             // Oxxo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(textBoxNPedido);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBoxInstruction);
             Controls.Add(pictureBoxCuadInfo);
@@ -222,5 +234,6 @@
         private PictureBox pictureBoxCuadInfo;
         private PictureBox pictureBoxInstruction;
         private PictureBox pictureBox1;
+        private TextBox textBoxNPedido;
     }
 }

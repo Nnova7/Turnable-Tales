@@ -181,9 +181,10 @@
             // 
             textBoxNPedido.BackColor = Color.Black;
             textBoxNPedido.Enabled = false;
+            textBoxNPedido.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxNPedido.Location = new Point(647, 244);
             textBoxNPedido.Name = "textBoxNPedido";
-            textBoxNPedido.Size = new Size(151, 23);
+            textBoxNPedido.Size = new Size(151, 26);
             textBoxNPedido.TabIndex = 196;
             // 
             // textBoxSub
