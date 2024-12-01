@@ -55,6 +55,7 @@
             buttonAtras = new Button();
             label3 = new Label();
             label12 = new Label();
+            descripcionIncomodo = new RichTextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -156,7 +157,7 @@
             label11.BackColor = Color.Transparent;
             label11.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             label11.ForeColor = Color.White;
-            label11.Location = new Point(726, 186);
+            label11.Location = new Point(1169, 197);
             label11.Name = "label11";
             label11.Size = new Size(54, 20);
             label11.TabIndex = 225;
@@ -168,7 +169,7 @@
             label10.BackColor = Color.Transparent;
             label10.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             label10.ForeColor = Color.White;
-            label10.Location = new Point(786, 237);
+            label10.Location = new Point(786, 198);
             label10.Name = "label10";
             label10.Size = new Size(111, 20);
             label10.TabIndex = 224;
@@ -180,7 +181,7 @@
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             label9.ForeColor = Color.White;
-            label9.Location = new Point(775, 284);
+            label9.Location = new Point(775, 233);
             label9.Name = "label9";
             label9.Size = new Size(73, 20);
             label9.TabIndex = 223;
@@ -191,7 +192,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.White;
-            label8.Location = new Point(688, 314);
+            label8.Location = new Point(688, 254);
             label8.Name = "label8";
             label8.Size = new Size(282, 61);
             label8.TabIndex = 222;
@@ -204,7 +205,7 @@
             button3.FlatStyle = FlatStyle.Popup;
             button3.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
             button3.ForeColor = SystemColors.ButtonHighlight;
-            button3.Location = new Point(1018, 556);
+            button3.Location = new Point(899, 583);
             button3.Name = "button3";
             button3.Size = new Size(173, 38);
             button3.TabIndex = 221;
@@ -217,7 +218,7 @@
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Location = new Point(1106, 497);
+            button2.Location = new Point(1100, 583);
             button2.Name = "button2";
             button2.Size = new Size(173, 38);
             button2.TabIndex = 220;
@@ -230,7 +231,7 @@
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(912, 497);
+            button1.Location = new Point(688, 583);
             button1.Name = "button1";
             button1.Size = new Size(173, 38);
             button1.TabIndex = 219;
@@ -243,7 +244,7 @@
             buttonAgregar.FlatStyle = FlatStyle.Popup;
             buttonAgregar.Font = new Font("Segoe UI Black", 10F, FontStyle.Bold, GraphicsUnit.Point);
             buttonAgregar.ForeColor = Color.WhiteSmoke;
-            buttonAgregar.Location = new Point(935, 425);
+            buttonAgregar.Location = new Point(688, 522);
             buttonAgregar.Name = "buttonAgregar";
             buttonAgregar.Size = new Size(317, 46);
             buttonAgregar.TabIndex = 218;
@@ -255,7 +256,7 @@
             textBoxNumero.BackColor = SystemColors.InactiveCaptionText;
             textBoxNumero.Enabled = false;
             textBoxNumero.ForeColor = SystemColors.MenuBar;
-            textBoxNumero.Location = new Point(697, 575);
+            textBoxNumero.Location = new Point(699, 476);
             textBoxNumero.Name = "textBoxNumero";
             textBoxNumero.Size = new Size(81, 31);
             textBoxNumero.TabIndex = 217;
@@ -268,7 +269,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(688, 547);
+            label7.Location = new Point(690, 448);
             label7.Name = "label7";
             label7.Size = new Size(149, 25);
             label7.TabIndex = 216;
@@ -278,7 +279,7 @@
             // 
             domainUpDownCantidad.BackColor = SystemColors.InactiveCaptionText;
             domainUpDownCantidad.ForeColor = SystemColors.InactiveBorder;
-            domainUpDownCantidad.Location = new Point(697, 484);
+            domainUpDownCantidad.Location = new Point(697, 406);
             domainUpDownCantidad.Name = "domainUpDownCantidad";
             domainUpDownCantidad.Size = new Size(81, 31);
             domainUpDownCantidad.TabIndex = 215;
@@ -289,7 +290,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(688, 446);
+            label6.Location = new Point(688, 368);
             label6.Name = "label6";
             label6.Size = new Size(111, 25);
             label6.TabIndex = 214;
@@ -301,7 +302,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(688, 280);
+            label5.Location = new Point(688, 229);
             label5.Name = "label5";
             label5.Size = new Size(90, 25);
             label5.TabIndex = 213;
@@ -313,7 +314,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(688, 233);
+            label4.Location = new Point(688, 194);
             label4.Name = "label4";
             label4.Size = new Size(92, 25);
             label4.TabIndex = 212;
@@ -325,7 +326,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(688, 182);
+            label2.Location = new Point(1131, 193);
             label2.Name = "label2";
             label2.Size = new Size(36, 25);
             label2.TabIndex = 211;
@@ -359,11 +360,22 @@
             label12.BackColor = Color.Transparent;
             label12.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label12.ForeColor = Color.White;
-            label12.Location = new Point(697, 375);
+            label12.Location = new Point(697, 315);
             label12.Name = "label12";
             label12.Size = new Size(105, 38);
             label12.TabIndex = 227;
             label12.Text = "$1,350";
+            // 
+            // descripcionIncomodo
+            // 
+            descripcionIncomodo.BackColor = SystemColors.InactiveCaptionText;
+            descripcionIncomodo.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            descripcionIncomodo.ForeColor = Color.WhiteSmoke;
+            descripcionIncomodo.Location = new Point(886, 338);
+            descripcionIncomodo.Name = "descripcionIncomodo";
+            descripcionIncomodo.Size = new Size(378, 117);
+            descripcionIncomodo.TabIndex = 233;
+            descripcionIncomodo.Text = " D E S C R I P C I Ó N:                                                   Es un álbum de corridos lanzado por Tito  Double P, destacando por su estilo  auténtico y letras directas.";
             // 
             // Incomodo
             // 
@@ -371,6 +383,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 633);
+            Controls.Add(descripcionIncomodo);
             Controls.Add(label12);
             Controls.Add(pictureBox2);
             Controls.Add(label11);
@@ -433,5 +446,6 @@
         private Button buttonAtras;
         private Label label3;
         private Label label12;
+        private RichTextBox descripcionIncomodo;
     }
 }
