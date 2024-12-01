@@ -140,8 +140,7 @@
             // 
             // MostrarNombre
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.cafex2;
             ClientSize = new Size(378, 444);
             Controls.Add(textBoxHora);

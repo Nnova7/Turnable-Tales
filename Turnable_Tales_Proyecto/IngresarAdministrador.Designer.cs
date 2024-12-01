@@ -147,8 +147,7 @@
             // 
             // IngresarAdministrador
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.cafe;
             ClientSize = new Size(585, 633);
             Controls.Add(buttonSiguiente);

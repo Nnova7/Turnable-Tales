@@ -32,9 +32,9 @@
             // 
             // Efectivo
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1286, 594);
+            AutoScaleMode = AutoScaleMode.None;
+            ClientSize = new Size(1837, 990);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Efectivo";
             Text = "Efectivo";
             ResumeLayout(false);
