@@ -25,10 +25,10 @@ namespace Turnable_Tales_Proyecto
         /// <param name="e"></param>
         private void buttonAdministrador_Click(object sender, EventArgs e)
         {
-            IngresarAdministrador administrador = new IngresarAdministrador();
-            this.Hide();
-            administrador.Show();
-            this.Close();
+            IngresarAdministrador administrador = new IngresarAdministrador();//Crea instancia
+            this.Hide();//Oculta el de atras
+            administrador.ShowDialog();//Muestra
+            this.Close();//Cierra
         }
         /// <summary>
         /// buttonAtras_Click
@@ -41,9 +41,9 @@ namespace Turnable_Tales_Proyecto
             PortadaProyecto portada = (PortadaProyecto)Application.OpenForms["PortadaProyecto"];
             if (portada != null)
             {
-                this.Hide();
-                portada.Show();
-                this.Close();
+                this.Hide();//Oculta el form de atras
+                portada.ShowDialog();//muestra
+                this.Close();//cierra
             }
         }
 
@@ -55,10 +55,10 @@ namespace Turnable_Tales_Proyecto
         /// <param name="e"></param>
         private void buttonUsuario_Click(object sender, EventArgs e)
         {
-            IngresarUsuario usuario = new IngresarUsuario();
-            this.Hide();
-            usuario.Show();
-            this.Close();
+            IngresarUsuario usuario = new IngresarUsuario(); //crea instancia
+            this.Hide();//oculta el de atras
+            usuario.ShowDialog();//muestra
+            this.Close();//cierra
         }
     }
 }
