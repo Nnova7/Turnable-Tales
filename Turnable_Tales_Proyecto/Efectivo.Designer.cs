@@ -45,6 +45,7 @@
             textBoxImp = new TextBox();
             textBoxTot = new TextBox();
             textBoxCam = new TextBox();
+            textBoxPagoCon = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxDatos).BeginInit();
             SuspendLayout();
             // 
@@ -221,11 +222,20 @@
             textBoxCam.Size = new Size(151, 23);
             textBoxCam.TabIndex = 200;
             // 
+            // textBoxPagoCon
+            // 
+            textBoxPagoCon.BackColor = Color.Black;
+            textBoxPagoCon.Location = new Point(647, 441);
+            textBoxPagoCon.Name = "textBoxPagoCon";
+            textBoxPagoCon.Size = new Size(151, 23);
+            textBoxPagoCon.TabIndex = 201;
+            // 
             // Efectivo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(textBoxPagoCon);
             Controls.Add(textBoxCam);
             Controls.Add(textBoxTot);
             Controls.Add(textBoxImp);
@@ -268,5 +278,6 @@
         private TextBox textBoxImp;
         private TextBox textBoxTot;
         private TextBox textBoxCam;
+        private TextBox textBoxPagoCon;
     }
 }
