@@ -53,6 +53,9 @@
             labelFCaducidad = new Label();
             labelCSeguridad = new Label();
             textBoxNTarjeta = new TextBox();
+            textBoxMes = new TextBox();
+            textBoxCVV = new TextBox();
+            textBoxAnio = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -319,11 +322,48 @@
             textBoxNTarjeta.BackColor = Color.Black;
             textBoxNTarjeta.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxNTarjeta.Location = new Point(127, 337);
+            textBoxNTarjeta.MaxLength = 16;
             textBoxNTarjeta.Name = "textBoxNTarjeta";
             textBoxNTarjeta.PlaceholderText = "XXXX XXXX XXXX XXXX";
-            textBoxNTarjeta.Size = new Size(266, 26);
+            textBoxNTarjeta.Size = new Size(305, 26);
             textBoxNTarjeta.TabIndex = 217;
             textBoxNTarjeta.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBoxMes
+            // 
+            textBoxMes.BackColor = Color.Black;
+            textBoxMes.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxMes.Location = new Point(127, 408);
+            textBoxMes.MaxLength = 2;
+            textBoxMes.Name = "textBoxMes";
+            textBoxMes.PlaceholderText = "MES";
+            textBoxMes.Size = new Size(88, 26);
+            textBoxMes.TabIndex = 218;
+            textBoxMes.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBoxCVV
+            // 
+            textBoxCVV.BackColor = Color.Black;
+            textBoxCVV.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxCVV.Location = new Point(127, 475);
+            textBoxCVV.MaxLength = 3;
+            textBoxCVV.Name = "textBoxCVV";
+            textBoxCVV.PlaceholderText = "CVV/CVC/CID";
+            textBoxCVV.Size = new Size(144, 26);
+            textBoxCVV.TabIndex = 219;
+            textBoxCVV.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBoxAnio
+            // 
+            textBoxAnio.BackColor = Color.Black;
+            textBoxAnio.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxAnio.Location = new Point(255, 408);
+            textBoxAnio.MaxLength = 2;
+            textBoxAnio.Name = "textBoxAnio";
+            textBoxAnio.PlaceholderText = "AÑO";
+            textBoxAnio.Size = new Size(83, 26);
+            textBoxAnio.TabIndex = 220;
+            textBoxAnio.TextAlign = HorizontalAlignment.Center;
             // 
             // Tarjeta
             // 
@@ -331,6 +371,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(textBoxAnio);
+            Controls.Add(textBoxCVV);
+            Controls.Add(textBoxMes);
             Controls.Add(textBoxNTarjeta);
             Controls.Add(labelCSeguridad);
             Controls.Add(labelFCaducidad);
@@ -388,5 +431,8 @@
         private Label labelFCaducidad;
         private Label labelCSeguridad;
         private TextBox textBoxNTarjeta;
+        private TextBox textBoxMes;
+        private TextBox textBoxCVV;
+        private TextBox textBoxAnio;
     }
 }
