@@ -39,11 +39,12 @@
             // buttonRegresar
             // 
             buttonRegresar.BackColor = Color.Transparent;
+            buttonRegresar.BackgroundImage = Properties.Resources.flechaizq;
             buttonRegresar.FlatStyle = FlatStyle.Popup;
-            buttonRegresar.Location = new Point(14, 396);
+            buttonRegresar.Location = new Point(9, 296);
             buttonRegresar.Margin = new Padding(0);
             buttonRegresar.Name = "buttonRegresar";
-            buttonRegresar.Size = new Size(48, 56);
+            buttonRegresar.Size = new Size(60, 67);
             buttonRegresar.TabIndex = 0;
             buttonRegresar.UseVisualStyleBackColor = false;
             // 
