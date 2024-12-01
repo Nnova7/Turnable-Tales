@@ -50,6 +50,8 @@
             textBoxCosEnvio = new TextBox();
             button5 = new Button();
             labelNTarjeta = new Label();
+            labelFCaducidad = new Label();
+            labelCSeguridad = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -287,12 +289,38 @@
             labelNTarjeta.TabIndex = 214;
             labelNTarjeta.Text = "NUMERO DE LA TARJETA*";
             // 
+            // labelFCaducidad
+            // 
+            labelFCaducidad.AutoSize = true;
+            labelFCaducidad.BackColor = Color.Transparent;
+            labelFCaducidad.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            labelFCaducidad.ForeColor = Color.White;
+            labelFCaducidad.Location = new Point(127, 369);
+            labelFCaducidad.Name = "labelFCaducidad";
+            labelFCaducidad.Size = new Size(183, 18);
+            labelFCaducidad.TabIndex = 215;
+            labelFCaducidad.Text = "FECHA DE CADUCIDAD*";
+            // 
+            // labelCSeguridad
+            // 
+            labelCSeguridad.AutoSize = true;
+            labelCSeguridad.BackColor = Color.Transparent;
+            labelCSeguridad.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCSeguridad.ForeColor = Color.White;
+            labelCSeguridad.Location = new Point(127, 430);
+            labelCSeguridad.Name = "labelCSeguridad";
+            labelCSeguridad.Size = new Size(193, 18);
+            labelCSeguridad.TabIndex = 216;
+            labelCSeguridad.Text = "CODIGO DE SEGURIDAD*";
+            // 
             // Tarjeta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(labelCSeguridad);
+            Controls.Add(labelFCaducidad);
             Controls.Add(labelNTarjeta);
             Controls.Add(button5);
             Controls.Add(textBoxCosEnvio);
@@ -344,5 +372,7 @@
         private TextBox textBoxCosEnvio;
         private Button button5;
         private Label labelNTarjeta;
+        private Label labelFCaducidad;
+        private Label labelCSeguridad;
     }
 }
