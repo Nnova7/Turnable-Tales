@@ -39,6 +39,9 @@
             labelNomDiap = new Label();
             labelLinea = new Label();
             button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -159,12 +162,45 @@
             button1.TabIndex = 203;
             button1.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            button2.BackgroundImage = Properties.Resources.visa;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Location = new Point(255, 221);
+            button2.Name = "button2";
+            button2.Size = new Size(129, 68);
+            button2.TabIndex = 204;
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.BackgroundImage = Properties.Resources.visa;
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.Location = new Point(390, 221);
+            button3.Name = "button3";
+            button3.Size = new Size(129, 68);
+            button3.TabIndex = 205;
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.BackgroundImage = Properties.Resources.visa;
+            button4.FlatStyle = FlatStyle.Popup;
+            button4.Location = new Point(525, 221);
+            button4.Name = "button4";
+            button4.Size = new Size(129, 68);
+            button4.TabIndex = 206;
+            button4.UseVisualStyleBackColor = true;
+            // 
             // Tarjeta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(labelLinea);
             Controls.Add(labelNomDiap);
@@ -193,5 +229,8 @@
         private Label labelNomDiap;
         private Label labelLinea;
         private Button button1;
+        private Button button2;
+        private Button button3;
+        private Button button4;
     }
 }
