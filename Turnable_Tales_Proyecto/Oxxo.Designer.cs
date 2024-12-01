@@ -38,6 +38,8 @@
             label1 = new Label();
             labelNomDiap = new Label();
             labelLinea = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -148,12 +150,22 @@
             labelLinea.Text = resources.GetString("labelLinea.Text");
             labelLinea.TextAlign = ContentAlignment.TopCenter;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = Properties.Resources.cuadros;
+            pictureBox1.Location = new Point(134, 220);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(626, 78);
+            pictureBox1.TabIndex = 202;
+            pictureBox1.TabStop = false;
+            // 
             // Oxxo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(pictureBox1);
             Controls.Add(labelLinea);
             Controls.Add(labelNomDiap);
             Controls.Add(label1);
@@ -165,6 +177,7 @@
             Controls.Add(buttonRegresar);
             Name = "Oxxo";
             Text = "Oxxo";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -180,5 +193,6 @@
         private Label label1;
         private Label labelNomDiap;
         private Label labelLinea;
+        private PictureBox pictureBox1;
     }
 }
