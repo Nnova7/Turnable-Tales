@@ -40,6 +40,7 @@
             pictureBoxDatos = new PictureBox();
             buttonCambio = new Button();
             buttonTicket = new Button();
+            textBoxNPedido = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxDatos).BeginInit();
             SuspendLayout();
             // 
@@ -171,11 +172,21 @@
             buttonTicket.TabIndex = 195;
             buttonTicket.UseVisualStyleBackColor = false;
             // 
+            // textBoxNPedido
+            // 
+            textBoxNPedido.BackColor = Color.Black;
+            textBoxNPedido.Enabled = false;
+            textBoxNPedido.Location = new Point(647, 244);
+            textBoxNPedido.Name = "textBoxNPedido";
+            textBoxNPedido.Size = new Size(151, 23);
+            textBoxNPedido.TabIndex = 196;
+            // 
             // Efectivo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(textBoxNPedido);
             Controls.Add(buttonTicket);
             Controls.Add(buttonCambio);
             Controls.Add(pictureBoxDatos);
@@ -208,5 +219,6 @@
         private PictureBox pictureBoxDatos;
         private Button buttonCambio;
         private Button buttonTicket;
+        private TextBox textBoxNPedido;
     }
 }
