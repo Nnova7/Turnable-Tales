@@ -37,6 +37,8 @@
             labelNomDiap = new Label();
             buttonUsuario = new Button();
             buttonMusica = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -137,11 +139,22 @@
             buttonMusica.TabIndex = 192;
             buttonMusica.UseVisualStyleBackColor = false;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.BackgroundImage = Properties.Resources.datos;
+            pictureBox1.Location = new Point(420, 204);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(412, 369);
+            pictureBox1.TabIndex = 193;
+            pictureBox1.TabStop = false;
+            // 
             // Efectivo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(pictureBox1);
             Controls.Add(buttonMusica);
             Controls.Add(buttonUsuario);
             Controls.Add(labelNomDiap);
@@ -153,6 +166,7 @@
             Margin = new Padding(4, 5, 4, 5);
             Name = "Efectivo";
             Text = "Efectivo";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -167,5 +181,6 @@
         private Label labelNomDiap;
         private Button buttonUsuario;
         private Button buttonMusica;
+        private PictureBox pictureBox1;
     }
 }
