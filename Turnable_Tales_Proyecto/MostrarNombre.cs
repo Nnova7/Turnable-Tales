@@ -35,10 +35,20 @@ namespace Turnable_Tales_Proyecto
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-            ListaGeneros lista = new ListaGeneros();
-            this.Hide();
-            lista.Show();
-            this.Close();
+            ListaGeneros lista = new ListaGeneros(); //Crea instancia
+            this.Hide();// Oculta el Form de atras
+            lista.ShowDialog(); //Muestra
+            this.Close(); //Cierra
+        }
+        /// <summary>
+        /// Se colocó la fecha en tiempo real y la hora
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void horafecha_Tick(object sender, EventArgs e)
+        {
+            textBoxHora.Text = DateTime.Now.ToShortTimeString();
+            textBoxFecha.Text = DateTime.Now.ToShortDateString();
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MostrarNombre));
             button1 = new Button();
             buttonSalir = new Button();
@@ -38,6 +39,7 @@
             textBoxUsuario = new TextBox();
             textBoxFecha = new TextBox();
             textBoxHora = new TextBox();
+            horafecha = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBoxUsuario).BeginInit();
             SuspendLayout();
             // 
@@ -138,6 +140,11 @@
             textBoxHora.Size = new Size(197, 31);
             textBoxHora.TabIndex = 75;
             // 
+            // horafecha
+            // 
+            horafecha.Enabled = true;
+            horafecha.Tick += horafecha_Tick;
+            // 
             // MostrarNombre
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -170,5 +177,6 @@
         private TextBox textBoxUsuario;
         private TextBox textBoxFecha;
         private TextBox textBoxHora;
+        private System.Windows.Forms.Timer horafecha;
     }
 }
