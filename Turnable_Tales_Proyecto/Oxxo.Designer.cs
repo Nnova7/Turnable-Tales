@@ -42,9 +42,9 @@
             pictureBoxInstruction = new PictureBox();
             pictureBox1 = new PictureBox();
             textBoxNPedido = new TextBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            textBoxPagAntes = new TextBox();
+            textBoxValor = new TextBox();
+            textBoxFechaCrea = new TextBox();
             label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCuadInfo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxInstruction).BeginInit();
@@ -197,38 +197,38 @@
             textBoxNPedido.TabIndex = 205;
             textBoxNPedido.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox1
+            // textBoxPagAntes
             // 
-            textBox1.BackColor = Color.Black;
-            textBox1.Enabled = false;
-            textBox1.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox1.Location = new Point(566, 255);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(179, 26);
-            textBox1.TabIndex = 206;
-            textBox1.TextAlign = HorizontalAlignment.Center;
+            textBoxPagAntes.BackColor = Color.Black;
+            textBoxPagAntes.Enabled = false;
+            textBoxPagAntes.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxPagAntes.Location = new Point(566, 255);
+            textBoxPagAntes.Name = "textBoxPagAntes";
+            textBoxPagAntes.Size = new Size(179, 26);
+            textBoxPagAntes.TabIndex = 206;
+            textBoxPagAntes.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox2
+            // textBoxValor
             // 
-            textBox2.BackColor = Color.Black;
-            textBox2.Enabled = false;
-            textBox2.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox2.Location = new Point(151, 255);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(179, 26);
-            textBox2.TabIndex = 207;
-            textBox2.TextAlign = HorizontalAlignment.Center;
+            textBoxValor.BackColor = Color.Black;
+            textBoxValor.Enabled = false;
+            textBoxValor.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxValor.Location = new Point(151, 255);
+            textBoxValor.Name = "textBoxValor";
+            textBoxValor.Size = new Size(179, 26);
+            textBoxValor.TabIndex = 207;
+            textBoxValor.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox3
+            // textBoxFechaCrea
             // 
-            textBox3.BackColor = Color.Black;
-            textBox3.Enabled = false;
-            textBox3.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox3.Location = new Point(359, 255);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(179, 26);
-            textBox3.TabIndex = 208;
-            textBox3.TextAlign = HorizontalAlignment.Center;
+            textBoxFechaCrea.BackColor = Color.Black;
+            textBoxFechaCrea.Enabled = false;
+            textBoxFechaCrea.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxFechaCrea.Location = new Point(359, 255);
+            textBoxFechaCrea.Name = "textBoxFechaCrea";
+            textBoxFechaCrea.Size = new Size(179, 26);
+            textBoxFechaCrea.TabIndex = 208;
+            textBoxFechaCrea.TextAlign = HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -249,9 +249,9 @@
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
             Controls.Add(label2);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(textBoxFechaCrea);
+            Controls.Add(textBoxValor);
+            Controls.Add(textBoxPagAntes);
             Controls.Add(textBoxNPedido);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBoxInstruction);
@@ -289,9 +289,9 @@
         private PictureBox pictureBoxInstruction;
         private PictureBox pictureBox1;
         private TextBox textBoxNPedido;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox textBoxPagAntes;
+        private TextBox textBoxValor;
+        private TextBox textBoxFechaCrea;
         private Label label2;
     }
 }
