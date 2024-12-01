@@ -174,9 +174,10 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(871, 215);
+            pictureBox1.BackgroundImage = Properties.Resources.codigobarras;
+            pictureBox1.Location = new Point(953, 199);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(188, 90);
+            pictureBox1.Size = new Size(247, 99);
             pictureBox1.TabIndex = 204;
             pictureBox1.TabStop = false;
             // 
