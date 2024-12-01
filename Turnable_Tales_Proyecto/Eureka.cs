@@ -32,5 +32,10 @@ namespace Turnable_Tales_Proyecto
             discos.Show(); //Muestra
             this.Close(); //Cierra
         }
+
+        private void Eureka_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
