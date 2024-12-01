@@ -151,10 +151,11 @@
             // 
             // button1
             // 
+            button1.BackgroundImage = Properties.Resources.visa;
             button1.FlatStyle = FlatStyle.Popup;
-            button1.Location = new Point(154, 232);
+            button1.Location = new Point(120, 221);
             button1.Name = "button1";
-            button1.Size = new Size(103, 66);
+            button1.Size = new Size(129, 68);
             button1.TabIndex = 203;
             button1.UseVisualStyleBackColor = true;
             // 
