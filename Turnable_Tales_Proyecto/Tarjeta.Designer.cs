@@ -56,7 +56,9 @@
             textBoxMes = new TextBox();
             textBoxCVV = new TextBox();
             textBoxAnio = new TextBox();
+            pictureBoxLogo = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -365,12 +367,24 @@
             textBoxAnio.TabIndex = 220;
             textBoxAnio.TextAlign = HorizontalAlignment.Center;
             // 
+            // pictureBoxLogo
+            // 
+            pictureBoxLogo.BackgroundImageLayout = ImageLayout.None;
+            pictureBoxLogo.Image = (Image)resources.GetObject("pictureBoxLogo.Image");
+            pictureBoxLogo.Location = new Point(12, 13);
+            pictureBoxLogo.Name = "pictureBoxLogo";
+            pictureBoxLogo.Size = new Size(175, 174);
+            pictureBoxLogo.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxLogo.TabIndex = 221;
+            pictureBoxLogo.TabStop = false;
+            // 
             // Tarjeta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(pictureBoxLogo);
             Controls.Add(textBoxAnio);
             Controls.Add(textBoxCVV);
             Controls.Add(textBoxMes);
@@ -401,6 +415,7 @@
             Name = "Tarjeta";
             Text = "Tarjeta";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -434,5 +449,6 @@
         private TextBox textBoxMes;
         private TextBox textBoxCVV;
         private TextBox textBoxAnio;
+        private PictureBox pictureBoxLogo;
     }
 }
