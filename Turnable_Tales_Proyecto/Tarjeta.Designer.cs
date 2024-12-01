@@ -147,11 +147,11 @@
             labelNomDiap.BackColor = Color.Transparent;
             labelNomDiap.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             labelNomDiap.ForeColor = Color.White;
-            labelNomDiap.Location = new Point(505, 111);
+            labelNomDiap.Location = new Point(466, 109);
             labelNomDiap.Name = "labelNomDiap";
-            labelNomDiap.Size = new Size(240, 41);
+            labelNomDiap.Size = new Size(305, 41);
             labelNomDiap.TabIndex = 201;
-            labelNomDiap.Text = "PAGO EN OXXO";
+            labelNomDiap.Text = "PAGO CON TARJETA";
             labelNomDiap.TextAlign = ContentAlignment.TopCenter;
             // 
             // labelLinea
