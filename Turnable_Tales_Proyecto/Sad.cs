@@ -27,10 +27,10 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonAtras_Click(object sender, EventArgs e)
         {
-            DiscosCorridos discos = new DiscosCorridos();
-            this.Hide();
-            discos.Show();
-            this.Close();
+            ListaGeneros discos = new ListaGeneros();//se crea instancia
+            this.Hide();//Oculta el form de atras
+            discos.Show();//Muestra
+            this.Close();//Cierra
         }
     }
 }

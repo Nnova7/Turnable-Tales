@@ -376,6 +376,7 @@
             buttonRock1.TabIndex = 163;
             buttonRock1.Text = "VER MÁS";
             buttonRock1.UseVisualStyleBackColor = false;
+            buttonRock1.Click += buttonRock1_Click;
             // 
             // buttonRock2
             // 
@@ -389,6 +390,7 @@
             buttonRock2.TabIndex = 164;
             buttonRock2.Text = "VER MÁS";
             buttonRock2.UseVisualStyleBackColor = false;
+            buttonRock2.Click += buttonRock2_Click;
             // 
             // buttonCorridos1
             // 
@@ -402,6 +404,7 @@
             buttonCorridos1.TabIndex = 165;
             buttonCorridos1.Text = "VER MÁS";
             buttonCorridos1.UseVisualStyleBackColor = false;
+            buttonCorridos1.Click += buttonCorridos1_Click;
             // 
             // buttonCorridos2
             // 
@@ -415,6 +418,7 @@
             buttonCorridos2.TabIndex = 166;
             buttonCorridos2.Text = "VER MÁS";
             buttonCorridos2.UseVisualStyleBackColor = false;
+            buttonCorridos2.Click += buttonCorridos2_Click;
             // 
             // buttonClasica1
             // 
@@ -428,6 +432,7 @@
             buttonClasica1.TabIndex = 167;
             buttonClasica1.Text = "VER MÁS";
             buttonClasica1.UseVisualStyleBackColor = false;
+            buttonClasica1.Click += buttonClasica1_Click;
             // 
             // buttonClasica2
             // 
@@ -441,6 +446,7 @@
             buttonClasica2.TabIndex = 168;
             buttonClasica2.Text = "VER MÁS";
             buttonClasica2.UseVisualStyleBackColor = false;
+            buttonClasica2.Click += buttonClasica2_Click;
             // 
             // buttonPop1
             // 
@@ -454,6 +460,7 @@
             buttonPop1.TabIndex = 169;
             buttonPop1.Text = "VER MÁS";
             buttonPop1.UseVisualStyleBackColor = false;
+            buttonPop1.Click += buttonPop1_Click;
             // 
             // buttonPop2
             // 
@@ -467,6 +474,7 @@
             buttonPop2.TabIndex = 170;
             buttonPop2.Text = "VER MÁS";
             buttonPop2.UseVisualStyleBackColor = false;
+            buttonPop2.Click += buttonPop2_Click;
             // 
             // label11
             // 
