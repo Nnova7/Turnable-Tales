@@ -38,10 +38,10 @@
             label1 = new Label();
             labelNomDiap = new Label();
             labelLinea = new Label();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            pictureBoxCuadInfo = new PictureBox();
+            pictureBoxInstruction = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCuadInfo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxInstruction).BeginInit();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -152,23 +152,23 @@
             labelLinea.Text = resources.GetString("labelLinea.Text");
             labelLinea.TextAlign = ContentAlignment.TopCenter;
             // 
-            // pictureBox1
+            // pictureBoxCuadInfo
             // 
-            pictureBox1.BackgroundImage = Properties.Resources.cuadros;
-            pictureBox1.Location = new Point(134, 220);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(626, 78);
-            pictureBox1.TabIndex = 202;
-            pictureBox1.TabStop = false;
+            pictureBoxCuadInfo.BackgroundImage = Properties.Resources.cuadros;
+            pictureBoxCuadInfo.Location = new Point(134, 220);
+            pictureBoxCuadInfo.Name = "pictureBoxCuadInfo";
+            pictureBoxCuadInfo.Size = new Size(626, 78);
+            pictureBoxCuadInfo.TabIndex = 202;
+            pictureBoxCuadInfo.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBoxInstruction
             // 
-            pictureBox2.BackgroundImage = Properties.Resources.instruction2;
-            pictureBox2.Location = new Point(134, 371);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(591, 184);
-            pictureBox2.TabIndex = 203;
-            pictureBox2.TabStop = false;
+            pictureBoxInstruction.BackgroundImage = Properties.Resources.instruction2;
+            pictureBoxInstruction.Location = new Point(134, 371);
+            pictureBoxInstruction.Name = "pictureBoxInstruction";
+            pictureBoxInstruction.Size = new Size(591, 184);
+            pictureBoxInstruction.TabIndex = 203;
+            pictureBoxInstruction.TabStop = false;
             // 
             // Oxxo
             // 
@@ -176,8 +176,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
+            Controls.Add(pictureBoxInstruction);
+            Controls.Add(pictureBoxCuadInfo);
             Controls.Add(labelLinea);
             Controls.Add(labelNomDiap);
             Controls.Add(label1);
@@ -189,8 +189,8 @@
             Controls.Add(buttonRegresar);
             Name = "Oxxo";
             Text = "Oxxo";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCuadInfo).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxInstruction).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -206,7 +206,7 @@
         private Label label1;
         private Label labelNomDiap;
         private Label labelLinea;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
+        private PictureBox pictureBoxCuadInfo;
+        private PictureBox pictureBoxInstruction;
     }
 }
