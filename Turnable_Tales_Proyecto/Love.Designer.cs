@@ -55,6 +55,7 @@
             buttonAtras = new Button();
             label3 = new Label();
             label12 = new Label();
+            descripcionLove = new RichTextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -156,7 +157,7 @@
             label11.BackColor = Color.Transparent;
             label11.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             label11.ForeColor = Color.White;
-            label11.Location = new Point(720, 172);
+            label11.Location = new Point(1192, 179);
             label11.Name = "label11";
             label11.Size = new Size(54, 20);
             label11.TabIndex = 225;
@@ -168,7 +169,7 @@
             label10.BackColor = Color.Transparent;
             label10.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             label10.ForeColor = Color.White;
-            label10.Location = new Point(780, 223);
+            label10.Location = new Point(784, 187);
             label10.Name = "label10";
             label10.Size = new Size(42, 20);
             label10.TabIndex = 224;
@@ -180,7 +181,7 @@
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             label9.ForeColor = Color.White;
-            label9.Location = new Point(769, 276);
+            label9.Location = new Point(773, 217);
             label9.Name = "label9";
             label9.Size = new Size(55, 20);
             label9.TabIndex = 223;
@@ -192,7 +193,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.White;
-            label8.Location = new Point(682, 300);
+            label8.Location = new Point(680, 237);
             label8.Name = "label8";
             label8.Size = new Size(459, 61);
             label8.TabIndex = 222;
@@ -205,7 +206,7 @@
             button3.FlatStyle = FlatStyle.Popup;
             button3.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
             button3.ForeColor = SystemColors.ButtonHighlight;
-            button3.Location = new Point(1012, 542);
+            button3.Location = new Point(900, 572);
             button3.Name = "button3";
             button3.Size = new Size(173, 38);
             button3.TabIndex = 221;
@@ -218,7 +219,7 @@
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Location = new Point(1100, 483);
+            button2.Location = new Point(1104, 572);
             button2.Name = "button2";
             button2.Size = new Size(173, 38);
             button2.TabIndex = 220;
@@ -231,7 +232,7 @@
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(906, 483);
+            button1.Location = new Point(698, 572);
             button1.Name = "button1";
             button1.Size = new Size(173, 38);
             button1.TabIndex = 219;
@@ -244,7 +245,7 @@
             buttonAgregar.FlatStyle = FlatStyle.Popup;
             buttonAgregar.Font = new Font("Segoe UI Black", 10F, FontStyle.Bold, GraphicsUnit.Point);
             buttonAgregar.ForeColor = Color.WhiteSmoke;
-            buttonAgregar.Location = new Point(929, 411);
+            buttonAgregar.Location = new Point(689, 508);
             buttonAgregar.Name = "buttonAgregar";
             buttonAgregar.Size = new Size(317, 46);
             buttonAgregar.TabIndex = 218;
@@ -256,7 +257,7 @@
             textBoxNumero.BackColor = SystemColors.InactiveCaptionText;
             textBoxNumero.Enabled = false;
             textBoxNumero.ForeColor = SystemColors.MenuBar;
-            textBoxNumero.Location = new Point(691, 561);
+            textBoxNumero.Location = new Point(698, 460);
             textBoxNumero.Name = "textBoxNumero";
             textBoxNumero.Size = new Size(81, 31);
             textBoxNumero.TabIndex = 217;
@@ -269,7 +270,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(682, 533);
+            label7.Location = new Point(689, 432);
             label7.Name = "label7";
             label7.Size = new Size(149, 25);
             label7.TabIndex = 216;
@@ -279,7 +280,7 @@
             // 
             domainUpDownCantidad.BackColor = SystemColors.InactiveCaptionText;
             domainUpDownCantidad.ForeColor = SystemColors.InactiveBorder;
-            domainUpDownCantidad.Location = new Point(691, 470);
+            domainUpDownCantidad.Location = new Point(698, 393);
             domainUpDownCantidad.Name = "domainUpDownCantidad";
             domainUpDownCantidad.Size = new Size(81, 31);
             domainUpDownCantidad.TabIndex = 215;
@@ -290,7 +291,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(682, 432);
+            label6.Location = new Point(689, 355);
             label6.Name = "label6";
             label6.Size = new Size(111, 25);
             label6.TabIndex = 214;
@@ -302,7 +303,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(682, 272);
+            label5.Location = new Point(686, 213);
             label5.Name = "label5";
             label5.Size = new Size(90, 25);
             label5.TabIndex = 213;
@@ -314,7 +315,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(682, 219);
+            label4.Location = new Point(686, 183);
             label4.Name = "label4";
             label4.Size = new Size(92, 25);
             label4.TabIndex = 212;
@@ -326,7 +327,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(682, 168);
+            label2.Location = new Point(1154, 175);
             label2.Name = "label2";
             label2.Size = new Size(36, 25);
             label2.TabIndex = 211;
@@ -360,11 +361,22 @@
             label12.BackColor = Color.Transparent;
             label12.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label12.ForeColor = Color.White;
-            label12.Location = new Point(682, 375);
+            label12.Location = new Point(689, 298);
             label12.Name = "label12";
             label12.Size = new Size(105, 38);
             label12.TabIndex = 228;
             label12.Text = "$1,430";
+            // 
+            // descripcionLove
+            // 
+            descripcionLove.BackColor = SystemColors.InactiveCaptionText;
+            descripcionLove.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            descripcionLove.ForeColor = Color.WhiteSmoke;
+            descripcionLove.Location = new Point(884, 324);
+            descripcionLove.Name = "descripcionLove";
+            descripcionLove.Size = new Size(378, 117);
+            descripcionLove.TabIndex = 234;
+            descripcionLove.Text = " D E S C R I P C I Ó N:                                                   Es un álbum de K-pop lanzado por BTS el 24 de agosto de 2018, como parte de la serie Love Yourself.";
             // 
             // Love
             // 
@@ -372,6 +384,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 633);
+            Controls.Add(descripcionLove);
             Controls.Add(label12);
             Controls.Add(pictureBox2);
             Controls.Add(label11);
@@ -434,5 +447,6 @@
         private Button buttonAtras;
         private Label label3;
         private Label label12;
+        private RichTextBox descripcionLove;
     }
 }
