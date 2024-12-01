@@ -24,5 +24,10 @@ namespace Turnable_Tales_Proyecto
             mostrar.Show(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
