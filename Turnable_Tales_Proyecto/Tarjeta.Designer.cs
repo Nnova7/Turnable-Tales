@@ -164,11 +164,11 @@
             // 
             // button2
             // 
-            button2.BackgroundImage = Properties.Resources.visa;
+            button2.BackgroundImage = Properties.Resources.mastercad;
             button2.FlatStyle = FlatStyle.Popup;
             button2.Location = new Point(255, 221);
             button2.Name = "button2";
-            button2.Size = new Size(129, 68);
+            button2.Size = new Size(98, 76);
             button2.TabIndex = 204;
             button2.UseVisualStyleBackColor = true;
             // 
