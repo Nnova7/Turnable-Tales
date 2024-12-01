@@ -186,7 +186,7 @@
             // 
             button4.BackgroundImage = Properties.Resources.visa;
             button4.FlatStyle = FlatStyle.Popup;
-            button4.Location = new Point(525, 221);
+            button4.Location = new Point(438, 221);
             button4.Name = "button4";
             button4.Size = new Size(129, 68);
             button4.TabIndex = 206;
