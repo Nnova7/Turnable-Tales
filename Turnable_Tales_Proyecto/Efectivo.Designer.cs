@@ -34,7 +34,7 @@
             labelFrase = new Label();
             labelLinea = new Label();
             label1 = new Label();
-            label2 = new Label();
+            labelNomDiap = new Label();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -99,25 +99,25 @@
             label1.Text = resources.GetString("label1.Text");
             label1.TextAlign = ContentAlignment.TopCenter;
             // 
-            // label2
+            // labelNomDiap
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(421, 113);
-            label2.Name = "label2";
-            label2.Size = new Size(371, 41);
-            label2.TabIndex = 62;
-            label2.Text = "A D M I N I S T R A D O R\r\n";
-            label2.TextAlign = ContentAlignment.TopCenter;
+            labelNomDiap.AutoSize = true;
+            labelNomDiap.BackColor = Color.Transparent;
+            labelNomDiap.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
+            labelNomDiap.ForeColor = Color.White;
+            labelNomDiap.Location = new Point(474, 112);
+            labelNomDiap.Name = "labelNomDiap";
+            labelNomDiap.Size = new Size(293, 41);
+            labelNomDiap.TabIndex = 62;
+            labelNomDiap.Text = "PAGO EN EFECTIVO";
+            labelNomDiap.TextAlign = ContentAlignment.TopCenter;
             // 
             // Efectivo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
-            Controls.Add(label2);
+            Controls.Add(labelNomDiap);
             Controls.Add(label1);
             Controls.Add(labelLinea);
             Controls.Add(labelFrase);
@@ -137,6 +137,6 @@
         private Label labelFrase;
         private Label labelLinea;
         private Label label1;
-        private Label label2;
+        private Label labelNomDiap;
     }
 }
