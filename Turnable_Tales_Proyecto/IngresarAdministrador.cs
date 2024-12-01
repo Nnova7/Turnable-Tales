@@ -28,5 +28,10 @@ namespace Turnable_Tales_Proyecto
             usuario.Show();
             this.Close();
         }
+
+        private void IngresarAdministrador_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
