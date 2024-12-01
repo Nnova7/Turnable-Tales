@@ -40,7 +40,7 @@
             buttonRegresar.BackColor = Color.Transparent;
             buttonRegresar.BackgroundImage = Properties.Resources.flechaizq;
             buttonRegresar.FlatStyle = FlatStyle.Popup;
-            buttonRegresar.Location = new Point(613, 264);
+            buttonRegresar.Location = new Point(9, 296);
             buttonRegresar.Margin = new Padding(0);
             buttonRegresar.Name = "buttonRegresar";
             buttonRegresar.Size = new Size(60, 67);
@@ -52,7 +52,7 @@
             buttonMusica.BackColor = Color.Transparent;
             buttonMusica.FlatStyle = FlatStyle.Popup;
             buttonMusica.Image = (Image)resources.GetObject("buttonMusica.Image");
-            buttonMusica.Location = new Point(444, 294);
+            buttonMusica.Location = new Point(905, -2);
             buttonMusica.Name = "buttonMusica";
             buttonMusica.Size = new Size(84, 86);
             buttonMusica.TabIndex = 193;
@@ -63,7 +63,7 @@
             buttonUsuario.BackColor = Color.Transparent;
             buttonUsuario.FlatStyle = FlatStyle.Popup;
             buttonUsuario.Image = Properties.Resources.Imagen1_removebg_preview;
-            buttonUsuario.Location = new Point(754, 179);
+            buttonUsuario.Location = new Point(994, 2);
             buttonUsuario.Margin = new Padding(2);
             buttonUsuario.Name = "buttonUsuario";
             buttonUsuario.Size = new Size(92, 78);
@@ -74,7 +74,7 @@
             // 
             buttonTicket.BackColor = Color.Transparent;
             buttonTicket.BackgroundImage = Properties.Resources.descargarticket;
-            buttonTicket.Location = new Point(652, 406);
+            buttonTicket.Location = new Point(1083, 515);
             buttonTicket.Name = "buttonTicket";
             buttonTicket.Size = new Size(175, 58);
             buttonTicket.TabIndex = 196;
