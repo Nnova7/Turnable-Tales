@@ -184,11 +184,11 @@
             // 
             // button4
             // 
-            button4.BackgroundImage = Properties.Resources.visa;
+            button4.BackgroundImage = Properties.Resources.carnet;
             button4.FlatStyle = FlatStyle.Popup;
             button4.Location = new Point(438, 221);
             button4.Name = "button4";
-            button4.Size = new Size(129, 68);
+            button4.Size = new Size(100, 68);
             button4.TabIndex = 206;
             button4.UseVisualStyleBackColor = true;
             // 
