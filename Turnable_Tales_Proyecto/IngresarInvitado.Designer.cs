@@ -39,6 +39,7 @@
             button1 = new Button();
             label3 = new Label();
             label6 = new Label();
+            textBoxContraA = new TextBox();
             SuspendLayout();
             // 
             // label4
@@ -79,14 +80,10 @@
             // 
             // textBoxContraI
             // 
-            textBoxContraI.BackColor = Color.Silver;
-            textBoxContraI.Location = new Point(141, 423);
+            textBoxContraI.Location = new Point(0, 0);
             textBoxContraI.Name = "textBoxContraI";
-            textBoxContraI.PlaceholderText = "Ingresa la contraseña";
-            textBoxContraI.Size = new Size(341, 27);
-            textBoxContraI.TabIndex = 83;
-            textBoxContraI.TextAlign = HorizontalAlignment.Center;
-            textBoxContraI.TextChanged += textBoxContraA_TextChanged;
+            textBoxContraI.Size = new Size(100, 27);
+            textBoxContraI.TabIndex = 85;
             // 
             // textBoxCuentaI
             // 
@@ -108,6 +105,7 @@
             buttonAtras.Size = new Size(68, 72);
             buttonAtras.TabIndex = 81;
             buttonAtras.UseVisualStyleBackColor = false;
+            buttonAtras.Click += buttonAtras_Click;
             // 
             // label2
             // 
@@ -169,12 +167,23 @@
             label6.TabIndex = 76;
             label6.Text = "I N I C I O  D E  S E S I Ó N";
             // 
+            // textBoxContraA
+            // 
+            textBoxContraA.BackColor = Color.Silver;
+            textBoxContraA.Location = new Point(141, 423);
+            textBoxContraA.Name = "textBoxContraA";
+            textBoxContraA.PlaceholderText = "Ingresa la contraseña";
+            textBoxContraA.Size = new Size(341, 27);
+            textBoxContraA.TabIndex = 86;
+            textBoxContraA.TextAlign = HorizontalAlignment.Center;
+            // 
             // IngresarInvitado
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.cafe;
             ClientSize = new Size(585, 633);
+            Controls.Add(textBoxContraA);
             Controls.Add(buttonSiguiente);
             Controls.Add(textBoxContraI);
             Controls.Add(textBoxCuentaI);
@@ -206,5 +215,6 @@
         private Button button1;
         private Label label3;
         private Label label6;
+        private TextBox textBoxContraA;
     }
 }
