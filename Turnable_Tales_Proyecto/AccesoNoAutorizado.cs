@@ -21,5 +21,10 @@ namespace Turnable_Tales_Proyecto
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

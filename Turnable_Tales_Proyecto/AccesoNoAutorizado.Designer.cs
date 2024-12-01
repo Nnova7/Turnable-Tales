@@ -30,6 +30,7 @@
         {
             buttonRegresar = new Button();
             label6 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -46,14 +47,27 @@
             // 
             label6.AutoSize = true;
             label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Segoe UI Variable Display", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Font = new Font("Segoe UI Variable Display", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = SystemColors.ButtonFace;
-            label6.Location = new Point(310, 97);
+            label6.Location = new Point(42, 68);
             label6.Name = "label6";
-            label6.Size = new Size(294, 32);
+            label6.Size = new Size(764, 58);
             label6.TabIndex = 77;
-            label6.Text = "I N I C I O  D E  S E S I Ó N";
+            label6.Text = "A C C E S O   N O   A U T O R I Z A D O";
             label6.Click += label6_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.ButtonFace;
+            label3.Location = new Point(197, 126);
+            label3.Name = "label3";
+            label3.Size = new Size(280, 23);
+            label3.TabIndex = 78;
+            label3.Text = "I N I C I A R  S E S I Ó N  C O M O:";
+            label3.Click += label3_Click;
             // 
             // AccesoNoAutorizado
             // 
@@ -61,6 +75,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.rojito;
             ClientSize = new Size(830, 219);
+            Controls.Add(label3);
             Controls.Add(label6);
             Controls.Add(buttonRegresar);
             Name = "AccesoNoAutorizado";
@@ -73,5 +88,6 @@
 
         private Button buttonRegresar;
         private Label label6;
+        private Label label3;
     }
 }
