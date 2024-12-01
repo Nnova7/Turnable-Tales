@@ -28,13 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            button1 = new Button();
             SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.Location = new Point(14, 396);
+            button1.Name = "button1";
+            button1.Size = new Size(48, 56);
+            button1.TabIndex = 0;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
             // 
             // Efectivo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.fondoEfectivo;
             ClientSize = new Size(1370, 749);
+            Controls.Add(button1);
             Margin = new Padding(4, 5, 4, 5);
             Name = "Efectivo";
             Text = "Efectivo";
@@ -42,5 +53,7 @@
         }
 
         #endregion
+
+        private Button button1;
     }
 }
