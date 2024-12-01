@@ -277,7 +277,7 @@
             buttonGuardar.BackgroundImage = Properties.Resources.guardar;
             buttonGuardar.Location = new Point(850, 515);
             buttonGuardar.Name = "buttonGuardar";
-            buttonGuardar.Size = new Size(112, 58);
+            buttonGuardar.Size = new Size(112, 55);
             buttonGuardar.TabIndex = 213;
             buttonGuardar.UseVisualStyleBackColor = false;
             // 
