@@ -38,10 +38,10 @@
             label1 = new Label();
             labelNomDiap = new Label();
             labelLinea = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            buttonVisa = new Button();
+            buttonMaster = new Button();
+            buttonAmerican = new Button();
+            buttonCarnet = new Button();
             pictureBox1 = new PictureBox();
             textBoxNPedido = new TextBox();
             textBoxSub = new TextBox();
@@ -167,45 +167,45 @@
             labelLinea.Text = resources.GetString("labelLinea.Text");
             labelLinea.TextAlign = ContentAlignment.TopCenter;
             // 
-            // button1
+            // buttonVisa
             // 
-            button1.BackgroundImage = Properties.Resources.visa;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Location = new Point(120, 221);
-            button1.Name = "button1";
-            button1.Size = new Size(129, 68);
-            button1.TabIndex = 203;
-            button1.UseVisualStyleBackColor = true;
+            buttonVisa.BackgroundImage = Properties.Resources.visa;
+            buttonVisa.FlatStyle = FlatStyle.Popup;
+            buttonVisa.Location = new Point(120, 221);
+            buttonVisa.Name = "buttonVisa";
+            buttonVisa.Size = new Size(129, 68);
+            buttonVisa.TabIndex = 203;
+            buttonVisa.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // buttonMaster
             // 
-            button2.BackgroundImage = Properties.Resources.mastercad;
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Location = new Point(255, 221);
-            button2.Name = "button2";
-            button2.Size = new Size(96, 76);
-            button2.TabIndex = 204;
-            button2.UseVisualStyleBackColor = true;
+            buttonMaster.BackgroundImage = Properties.Resources.mastercad;
+            buttonMaster.FlatStyle = FlatStyle.Popup;
+            buttonMaster.Location = new Point(255, 221);
+            buttonMaster.Name = "buttonMaster";
+            buttonMaster.Size = new Size(96, 76);
+            buttonMaster.TabIndex = 204;
+            buttonMaster.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // buttonAmerican
             // 
-            button3.BackgroundImage = Properties.Resources.americanexpress;
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.Location = new Point(357, 221);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 68);
-            button3.TabIndex = 205;
-            button3.UseVisualStyleBackColor = true;
+            buttonAmerican.BackgroundImage = Properties.Resources.americanexpress;
+            buttonAmerican.FlatStyle = FlatStyle.Popup;
+            buttonAmerican.Location = new Point(357, 221);
+            buttonAmerican.Name = "buttonAmerican";
+            buttonAmerican.Size = new Size(75, 68);
+            buttonAmerican.TabIndex = 205;
+            buttonAmerican.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // buttonCarnet
             // 
-            button4.BackgroundImage = Properties.Resources.carnet;
-            button4.FlatStyle = FlatStyle.Popup;
-            button4.Location = new Point(438, 221);
-            button4.Name = "button4";
-            button4.Size = new Size(100, 68);
-            button4.TabIndex = 206;
-            button4.UseVisualStyleBackColor = true;
+            buttonCarnet.BackgroundImage = Properties.Resources.carnet;
+            buttonCarnet.FlatStyle = FlatStyle.Popup;
+            buttonCarnet.Location = new Point(438, 221);
+            buttonCarnet.Name = "buttonCarnet";
+            buttonCarnet.Size = new Size(100, 68);
+            buttonCarnet.TabIndex = 206;
+            buttonCarnet.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -385,10 +385,10 @@
             Controls.Add(textBoxSub);
             Controls.Add(textBoxNPedido);
             Controls.Add(pictureBox1);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(buttonCarnet);
+            Controls.Add(buttonAmerican);
+            Controls.Add(buttonMaster);
+            Controls.Add(buttonVisa);
             Controls.Add(labelLinea);
             Controls.Add(labelNomDiap);
             Controls.Add(label1);
@@ -416,10 +416,10 @@
         private Label label1;
         private Label labelNomDiap;
         private Label labelLinea;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button buttonVisa;
+        private Button buttonMaster;
+        private Button buttonAmerican;
+        private Button buttonCarnet;
         private PictureBox pictureBox1;
         private TextBox textBoxNPedido;
         private TextBox textBoxSub;
