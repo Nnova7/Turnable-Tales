@@ -39,6 +39,7 @@
             buttonMusica = new Button();
             pictureBoxDatos = new PictureBox();
             buttonCambio = new Button();
+            buttonTicket = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBoxDatos).BeginInit();
             SuspendLayout();
             // 
@@ -160,11 +161,22 @@
             buttonCambio.TabIndex = 194;
             buttonCambio.UseVisualStyleBackColor = false;
             // 
+            // buttonTicket
+            // 
+            buttonTicket.BackColor = Color.Transparent;
+            buttonTicket.BackgroundImage = Properties.Resources.descargarticket;
+            buttonTicket.Location = new Point(1083, 515);
+            buttonTicket.Name = "buttonTicket";
+            buttonTicket.Size = new Size(175, 58);
+            buttonTicket.TabIndex = 195;
+            buttonTicket.UseVisualStyleBackColor = false;
+            // 
             // Efectivo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(buttonTicket);
             Controls.Add(buttonCambio);
             Controls.Add(pictureBoxDatos);
             Controls.Add(buttonMusica);
@@ -195,5 +207,6 @@
         private Button buttonMusica;
         private PictureBox pictureBoxDatos;
         private Button buttonCambio;
+        private Button buttonTicket;
     }
 }
