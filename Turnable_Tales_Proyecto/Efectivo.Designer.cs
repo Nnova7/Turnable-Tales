@@ -35,7 +35,7 @@
             labelLinea = new Label();
             label1 = new Label();
             labelNomDiap = new Label();
-            button1 = new Button();
+            buttonUsuario = new Button();
             buttonMusica = new Button();
             SuspendLayout();
             // 
@@ -114,17 +114,17 @@
             labelNomDiap.Text = "PAGO EN EFECTIVO";
             labelNomDiap.TextAlign = ContentAlignment.TopCenter;
             // 
-            // button1
+            // buttonUsuario
             // 
-            button1.BackColor = Color.Transparent;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Image = Properties.Resources.Imagen1_removebg_preview;
-            button1.Location = new Point(994, 2);
-            button1.Margin = new Padding(2);
-            button1.Name = "button1";
-            button1.Size = new Size(92, 78);
-            button1.TabIndex = 191;
-            button1.UseVisualStyleBackColor = false;
+            buttonUsuario.BackColor = Color.Transparent;
+            buttonUsuario.FlatStyle = FlatStyle.Popup;
+            buttonUsuario.Image = Properties.Resources.Imagen1_removebg_preview;
+            buttonUsuario.Location = new Point(994, 2);
+            buttonUsuario.Margin = new Padding(2);
+            buttonUsuario.Name = "buttonUsuario";
+            buttonUsuario.Size = new Size(92, 78);
+            buttonUsuario.TabIndex = 191;
+            buttonUsuario.UseVisualStyleBackColor = false;
             // 
             // buttonMusica
             // 
@@ -143,7 +143,7 @@
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
             Controls.Add(buttonMusica);
-            Controls.Add(button1);
+            Controls.Add(buttonUsuario);
             Controls.Add(labelNomDiap);
             Controls.Add(label1);
             Controls.Add(labelLinea);
@@ -165,7 +165,7 @@
         private Label labelLinea;
         private Label label1;
         private Label labelNomDiap;
-        private Button button1;
+        private Button buttonUsuario;
         private Button buttonMusica;
     }
 }
