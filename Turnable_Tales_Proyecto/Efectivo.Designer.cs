@@ -37,8 +37,9 @@
             labelNomDiap = new Label();
             buttonUsuario = new Button();
             buttonMusica = new Button();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pictureBoxDatos = new PictureBox();
+            button1 = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxDatos).BeginInit();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -139,22 +140,32 @@
             buttonMusica.TabIndex = 192;
             buttonMusica.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // pictureBoxDatos
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.BackgroundImage = Properties.Resources.datos;
-            pictureBox1.Location = new Point(420, 204);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(412, 369);
-            pictureBox1.TabIndex = 193;
-            pictureBox1.TabStop = false;
+            pictureBoxDatos.BackColor = Color.Transparent;
+            pictureBoxDatos.BackgroundImage = Properties.Resources.datos;
+            pictureBoxDatos.Location = new Point(420, 204);
+            pictureBoxDatos.Name = "pictureBoxDatos";
+            pictureBoxDatos.Size = new Size(412, 369);
+            pictureBoxDatos.TabIndex = 193;
+            pictureBoxDatos.TabStop = false;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(557, 470);
+            button1.Name = "button1";
+            button1.Size = new Size(130, 42);
+            button1.TabIndex = 194;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
             // 
             // Efectivo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
-            Controls.Add(pictureBox1);
+            Controls.Add(button1);
+            Controls.Add(pictureBoxDatos);
             Controls.Add(buttonMusica);
             Controls.Add(buttonUsuario);
             Controls.Add(labelNomDiap);
@@ -166,7 +177,7 @@
             Margin = new Padding(4, 5, 4, 5);
             Name = "Efectivo";
             Text = "Efectivo";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxDatos).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -181,6 +192,7 @@
         private Label labelNomDiap;
         private Button buttonUsuario;
         private Button buttonMusica;
-        private PictureBox pictureBox1;
+        private PictureBox pictureBoxDatos;
+        private Button button1;
     }
 }
