@@ -45,7 +45,7 @@
             // Efectivo
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackgroundImage = Properties.Resources.fondoEfectivo;
+            BackgroundImage = Properties.Resources.fonfoEf2;
             ClientSize = new Size(1286, 594);
             Controls.Add(buttonRegresar);
             Margin = new Padding(4, 5, 4, 5);
