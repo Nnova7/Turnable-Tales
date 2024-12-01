@@ -41,6 +41,10 @@
             buttonCambio = new Button();
             buttonTicket = new Button();
             textBoxNPedido = new TextBox();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxDatos).BeginInit();
             SuspendLayout();
             // 
@@ -181,11 +185,51 @@
             textBoxNPedido.Size = new Size(151, 23);
             textBoxNPedido.TabIndex = 196;
             // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.Black;
+            textBox1.Enabled = false;
+            textBox1.Location = new Point(647, 284);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(151, 23);
+            textBox1.TabIndex = 197;
+            // 
+            // textBox2
+            // 
+            textBox2.BackColor = Color.Black;
+            textBox2.Enabled = false;
+            textBox2.Location = new Point(647, 319);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(151, 23);
+            textBox2.TabIndex = 198;
+            // 
+            // textBox3
+            // 
+            textBox3.BackColor = Color.Black;
+            textBox3.Enabled = false;
+            textBox3.Location = new Point(647, 357);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(151, 23);
+            textBox3.TabIndex = 199;
+            // 
+            // textBox4
+            // 
+            textBox4.BackColor = Color.Black;
+            textBox4.Enabled = false;
+            textBox4.Location = new Point(647, 534);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(151, 23);
+            textBox4.TabIndex = 200;
+            // 
             // Efectivo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(textBox4);
+            Controls.Add(textBox3);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
             Controls.Add(textBoxNPedido);
             Controls.Add(buttonTicket);
             Controls.Add(buttonCambio);
@@ -220,5 +264,9 @@
         private Button buttonCambio;
         private Button buttonTicket;
         private TextBox textBoxNPedido;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private TextBox textBox3;
+        private TextBox textBox4;
     }
 }
