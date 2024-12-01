@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             buttonRegresar = new Button();
+            labelTitulo = new Label();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -42,20 +43,35 @@
             buttonRegresar.TabIndex = 0;
             buttonRegresar.UseVisualStyleBackColor = false;
             // 
+            // labelTitulo
+            // 
+            labelTitulo.AutoSize = true;
+            labelTitulo.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
+            labelTitulo.ForeColor = Color.White;
+            labelTitulo.Location = new Point(432, 21);
+            labelTitulo.Name = "labelTitulo";
+            labelTitulo.Size = new Size(398, 41);
+            labelTitulo.TabIndex = 57;
+            labelTitulo.Text = "T U R N T A B L E   T A L E S";
+            labelTitulo.TextAlign = ContentAlignment.TopCenter;
+            // 
             // Efectivo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(labelTitulo);
             Controls.Add(buttonRegresar);
             Margin = new Padding(4, 5, 4, 5);
             Name = "Efectivo";
             Text = "Efectivo";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button buttonRegresar;
+        private Label labelTitulo;
     }
 }
