@@ -49,6 +49,7 @@
             textBoxTot = new TextBox();
             textBoxCosEnvio = new TextBox();
             button5 = new Button();
+            labelNTarjeta = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -274,12 +275,25 @@
             button5.TabIndex = 213;
             button5.UseVisualStyleBackColor = false;
             // 
+            // labelNTarjeta
+            // 
+            labelNTarjeta.AutoSize = true;
+            labelNTarjeta.BackColor = Color.Transparent;
+            labelNTarjeta.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            labelNTarjeta.ForeColor = Color.White;
+            labelNTarjeta.Location = new Point(127, 314);
+            labelNTarjeta.Name = "labelNTarjeta";
+            labelNTarjeta.Size = new Size(187, 18);
+            labelNTarjeta.TabIndex = 214;
+            labelNTarjeta.Text = "NUMERO DE LA TARJETA*";
+            // 
             // Tarjeta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(labelNTarjeta);
             Controls.Add(button5);
             Controls.Add(textBoxCosEnvio);
             Controls.Add(textBoxTot);
@@ -329,5 +343,6 @@
         private TextBox textBoxTot;
         private TextBox textBoxCosEnvio;
         private Button button5;
+        private Label labelNTarjeta;
     }
 }
