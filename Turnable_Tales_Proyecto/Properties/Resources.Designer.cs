@@ -113,6 +113,16 @@ namespace Turnable_Tales_Proyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cambio {
+            get {
+                object obj = ResourceManager.GetObject("cambio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_pantalla_2024_11_21_093731 {
             get {
                 object obj = ResourceManager.GetObject("Captura de pantalla 2024-11-21 093731", resourceCulture);
