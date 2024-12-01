@@ -46,7 +46,9 @@
             textBoxTot = new TextBox();
             textBoxCam = new TextBox();
             textBoxPagoCon = new TextBox();
+            pictureBoxLogo = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxDatos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -242,11 +244,23 @@
             textBoxPagoCon.TabIndex = 201;
             textBoxPagoCon.TextAlign = HorizontalAlignment.Center;
             // 
+            // pictureBoxLogo
+            // 
+            pictureBoxLogo.BackgroundImageLayout = ImageLayout.None;
+            pictureBoxLogo.Image = (Image)resources.GetObject("pictureBoxLogo.Image");
+            pictureBoxLogo.Location = new Point(12, 13);
+            pictureBoxLogo.Name = "pictureBoxLogo";
+            pictureBoxLogo.Size = new Size(175, 174);
+            pictureBoxLogo.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxLogo.TabIndex = 202;
+            pictureBoxLogo.TabStop = false;
+            // 
             // Efectivo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(pictureBoxLogo);
             Controls.Add(textBoxPagoCon);
             Controls.Add(textBoxCam);
             Controls.Add(textBoxTot);
@@ -268,6 +282,7 @@
             Name = "Efectivo";
             Text = "Efectivo";
             ((System.ComponentModel.ISupportInitialize)pictureBoxDatos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -291,5 +306,6 @@
         private TextBox textBoxTot;
         private TextBox textBoxCam;
         private TextBox textBoxPagoCon;
+        private PictureBox pictureBoxLogo;
     }
 }
