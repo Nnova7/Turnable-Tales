@@ -35,6 +35,7 @@
             labelLinea = new Label();
             label1 = new Label();
             labelNomDiap = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -112,11 +113,24 @@
             labelNomDiap.Text = "PAGO EN EFECTIVO";
             labelNomDiap.TextAlign = ContentAlignment.TopCenter;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Image = Properties.Resources.Imagen1_removebg_preview;
+            button1.Location = new Point(994, 2);
+            button1.Margin = new Padding(2);
+            button1.Name = "button1";
+            button1.Size = new Size(92, 78);
+            button1.TabIndex = 191;
+            button1.UseVisualStyleBackColor = false;
+            // 
             // Efectivo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(button1);
             Controls.Add(labelNomDiap);
             Controls.Add(label1);
             Controls.Add(labelLinea);
@@ -138,5 +152,6 @@
         private Label labelLinea;
         private Label label1;
         private Label labelNomDiap;
+        private Button button1;
     }
 }
