@@ -45,6 +45,7 @@
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCuadInfo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxInstruction).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -194,6 +195,7 @@
             textBoxNPedido.Name = "textBoxNPedido";
             textBoxNPedido.Size = new Size(179, 26);
             textBoxNPedido.TabIndex = 205;
+            textBoxNPedido.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox1
             // 
@@ -204,6 +206,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(179, 26);
             textBox1.TabIndex = 206;
+            textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox2
             // 
@@ -214,6 +217,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(179, 26);
             textBox2.TabIndex = 207;
+            textBox2.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox3
             // 
@@ -224,6 +228,19 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(179, 26);
             textBox3.TabIndex = 208;
+            textBox3.TextAlign = HorizontalAlignment.Center;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(953, 345);
+            label2.Name = "label2";
+            label2.Size = new Size(162, 18);
+            label2.TabIndex = 209;
+            label2.Text = "NUMERO DEL PEDIDO";
             // 
             // Oxxo
             // 
@@ -231,6 +248,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(label2);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
@@ -274,5 +292,6 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox textBox3;
+        private Label label2;
     }
 }
