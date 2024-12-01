@@ -30,6 +30,7 @@
         {
             buttonRegresar = new Button();
             labelTitulo = new Label();
+            labelFrase = new Label();
             SuspendLayout();
             // 
             // buttonRegresar
@@ -49,18 +50,30 @@
             labelTitulo.BackColor = Color.Transparent;
             labelTitulo.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             labelTitulo.ForeColor = Color.White;
-            labelTitulo.Location = new Point(432, 21);
+            labelTitulo.Location = new Point(433, 9);
             labelTitulo.Name = "labelTitulo";
             labelTitulo.Size = new Size(398, 41);
             labelTitulo.TabIndex = 57;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
             // 
+            // labelFrase
+            // 
+            labelFrase.AutoSize = true;
+            labelFrase.BackColor = Color.Transparent;
+            labelFrase.ForeColor = Color.White;
+            labelFrase.Location = new Point(518, 59);
+            labelFrase.Name = "labelFrase";
+            labelFrase.Size = new Size(190, 15);
+            labelFrase.TabIndex = 58;
+            labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
+            // 
             // Efectivo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(labelFrase);
             Controls.Add(labelTitulo);
             Controls.Add(buttonRegresar);
             Margin = new Padding(4, 5, 4, 5);
@@ -74,5 +87,6 @@
 
         private Button buttonRegresar;
         private Label labelTitulo;
+        private Label labelFrase;
     }
 }
