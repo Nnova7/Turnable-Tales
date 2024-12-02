@@ -32,12 +32,6 @@
             buttonRegresar = new Button();
             buttonSalir = new Button();
             buttonActualiza = new Button();
-            labeltxtId = new Label();
-            labeltxtExistencias = new Label();
-            labeltxtPrecio = new Label();
-            labeltxtGenero = new Label();
-            labeltxtArtista = new Label();
-            labeltxtTitulo = new Label();
             button1 = new Button();
             buttonMusica = new Button();
             buttonUsuario = new Button();
@@ -48,12 +42,22 @@
             labelTitulo = new Label();
             labelFrase = new Label();
             labelMenu = new Label();
-            textBoxId = new TextBox();
-            textBoxArtista = new TextBox();
-            textBoxGenero = new TextBox();
-            textBoxExistencias = new TextBox();
-            textBoxTitulo = new TextBox();
+            textBoxImagen = new TextBox();
+            textBoxDescripcion = new TextBox();
+            label3 = new Label();
+            label4 = new Label();
             textBoxPrecio = new TextBox();
+            textBoxTitulo = new TextBox();
+            textBoxExistencias = new TextBox();
+            textBoxGenero = new TextBox();
+            textBoxArtista = new TextBox();
+            textBoxId = new TextBox();
+            labeltxtId = new Label();
+            labeltxtExistencias = new Label();
+            labeltxtPrecio = new Label();
+            labeltxtGenero = new Label();
+            labeltxtArtista = new Label();
+            labeltxtTitulo = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -86,78 +90,6 @@
             buttonActualiza.Size = new Size(263, 58);
             buttonActualiza.TabIndex = 71;
             buttonActualiza.UseVisualStyleBackColor = true;
-            // 
-            // labeltxtId
-            // 
-            labeltxtId.AutoSize = true;
-            labeltxtId.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            labeltxtId.ForeColor = Color.White;
-            labeltxtId.Location = new Point(272, 271);
-            labeltxtId.Name = "labeltxtId";
-            labeltxtId.Size = new Size(58, 41);
-            labeltxtId.TabIndex = 62;
-            labeltxtId.Text = "ID:";
-            labeltxtId.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // labeltxtExistencias
-            // 
-            labeltxtExistencias.AutoSize = true;
-            labeltxtExistencias.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            labeltxtExistencias.ForeColor = Color.White;
-            labeltxtExistencias.Location = new Point(667, 460);
-            labeltxtExistencias.Name = "labeltxtExistencias";
-            labeltxtExistencias.Size = new Size(215, 41);
-            labeltxtExistencias.TabIndex = 61;
-            labeltxtExistencias.Text = "EXISTENCIAS:\r\n";
-            labeltxtExistencias.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // labeltxtPrecio
-            // 
-            labeltxtPrecio.AutoSize = true;
-            labeltxtPrecio.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            labeltxtPrecio.ForeColor = Color.White;
-            labeltxtPrecio.Location = new Point(199, 460);
-            labeltxtPrecio.Name = "labeltxtPrecio";
-            labeltxtPrecio.Size = new Size(132, 41);
-            labeltxtPrecio.TabIndex = 60;
-            labeltxtPrecio.Text = "PRECIO:";
-            labeltxtPrecio.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // labeltxtGenero
-            // 
-            labeltxtGenero.AutoSize = true;
-            labeltxtGenero.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            labeltxtGenero.ForeColor = Color.White;
-            labeltxtGenero.Location = new Point(736, 371);
-            labeltxtGenero.Name = "labeltxtGenero";
-            labeltxtGenero.Size = new Size(146, 41);
-            labeltxtGenero.TabIndex = 59;
-            labeltxtGenero.Text = "GÉNERO:\r\n";
-            labeltxtGenero.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // labeltxtArtista
-            // 
-            labeltxtArtista.AutoSize = true;
-            labeltxtArtista.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            labeltxtArtista.ForeColor = Color.White;
-            labeltxtArtista.Location = new Point(734, 285);
-            labeltxtArtista.Name = "labeltxtArtista";
-            labeltxtArtista.Size = new Size(148, 41);
-            labeltxtArtista.TabIndex = 58;
-            labeltxtArtista.Text = "ARTISTA:\r\n";
-            labeltxtArtista.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // labeltxtTitulo
-            // 
-            labeltxtTitulo.AutoSize = true;
-            labeltxtTitulo.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            labeltxtTitulo.ForeColor = Color.White;
-            labeltxtTitulo.Location = new Point(199, 371);
-            labeltxtTitulo.Name = "labeltxtTitulo";
-            labeltxtTitulo.Size = new Size(131, 41);
-            labeltxtTitulo.TabIndex = 57;
-            labeltxtTitulo.Text = "TÍTULO:\r\n";
-            labeltxtTitulo.TextAlign = ContentAlignment.TopCenter;
             // 
             // button1
             // 
@@ -275,83 +207,227 @@
             labelMenu.TabIndex = 189;
             labelMenu.Text = "AGREGAR DISCO";
             // 
-            // textBoxId
+            // textBoxImagen
             // 
-            textBoxId.BackColor = SystemColors.InactiveCaptionText;
-            textBoxId.Location = new Point(336, 285);
-            textBoxId.Name = "textBoxId";
-            textBoxId.PlaceholderText = "INTRODUZCA UN DATO";
-            textBoxId.Size = new Size(221, 27);
-            textBoxId.TabIndex = 199;
-            textBoxId.Tag = "";
-            textBoxId.TextAlign = HorizontalAlignment.Center;
+            textBoxImagen.BackColor = SystemColors.InactiveCaptionText;
+            textBoxImagen.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxImagen.ForeColor = Color.White;
+            textBoxImagen.Location = new Point(225, 494);
+            textBoxImagen.Name = "textBoxImagen";
+            textBoxImagen.PlaceholderText = "INTRODUZCA UN DATO";
+            textBoxImagen.Size = new Size(221, 27);
+            textBoxImagen.TabIndex = 236;
+            textBoxImagen.Tag = "";
+            textBoxImagen.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBoxArtista
+            // textBoxDescripcion
             // 
-            textBoxArtista.BackColor = SystemColors.InactiveCaptionText;
-            textBoxArtista.Location = new Point(888, 298);
-            textBoxArtista.Name = "textBoxArtista";
-            textBoxArtista.PlaceholderText = "INTRODUZCA UN DATO";
-            textBoxArtista.Size = new Size(221, 27);
-            textBoxArtista.TabIndex = 200;
-            textBoxArtista.Tag = "";
-            textBoxArtista.TextAlign = HorizontalAlignment.Center;
+            textBoxDescripcion.BackColor = SystemColors.InactiveCaptionText;
+            textBoxDescripcion.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxDescripcion.ForeColor = Color.White;
+            textBoxDescripcion.Location = new Point(727, 494);
+            textBoxDescripcion.Name = "textBoxDescripcion";
+            textBoxDescripcion.PlaceholderText = "INTRODUZCA UN DATO";
+            textBoxDescripcion.Size = new Size(547, 27);
+            textBoxDescripcion.TabIndex = 235;
+            textBoxDescripcion.Tag = "";
+            textBoxDescripcion.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBoxGenero
+            // label3
             // 
-            textBoxGenero.BackColor = SystemColors.InactiveCaptionText;
-            textBoxGenero.Location = new Point(888, 385);
-            textBoxGenero.Name = "textBoxGenero";
-            textBoxGenero.PlaceholderText = "INTRODUZCA UN DATO";
-            textBoxGenero.Size = new Size(221, 27);
-            textBoxGenero.TabIndex = 201;
-            textBoxGenero.Tag = "";
-            textBoxGenero.TextAlign = HorizontalAlignment.Center;
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(497, 480);
+            label3.Name = "label3";
+            label3.Size = new Size(224, 82);
+            label3.TabIndex = 234;
+            label3.Text = "DESCRIPCION:\r\n\r\n";
+            label3.TextAlign = ContentAlignment.TopCenter;
             // 
-            // textBoxExistencias
+            // label4
             // 
-            textBoxExistencias.BackColor = SystemColors.InactiveCaptionText;
-            textBoxExistencias.Location = new Point(888, 474);
-            textBoxExistencias.Name = "textBoxExistencias";
-            textBoxExistencias.PlaceholderText = "INTRODUZCA UN DATO";
-            textBoxExistencias.Size = new Size(221, 27);
-            textBoxExistencias.TabIndex = 202;
-            textBoxExistencias.Tag = "";
-            textBoxExistencias.TextAlign = HorizontalAlignment.Center;
-            // 
-            // textBoxTitulo
-            // 
-            textBoxTitulo.BackColor = SystemColors.InactiveCaptionText;
-            textBoxTitulo.Location = new Point(336, 385);
-            textBoxTitulo.Name = "textBoxTitulo";
-            textBoxTitulo.PlaceholderText = "INTRODUZCA UN DATO";
-            textBoxTitulo.Size = new Size(221, 27);
-            textBoxTitulo.TabIndex = 203;
-            textBoxTitulo.Tag = "";
-            textBoxTitulo.TextAlign = HorizontalAlignment.Center;
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(72, 480);
+            label4.Name = "label4";
+            label4.Size = new Size(147, 41);
+            label4.TabIndex = 233;
+            label4.Text = "IMAGEN:";
+            label4.TextAlign = ContentAlignment.TopCenter;
             // 
             // textBoxPrecio
             // 
             textBoxPrecio.BackColor = SystemColors.InactiveCaptionText;
-            textBoxPrecio.Location = new Point(337, 474);
+            textBoxPrecio.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxPrecio.ForeColor = Color.White;
+            textBoxPrecio.Location = new Point(611, 384);
             textBoxPrecio.Name = "textBoxPrecio";
             textBoxPrecio.PlaceholderText = "INTRODUZCA UN DATO";
             textBoxPrecio.Size = new Size(221, 27);
-            textBoxPrecio.TabIndex = 204;
+            textBoxPrecio.TabIndex = 232;
             textBoxPrecio.Tag = "";
             textBoxPrecio.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBoxTitulo
+            // 
+            textBoxTitulo.BackColor = SystemColors.InactiveCaptionText;
+            textBoxTitulo.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxTitulo.ForeColor = Color.White;
+            textBoxTitulo.Location = new Point(225, 384);
+            textBoxTitulo.Name = "textBoxTitulo";
+            textBoxTitulo.PlaceholderText = "INTRODUZCA UN DATO";
+            textBoxTitulo.Size = new Size(221, 27);
+            textBoxTitulo.TabIndex = 231;
+            textBoxTitulo.Tag = "";
+            textBoxTitulo.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBoxExistencias
+            // 
+            textBoxExistencias.BackColor = SystemColors.InactiveCaptionText;
+            textBoxExistencias.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxExistencias.ForeColor = Color.White;
+            textBoxExistencias.Location = new Point(1069, 384);
+            textBoxExistencias.Name = "textBoxExistencias";
+            textBoxExistencias.PlaceholderText = "INTRODUZCA UN DATO";
+            textBoxExistencias.Size = new Size(221, 27);
+            textBoxExistencias.TabIndex = 230;
+            textBoxExistencias.Tag = "";
+            textBoxExistencias.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBoxGenero
+            // 
+            textBoxGenero.BackColor = SystemColors.InactiveCaptionText;
+            textBoxGenero.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxGenero.ForeColor = Color.White;
+            textBoxGenero.Location = new Point(1053, 271);
+            textBoxGenero.Name = "textBoxGenero";
+            textBoxGenero.PlaceholderText = "INTRODUZCA UN DATO";
+            textBoxGenero.Size = new Size(221, 27);
+            textBoxGenero.TabIndex = 229;
+            textBoxGenero.Tag = "";
+            textBoxGenero.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBoxArtista
+            // 
+            textBoxArtista.BackColor = SystemColors.InactiveCaptionText;
+            textBoxArtista.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxArtista.ForeColor = Color.White;
+            textBoxArtista.Location = new Point(623, 271);
+            textBoxArtista.Name = "textBoxArtista";
+            textBoxArtista.PlaceholderText = "INTRODUZCA UN DATO";
+            textBoxArtista.Size = new Size(221, 27);
+            textBoxArtista.TabIndex = 228;
+            textBoxArtista.Tag = "";
+            textBoxArtista.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBoxId
+            // 
+            textBoxId.BackColor = SystemColors.InactiveCaptionText;
+            textBoxId.Font = new Font("Consolas", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxId.ForeColor = Color.White;
+            textBoxId.Location = new Point(195, 271);
+            textBoxId.Name = "textBoxId";
+            textBoxId.PlaceholderText = "INTRODUZCA UN DATO";
+            textBoxId.Size = new Size(221, 27);
+            textBoxId.TabIndex = 227;
+            textBoxId.Tag = "";
+            textBoxId.TextAlign = HorizontalAlignment.Center;
+            // 
+            // labeltxtId
+            // 
+            labeltxtId.AutoSize = true;
+            labeltxtId.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            labeltxtId.ForeColor = Color.White;
+            labeltxtId.Location = new Point(124, 257);
+            labeltxtId.Name = "labeltxtId";
+            labeltxtId.Size = new Size(58, 41);
+            labeltxtId.TabIndex = 226;
+            labeltxtId.Text = "ID:";
+            labeltxtId.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // labeltxtExistencias
+            // 
+            labeltxtExistencias.AutoSize = true;
+            labeltxtExistencias.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            labeltxtExistencias.ForeColor = Color.White;
+            labeltxtExistencias.Location = new Point(859, 375);
+            labeltxtExistencias.Name = "labeltxtExistencias";
+            labeltxtExistencias.Size = new Size(215, 41);
+            labeltxtExistencias.TabIndex = 225;
+            labeltxtExistencias.Text = "EXISTENCIAS:\r\n";
+            labeltxtExistencias.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // labeltxtPrecio
+            // 
+            labeltxtPrecio.AutoSize = true;
+            labeltxtPrecio.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            labeltxtPrecio.ForeColor = Color.White;
+            labeltxtPrecio.Location = new Point(473, 375);
+            labeltxtPrecio.Name = "labeltxtPrecio";
+            labeltxtPrecio.Size = new Size(132, 41);
+            labeltxtPrecio.TabIndex = 224;
+            labeltxtPrecio.Text = "PRECIO:";
+            labeltxtPrecio.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // labeltxtGenero
+            // 
+            labeltxtGenero.AutoSize = true;
+            labeltxtGenero.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            labeltxtGenero.ForeColor = Color.White;
+            labeltxtGenero.Location = new Point(901, 257);
+            labeltxtGenero.Name = "labeltxtGenero";
+            labeltxtGenero.Size = new Size(146, 41);
+            labeltxtGenero.TabIndex = 223;
+            labeltxtGenero.Text = "GÉNERO:\r\n";
+            labeltxtGenero.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // labeltxtArtista
+            // 
+            labeltxtArtista.AutoSize = true;
+            labeltxtArtista.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            labeltxtArtista.ForeColor = Color.White;
+            labeltxtArtista.Location = new Point(469, 257);
+            labeltxtArtista.Name = "labeltxtArtista";
+            labeltxtArtista.Size = new Size(148, 41);
+            labeltxtArtista.TabIndex = 222;
+            labeltxtArtista.Text = "ARTISTA:\r\n";
+            labeltxtArtista.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // labeltxtTitulo
+            // 
+            labeltxtTitulo.AutoSize = true;
+            labeltxtTitulo.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            labeltxtTitulo.ForeColor = Color.White;
+            labeltxtTitulo.Location = new Point(89, 375);
+            labeltxtTitulo.Name = "labeltxtTitulo";
+            labeltxtTitulo.Size = new Size(131, 41);
+            labeltxtTitulo.TabIndex = 221;
+            labeltxtTitulo.Text = "TÍTULO:\r\n";
+            labeltxtTitulo.TextAlign = ContentAlignment.TopCenter;
             // 
             // FormAgregarDisco
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 633);
+            Controls.Add(textBoxImagen);
+            Controls.Add(textBoxDescripcion);
+            Controls.Add(label3);
+            Controls.Add(label4);
             Controls.Add(textBoxPrecio);
             Controls.Add(textBoxTitulo);
             Controls.Add(textBoxExistencias);
             Controls.Add(textBoxGenero);
             Controls.Add(textBoxArtista);
             Controls.Add(textBoxId);
+            Controls.Add(labeltxtId);
+            Controls.Add(labeltxtExistencias);
+            Controls.Add(labeltxtPrecio);
+            Controls.Add(labeltxtGenero);
+            Controls.Add(labeltxtArtista);
+            Controls.Add(labeltxtTitulo);
             Controls.Add(button1);
             Controls.Add(buttonMusica);
             Controls.Add(buttonUsuario);
@@ -365,12 +441,6 @@
             Controls.Add(buttonRegresar);
             Controls.Add(buttonSalir);
             Controls.Add(buttonActualiza);
-            Controls.Add(labeltxtId);
-            Controls.Add(labeltxtExistencias);
-            Controls.Add(labeltxtPrecio);
-            Controls.Add(labeltxtGenero);
-            Controls.Add(labeltxtArtista);
-            Controls.Add(labeltxtTitulo);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormAgregarDisco";
             StartPosition = FormStartPosition.CenterScreen;
@@ -384,12 +454,6 @@
         private Button buttonRegresar;
         private Button buttonSalir;
         private Button buttonActualiza;
-        private Label labeltxtId;
-        private Label labeltxtExistencias;
-        private Label labeltxtPrecio;
-        private Label labeltxtGenero;
-        private Label labeltxtArtista;
-        private Label labeltxtTitulo;
         private Button button1;
         private Button buttonMusica;
         private Button buttonUsuario;
@@ -400,11 +464,21 @@
         private Label labelTitulo;
         private Label labelFrase;
         private Label labelMenu;
-        private TextBox textBoxId;
-        private TextBox textBoxArtista;
-        private TextBox textBoxGenero;
-        private TextBox textBoxExistencias;
-        private TextBox textBoxTitulo;
+        private TextBox textBoxImagen;
+        private TextBox textBoxDescripcion;
+        private Label label3;
+        private Label label4;
         private TextBox textBoxPrecio;
+        private TextBox textBoxTitulo;
+        private TextBox textBoxExistencias;
+        private TextBox textBoxGenero;
+        private TextBox textBoxArtista;
+        private TextBox textBoxId;
+        private Label labeltxtId;
+        private Label labeltxtExistencias;
+        private Label labeltxtPrecio;
+        private Label labeltxtGenero;
+        private Label labeltxtArtista;
+        private Label labeltxtTitulo;
     }
 }
