@@ -42,7 +42,7 @@ namespace Turnable_Tales_Proyecto
             if (portada != null)
             {
                 this.Hide();//Oculta el form de atras
-                portada.ShowDialog();//muestra
+                portada.Show();//muestra
                 this.Close();//cierra
             }
         }

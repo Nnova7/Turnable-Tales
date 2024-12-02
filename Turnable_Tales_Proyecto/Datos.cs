@@ -26,7 +26,7 @@ namespace Turnable_Tales_Proyecto
         }//Desconectar
 
         /// <summary>
-        ///  /// Consulta todos los registros y devuelve una lista con objetos de la clase del registro
+        /// Consulta todos los registros y devuelve una lista con objetos de la clase del registro
         /// Para usarse...
         ///                 AdmonBD obj = new AdmonBD(); // Instancia de la clase de administración de base de datos
         ///                 data = obj.consulta(); // Obtiene los registros de la base de datos
@@ -86,30 +86,32 @@ namespace Turnable_Tales_Proyecto
         /// <param name="descripcion"></param>
         public void Insertar(int id, string artista, string genero, string nombre, int precio, int cantidad, string imagen, string descripcion)
         {
-            string query = "";//Cadena para el comando sql
+            string query = ""; // Cadena para el comando SQL
             try
             {
-                //crea el comando sql para insertar un registro en la tabla de discos
-                query = "INSERT INTO prendas (id,artista,genero,nombre,precio,cantidad,imagen,descripcion) VALUES ("
-                    + "'" + id + "´,"
-                    + "'" + artista + "´,"
-                    + "'" + genero + "´,"
-                    + "'" + nombre + "´,"
-                    + "'" + precio + "´,"
-                    + "'" + cantidad + "´,"
-                    + "'" + imagen + "´,"
-                    + "'" + descripcion + "´,)";
+                // Crear el comando SQL para insertar un registro en la tabla de prendas
+                query = "INSERT INTO discos (id, artista, genero, nombre, precio, cantidad, imagen, descripcion) VALUES ("
+                    + id + ", " //No es necesario poner comillas para un valor numérico
+                    + "'" + artista + "', "
+                    + "'" + genero + "', "
+                    + "'" + nombre + "', "
+                    + precio + ", "
+                    + cantidad + ", "
+                    + "'" + imagen + "', "
+                    + "'" + descripcion + "');";
 
-                MySqlCommand cmd = new MySqlCommand(query, conexion);//Prepara el comando
-                cmd.ExecuteNonQuery();//ejecuta el comando
-            }//try
+                MySqlCommand cmd = new MySqlCommand(query, conexion); // Prepara el comando
+                cmd.ExecuteNonQuery(); // Ejecuta el comando
+                FormAgregado formAgregado = new FormAgregado();
+                formAgregado.ShowDialog();
+            }
             catch (Exception ex)
             {
-                MessageBox.Show(query + "\nClave duplucada" + ex.Message);//Manejar errores
-                this.Desconectar();//dESCONECTA LA BASE EN CASO DE ERROR
-            }//catch
+                MessageBox.Show(query + "\nClave duplicada: " + ex.Message); // Manejar errores
+                this.Desconectar(); // Desconecta la base en caso de error
+            }
+        }
 
-        }//insertar
 
         /// <summary>
         /// Consultar un registro por medio del id
@@ -169,6 +171,8 @@ namespace Turnable_Tales_Proyecto
                 query = "DELETE FROM discos WHERE id=" + id + ";";//crea el comando
                 MySqlCommand cmd = new MySqlCommand(query, conexion);//prepara el comando
                 cmd.ExecuteNonQuery();//Ejecuta el comando
+                FormAgregado formAgregado = new FormAgregado();
+                formAgregado.ShowDialog();
             }//try
             catch (Exception ex)
             {
@@ -230,6 +234,70 @@ namespace Turnable_Tales_Proyecto
                 MessageBox.Show($"Error al conectar con la base de datos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);//MANEJO DE ERRORES
             }
         }//Conectar
+
+        /// <summary>
+        /// DEVUELVE EL NUMERO DE DISCOS QUE HAY EN LA TABLA DE LA BASE DE DATOS
+        /// </summary>
+        /// <returns></returns>
+        public int numDeRegistros()
+        {
+            Productos aux;
+            int id = 0, precio = 0, cantidad = 0, cont = 0;
+            string artista, genero, nombre, imagen, descripcion;
+            try
+            {
+                string query = "SELECT * FROM discos";//Consulta SQL para obtener todos los registros
+                MySqlCommand command = new MySqlCommand(query, this.conexion);//Prepara el comando sql
+                MySqlDataReader reader = command.ExecuteReader();//Ejecuta la consulta y obtiene la informacion
+                while (reader.Read())//Recorre los registros uno por uno
+                {
+                    cont++;
+                }//while
+                reader.Close();
+            }//try
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al leer la base de datos: " + ex.Message);
+                this.Desconectar();//Desconecta la base de datos en caso de error
+            }//catch
+
+            return cont;//Devuelve la lista
+        }//Consultar todos
+
+
+        public List<Usuarios> ConsultarTodosUsuarios()
+        {
+            List<Usuarios> datos = new List<Usuarios>();//Lista de tipo productos para almacenarlos
+            Usuarios aux;
+            int id = 0, monto = 0;
+            string cuenta, nombreCompleto, contraseña;
+            try
+            {
+                string query = "SELECT * FROM usuarios";//Consulta SQL para obtener todos los registros
+                MySqlCommand command = new MySqlCommand(query, this.conexion);//Prepara el comando sql
+                MySqlDataReader reader = command.ExecuteReader();//Ejecuta la consulta y obtiene la informacion
+                while (reader.Read())//Recorre los registros uno por uno
+                {
+                    //Obtiene los valores de cada columna de la tabla de datos
+                    id = Convert.ToInt32(reader["id"]);
+                    monto = Convert.ToInt32(reader["monto"]);
+                    cuenta = Convert.ToString(reader["cuenta"]) ?? "";
+                    nombreCompleto = Convert.ToString(reader["nombreCompleto"]) ?? "";
+                    contraseña = Convert.ToString(reader["contraseña"]) ?? "";
+
+                    //Se crea la instancia con los datos recopilados
+                    aux = new Usuarios(id, nombreCompleto, cuenta, contraseña, monto);
+                    datos.Add(aux);//Se agrega el objeto a la lista
+                }//while
+                reader.Close();
+            }//try
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al leer la base de datos: " + ex.Message);
+                this.Desconectar();//Desconecta la base de datos en caso de error
+            }//catch
+            return datos;
+        }
 
     }//clase
 }//namespace
