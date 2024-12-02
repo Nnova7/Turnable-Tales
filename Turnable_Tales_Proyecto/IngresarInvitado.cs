@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,9 +6,9 @@ using System.Windows.Forms;
 
 namespace Turnable_Tales_Proyecto
 {
-    public partial class IngresarAdministrador : Form
+    public partial class IngresarInvitado : Form
     {
-        public IngresarAdministrador()
+        public IngresarInvitado()
         {
             InitializeComponent();
         }
@@ -29,7 +25,7 @@ namespace Turnable_Tales_Proyecto
             this.Close();
         }
 
-        private void IngresarAdministrador_Load(object sender, EventArgs e)
+        private void IngresarInvitado_Load(object sender, EventArgs e)
         {
 
         }

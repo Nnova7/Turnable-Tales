@@ -72,6 +72,7 @@
             buttonInvitado.TabIndex = 47;
             buttonInvitado.Text = "I N V I T A D O";
             buttonInvitado.UseVisualStyleBackColor = true;
+            buttonInvitado.Click += buttonInvitado_Click;
             // 
             // buttonAdministrador
             // 
@@ -95,7 +96,7 @@
             label3.ForeColor = SystemColors.ButtonFace;
             label3.Location = new Point(193, 83);
             label3.Name = "label3";
-            label3.Size = new Size(229, 19);
+            label3.Size = new Size(186, 15);
             label3.TabIndex = 45;
             label3.Text = "I N I C I A R  S E S I Ó N  C O M O:";
             // 
@@ -107,7 +108,7 @@
             label4.ForeColor = SystemColors.ButtonFace;
             label4.Location = new Point(143, 46);
             label4.Name = "label4";
-            label4.Size = new Size(348, 37);
+            label4.Size = new Size(294, 32);
             label4.TabIndex = 44;
             label4.Text = "I N I C I O  D E  S E S I Ó N";
             // 

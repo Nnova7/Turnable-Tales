@@ -60,5 +60,13 @@ namespace Turnable_Tales_Proyecto
             usuario.ShowDialog();//muestra
             this.Close();//cierra
         }
+
+        private void buttonInvitado_Click(object sender, EventArgs e)
+        {
+            IngresarInvitado invitado = new IngresarInvitado();//Crea instancia
+            this.Hide();//Oculta el de atras
+            invitado.ShowDialog();//Muestra
+            this.Close();//Cierra
+        }
     }
 }
