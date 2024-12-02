@@ -31,7 +31,6 @@
             label4 = new Label();
             label5 = new Label();
             buttonSiguiente = new Button();
-            textBoxContraI = new TextBox();
             textBoxCuentaI = new TextBox();
             buttonAtras = new Button();
             label2 = new Label();
@@ -77,13 +76,6 @@
             buttonSiguiente.TabIndex = 84;
             buttonSiguiente.Text = "SIGUIENTE";
             buttonSiguiente.UseVisualStyleBackColor = false;
-            // 
-            // textBoxContraI
-            // 
-            textBoxContraI.Location = new Point(0, 0);
-            textBoxContraI.Name = "textBoxContraI";
-            textBoxContraI.Size = new Size(100, 27);
-            textBoxContraI.TabIndex = 85;
             // 
             // textBoxCuentaI
             // 
@@ -185,7 +177,6 @@
             ClientSize = new Size(585, 633);
             Controls.Add(textBoxContraA);
             Controls.Add(buttonSiguiente);
-            Controls.Add(textBoxContraI);
             Controls.Add(textBoxCuentaI);
             Controls.Add(buttonAtras);
             Controls.Add(label2);
@@ -207,7 +198,6 @@
         private Label label4;
         private Label label5;
         private Button buttonSiguiente;
-        private TextBox textBoxContraI;
         private TextBox textBoxCuentaI;
         private Button buttonAtras;
         private Label label2;
