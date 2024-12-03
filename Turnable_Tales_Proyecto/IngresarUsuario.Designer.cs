@@ -59,7 +59,7 @@
             textBoxContraU.Location = new Point(141, 423);
             textBoxContraU.Name = "textBoxContraU";
             textBoxContraU.PlaceholderText = "Ingresa la contraseña";
-            textBoxContraU.Size = new Size(341, 27);
+            textBoxContraU.Size = new Size(341, 23);
             textBoxContraU.TabIndex = 64;
             textBoxContraU.TextAlign = HorizontalAlignment.Center;
             // 
@@ -69,7 +69,7 @@
             textBoxCuentaU.Location = new Point(141, 294);
             textBoxCuentaU.Name = "textBoxCuentaU";
             textBoxCuentaU.PlaceholderText = "Ingresa tu cuenta";
-            textBoxCuentaU.Size = new Size(341, 27);
+            textBoxCuentaU.Size = new Size(341, 23);
             textBoxCuentaU.TabIndex = 63;
             textBoxCuentaU.TextAlign = HorizontalAlignment.Center;
             // 
@@ -93,7 +93,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(141, 381);
             label2.Name = "label2";
-            label2.Size = new Size(150, 20);
+            label2.Size = new Size(115, 15);
             label2.TabIndex = 61;
             label2.Text = "C O N T R A S E Ñ A:";
             // 
@@ -105,7 +105,7 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(141, 253);
             label1.Name = "label1";
-            label1.Size = new Size(93, 20);
+            label1.Size = new Size(71, 15);
             label1.TabIndex = 60;
             label1.Text = "C U E N T A:";
             // 
@@ -129,7 +129,7 @@
             label3.ForeColor = SystemColors.ButtonFace;
             label3.Location = new Point(189, 67);
             label3.Name = "label3";
-            label3.Size = new Size(186, 15);
+            label3.Size = new Size(167, 12);
             label3.TabIndex = 58;
             label3.Text = "I N I C I A R  S E S I Ó N  C O M O:";
             // 
@@ -141,7 +141,7 @@
             label4.ForeColor = SystemColors.ButtonFace;
             label4.Location = new Point(141, 35);
             label4.Name = "label4";
-            label4.Size = new Size(294, 32);
+            label4.Size = new Size(224, 26);
             label4.TabIndex = 57;
             label4.Text = "I N I C I O  D E  S E S I Ó N";
             // 
@@ -159,6 +159,7 @@
             Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(label4);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "IngresarUsuario";
             Text = "IngresarUsuario";
             ResumeLayout(false);
