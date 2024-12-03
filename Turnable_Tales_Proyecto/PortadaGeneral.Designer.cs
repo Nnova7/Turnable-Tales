@@ -379,7 +379,7 @@
             label51.ForeColor = Color.White;
             label51.Location = new Point(885, 311);
             label51.Name = "label51";
-            label51.Size = new Size(0, 32);
+            label51.Size = new Size(0, 21);
             label51.TabIndex = 182;
             // 
             // label52
@@ -510,7 +510,7 @@
             label62.ForeColor = Color.White;
             label62.Location = new Point(885, 285);
             label62.Name = "label62";
-            label62.Size = new Size(0, 32);
+            label62.Size = new Size(0, 21);
             label62.TabIndex = 171;
             // 
             // label63
@@ -641,7 +641,7 @@
             label74.ForeColor = Color.White;
             label74.Location = new Point(885, 256);
             label74.Name = "label74";
-            label74.Size = new Size(0, 32);
+            label74.Size = new Size(0, 21);
             label74.TabIndex = 160;
             // 
             // label31
@@ -772,7 +772,7 @@
             label41.ForeColor = Color.White;
             label41.Location = new Point(456, 299);
             label41.Name = "label41";
-            label41.Size = new Size(0, 32);
+            label41.Size = new Size(0, 21);
             label41.TabIndex = 149;
             // 
             // label20
@@ -903,7 +903,7 @@
             label30.ForeColor = Color.White;
             label30.Location = new Point(456, 268);
             label30.Name = "label30";
-            label30.Size = new Size(0, 32);
+            label30.Size = new Size(0, 21);
             label30.TabIndex = 138;
             // 
             // label19
@@ -1046,7 +1046,7 @@
             labelSlogan2.ForeColor = Color.White;
             labelSlogan2.Location = new Point(571, 290);
             labelSlogan2.Name = "labelSlogan2";
-            labelSlogan2.Size = new Size(205, 32);
+            labelSlogan2.Size = new Size(138, 21);
             labelSlogan2.TabIndex = 126;
             labelSlogan2.Text = "T U  V I N I L O.\"";
             // 
@@ -1058,7 +1058,7 @@
             labelFecha.ForeColor = SystemColors.ButtonFace;
             labelFecha.Location = new Point(405, 589);
             labelFecha.Name = "labelFecha";
-            labelFecha.Size = new Size(544, 30);
+            labelFecha.Size = new Size(370, 20);
             labelFecha.TabIndex = 125;
             labelFecha.Text = "AGS. AGUASCALIENTES A 15 DE DICIEMBRE DEL 2024";
             // 
@@ -1070,7 +1070,7 @@
             labelNombres.ForeColor = SystemColors.ButtonFace;
             labelNombres.Location = new Point(477, 473);
             labelNombres.Name = "labelNombres";
-            labelNombres.Size = new Size(402, 100);
+            labelNombres.Size = new Size(259, 60);
             labelNombres.TabIndex = 124;
             labelNombres.Text = "DULCE MARIANA ANDRADE OLVERA \nELIA GUADALUPE ARTEAGA DELGADO\nGEORGINA GUADALUPE CALZADA GONZÁLEZ \nVALERIA RAMOS LÓPEZ";
             labelNombres.TextAlign = ContentAlignment.MiddleCenter;
@@ -1083,7 +1083,7 @@
             labelIntegrantes.ForeColor = SystemColors.ButtonFace;
             labelIntegrantes.Location = new Point(547, 441);
             labelIntegrantes.Name = "labelIntegrantes";
-            labelIntegrantes.Size = new Size(243, 32);
+            labelIntegrantes.Size = new Size(159, 21);
             labelIntegrantes.TabIndex = 123;
             labelIntegrantes.Text = "I N T E G R A N T E S:";
             // 
@@ -1095,7 +1095,7 @@
             labelMestra.ForeColor = SystemColors.ButtonFace;
             labelMestra.Location = new Point(447, 395);
             labelMestra.Name = "labelMestra";
-            labelMestra.Size = new Size(438, 25);
+            labelMestra.Size = new Size(286, 15);
             labelMestra.TabIndex = 122;
             labelMestra.Text = "PROFESORA:  DRA.  GEORGINA  SALAZAR  PARTIDA";
             // 
@@ -1107,7 +1107,7 @@
             labelMateria.ForeColor = SystemColors.ButtonHighlight;
             labelMateria.Location = new Point(567, 367);
             labelMateria.Name = "labelMateria";
-            labelMateria.Size = new Size(193, 28);
+            labelMateria.Size = new Size(138, 19);
             labelMateria.TabIndex = 121;
             labelMateria.Text = "PROGRAMACIÓN  II";
             // 
@@ -1119,7 +1119,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(354, 170);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(595, 61);
+            labelTitulo.Size = new Size(398, 41);
             labelTitulo.TabIndex = 119;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -1132,7 +1132,7 @@
             labelSlogan.ForeColor = Color.White;
             labelSlogan.Location = new Point(477, 254);
             labelSlogan.Name = "labelSlogan";
-            labelSlogan.Size = new Size(384, 32);
+            labelSlogan.Size = new Size(255, 21);
             labelSlogan.TabIndex = 120;
             labelSlogan.Text = "\"T U  V I D A,  T U  M Ú S I C A, ";
             // 
@@ -1141,7 +1141,7 @@
             label1.AutoSize = true;
             label1.Location = new Point(547, 198);
             label1.Name = "label1";
-            label1.Size = new Size(0, 25);
+            label1.Size = new Size(0, 15);
             label1.TabIndex = 118;
             // 
             // buttonSiguiente
@@ -1251,6 +1251,7 @@
             Controls.Add(label1);
             Margin = new Padding(4);
             Name = "PortadaGeneral";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogoUAA).EndInit();

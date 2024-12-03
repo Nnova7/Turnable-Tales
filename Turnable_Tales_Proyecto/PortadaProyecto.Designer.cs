@@ -124,7 +124,7 @@ namespace Turnable_Tales_Proyecto
             label2.ForeColor = Color.White;
             label2.Location = new Point(526, 603);
             label2.Name = "label2";
-            label2.Size = new Size(305, 15);
+            label2.Size = new Size(202, 11);
             label2.TabIndex = 281;
             label2.Text = "S I S T E M A  D E  E S C R I T O R I O  S T A N D A L O N E ";
             // 
@@ -364,7 +364,7 @@ namespace Turnable_Tales_Proyecto
             label51.ForeColor = Color.White;
             label51.Location = new Point(919, 375);
             label51.Name = "label51";
-            label51.Size = new Size(0, 32);
+            label51.Size = new Size(0, 21);
             label51.TabIndex = 260;
             // 
             // label52
@@ -495,7 +495,7 @@ namespace Turnable_Tales_Proyecto
             label62.ForeColor = Color.White;
             label62.Location = new Point(919, 349);
             label62.Name = "label62";
-            label62.Size = new Size(0, 32);
+            label62.Size = new Size(0, 21);
             label62.TabIndex = 249;
             // 
             // label63
@@ -626,7 +626,7 @@ namespace Turnable_Tales_Proyecto
             label74.ForeColor = Color.White;
             label74.Location = new Point(919, 320);
             label74.Name = "label74";
-            label74.Size = new Size(0, 32);
+            label74.Size = new Size(0, 21);
             label74.TabIndex = 238;
             // 
             // label31
@@ -757,7 +757,7 @@ namespace Turnable_Tales_Proyecto
             label41.ForeColor = Color.White;
             label41.Location = new Point(490, 363);
             label41.Name = "label41";
-            label41.Size = new Size(0, 32);
+            label41.Size = new Size(0, 21);
             label41.TabIndex = 227;
             // 
             // label20
@@ -888,7 +888,7 @@ namespace Turnable_Tales_Proyecto
             label30.ForeColor = Color.White;
             label30.Location = new Point(490, 332);
             label30.Name = "label30";
-            label30.Size = new Size(0, 32);
+            label30.Size = new Size(0, 21);
             label30.TabIndex = 216;
             // 
             // label19
@@ -1031,7 +1031,7 @@ namespace Turnable_Tales_Proyecto
             label7.ForeColor = Color.White;
             label7.Location = new Point(605, 354);
             label7.Name = "label7";
-            label7.Size = new Size(205, 32);
+            label7.Size = new Size(138, 21);
             label7.TabIndex = 204;
             label7.Text = "T U  V I N I L O.\"";
             // 
@@ -1043,7 +1043,7 @@ namespace Turnable_Tales_Proyecto
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(388, 234);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(595, 61);
+            labelTitulo.Size = new Size(398, 41);
             labelTitulo.TabIndex = 202;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -1056,7 +1056,7 @@ namespace Turnable_Tales_Proyecto
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(511, 318);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(384, 32);
+            labelFrase.Size = new Size(255, 21);
             labelFrase.TabIndex = 203;
             labelFrase.Text = "\"T U  V I D A,  T U  M Ú S I C A, ";
             // 
@@ -1065,7 +1065,7 @@ namespace Turnable_Tales_Proyecto
             label1.AutoSize = true;
             label1.Location = new Point(581, 262);
             label1.Name = "label1";
-            label1.Size = new Size(0, 25);
+            label1.Size = new Size(0, 15);
             label1.TabIndex = 201;
             // 
             // pictureBoxLogo
@@ -1194,6 +1194,7 @@ namespace Turnable_Tales_Proyecto
             Controls.Add(labelFrase);
             Controls.Add(label1);
             Name = "PortadaProyecto";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "PortadaProyecto";
             Load += PortadaProyecto_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
