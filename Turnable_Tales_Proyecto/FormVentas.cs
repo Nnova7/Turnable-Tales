@@ -24,5 +24,13 @@ namespace Turnable_Tales_Proyecto
             mostrar.Show(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
+
+        private void buttonRegresar_Click(object sender, EventArgs e)
+        {
+            FormMenuAdmin menu = new FormMenuAdmin(); //se crea instancia
+            this.Hide();
+            menu.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
     }
 }

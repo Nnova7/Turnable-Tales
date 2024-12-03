@@ -55,6 +55,7 @@
             buttonRegresar.Size = new Size(82, 97);
             buttonRegresar.TabIndex = 63;
             buttonRegresar.UseVisualStyleBackColor = true;
+            buttonRegresar.Click += buttonRegresar_Click;
             // 
             // buttonSalir
             // 
