@@ -116,6 +116,7 @@
             labelSlogan = new Label();
             label1 = new Label();
             buttonSiguiente = new Button();
+            buttonSalir = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogoUAA).BeginInit();
             SuspendLayout();
             // 
@@ -1157,11 +1158,25 @@
             buttonSiguiente.UseVisualStyleBackColor = true;
             buttonSiguiente.Click += buttonSiguiente_Click;
             // 
+            // buttonSalir
+            // 
+            buttonSalir.BackColor = Color.Transparent;
+            buttonSalir.BackgroundImage = Properties.Resources.Fondo;
+            buttonSalir.Font = new Font("Segoe UI Emoji", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonSalir.ForeColor = Color.White;
+            buttonSalir.Location = new Point(1125, 581);
+            buttonSalir.Name = "buttonSalir";
+            buttonSalir.Size = new Size(150, 36);
+            buttonSalir.TabIndex = 285;
+            buttonSalir.Text = "SALIR";
+            buttonSalir.UseVisualStyleBackColor = false;
+            // 
             // PortadaGeneral
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1302, 633);
+            Controls.Add(buttonSalir);
             Controls.Add(buttonSiguiente);
             Controls.Add(pictureBoxLogoUAA);
             Controls.Add(label83);
@@ -1348,5 +1363,6 @@
         private Label labelSlogan;
         private Label label1;
         private Button buttonSiguiente;
+        private Button buttonSalir;
     }
 }
