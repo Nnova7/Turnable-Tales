@@ -32,5 +32,10 @@ namespace Turnable_Tales_Proyecto
             menu.Show(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
+
+        private void FormAgregarDisco_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
