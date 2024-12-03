@@ -211,6 +211,7 @@
             buttonEfectivo.TabIndex = 221;
             buttonEfectivo.Text = "PAGO EN EFECTIVO";
             buttonEfectivo.UseVisualStyleBackColor = false;
+            buttonEfectivo.Click += buttonEfectivo_Click;
             // 
             // button2
             // 
@@ -238,6 +239,7 @@
             buttonTarjeta.TabIndex = 219;
             buttonTarjeta.Text = "PAGO CON TARJETA";
             buttonTarjeta.UseVisualStyleBackColor = false;
+            buttonTarjeta.Click += buttonTarjeta_Click;
             // 
             // buttonAgregar
             // 
@@ -411,6 +413,7 @@
             Controls.Add(labelTitulo);
             Controls.Add(labelFrase);
             Name = "Eureka";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Eureka";
             Load += Eureka_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
