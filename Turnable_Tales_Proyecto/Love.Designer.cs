@@ -212,6 +212,7 @@
             button3.TabIndex = 221;
             button3.Text = "PAGO EN EFECTIVO";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -225,6 +226,7 @@
             button2.TabIndex = 220;
             button2.Text = "PAGO EN OXXO";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
