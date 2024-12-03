@@ -29,7 +29,47 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonAgregarDisco_Click(object sender, EventArgs e)
         {
+            FormAgregarDisco agregarDisc = new FormAgregarDisco(); //se crea instancia
+            this.Hide();
+            agregarDisc.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
 
+        private void buttonVentasTotales_Click(object sender, EventArgs e)
+        {
+            FormVentas ventas = new FormVentas(); //se crea instancia
+            this.Hide();
+            ventas.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
+
+        private void buttonEliminaDisco_Click(object sender, EventArgs e)
+        {
+            FormEliminar eliminar = new FormEliminar(); //se crea instancia
+            this.Hide();
+            eliminar.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
+
+        private void buttonGraficas_Click(object sender, EventArgs e)
+        {
+            FormGraficas graficas = new FormGraficas(); //se crea instancia
+            this.Hide();
+            graficas.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
+
+        private void buttonListado_Click(object sender, EventArgs e)
+        {
+            FormListado listado = new FormListado(); //se crea instancia
+            this.Hide();
+            listado.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
+
+        private void buttonSalir_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

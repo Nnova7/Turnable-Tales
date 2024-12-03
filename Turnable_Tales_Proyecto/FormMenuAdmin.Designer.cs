@@ -87,7 +87,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(421, 103);
             label2.Name = "label2";
-            label2.Size = new Size(455, 50);
+            label2.Size = new Size(371, 41);
             label2.TabIndex = 35;
             label2.Text = "A D M I N I S T R A D O R\r\n";
             label2.TextAlign = ContentAlignment.TopCenter;
@@ -125,7 +125,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(400, -6);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(493, 50);
+            labelTitulo.Size = new Size(398, 41);
             labelTitulo.TabIndex = 29;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -137,7 +137,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(521, 49);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(237, 20);
+            labelFrase.Size = new Size(190, 15);
             labelFrase.TabIndex = 30;
             labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
             // 
@@ -150,6 +150,7 @@
             buttonSalir.Size = new Size(187, 50);
             buttonSalir.TabIndex = 28;
             buttonSalir.UseVisualStyleBackColor = true;
+            buttonSalir.Click += buttonSalir_Click;
             // 
             // buttonListado
             // 
@@ -161,6 +162,7 @@
             buttonListado.TabIndex = 27;
             buttonListado.Text = "button7";
             buttonListado.UseVisualStyleBackColor = true;
+            buttonListado.Click += buttonListado_Click;
             // 
             // buttonGraficas
             // 
@@ -172,6 +174,7 @@
             buttonGraficas.TabIndex = 26;
             buttonGraficas.Text = "button6";
             buttonGraficas.UseVisualStyleBackColor = true;
+            buttonGraficas.Click += buttonGraficas_Click;
             // 
             // buttonEliminaDisco
             // 
@@ -183,6 +186,7 @@
             buttonEliminaDisco.TabIndex = 25;
             buttonEliminaDisco.Text = "button5";
             buttonEliminaDisco.UseVisualStyleBackColor = true;
+            buttonEliminaDisco.Click += buttonEliminaDisco_Click;
             // 
             // buttonVentasTotales
             // 
@@ -194,6 +198,7 @@
             buttonVentasTotales.TabIndex = 24;
             buttonVentasTotales.Text = "button4";
             buttonVentasTotales.UseVisualStyleBackColor = true;
+            buttonVentasTotales.Click += buttonVentasTotales_Click;
             // 
             // buttonAgregarDisco
             // 
@@ -215,7 +220,7 @@
             labelMenu.ForeColor = Color.White;
             labelMenu.Location = new Point(603, 191);
             labelMenu.Name = "labelMenu";
-            labelMenu.Size = new Size(79, 36);
+            labelMenu.Size = new Size(64, 28);
             labelMenu.TabIndex = 23;
             labelMenu.Text = "MENU";
             // 
