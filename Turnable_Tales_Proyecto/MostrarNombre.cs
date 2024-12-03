@@ -50,5 +50,10 @@ namespace Turnable_Tales_Proyecto
             textBoxHora.Text = DateTime.Now.ToShortTimeString();
             textBoxFecha.Text = DateTime.Now.ToShortDateString();
         }
+
+        private void textBoxFecha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

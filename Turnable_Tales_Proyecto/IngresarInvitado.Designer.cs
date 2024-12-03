@@ -179,7 +179,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.cafe;
-            ClientSize = new Size(512, 475);
+            ClientSize = new Size(585, 633);
             Controls.Add(textBoxContraA);
             Controls.Add(buttonSiguiente);
             Controls.Add(textBoxCuentaI);
