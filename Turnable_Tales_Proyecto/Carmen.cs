@@ -32,5 +32,29 @@ namespace Turnable_Tales_Proyecto
             discos.Show(); // Muestra
             this.Close(); //Oculta
         }
+
+        private void buttonTarjeta_Click(object sender, EventArgs e)
+        {
+            Tarjeta tarjeta = new Tarjeta(); //se crea instancia
+            this.Hide();
+            tarjeta.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
+
+        private void buttonEfectivo_Click(object sender, EventArgs e)
+        {
+            Efectivo efectivo = new Efectivo(); //se crea instancia
+            this.Hide();
+            efectivo.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
+
+        private void buttonOxxo_Click(object sender, EventArgs e)
+        {
+            Oxxo oxxo = new Oxxo(); //se crea instancia
+            this.Hide();
+            oxxo.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
     }
 }
