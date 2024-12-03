@@ -413,6 +413,7 @@
             Controls.Add(labelTitulo);
             Controls.Add(labelFrase);
             Name = "Sad";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Sad";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
