@@ -1170,6 +1170,7 @@
             buttonSalir.TabIndex = 285;
             buttonSalir.Text = "SALIR";
             buttonSalir.UseVisualStyleBackColor = false;
+            buttonSalir.Click += buttonSalir_Click;
             // 
             // PortadaGeneral
             // 

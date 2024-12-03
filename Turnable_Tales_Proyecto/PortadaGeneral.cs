@@ -51,5 +51,10 @@ namespace Turnable_Tales_Proyecto
             segundaPortada.ShowDialog();
             this.Show();
         }
+
+        private void buttonSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();//cierra
+        }
     }
 }
