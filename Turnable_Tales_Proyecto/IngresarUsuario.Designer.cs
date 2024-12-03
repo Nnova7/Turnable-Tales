@@ -160,7 +160,7 @@
             Controls.Add(label3);
             Controls.Add(label4);
             FormBorderStyle = FormBorderStyle.None;
-            Location = new Point(500, 0);
+            Location = new Point(750, 55);
             Name = "IngresarUsuario";
             StartPosition = FormStartPosition.Manual;
             Text = "IngresarUsuario";
