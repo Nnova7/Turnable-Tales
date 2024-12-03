@@ -68,7 +68,7 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(185, 130);
             label1.Name = "label1";
-            label1.Size = new Size(1784, 4);
+            label1.Size = new Size(893, 3);
             label1.TabIndex = 208;
             label1.Text = resources.GetString("label1.Text");
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -81,7 +81,7 @@
             labelLinea.ForeColor = Color.White;
             labelLinea.Location = new Point(185, 116);
             labelLinea.Name = "labelLinea";
-            labelLinea.Size = new Size(1784, 4);
+            labelLinea.Size = new Size(893, 3);
             labelLinea.TabIndex = 207;
             labelLinea.Text = resources.GetString("labelLinea.Text");
             labelLinea.TextAlign = ContentAlignment.TopCenter;
@@ -126,7 +126,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(376, 9);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(595, 61);
+            labelTitulo.Size = new Size(398, 41);
             labelTitulo.TabIndex = 202;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -138,7 +138,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(506, 70);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(288, 25);
+            labelFrase.Size = new Size(190, 15);
             labelFrase.TabIndex = 203;
             labelFrase.Text = "\"TU VIDA, TU MÚSICA, TU VINILO.\"\r\n";
             // 
@@ -159,7 +159,7 @@
             label11.ForeColor = Color.White;
             label11.Location = new Point(1192, 179);
             label11.Name = "label11";
-            label11.Size = new Size(54, 20);
+            label11.Size = new Size(37, 13);
             label11.TabIndex = 225;
             label11.Text = "37690";
             // 
@@ -171,7 +171,7 @@
             label10.ForeColor = Color.White;
             label10.Location = new Point(784, 187);
             label10.Name = "label10";
-            label10.Size = new Size(42, 20);
+            label10.Size = new Size(28, 13);
             label10.TabIndex = 224;
             label10.Text = "BTS";
             // 
@@ -183,7 +183,7 @@
             label9.ForeColor = Color.White;
             label9.Location = new Point(773, 217);
             label9.Name = "label9";
-            label9.Size = new Size(55, 20);
+            label9.Size = new Size(36, 13);
             label9.TabIndex = 223;
             label9.Text = "K-Pop";
             label9.TextAlign = ContentAlignment.TopCenter;
@@ -195,7 +195,7 @@
             label8.ForeColor = Color.White;
             label8.Location = new Point(680, 237);
             label8.Name = "label8";
-            label8.Size = new Size(459, 61);
+            label8.Size = new Size(304, 41);
             label8.TabIndex = 222;
             label8.Text = "Love Youself Answer";
             label8.TextAlign = ContentAlignment.TopCenter;
@@ -238,6 +238,7 @@
             button1.TabIndex = 219;
             button1.Text = "PAGO CON TARJETA";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // buttonAgregar
             // 
@@ -259,7 +260,7 @@
             textBoxNumero.ForeColor = SystemColors.MenuBar;
             textBoxNumero.Location = new Point(698, 460);
             textBoxNumero.Name = "textBoxNumero";
-            textBoxNumero.Size = new Size(81, 31);
+            textBoxNumero.Size = new Size(81, 23);
             textBoxNumero.TabIndex = 217;
             textBoxNumero.Text = "7";
             textBoxNumero.TextAlign = HorizontalAlignment.Center;
@@ -272,7 +273,7 @@
             label7.ForeColor = Color.White;
             label7.Location = new Point(689, 432);
             label7.Name = "label7";
-            label7.Size = new Size(149, 25);
+            label7.Size = new Size(94, 15);
             label7.TabIndex = 216;
             label7.Text = "EN EXISTENCIA:";
             // 
@@ -282,7 +283,7 @@
             domainUpDownCantidad.ForeColor = SystemColors.InactiveBorder;
             domainUpDownCantidad.Location = new Point(698, 393);
             domainUpDownCantidad.Name = "domainUpDownCantidad";
-            domainUpDownCantidad.Size = new Size(81, 31);
+            domainUpDownCantidad.Size = new Size(81, 23);
             domainUpDownCantidad.TabIndex = 215;
             // 
             // label6
@@ -293,7 +294,7 @@
             label6.ForeColor = Color.White;
             label6.Location = new Point(689, 355);
             label6.Name = "label6";
-            label6.Size = new Size(111, 25);
+            label6.Size = new Size(71, 15);
             label6.TabIndex = 214;
             label6.Text = "CANTIDAD:";
             // 
@@ -305,7 +306,7 @@
             label5.ForeColor = Color.White;
             label5.Location = new Point(686, 213);
             label5.Name = "label5";
-            label5.Size = new Size(90, 25);
+            label5.Size = new Size(57, 15);
             label5.TabIndex = 213;
             label5.Text = "GÉNERO:";
             // 
@@ -317,7 +318,7 @@
             label4.ForeColor = Color.White;
             label4.Location = new Point(686, 183);
             label4.Name = "label4";
-            label4.Size = new Size(92, 25);
+            label4.Size = new Size(58, 15);
             label4.TabIndex = 212;
             label4.Text = "ARTISTA:";
             // 
@@ -329,7 +330,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(1154, 175);
             label2.Name = "label2";
-            label2.Size = new Size(36, 25);
+            label2.Size = new Size(23, 15);
             label2.TabIndex = 211;
             label2.Text = "ID:";
             // 
@@ -352,7 +353,7 @@
             label3.ForeColor = Color.White;
             label3.Location = new Point(588, 179);
             label3.Name = "label3";
-            label3.Size = new Size(0, 42);
+            label3.Size = new Size(0, 28);
             label3.TabIndex = 209;
             // 
             // label12
@@ -363,7 +364,7 @@
             label12.ForeColor = Color.White;
             label12.Location = new Point(689, 298);
             label12.Name = "label12";
-            label12.Size = new Size(105, 38);
+            label12.Size = new Size(72, 25);
             label12.TabIndex = 228;
             label12.Text = "$1,430";
             // 
@@ -411,6 +412,7 @@
             Controls.Add(labelTitulo);
             Controls.Add(labelFrase);
             Name = "Love";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Love";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

@@ -32,5 +32,12 @@ namespace Turnable_Tales_Proyecto
             discos.Show();//muestra
             this.Close();//cierra
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Tarjeta tarjeta = new Tarjeta(); //se crea instancia
+            this.Hide();
+            tarjeta.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
     }
 }

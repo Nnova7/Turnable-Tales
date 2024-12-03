@@ -412,6 +412,7 @@
             Controls.Add(buttonMusica);
             Controls.Add(buttonRegresar);
             Name = "Tarjeta";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Tarjeta";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
