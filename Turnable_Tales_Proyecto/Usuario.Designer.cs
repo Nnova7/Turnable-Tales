@@ -96,7 +96,7 @@
             label3.ForeColor = SystemColors.ButtonFace;
             label3.Location = new Point(193, 83);
             label3.Name = "label3";
-            label3.Size = new Size(186, 15);
+            label3.Size = new Size(167, 12);
             label3.TabIndex = 45;
             label3.Text = "I N I C I A R  S E S I Ó N  C O M O:";
             // 
@@ -108,7 +108,7 @@
             label4.ForeColor = SystemColors.ButtonFace;
             label4.Location = new Point(143, 46);
             label4.Name = "label4";
-            label4.Size = new Size(294, 32);
+            label4.Size = new Size(224, 26);
             label4.TabIndex = 44;
             label4.Text = "I N I C I O  D E  S E S I Ó N";
             // 
@@ -123,7 +123,10 @@
             Controls.Add(buttonAdministrador);
             Controls.Add(label3);
             Controls.Add(label4);
+            FormBorderStyle = FormBorderStyle.None;
+            Location = new Point(150, 0);
             Name = "Usuario";
+            StartPosition = FormStartPosition.Manual;
             Text = "Usuario";
             ResumeLayout(false);
             PerformLayout();
