@@ -26,7 +26,7 @@ namespace Turnable_Tales_Proyecto
         private void buttonUsuario_Click(object sender, EventArgs e)
         {
             Usuario usuario = new Usuario();
-            this.Hide();
+            //this.Hide();
             usuario.ShowDialog();
             this.Show();
         }
