@@ -235,6 +235,7 @@
             button1.Size = new Size(97, 89);
             button1.TabIndex = 188;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // FormMenuAdmin
             // 

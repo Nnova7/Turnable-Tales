@@ -105,7 +105,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(453, 104);
             label2.Name = "label2";
-            label2.Size = new Size(455, 50);
+            label2.Size = new Size(371, 41);
             label2.TabIndex = 58;
             label2.Text = "A D M I N I S T R A D O R\r\n";
             label2.TextAlign = ContentAlignment.TopCenter;
@@ -143,7 +143,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(432, 9);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(493, 50);
+            labelTitulo.Size = new Size(398, 41);
             labelTitulo.TabIndex = 52;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -155,7 +155,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(567, 59);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(237, 20);
+            labelFrase.Size = new Size(190, 15);
             labelFrase.TabIndex = 53;
             labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
             // 
@@ -167,7 +167,7 @@
             labelMenu.ForeColor = Color.White;
             labelMenu.Location = new Point(336, 186);
             labelMenu.Name = "labelMenu";
-            labelMenu.Size = new Size(703, 36);
+            labelMenu.Size = new Size(571, 28);
             labelMenu.TabIndex = 51;
             labelMenu.Text = "LISTADO DE DISCOS ORDENADOS POR EXISTENCIAS";
             // 
@@ -182,6 +182,7 @@
             button1.Size = new Size(97, 89);
             button1.TabIndex = 191;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // imageListDiscos
             // 

@@ -83,7 +83,7 @@
             labeltxtDiscoaEliminar.ForeColor = Color.White;
             labeltxtDiscoaEliminar.Location = new Point(410, 287);
             labeltxtDiscoaEliminar.Name = "labeltxtDiscoaEliminar";
-            labeltxtDiscoaEliminar.Size = new Size(481, 50);
+            labeltxtDiscoaEliminar.Size = new Size(392, 41);
             labeltxtDiscoaEliminar.TabIndex = 59;
             labeltxtDiscoaEliminar.Text = "ID DEL DISCO A ELIMINAR";
             labeltxtDiscoaEliminar.TextAlign = ContentAlignment.TopCenter;
@@ -96,7 +96,7 @@
             labeltxtEliminardisco.ForeColor = Color.White;
             labeltxtEliminardisco.Location = new Point(531, 199);
             labeltxtEliminardisco.Name = "labeltxtEliminardisco";
-            labeltxtEliminardisco.Size = new Size(239, 36);
+            labeltxtEliminardisco.Size = new Size(194, 28);
             labeltxtEliminardisco.TabIndex = 51;
             labeltxtEliminardisco.Text = "ELIMINAR DISCO\r\n";
             // 
@@ -107,7 +107,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(531, 64);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(237, 20);
+            labelFrase.Size = new Size(190, 15);
             labelFrase.TabIndex = 53;
             labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
             // 
@@ -118,7 +118,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(410, 9);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(493, 50);
+            labelTitulo.Size = new Size(398, 41);
             labelTitulo.TabIndex = 52;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -156,7 +156,7 @@
             labelAdministrador.ForeColor = Color.White;
             labelAdministrador.Location = new Point(431, 112);
             labelAdministrador.Name = "labelAdministrador";
-            labelAdministrador.Size = new Size(455, 50);
+            labelAdministrador.Size = new Size(371, 41);
             labelAdministrador.TabIndex = 57;
             labelAdministrador.Text = "A D M I N I S T R A D O R\r\n";
             labelAdministrador.TextAlign = ContentAlignment.TopCenter;
@@ -193,6 +193,7 @@
             button1.Size = new Size(97, 89);
             button1.TabIndex = 189;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // textBoxId
             // 
@@ -200,7 +201,7 @@
             textBoxId.Location = new Point(431, 357);
             textBoxId.Name = "textBoxId";
             textBoxId.PlaceholderText = "INTRODUZCA UN DATO";
-            textBoxId.Size = new Size(428, 27);
+            textBoxId.Size = new Size(428, 23);
             textBoxId.TabIndex = 190;
             textBoxId.TextAlign = HorizontalAlignment.Center;
             // 
