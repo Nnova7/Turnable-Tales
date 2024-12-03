@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAgregarDisco));
             buttonRegresar = new Button();
-            buttonSalir = new Button();
             buttonActualiza = new Button();
             button1 = new Button();
             buttonMusica = new Button();
@@ -71,16 +70,6 @@
             buttonRegresar.TabIndex = 73;
             buttonRegresar.UseVisualStyleBackColor = true;
             buttonRegresar.Click += buttonRegresar_Click;
-            // 
-            // buttonSalir
-            // 
-            buttonSalir.FlatStyle = FlatStyle.Popup;
-            buttonSalir.Image = (Image)resources.GetObject("buttonSalir.Image");
-            buttonSalir.Location = new Point(1080, 563);
-            buttonSalir.Name = "buttonSalir";
-            buttonSalir.Size = new Size(194, 58);
-            buttonSalir.TabIndex = 72;
-            buttonSalir.UseVisualStyleBackColor = true;
             // 
             // buttonActualiza
             // 
@@ -441,7 +430,6 @@
             Controls.Add(labelFrase);
             Controls.Add(labelMenu);
             Controls.Add(buttonRegresar);
-            Controls.Add(buttonSalir);
             Controls.Add(buttonActualiza);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormAgregarDisco";
@@ -454,7 +442,6 @@
 
         #endregion
         private Button buttonRegresar;
-        private Button buttonSalir;
         private Button buttonActualiza;
         private Button button1;
         private Button buttonMusica;

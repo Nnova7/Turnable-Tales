@@ -37,7 +37,6 @@
             labelLinea = new Label();
             labelTitulo = new Label();
             labelFrase = new Label();
-            buttonSalir = new Button();
             buttonListado = new Button();
             buttonGraficas = new Button();
             buttonEliminaDisco = new Button();
@@ -141,17 +140,6 @@
             labelFrase.TabIndex = 30;
             labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
             // 
-            // buttonSalir
-            // 
-            buttonSalir.FlatStyle = FlatStyle.Popup;
-            buttonSalir.Image = (Image)resources.GetObject("buttonSalir.Image");
-            buttonSalir.Location = new Point(554, 524);
-            buttonSalir.Name = "buttonSalir";
-            buttonSalir.Size = new Size(187, 50);
-            buttonSalir.TabIndex = 28;
-            buttonSalir.UseVisualStyleBackColor = true;
-            buttonSalir.Click += buttonSalir_Click;
-            // 
             // buttonListado
             // 
             buttonListado.FlatStyle = FlatStyle.Popup;
@@ -251,7 +239,6 @@
             Controls.Add(labelLinea);
             Controls.Add(labelTitulo);
             Controls.Add(labelFrase);
-            Controls.Add(buttonSalir);
             Controls.Add(buttonListado);
             Controls.Add(buttonGraficas);
             Controls.Add(buttonEliminaDisco);
@@ -278,7 +265,6 @@
         private Label labelLinea;
         private Label labelTitulo;
         private Label labelFrase;
-        private Button buttonSalir;
         private Button buttonListado;
         private Button buttonGraficas;
         private Button buttonEliminaDisco;

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGraficas));
             pictureBox1 = new PictureBox();
-            buttonSalir = new Button();
             buttonRegresar = new Button();
             buttonMusica = new Button();
             label2 = new Label();
@@ -53,16 +52,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 65;
             pictureBox1.TabStop = false;
-            // 
-            // buttonSalir
-            // 
-            buttonSalir.FlatStyle = FlatStyle.Popup;
-            buttonSalir.Image = (Image)resources.GetObject("buttonSalir.Image");
-            buttonSalir.Location = new Point(1103, 572);
-            buttonSalir.Name = "buttonSalir";
-            buttonSalir.Size = new Size(187, 50);
-            buttonSalir.TabIndex = 64;
-            buttonSalir.UseVisualStyleBackColor = true;
             // 
             // buttonRegresar
             // 
@@ -179,7 +168,6 @@
             ClientSize = new Size(1302, 633);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
-            Controls.Add(buttonSalir);
             Controls.Add(buttonRegresar);
             Controls.Add(buttonMusica);
             Controls.Add(label2);
@@ -200,7 +188,6 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Button buttonSalir;
         private Button buttonRegresar;
         private Button buttonMusica;
         private Label label2;

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEliminar));
             buttonRegresar = new Button();
-            buttonSalir = new Button();
             buttonEnter = new Button();
             labeltxtDiscoaEliminar = new Label();
             labeltxtEliminardisco = new Label();
@@ -56,16 +55,6 @@
             buttonRegresar.TabIndex = 63;
             buttonRegresar.UseVisualStyleBackColor = true;
             buttonRegresar.Click += buttonRegresar_Click;
-            // 
-            // buttonSalir
-            // 
-            buttonSalir.FlatStyle = FlatStyle.Popup;
-            buttonSalir.Image = (Image)resources.GetObject("buttonSalir.Image");
-            buttonSalir.Location = new Point(1093, 564);
-            buttonSalir.Name = "buttonSalir";
-            buttonSalir.Size = new Size(194, 58);
-            buttonSalir.TabIndex = 62;
-            buttonSalir.UseVisualStyleBackColor = true;
             // 
             // buttonEnter
             // 
@@ -215,7 +204,6 @@
             Controls.Add(button1);
             Controls.Add(pictureBox1);
             Controls.Add(buttonRegresar);
-            Controls.Add(buttonSalir);
             Controls.Add(buttonEnter);
             Controls.Add(labeltxtDiscoaEliminar);
             Controls.Add(buttonMusica);
@@ -236,7 +224,6 @@
 
         #endregion
         private Button buttonRegresar;
-        private Button buttonSalir;
         private Button buttonEnter;
         private Label labeltxtDiscoaEliminar;
         private Label labeltxtEliminardisco;

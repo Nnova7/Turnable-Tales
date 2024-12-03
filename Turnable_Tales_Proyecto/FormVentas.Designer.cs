@@ -40,7 +40,6 @@
             labelFrase = new Label();
             labelMenu = new Label();
             buttonRegresar = new Button();
-            buttonSalir = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -172,22 +171,11 @@
             buttonRegresar.UseVisualStyleBackColor = true;
             buttonRegresar.Click += buttonRegresar_Click;
             // 
-            // buttonSalir
-            // 
-            buttonSalir.FlatStyle = FlatStyle.Popup;
-            buttonSalir.Image = (Image)resources.GetObject("buttonSalir.Image");
-            buttonSalir.Location = new Point(1096, 563);
-            buttonSalir.Name = "buttonSalir";
-            buttonSalir.Size = new Size(194, 58);
-            buttonSalir.TabIndex = 214;
-            buttonSalir.UseVisualStyleBackColor = true;
-            // 
             // FormVentas
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 633);
-            Controls.Add(buttonSalir);
             Controls.Add(button1);
             Controls.Add(buttonMusica);
             Controls.Add(buttonUsuario);
@@ -221,6 +209,5 @@
         private Label labelFrase;
         private Label labelMenu;
         private Button buttonRegresar;
-        private Button buttonSalir;
     }
 }
