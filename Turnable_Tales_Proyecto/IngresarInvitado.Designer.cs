@@ -70,10 +70,10 @@
             buttonSiguiente.BackgroundImageLayout = ImageLayout.Center;
             buttonSiguiente.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             buttonSiguiente.ForeColor = SystemColors.ButtonHighlight;
-            buttonSiguiente.Location = new Point(178, 391);
+            buttonSiguiente.Location = new Point(203, 521);
             buttonSiguiente.Margin = new Padding(3, 2, 3, 2);
             buttonSiguiente.Name = "buttonSiguiente";
-            buttonSiguiente.Size = new Size(173, 27);
+            buttonSiguiente.Size = new Size(198, 36);
             buttonSiguiente.TabIndex = 84;
             buttonSiguiente.Text = "SIGUIENTE";
             buttonSiguiente.UseVisualStyleBackColor = false;
@@ -81,11 +81,11 @@
             // textBoxCuentaI
             // 
             textBoxCuentaI.BackColor = Color.Silver;
-            textBoxCuentaI.Location = new Point(123, 220);
+            textBoxCuentaI.Location = new Point(141, 294);
             textBoxCuentaI.Margin = new Padding(3, 2, 3, 2);
             textBoxCuentaI.Name = "textBoxCuentaI";
             textBoxCuentaI.PlaceholderText = "Ingresa tu cuenta";
-            textBoxCuentaI.Size = new Size(299, 23);
+            textBoxCuentaI.Size = new Size(341, 23);
             textBoxCuentaI.TabIndex = 82;
             textBoxCuentaI.TextAlign = HorizontalAlignment.Center;
             // 
@@ -94,10 +94,10 @@
             buttonAtras.BackColor = Color.Transparent;
             buttonAtras.FlatStyle = FlatStyle.Popup;
             buttonAtras.Image = Properties.Resources.flechaizq;
-            buttonAtras.Location = new Point(9, 210);
+            buttonAtras.Location = new Point(10, 280);
             buttonAtras.Margin = new Padding(3, 2, 3, 2);
             buttonAtras.Name = "buttonAtras";
-            buttonAtras.Size = new Size(60, 54);
+            buttonAtras.Size = new Size(68, 72);
             buttonAtras.TabIndex = 81;
             buttonAtras.UseVisualStyleBackColor = false;
             buttonAtras.Click += buttonAtras_Click;
@@ -108,7 +108,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(123, 286);
+            label2.Location = new Point(141, 381);
             label2.Name = "label2";
             label2.Size = new Size(115, 15);
             label2.TabIndex = 80;
@@ -120,7 +120,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(123, 190);
+            label1.Location = new Point(141, 253);
             label1.Name = "label1";
             label1.Size = new Size(71, 15);
             label1.TabIndex = 79;
@@ -131,7 +131,7 @@
             button1.BackgroundImage = Properties.Resources.cafe;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(117, 89);
+            button1.Location = new Point(134, 119);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.Size = new Size(318, 58);
@@ -166,18 +166,17 @@
             // textBoxContraA
             // 
             textBoxContraA.BackColor = Color.Silver;
-            textBoxContraA.Location = new Point(123, 317);
+            textBoxContraA.Location = new Point(141, 423);
             textBoxContraA.Margin = new Padding(3, 2, 3, 2);
             textBoxContraA.Name = "textBoxContraA";
             textBoxContraA.PlaceholderText = "Ingresa la contraseña";
-            textBoxContraA.Size = new Size(299, 23);
+            textBoxContraA.Size = new Size(341, 23);
             textBoxContraA.TabIndex = 86;
             textBoxContraA.TextAlign = HorizontalAlignment.Center;
             // 
             // IngresarInvitado
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.cafe;
             ClientSize = new Size(585, 633);
             Controls.Add(textBoxContraA);
