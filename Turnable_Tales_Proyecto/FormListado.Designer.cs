@@ -209,6 +209,7 @@
             Controls.Add(labelMenu);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormListado";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
