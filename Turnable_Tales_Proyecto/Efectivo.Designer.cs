@@ -280,6 +280,7 @@
             Controls.Add(buttonRegresar);
             Margin = new Padding(4, 5, 4, 5);
             Name = "Efectivo";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Efectivo";
             ((System.ComponentModel.ISupportInitialize)pictureBoxDatos).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();

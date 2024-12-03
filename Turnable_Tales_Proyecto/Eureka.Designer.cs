@@ -41,9 +41,9 @@
             label10 = new Label();
             label9 = new Label();
             label8 = new Label();
-            button3 = new Button();
+            buttonEfectivo = new Button();
             button2 = new Button();
-            button1 = new Button();
+            buttonTarjeta = new Button();
             buttonAgregar = new Button();
             textBoxNumero = new TextBox();
             label7 = new Label();
@@ -68,7 +68,7 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(183, 130);
             label1.Name = "label1";
-            label1.Size = new Size(1784, 4);
+            label1.Size = new Size(893, 3);
             label1.TabIndex = 208;
             label1.Text = resources.GetString("label1.Text");
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -81,7 +81,7 @@
             labelLinea.ForeColor = Color.White;
             labelLinea.Location = new Point(183, 116);
             labelLinea.Name = "labelLinea";
-            labelLinea.Size = new Size(1784, 4);
+            labelLinea.Size = new Size(893, 3);
             labelLinea.TabIndex = 207;
             labelLinea.Text = resources.GetString("labelLinea.Text");
             labelLinea.TextAlign = ContentAlignment.TopCenter;
@@ -126,7 +126,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(374, 9);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(595, 61);
+            labelTitulo.Size = new Size(398, 41);
             labelTitulo.TabIndex = 202;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -138,7 +138,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(504, 70);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(288, 25);
+            labelFrase.Size = new Size(190, 15);
             labelFrase.TabIndex = 203;
             labelFrase.Text = "\"TU VIDA, TU MÚSICA, TU VINILO.\"\r\n";
             // 
@@ -159,7 +159,7 @@
             label11.ForeColor = Color.White;
             label11.Location = new Point(1191, 165);
             label11.Name = "label11";
-            label11.Size = new Size(54, 20);
+            label11.Size = new Size(37, 13);
             label11.TabIndex = 225;
             label11.Text = "37892";
             // 
@@ -171,7 +171,7 @@
             label10.ForeColor = Color.White;
             label10.Location = new Point(779, 177);
             label10.Name = "label10";
-            label10.Size = new Size(118, 20);
+            label10.Size = new Size(76, 13);
             label10.TabIndex = 224;
             label10.Text = "Mother Mother";
             // 
@@ -183,7 +183,7 @@
             label9.ForeColor = Color.White;
             label9.Location = new Point(770, 208);
             label9.Name = "label9";
-            label9.Size = new Size(47, 20);
+            label9.Size = new Size(33, 13);
             label9.TabIndex = 223;
             label9.Text = "Rock";
             // 
@@ -194,23 +194,23 @@
             label8.ForeColor = Color.White;
             label8.Location = new Point(681, 229);
             label8.Name = "label8";
-            label8.Size = new Size(198, 61);
+            label8.Size = new Size(132, 41);
             label8.TabIndex = 222;
             label8.Text = "EUREKA";
             label8.TextAlign = ContentAlignment.TopCenter;
             // 
-            // button3
+            // buttonEfectivo
             // 
-            button3.BackColor = Color.FromArgb(128, 64, 0);
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.ForeColor = SystemColors.ButtonHighlight;
-            button3.Location = new Point(886, 570);
-            button3.Name = "button3";
-            button3.Size = new Size(173, 38);
-            button3.TabIndex = 221;
-            button3.Text = "PAGO EN EFECTIVO";
-            button3.UseVisualStyleBackColor = false;
+            buttonEfectivo.BackColor = Color.FromArgb(128, 64, 0);
+            buttonEfectivo.FlatStyle = FlatStyle.Popup;
+            buttonEfectivo.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonEfectivo.ForeColor = SystemColors.ButtonHighlight;
+            buttonEfectivo.Location = new Point(886, 570);
+            buttonEfectivo.Name = "buttonEfectivo";
+            buttonEfectivo.Size = new Size(173, 38);
+            buttonEfectivo.TabIndex = 221;
+            buttonEfectivo.Text = "PAGO EN EFECTIVO";
+            buttonEfectivo.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -224,19 +224,20 @@
             button2.TabIndex = 220;
             button2.Text = "PAGO EN OXXO";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
-            // button1
+            // buttonTarjeta
             // 
-            button1.BackColor = Color.FromArgb(128, 64, 0);
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(681, 570);
-            button1.Name = "button1";
-            button1.Size = new Size(173, 38);
-            button1.TabIndex = 219;
-            button1.Text = "PAGO CON TARJETA";
-            button1.UseVisualStyleBackColor = false;
+            buttonTarjeta.BackColor = Color.FromArgb(128, 64, 0);
+            buttonTarjeta.FlatStyle = FlatStyle.Popup;
+            buttonTarjeta.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonTarjeta.ForeColor = SystemColors.ButtonHighlight;
+            buttonTarjeta.Location = new Point(681, 570);
+            buttonTarjeta.Name = "buttonTarjeta";
+            buttonTarjeta.Size = new Size(173, 38);
+            buttonTarjeta.TabIndex = 219;
+            buttonTarjeta.Text = "PAGO CON TARJETA";
+            buttonTarjeta.UseVisualStyleBackColor = false;
             // 
             // buttonAgregar
             // 
@@ -258,7 +259,7 @@
             textBoxNumero.ForeColor = SystemColors.MenuBar;
             textBoxNumero.Location = new Point(692, 467);
             textBoxNumero.Name = "textBoxNumero";
-            textBoxNumero.Size = new Size(81, 31);
+            textBoxNumero.Size = new Size(81, 23);
             textBoxNumero.TabIndex = 217;
             textBoxNumero.Text = "9";
             textBoxNumero.TextAlign = HorizontalAlignment.Center;
@@ -271,7 +272,7 @@
             label7.ForeColor = Color.White;
             label7.Location = new Point(683, 439);
             label7.Name = "label7";
-            label7.Size = new Size(149, 25);
+            label7.Size = new Size(94, 15);
             label7.TabIndex = 216;
             label7.Text = "EN EXISTENCIA:";
             // 
@@ -281,7 +282,7 @@
             domainUpDownCantidad.ForeColor = SystemColors.InactiveBorder;
             domainUpDownCantidad.Location = new Point(692, 386);
             domainUpDownCantidad.Name = "domainUpDownCantidad";
-            domainUpDownCantidad.Size = new Size(81, 31);
+            domainUpDownCantidad.Size = new Size(81, 23);
             domainUpDownCantidad.TabIndex = 215;
             // 
             // label6
@@ -292,7 +293,7 @@
             label6.ForeColor = Color.White;
             label6.Location = new Point(683, 348);
             label6.Name = "label6";
-            label6.Size = new Size(111, 25);
+            label6.Size = new Size(71, 15);
             label6.TabIndex = 214;
             label6.Text = "CANTIDAD:";
             // 
@@ -304,7 +305,7 @@
             label5.ForeColor = Color.White;
             label5.Location = new Point(683, 204);
             label5.Name = "label5";
-            label5.Size = new Size(90, 25);
+            label5.Size = new Size(57, 15);
             label5.TabIndex = 213;
             label5.Text = "GÉNERO:";
             // 
@@ -316,7 +317,7 @@
             label4.ForeColor = Color.White;
             label4.Location = new Point(681, 173);
             label4.Name = "label4";
-            label4.Size = new Size(92, 25);
+            label4.Size = new Size(58, 15);
             label4.TabIndex = 212;
             label4.Text = "ARTISTA:";
             // 
@@ -328,7 +329,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(1153, 161);
             label2.Name = "label2";
-            label2.Size = new Size(36, 25);
+            label2.Size = new Size(23, 15);
             label2.TabIndex = 211;
             label2.Text = "ID:";
             // 
@@ -351,7 +352,7 @@
             label3.ForeColor = Color.White;
             label3.Location = new Point(587, 177);
             label3.Name = "label3";
-            label3.Size = new Size(0, 42);
+            label3.Size = new Size(0, 28);
             label3.TabIndex = 209;
             // 
             // label12
@@ -362,7 +363,7 @@
             label12.ForeColor = Color.White;
             label12.Location = new Point(696, 290);
             label12.Name = "label12";
-            label12.Size = new Size(105, 38);
+            label12.Size = new Size(72, 25);
             label12.TabIndex = 229;
             label12.Text = "$1,500";
             // 
@@ -389,9 +390,9 @@
             Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(label8);
-            Controls.Add(button3);
+            Controls.Add(buttonEfectivo);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(buttonTarjeta);
             Controls.Add(buttonAgregar);
             Controls.Add(textBoxNumero);
             Controls.Add(label7);
@@ -432,9 +433,9 @@
         private Label label10;
         private Label label9;
         private Label label8;
-        private Button button3;
+        private Button buttonEfectivo;
         private Button button2;
-        private Button button1;
+        private Button buttonTarjeta;
         private Button buttonAgregar;
         private TextBox textBoxNumero;
         private Label label7;
