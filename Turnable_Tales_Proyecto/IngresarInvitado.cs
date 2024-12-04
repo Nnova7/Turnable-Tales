@@ -51,6 +51,7 @@ namespace Turnable_Tales_Proyecto
             //Si los campos están vacios
             if (string.IsNullOrEmpty(cuentaIngresada) || string.IsNullOrEmpty(contraseñaIngresada))
             {
+                //Manda un mensaje
                 MessageBox.Show("Por favor ingrese una cuenta y una contraseña", "Campos vacíos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -66,13 +67,14 @@ namespace Turnable_Tales_Proyecto
             {
                 MessageBox.Show("Bienvenido", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Mostrar Form6 y ocultar el formulario actual
+                // Mostrar Form de Bienvenido y ocultar el formulario actual
                 Bienvenido bienvenido = new Bienvenido();
-                bienvenido.Show();
-                this.Hide();
+                bienvenido.Show();//mostrar
+                this.Hide();//ocultar
             }
             else
             {
+                // Muestra un mensaje
                 MessageBox.Show("Cuenta o contraseña incorrectas", "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

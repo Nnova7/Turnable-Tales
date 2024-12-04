@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bienvenido));
-            buttonSalir = new Button();
-            buttonUsuario = new Button();
             pictureBoxLogo = new PictureBox();
             label2 = new Label();
             buttonSiguiente = new Button();
@@ -39,31 +37,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // buttonSalir
-            // 
-            buttonSalir.BackColor = Color.Transparent;
-            buttonSalir.BackgroundImage = Properties.Resources.Fondo;
-            buttonSalir.Font = new Font("Segoe UI Emoji", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonSalir.ForeColor = Color.White;
-            buttonSalir.Location = new Point(1108, 583);
-            buttonSalir.Name = "buttonSalir";
-            buttonSalir.Size = new Size(150, 36);
-            buttonSalir.TabIndex = 367;
-            buttonSalir.Text = "SALIR";
-            buttonSalir.UseVisualStyleBackColor = false;
-            // 
-            // buttonUsuario
-            // 
-            buttonUsuario.BackColor = Color.Transparent;
-            buttonUsuario.FlatStyle = FlatStyle.Flat;
-            buttonUsuario.ForeColor = SystemColors.ControlText;
-            buttonUsuario.Image = Properties.Resources.usuariosinfondo;
-            buttonUsuario.Location = new Point(1152, 13);
-            buttonUsuario.Name = "buttonUsuario";
-            buttonUsuario.Size = new Size(90, 90);
-            buttonUsuario.TabIndex = 366;
-            buttonUsuario.UseVisualStyleBackColor = true;
             // 
             // pictureBoxLogo
             // 
@@ -134,8 +107,6 @@
             Controls.Add(buttonSiguiente);
             Controls.Add(buttonBienvenido);
             Controls.Add(pictureBox1);
-            Controls.Add(buttonSalir);
-            Controls.Add(buttonUsuario);
             Controls.Add(pictureBoxLogo);
             Controls.Add(label2);
             Name = "Bienvenido";
@@ -147,9 +118,6 @@
         }
 
         #endregion
-
-        private Button buttonSalir;
-        private Button buttonUsuario;
         private PictureBox pictureBoxLogo;
         private Label label2;
         private Button buttonSiguiente;
