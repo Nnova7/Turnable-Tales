@@ -106,7 +106,7 @@
             label8.ForeColor = SystemColors.ButtonHighlight;
             label8.Location = new Point(805, 163);
             label8.Name = "label8";
-            label8.Size = new Size(83, 25);
+            label8.Size = new Size(54, 15);
             label8.TabIndex = 117;
             label8.Text = "K - P O P";
             // 
@@ -116,7 +116,7 @@
             label7.ForeColor = SystemColors.ButtonHighlight;
             label7.Location = new Point(542, 163);
             label7.Name = "label7";
-            label7.Size = new Size(106, 25);
+            label7.Size = new Size(69, 15);
             label7.TabIndex = 116;
             label7.Text = "C L Á S I CA";
             // 
@@ -126,7 +126,7 @@
             label6.ForeColor = SystemColors.ButtonHighlight;
             label6.Location = new Point(276, 163);
             label6.Name = "label6";
-            label6.Size = new Size(136, 25);
+            label6.Size = new Size(85, 15);
             label6.TabIndex = 115;
             label6.Text = "C O R R I D O S";
             // 
@@ -136,7 +136,7 @@
             label5.ForeColor = SystemColors.ButtonHighlight;
             label5.Location = new Point(62, 163);
             label5.Name = "label5";
-            label5.Size = new Size(73, 25);
+            label5.Size = new Size(47, 15);
             label5.TabIndex = 114;
             label5.Text = "R O C K";
             // 
@@ -170,7 +170,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(356, 108);
             label2.Name = "label2";
-            label2.Size = new Size(681, 38);
+            label2.Size = new Size(451, 25);
             label2.TabIndex = 111;
             label2.Text = "D I S C O S   M U S I C A L E S  D I S P O N I B L E S ";
             label2.TextAlign = ContentAlignment.TopCenter;
@@ -183,7 +183,7 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(167, 146);
             label1.Name = "label1";
-            label1.Size = new Size(1784, 4);
+            label1.Size = new Size(893, 3);
             label1.TabIndex = 110;
             label1.Text = resources.GetString("label1.Text");
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -196,7 +196,7 @@
             labelLinea.ForeColor = Color.White;
             labelLinea.Location = new Point(180, 104);
             labelLinea.Name = "labelLinea";
-            labelLinea.Size = new Size(1784, 4);
+            labelLinea.Size = new Size(893, 3);
             labelLinea.TabIndex = 109;
             labelLinea.Text = resources.GetString("labelLinea.Text");
             labelLinea.TextAlign = ContentAlignment.TopCenter;
@@ -208,7 +208,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(385, 9);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(595, 61);
+            labelTitulo.Size = new Size(398, 41);
             labelTitulo.TabIndex = 106;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -220,7 +220,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(508, 70);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(288, 25);
+            labelFrase.Size = new Size(190, 15);
             labelFrase.TabIndex = 107;
             labelFrase.Text = "\"TU VIDA, TU MÚSICA, TU VINILO.\"\r\n";
             // 
@@ -232,7 +232,7 @@
             label3.ForeColor = Color.White;
             label3.Location = new Point(586, 193);
             label3.Name = "label3";
-            label3.Size = new Size(0, 42);
+            label3.Size = new Size(0, 28);
             label3.TabIndex = 105;
             // 
             // pictureBoxRock1
@@ -251,7 +251,7 @@
             label4.ForeColor = SystemColors.ButtonHighlight;
             label4.Location = new Point(1075, 163);
             label4.Name = "label4";
-            label4.Size = new Size(106, 25);
+            label4.Size = new Size(67, 15);
             label4.TabIndex = 128;
             label4.Text = "N U E V O S";
             // 
@@ -348,7 +348,7 @@
             label9.ForeColor = SystemColors.ButtonHighlight;
             label9.Location = new Point(23, 354);
             label9.Name = "label9";
-            label9.Size = new Size(104, 15);
+            label9.Size = new Size(71, 11);
             label9.TabIndex = 162;
             label9.Text = "MOTHER MOTHER";
             // 
@@ -360,7 +360,7 @@
             label10.ForeColor = Color.White;
             label10.Location = new Point(23, 369);
             label10.Name = "label10";
-            label10.Size = new Size(100, 25);
+            label10.Size = new Size(64, 15);
             label10.TabIndex = 161;
             label10.Text = "\"EUREKA\"";
             // 
@@ -483,7 +483,7 @@
             label11.ForeColor = SystemColors.ButtonHighlight;
             label11.Location = new Point(12, 585);
             label11.Name = "label11";
-            label11.Size = new Size(115, 15);
+            label11.Size = new Size(76, 11);
             label11.TabIndex = 172;
             label11.Text = "L O S  C A I F A N E S";
             // 
@@ -495,7 +495,7 @@
             label12.ForeColor = Color.White;
             label12.Location = new Point(9, 600);
             label12.Name = "label12";
-            label12.Size = new Size(118, 21);
+            label12.Size = new Size(80, 13);
             label12.TabIndex = 171;
             label12.Text = "\"EL SILENCIO\"";
             // 
@@ -506,7 +506,7 @@
             label13.ForeColor = SystemColors.ButtonHighlight;
             label13.Location = new Point(264, 356);
             label13.Name = "label13";
-            label13.Size = new Size(78, 15);
+            label13.Size = new Size(54, 11);
             label13.TabIndex = 181;
             label13.Text = "Tito Double P";
             // 
@@ -518,7 +518,7 @@
             label14.ForeColor = Color.White;
             label14.Location = new Point(257, 371);
             label14.Name = "label14";
-            label14.Size = new Size(133, 25);
+            label14.Size = new Size(86, 15);
             label14.TabIndex = 180;
             label14.Text = "\"INCÓMODO\"";
             label14.Click += label14_Click;
@@ -530,7 +530,7 @@
             label15.ForeColor = SystemColors.ButtonHighlight;
             label15.Location = new Point(264, 584);
             label15.Name = "label15";
-            label15.Size = new Size(123, 15);
+            label15.Size = new Size(85, 11);
             label15.TabIndex = 183;
             label15.Text = "Antonio Herrera Pérez";
             // 
@@ -542,7 +542,7 @@
             label16.ForeColor = Color.White;
             label16.Location = new Point(257, 600);
             label16.Name = "label16";
-            label16.Size = new Size(134, 25);
+            label16.Size = new Size(87, 15);
             label16.TabIndex = 182;
             label16.Text = "\"SAD BOYZ 2\"";
             // 
@@ -553,7 +553,7 @@
             label17.ForeColor = SystemColors.ButtonHighlight;
             label17.Location = new Point(508, 356);
             label17.Name = "label17";
-            label17.Size = new Size(89, 15);
+            label17.Size = new Size(60, 11);
             label17.TabIndex = 185;
             label17.Text = "GEORGES BIZET";
             // 
@@ -565,7 +565,7 @@
             label18.ForeColor = Color.White;
             label18.Location = new Point(503, 371);
             label18.Name = "label18";
-            label18.Size = new Size(142, 21);
+            label18.Size = new Size(97, 13);
             label18.TabIndex = 184;
             label18.Text = "\"CARMEN SUITE\"";
             // 
@@ -576,7 +576,7 @@
             label19.ForeColor = SystemColors.ButtonHighlight;
             label19.Location = new Point(503, 585);
             label19.Name = "label19";
-            label19.Size = new Size(87, 15);
+            label19.Size = new Size(58, 11);
             label19.TabIndex = 188;
             label19.Text = "LEONCAVALLO";
             // 
@@ -588,7 +588,7 @@
             label21.ForeColor = Color.White;
             label21.Location = new Point(503, 600);
             label21.Name = "label21";
-            label21.Size = new Size(106, 25);
+            label21.Size = new Size(68, 15);
             label21.TabIndex = 186;
             label21.Text = "\"VESTILA\" ";
             // 
@@ -600,7 +600,7 @@
             label20.Location = new Point(763, 356);
             label20.Margin = new Padding(2, 0, 2, 0);
             label20.Name = "label20";
-            label20.Size = new Size(39, 15);
+            label20.Size = new Size(26, 11);
             label20.TabIndex = 200;
             label20.Text = "ATEEZ";
             // 
@@ -613,7 +613,7 @@
             label23.Location = new Point(760, 373);
             label23.Margin = new Padding(2, 0, 2, 0);
             label23.Name = "label23";
-            label23.Size = new Size(136, 25);
+            label23.Size = new Size(88, 15);
             label23.TabIndex = 198;
             label23.Text = "\"THE WORLD\"";
             // 
@@ -625,7 +625,7 @@
             label22.Location = new Point(760, 582);
             label22.Margin = new Padding(2, 0, 2, 0);
             label22.Name = "label22";
-            label22.Size = new Size(25, 15);
+            label22.Size = new Size(18, 11);
             label22.TabIndex = 203;
             label22.Text = "BTS";
             // 
@@ -638,7 +638,7 @@
             label25.Location = new Point(760, 597);
             label25.Margin = new Padding(2, 0, 2, 0);
             label25.Name = "label25";
-            label25.Size = new Size(148, 21);
+            label25.Size = new Size(101, 13);
             label25.TabIndex = 201;
             label25.Text = "\"LOVE YOURSELF\"";
             // 
@@ -697,6 +697,7 @@
             Controls.Add(label3);
             ForeColor = Color.Black;
             Name = "ListaGeneros";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ListaGeneros";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxRock1).EndInit();
