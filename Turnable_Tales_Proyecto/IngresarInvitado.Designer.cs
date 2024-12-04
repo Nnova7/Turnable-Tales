@@ -49,7 +49,7 @@
             label4.ForeColor = SystemColors.ButtonFace;
             label4.Location = new Point(127, 225);
             label4.Name = "label4";
-            label4.Size = new Size(0, 26);
+            label4.Size = new Size(0, 37);
             label4.TabIndex = 67;
             // 
             // label5
@@ -60,7 +60,7 @@
             label5.ForeColor = Color.White;
             label5.Location = new Point(190, 230);
             label5.Name = "label5";
-            label5.Size = new Size(0, 15);
+            label5.Size = new Size(0, 25);
             label5.TabIndex = 75;
             // 
             // buttonSiguiente
@@ -77,6 +77,7 @@
             buttonSiguiente.TabIndex = 84;
             buttonSiguiente.Text = "SIGUIENTE";
             buttonSiguiente.UseVisualStyleBackColor = false;
+            buttonSiguiente.Click += buttonSiguiente_Click;
             // 
             // textBoxCuentaI
             // 
@@ -85,9 +86,10 @@
             textBoxCuentaI.Margin = new Padding(3, 2, 3, 2);
             textBoxCuentaI.Name = "textBoxCuentaI";
             textBoxCuentaI.PlaceholderText = "Ingresa tu cuenta";
-            textBoxCuentaI.Size = new Size(341, 23);
+            textBoxCuentaI.Size = new Size(341, 31);
             textBoxCuentaI.TabIndex = 82;
             textBoxCuentaI.TextAlign = HorizontalAlignment.Center;
+            textBoxCuentaI.TextChanged += textBoxCuentaI_TextChanged;
             // 
             // buttonAtras
             // 
@@ -110,7 +112,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(141, 381);
             label2.Name = "label2";
-            label2.Size = new Size(115, 15);
+            label2.Size = new Size(184, 25);
             label2.TabIndex = 80;
             label2.Text = "C O N T R A S E Ñ A:";
             // 
@@ -122,7 +124,7 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(141, 253);
             label1.Name = "label1";
-            label1.Size = new Size(71, 15);
+            label1.Size = new Size(114, 25);
             label1.TabIndex = 79;
             label1.Text = "C U E N T A:";
             // 
@@ -147,7 +149,7 @@
             label3.ForeColor = SystemColors.ButtonFace;
             label3.Location = new Point(165, 50);
             label3.Name = "label3";
-            label3.Size = new Size(167, 12);
+            label3.Size = new Size(229, 19);
             label3.TabIndex = 77;
             label3.Text = "I N I C I A R  S E S I Ó N  C O M O:";
             // 
@@ -159,7 +161,7 @@
             label6.ForeColor = SystemColors.ButtonFace;
             label6.Location = new Point(123, 26);
             label6.Name = "label6";
-            label6.Size = new Size(224, 26);
+            label6.Size = new Size(348, 37);
             label6.TabIndex = 76;
             label6.Text = "I N I C I O  D E  S E S I Ó N";
             // 
@@ -170,9 +172,10 @@
             textBoxContraA.Margin = new Padding(3, 2, 3, 2);
             textBoxContraA.Name = "textBoxContraA";
             textBoxContraA.PlaceholderText = "Ingresa la contraseña";
-            textBoxContraA.Size = new Size(341, 23);
+            textBoxContraA.Size = new Size(341, 31);
             textBoxContraA.TabIndex = 86;
             textBoxContraA.TextAlign = HorizontalAlignment.Center;
+            textBoxContraA.TextChanged += textBoxContraA_TextChanged;
             // 
             // IngresarInvitado
             // 
