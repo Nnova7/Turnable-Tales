@@ -56,5 +56,9 @@ namespace Turnable_Tales_Proyecto
 
         }
 
+        private void textBoxUsuario_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
