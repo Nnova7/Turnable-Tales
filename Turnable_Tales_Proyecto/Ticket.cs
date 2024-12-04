@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
+using System.Runtime.CompilerServices;
+
 namespace Turnable_Tales_Proyecto
 {
     public partial class Ticket : Form
