@@ -299,5 +299,70 @@ namespace Turnable_Tales_Proyecto
             return datos;
         }
 
+        /// <summary>
+        /// Debe de validar que la cuenta y contraseña sean las que se colocan de Administración.
+        /// </summary>
+        /// <param name="cuenta"></param>
+        /// <param name="contraseña"></param>
+        /// <returns></returns>
+        public bool ConsultarCuentaContraAdmin(string cuenta, string contraseña)
+        {
+            // Define las cuentas válidas
+            string cuentaValida = "admin";
+            string contraseñaValida = "meilleure";
+
+            // Compara las cuentas ingresadas con las válidas
+            return cuenta == cuentaValida && contraseña == contraseñaValida;
+        }//consultarCuentaContraAdmin
+
+        /// <summary>
+        /// Debe de validar que la cuenta y contraseña sean las que se colocan de Usuario.
+        /// </summary>
+        /// <param name="cuenta"></param>
+        /// <param name="contraseña"></param>
+        /// <returns></returns>
+        public bool ConsultarCuentaContraUsuario(string cuenta, string contraseña)
+        {
+            // Bloquear cuentas específicas
+            if ((cuenta == "admin" && contraseña == "meilleure") ||
+                (cuenta == "guest" && contraseña == "ennemie"))
+            {
+                return false; // Bloquear el acceso
+            }
+            try
+            {
+                string query = "SELECT * FROM usuarios WHERE cuenta = cuenta AND contraseña = contraseña";
+                MySqlCommand command = new MySqlCommand(query, this.conexion);
+                command.Parameters.AddWithValue("cuenta", cuenta);
+                command.Parameters.AddWithValue("contraseña", contraseña);
+
+                MySqlDataReader reader = command.ExecuteReader();
+                bool existe = reader.HasRows;
+                reader.Close();
+                return existe;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al verificar cuenta y contraseña: " + ex.Message);
+                return false;
+            }
+        }//consultarCuentaContraUsuario
+
+        /// <summary>
+        /// Debe de validar que la cuenta y contraseña sean las que se colocan de Invitado.
+        /// </summary>
+        /// <param name="cuenta"></param>
+        /// <param name="contraseña"></param>
+        /// <returns></returns>
+        public bool ConsultarCuentaContraInv(string cuenta, string contraseña)
+        {
+            // Define las cuentas válidas
+            string cuentaValida = "guest";
+            string contraseñaValida = "ennemie";
+
+            // Compara las cuentas ingresadas con las válidas
+            return cuenta == cuentaValida && contraseña == contraseñaValida;
+        }//consultarCuentaContraAdmin
+
     }//clase
 }//namespace
