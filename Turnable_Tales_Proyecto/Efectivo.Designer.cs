@@ -172,10 +172,10 @@
             // buttonTicket
             // 
             buttonTicket.BackColor = Color.Transparent;
-            buttonTicket.BackgroundImage = Properties.Resources.verTick;
-            buttonTicket.Location = new Point(1083, 515);
+            buttonTicket.BackgroundImage = Properties.Resources.verTicket;
+            buttonTicket.Location = new Point(1099, 547);
             buttonTicket.Name = "buttonTicket";
-            buttonTicket.Size = new Size(123, 26);
+            buttonTicket.Size = new Size(157, 26);
             buttonTicket.TabIndex = 195;
             buttonTicket.UseVisualStyleBackColor = false;
             // 
