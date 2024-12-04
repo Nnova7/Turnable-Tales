@@ -20,7 +20,7 @@ namespace Turnable_Tales_Proyecto
         private void buttonUsuario_Click(object sender, EventArgs e)
         {
             MostrarNombre mostrar = new MostrarNombre(); //se crea instancia
-            this.Hide();
+            //this.Hide();
             mostrar.Show(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
@@ -35,7 +35,7 @@ namespace Turnable_Tales_Proyecto
         private void button1_Click(object sender, EventArgs e)
         {
             Tarjeta tarjeta = new Tarjeta(); //se crea instancia
-            this.Hide();
+            //this.Hide();
             tarjeta.Show(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
@@ -43,7 +43,7 @@ namespace Turnable_Tales_Proyecto
         private void button3_Click(object sender, EventArgs e)
         {
             Efectivo efectivo = new Efectivo(); //se crea instancia
-            this.Hide();
+            //this.Hide();
             efectivo.Show(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
@@ -51,7 +51,7 @@ namespace Turnable_Tales_Proyecto
         private void button2_Click(object sender, EventArgs e)
         {
             Oxxo oxxo = new Oxxo(); //se crea instancia
-            this.Hide();
+            //this.Hide();
             oxxo.Show(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
