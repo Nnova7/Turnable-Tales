@@ -109,7 +109,7 @@ namespace Turnable_Tales_Proyecto
             AddCellToTable(table, "IMPORTE", contentFont, Element.ALIGN_RIGHT);
 
             // Agregar datos dinámicos
-            List<Ticket> tickets = GetSampleTickets(); // Obtener datos
+            List<Impresion> tickets = GetSampleTickets(); // Obtener datos
             foreach (var ticket in tickets)
             {
                 AddCellToTable(table, ticket.Cantidad.ToString(), contentFont, Element.ALIGN_CENTER);
@@ -176,14 +176,13 @@ namespace Turnable_Tales_Proyecto
             };
             table.AddCell(cell);
         }
-        private List<Ticket> GetSampleTickets()
+        private List<Impresion> GetSampleTickets()
         {
-            return new List<Ticket>
+            return new List<Impresion>
             {
-                new Ticket { Cantidad = 1, Articulo = "Disco 1", Precio = 400 },
-                new Ticket { Cantidad = 1, Articulo = "Disco 2", Precio = 200 }
+                new Impresion { Cantidad = 1, Articulo = "Disco 1", Precio = 400 },
+                new Impresion { Cantidad = 1, Articulo = "Disco 2", Precio = 200 }
             };
         }
-    }
     }
 }
