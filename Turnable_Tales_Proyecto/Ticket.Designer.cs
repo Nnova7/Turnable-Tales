@@ -120,6 +120,7 @@
             Controls.Add(buttonUsuario);
             Controls.Add(pictureBoxTicket);
             Name = "Ticket";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Ticket";
             ((System.ComponentModel.ISupportInitialize)pictureBoxTicket).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
