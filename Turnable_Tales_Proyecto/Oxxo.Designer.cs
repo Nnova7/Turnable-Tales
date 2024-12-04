@@ -91,10 +91,10 @@
             // buttonTicket
             // 
             buttonTicket.BackColor = Color.Transparent;
-            buttonTicket.BackgroundImage = Properties.Resources.descargarticket;
-            buttonTicket.Location = new Point(1083, 515);
+            buttonTicket.BackgroundImage = Properties.Resources.verTicket;
+            buttonTicket.Location = new Point(1100, 544);
             buttonTicket.Name = "buttonTicket";
-            buttonTicket.Size = new Size(175, 58);
+            buttonTicket.Size = new Size(158, 29);
             buttonTicket.TabIndex = 196;
             buttonTicket.UseVisualStyleBackColor = false;
             // 
