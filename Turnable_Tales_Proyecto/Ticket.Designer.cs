@@ -82,6 +82,7 @@
             buttonRegresar.Size = new Size(60, 67);
             buttonRegresar.TabIndex = 194;
             buttonRegresar.UseVisualStyleBackColor = false;
+            buttonRegresar.Click += buttonRegresar_Click;
             // 
             // pictureBoxLogo
             // 
