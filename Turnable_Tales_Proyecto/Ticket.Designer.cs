@@ -41,6 +41,7 @@
             // 
             // pictureBoxTicket
             // 
+            pictureBoxTicket.BackgroundImage = Properties.Resources.TurntableTi;
             pictureBoxTicket.Location = new Point(346, 12);
             pictureBoxTicket.Name = "pictureBoxTicket";
             pictureBoxTicket.Size = new Size(392, 555);
