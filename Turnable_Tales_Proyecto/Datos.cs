@@ -363,6 +363,5 @@ namespace Turnable_Tales_Proyecto
             // Compara las cuentas ingresadas con las válidas
             return cuenta == cuentaValida && contraseña == contraseñaValida;
         }//consultarCuentaContraAdmin
-
     }//clase
 }//namespace
