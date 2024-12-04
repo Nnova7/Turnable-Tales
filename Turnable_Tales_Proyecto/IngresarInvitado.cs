@@ -59,7 +59,7 @@ namespace Turnable_Tales_Proyecto
             Datos obj = new Datos();
 
             // Verificar si la cuenta y contraseña son válidas
-            bool accesoPermitido = obj.ConsultarCuentaContraAdmin(cuentaIngresada, contraseñaIngresada);
+            bool accesoPermitido = obj.ConsultarCuentaContraInv(cuentaIngresada, contraseñaIngresada);
 
             //Si lo que recibe en acceso permitido es correcto entonces realiza la siguiente acción
             if (accesoPermitido)
