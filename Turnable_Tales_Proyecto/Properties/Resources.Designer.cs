@@ -649,5 +649,15 @@ namespace Turnable_Tales_Proyecto.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_12_03_at_9_15_30_AM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-12-03 at 9.15.30 AM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

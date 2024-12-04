@@ -37,5 +37,10 @@ namespace Turnable_Tales_Proyecto
             listageneros.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
+
+        private void buttonTicket_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

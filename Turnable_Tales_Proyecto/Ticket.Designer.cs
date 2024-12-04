@@ -41,7 +41,7 @@
             // 
             // pictureBoxTicket
             // 
-            pictureBoxTicket.BackgroundImage = Properties.Resources.TurntableTi;
+            pictureBoxTicket.BackgroundImage = Properties.Resources.WhatsApp_Image_2024_12_03_at_9_15_30_AM;
             pictureBoxTicket.Location = new Point(346, 12);
             pictureBoxTicket.Name = "pictureBoxTicket";
             pictureBoxTicket.Size = new Size(392, 555);
@@ -105,6 +105,7 @@
             buttonTicket.Size = new Size(175, 58);
             buttonTicket.TabIndex = 204;
             buttonTicket.UseVisualStyleBackColor = false;
+            buttonTicket.Click += buttonTicket_Click;
             // 
             // Ticket
             // 
