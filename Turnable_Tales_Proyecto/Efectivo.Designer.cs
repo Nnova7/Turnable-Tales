@@ -62,6 +62,7 @@
             buttonRegresar.Size = new Size(60, 67);
             buttonRegresar.TabIndex = 0;
             buttonRegresar.UseVisualStyleBackColor = false;
+            buttonRegresar.Click += buttonRegresar_Click;
             // 
             // labelTitulo
             // 
@@ -179,6 +180,7 @@
             buttonTicket.Size = new Size(157, 26);
             buttonTicket.TabIndex = 195;
             buttonTicket.UseVisualStyleBackColor = false;
+            buttonTicket.Click += buttonTicket_Click;
             // 
             // textBoxNPedido
             // 

@@ -24,5 +24,21 @@ namespace Turnable_Tales_Proyecto
             mostrar.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
+
+        private void buttonRegresar_Click(object sender, EventArgs e)
+        {
+            ListaGeneros listageneros = new ListaGeneros(); //se crea instancia
+            this.Hide();
+            listageneros.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
+
+        private void buttonTicket_Click(object sender, EventArgs e)
+        {
+            Ticket ticket = new Ticket(); //se crea instancia
+            this.Hide();
+            ticket.Show(); // Mostrar
+            this.Close(); // Cerrar el formulario actual 
+        }
     }
 }

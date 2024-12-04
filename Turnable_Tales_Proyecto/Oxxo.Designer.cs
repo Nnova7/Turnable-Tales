@@ -64,6 +64,7 @@
             buttonRegresar.Size = new Size(60, 67);
             buttonRegresar.TabIndex = 1;
             buttonRegresar.UseVisualStyleBackColor = false;
+            buttonRegresar.Click += buttonRegresar_Click;
             // 
             // buttonMusica
             // 
@@ -98,6 +99,7 @@
             buttonTicket.Size = new Size(158, 29);
             buttonTicket.TabIndex = 196;
             buttonTicket.UseVisualStyleBackColor = false;
+            buttonTicket.Click += buttonTicket_Click;
             // 
             // labelTitulo
             // 

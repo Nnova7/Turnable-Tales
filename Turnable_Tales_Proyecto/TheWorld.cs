@@ -44,8 +44,8 @@ namespace Turnable_Tales_Proyecto
         private void buttonEfectivo_Click(object sender, EventArgs e)
         {
             Efectivo efectivo = new Efectivo(); //se crea instancia
-            //this.Hide();
-            efectivo.Show(); // Mostrar
+            this.Hide();
+            efectivo.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
 
