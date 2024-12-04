@@ -137,6 +137,7 @@
             buttonUsuario.Size = new Size(92, 78);
             buttonUsuario.TabIndex = 191;
             buttonUsuario.UseVisualStyleBackColor = false;
+            buttonUsuario.Click += buttonUsuario_Click;
             // 
             // buttonMusica
             // 

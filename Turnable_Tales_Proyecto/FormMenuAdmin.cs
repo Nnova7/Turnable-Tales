@@ -75,7 +75,7 @@ namespace Turnable_Tales_Proyecto
         private void button1_Click(object sender, EventArgs e)
         {
             MostrarNombre mostrar = new MostrarNombre(); //se crea instancia
-            this.Hide();
+            //this.Hide();
             mostrar.Show(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }

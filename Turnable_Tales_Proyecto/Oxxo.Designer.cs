@@ -87,6 +87,7 @@
             buttonUsuario.Size = new Size(92, 78);
             buttonUsuario.TabIndex = 194;
             buttonUsuario.UseVisualStyleBackColor = false;
+            buttonUsuario.Click += buttonUsuario_Click;
             // 
             // buttonTicket
             // 
