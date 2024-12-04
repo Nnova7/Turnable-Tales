@@ -37,7 +37,7 @@ namespace Turnable_Tales_Proyecto
         {
             Ticket ticket = new Ticket(); //se crea instancia
             this.Hide();
-            ticket.Show(); // Mostrar
+            ticket.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
     }

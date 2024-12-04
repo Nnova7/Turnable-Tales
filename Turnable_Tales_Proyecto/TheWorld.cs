@@ -36,8 +36,8 @@ namespace Turnable_Tales_Proyecto
         private void buttonTarjeta_Click(object sender, EventArgs e)
         {
             Tarjeta tarjeta = new Tarjeta(); //se crea instancia
-            //this.Hide();
-            tarjeta.Show(); // Mostrar
+            this.Hide();
+            tarjeta.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
 
@@ -52,8 +52,8 @@ namespace Turnable_Tales_Proyecto
         private void buttonOxxo_Click(object sender, EventArgs e)
         {
             Oxxo oxxo = new Oxxo(); //se crea instancia
-            //this.Hide();
-            oxxo.Show(); // Mostrar
+            this.Hide();
+            oxxo.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
     }

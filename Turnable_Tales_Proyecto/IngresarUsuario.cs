@@ -75,6 +75,10 @@ namespace Turnable_Tales_Proyecto
             else
             {
                 MessageBox.Show("Acceso denegado. Cuenta o contraseña incorrecta.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                AccesoNoAutorizado noautorizado = new AccesoNoAutorizado();
+                //this.Hide();
+                noautorizado.ShowDialog();
+                this.Close();
             }
         }
     }

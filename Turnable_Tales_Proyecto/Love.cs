@@ -35,24 +35,24 @@ namespace Turnable_Tales_Proyecto
         private void button1_Click(object sender, EventArgs e)
         {
             Tarjeta tarjeta = new Tarjeta(); //se crea instancia
-            //this.Hide();
-            tarjeta.Show(); // Mostrar
+            this.Hide();
+            tarjeta.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Efectivo efectivo = new Efectivo(); //se crea instancia
-            //this.Hide();
-            efectivo.Show(); // Mostrar
+            this.Hide();
+            efectivo.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Oxxo oxxo = new Oxxo(); //se crea instancia
-            //this.Hide();
-            oxxo.Show(); // Mostrar
+            this.Hide();
+            oxxo.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
     }

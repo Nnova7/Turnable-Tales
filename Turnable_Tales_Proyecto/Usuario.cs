@@ -26,6 +26,7 @@ namespace Turnable_Tales_Proyecto
         private void buttonAdministrador_Click(object sender, EventArgs e)
         {
             IngresarAdministrador administrador = new IngresarAdministrador();//Crea instancia
+            this.Hide();
             administrador.ShowDialog();//Muestra
             this.Close();//Cierra
         }
@@ -55,6 +56,7 @@ namespace Turnable_Tales_Proyecto
         private void buttonUsuario_Click(object sender, EventArgs e)
         {
             IngresarUsuario usuario = new IngresarUsuario(); //crea instanci
+            this.Hide();
             usuario.ShowDialog();//muestra
             this.Close();//cierra
         }
@@ -62,6 +64,7 @@ namespace Turnable_Tales_Proyecto
         private void buttonInvitado_Click(object sender, EventArgs e)
         {
             IngresarInvitado invitado = new IngresarInvitado();//Crea instancia
+            this.Hide();
             invitado.ShowDialog();//Muestra
             this.Close();//Cierra
         }
