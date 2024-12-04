@@ -59,6 +59,7 @@
             textBoxContraA.BackColor = Color.Silver;
             textBoxContraA.Location = new Point(141, 423);
             textBoxContraA.Name = "textBoxContraA";
+            textBoxContraA.PasswordChar = '*';
             textBoxContraA.PlaceholderText = "Ingresa la contraseña";
             textBoxContraA.Size = new Size(341, 31);
             textBoxContraA.TabIndex = 73;
