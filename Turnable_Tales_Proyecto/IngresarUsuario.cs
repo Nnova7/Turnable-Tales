@@ -68,9 +68,11 @@ namespace Turnable_Tales_Proyecto
                 MessageBox.Show("Bienvenido", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Abrir Form de bienvenido
+                Usuario usuario = new Usuario();
                 Bienvenido bienvenido = new Bienvenido();
+                usuario.Close();
                 bienvenido.Show();//mostrar
-                this.Hide();//ocultar
+                //this.Hide();//ocultar
             }
             else
             {

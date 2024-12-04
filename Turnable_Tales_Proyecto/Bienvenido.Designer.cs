@@ -56,7 +56,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(509, 604);
             label2.Name = "label2";
-            label2.Size = new Size(305, 15);
+            label2.Size = new Size(202, 11);
             label2.TabIndex = 364;
             label2.Text = "S I S T E M A  D E  E S C R I T O R I O  S T A N D A L O N E ";
             // 
@@ -110,6 +110,7 @@
             Controls.Add(pictureBoxLogo);
             Controls.Add(label2);
             Name = "Bienvenido";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Bienvenido";
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
