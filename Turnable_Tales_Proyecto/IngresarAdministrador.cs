@@ -72,13 +72,18 @@ namespace Turnable_Tales_Proyecto
 
                 // Mostrar Form de Bienvenido y ocultar el formulario actual
                 Bienvenido bienvenido = new Bienvenido();
-                bienvenido.Show();//Muestra
                 this.Hide();//Oculta
+                bienvenido.Show();//Muestra
+                this.Close();
             }
             else
             {
                 // Muestra un mensaje
                 MessageBox.Show("Cuenta o contraseña incorrectas", "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                AccesoNoAutorizado noautorizado = new AccesoNoAutorizado();
+                //this.Hide();
+                noautorizado.ShowDialog();
+                this.Close();
             }
         }
     }

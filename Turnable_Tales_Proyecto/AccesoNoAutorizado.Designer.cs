@@ -37,9 +37,10 @@
             // 
             buttonRegresar.BackgroundImage = Properties.Resources.Captura_de_pantalla_2024_11_22_2251051;
             buttonRegresar.FlatStyle = FlatStyle.Popup;
-            buttonRegresar.Location = new Point(-8, -2);
+            buttonRegresar.Location = new Point(-7, -2);
+            buttonRegresar.Margin = new Padding(3, 2, 3, 2);
             buttonRegresar.Name = "buttonRegresar";
-            buttonRegresar.Size = new Size(68, 54);
+            buttonRegresar.Size = new Size(60, 40);
             buttonRegresar.TabIndex = 0;
             buttonRegresar.UseVisualStyleBackColor = true;
             buttonRegresar.Click += buttonRegresar_Click;
@@ -50,9 +51,9 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI Variable Display", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = SystemColors.ButtonFace;
-            label6.Location = new Point(42, 68);
+            label6.Location = new Point(37, 51);
             label6.Name = "label6";
-            label6.Size = new Size(764, 58);
+            label6.Size = new Size(608, 47);
             label6.TabIndex = 77;
             label6.Text = "A C C E S O   N O   A U T O R I Z A D O";
             label6.Click += label6_Click;
@@ -63,23 +64,26 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ButtonFace;
-            label3.Location = new Point(205, 126);
+            label3.Location = new Point(179, 94);
             label3.Name = "label3";
-            label3.Size = new Size(423, 23);
+            label3.Size = new Size(344, 19);
             label3.TabIndex = 78;
             label3.Text = "I N T R O D U C E   U N A   C U E N T A   V A L I D A ";
             label3.Click += label3_Click;
             // 
             // AccesoNoAutorizado
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.rojito;
-            ClientSize = new Size(830, 219);
+            ClientSize = new Size(726, 164);
             Controls.Add(label3);
             Controls.Add(label6);
             Controls.Add(buttonRegresar);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "AccesoNoAutorizado";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AccesoNoAutorizado";
             ResumeLayout(false);
             PerformLayout();
