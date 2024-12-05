@@ -28,77 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
+            labelError = new Label();
             buttonRegresa = new Button();
-            labelRestriccion = new Label();
-            labelLimite = new Label();
-            labeltxtAviso = new Label();
+            label2 = new Label();
             SuspendLayout();
+            // 
+            // labelError
+            // 
+            labelError.BackColor = Color.Transparent;
+            labelError.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            labelError.ForeColor = Color.White;
+            labelError.Location = new Point(12, 148);
+            labelError.Name = "labelError";
+            labelError.Size = new Size(397, 77);
+            labelError.TabIndex = 27;
+            labelError.Text = "ERROR\r\n\r\n";
+            labelError.TextAlign = ContentAlignment.MiddleCenter;
+            labelError.Click += labelError_Click;
             // 
             // buttonRegresa
             // 
+            buttonRegresa.BackgroundImage = Properties.Resources.Captura_de_pantalla_2024_11_22_225105;
             buttonRegresa.FlatStyle = FlatStyle.Popup;
-            buttonRegresa.ForeColor = SystemColors.ControlLight;
-            buttonRegresa.Image = Properties.Resources.Captura_de_pantalla_2024_11_22_225105;
-            buttonRegresa.Location = new Point(425, 20);
+            buttonRegresa.Location = new Point(348, 12);
             buttonRegresa.Name = "buttonRegresa";
-            buttonRegresa.Size = new Size(61, 47);
-            buttonRegresa.TabIndex = 15;
+            buttonRegresa.Size = new Size(80, 52);
+            buttonRegresa.TabIndex = 26;
             buttonRegresa.UseVisualStyleBackColor = true;
             // 
-            // labelRestriccion
+            // label2
             // 
-            labelRestriccion.BackColor = Color.Transparent;
-            labelRestriccion.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelRestriccion.ForeColor = Color.White;
-            labelRestriccion.Location = new Point(31, 153);
-            labelRestriccion.Name = "labelRestriccion";
-            labelRestriccion.Size = new Size(414, 36);
-            labelRestriccion.TabIndex = 14;
-            labelRestriccion.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // labelLimite
-            // 
-            labelLimite.BackColor = Color.Transparent;
-            labelLimite.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            labelLimite.ForeColor = Color.White;
-            labelLimite.Location = new Point(71, 218);
-            labelLimite.Name = "labelLimite";
-            labelLimite.Size = new Size(323, 36);
-            labelLimite.TabIndex = 13;
-            labelLimite.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // labeltxtAviso
-            // 
-            labeltxtAviso.BackColor = Color.Transparent;
-            labeltxtAviso.Font = new Font("Consolas", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
-            labeltxtAviso.ForeColor = Color.White;
-            labeltxtAviso.Location = new Point(71, 30);
-            labeltxtAviso.Name = "labeltxtAviso";
-            labeltxtAviso.Size = new Size(323, 86);
-            labeltxtAviso.TabIndex = 12;
-            labeltxtAviso.TextAlign = ContentAlignment.MiddleCenter;
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(55, 67);
+            label2.Name = "label2";
+            label2.Size = new Size(287, 93);
+            label2.TabIndex = 25;
+            label2.Text = " NO SE LOGRO REALIZAR \r\n  LA ACCION\r\n\r\n";
+            label2.TextAlign = ContentAlignment.TopCenter;
             // 
             // FormDenegado
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.Maroon;
-            ClientSize = new Size(516, 274);
+            ClientSize = new Size(440, 273);
+            Controls.Add(labelError);
             Controls.Add(buttonRegresa);
-            Controls.Add(labelRestriccion);
-            Controls.Add(labelLimite);
-            Controls.Add(labeltxtAviso);
+            Controls.Add(label2);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormDenegado";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormDenegado";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
+        private Label labelError;
         private Button buttonRegresa;
-        private Label labelRestriccion;
-        private Label labelLimite;
-        private Label labeltxtAviso;
+        private Label label2;
     }
 }

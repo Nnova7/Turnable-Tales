@@ -29,43 +29,60 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonAgregarDisco_Click(object sender, EventArgs e)
         {
-
-            FormAgregarDisco agregarDisc = new FormAgregarDisco(); //se crea instancia
-            this.Hide();
-            agregarDisc.Show(); // Mostrar
-            this.Close(); // Cerrar el formulario actual 
-        }
+            Datos obj = new Datos();
+            if (obj.numDeRegistros() < 10)//En caso de que se puedan agregar discos
+            {
+                FormAgregarDisco formAgregarDisco = new FormAgregarDisco();
+                this.Hide();
+                formAgregarDisco.ShowDialog();
+                this.Show();
+            }//if
+            else//En caso de que este lleno sale la restriccion
+            {
+                FormDenegado formDenegado=new FormDenegado("SE ALCANZO EL NUMERO MAXIMO DE VINILOS");
+                formDenegado.ShowDialog();
+            }//else
+        }//buttonAgregarDisco_Click
 
         private void buttonVentasTotales_Click(object sender, EventArgs e)
         {
             FormVentas ventas = new FormVentas(); //se crea instancia
             this.Hide();
-            ventas.Show(); // Mostrar
-            this.Close(); // Cerrar el formulario actual 
+            ventas.ShowDialog(); 
+            this.Show(); 
         }
 
         private void buttonEliminaDisco_Click(object sender, EventArgs e)
         {
-            FormEliminar eliminar = new FormEliminar(); //se crea instancia
-            this.Hide();
-            eliminar.Show(); // Mostrar
-            this.Close(); // Cerrar el formulario actual 
-        }
+            Datos obj = new Datos();
+            if(obj.numDeRegistros() > 6)//Si se pueden eliminar discos
+            {
+                FormEliminar formEliminar = new FormEliminar();
+                this.Hide();
+                formEliminar.ShowDialog();
+                this.Show();
+            }//if
+            else//En caso de que no haya discos sale la restriccion
+            {
+                FormDenegado formDenegado = new FormDenegado("SE ALCANZO EL NUMERO MINIMO DE DISCOS");
+                formDenegado.ShowDialog();
+            }//else 
+        }//buttonEliminaDisco_Click
 
         private void buttonGraficas_Click(object sender, EventArgs e)
         {
             FormGraficas graficas = new FormGraficas(); //se crea instancia
             this.Hide();
             graficas.Show(); // Mostrar
-            this.Close(); // Cerrar el formulario actual 
-        }
+            this.Show(); // Cerrar el formulario actual 
+        }//buttonGraficas_Click
 
         private void buttonListado_Click(object sender, EventArgs e)
         {
             FormListado listado = new FormListado(); //se crea instancia
             this.Hide();
             listado.Show(); // Mostrar
-            this.Close(); // Cerrar el formulario actual 
+            this.Show(); // Cerrar el formulario actual 
         }
 
         private void buttonSalir_Click(object sender, EventArgs e)
@@ -76,9 +93,7 @@ namespace Turnable_Tales_Proyecto
         private void button1_Click(object sender, EventArgs e)
         {
             MostrarNombre mostrar = new MostrarNombre(); //se crea instancia
-            //this.Hide();
-            mostrar.Show(); // Mostrar
-            this.Close(); // Cerrar el formulario actual 
+            mostrar.ShowDialog(); // Mostrar
         }
     }
 }

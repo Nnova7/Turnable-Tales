@@ -16,5 +16,16 @@ namespace Turnable_Tales_Proyecto
         {
             InitializeComponent();
         }
+
+        public FormDenegado(string error)
+        {
+            InitializeComponent();
+            this.labelError.Text = error;
+        }
+
+        private void labelError_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
