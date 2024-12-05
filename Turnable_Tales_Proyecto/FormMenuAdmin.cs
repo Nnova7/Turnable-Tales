@@ -73,7 +73,7 @@ namespace Turnable_Tales_Proyecto
         {
             FormGraficas graficas = new FormGraficas(); //se crea instancia
             this.Hide();
-            graficas.Show(); // Mostrar
+            graficas.ShowDialog(); // Mostrar
             this.Show(); // Cerrar el formulario actual 
         }//buttonGraficas_Click
 
@@ -81,7 +81,7 @@ namespace Turnable_Tales_Proyecto
         {
             FormListado listado = new FormListado(); //se crea instancia
             this.Hide();
-            listado.Show(); // Mostrar
+            listado.ShowDialog(); // Mostrar
             this.Show(); // Cerrar el formulario actual 
         }
 
