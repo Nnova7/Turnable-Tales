@@ -16,5 +16,15 @@ namespace Turnable_Tales_Proyecto
         {
             InitializeComponent();
         }
+
+        private void FormAgregado_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonRegresa_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

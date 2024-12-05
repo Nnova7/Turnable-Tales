@@ -55,6 +55,7 @@
             buttonRegresa.Size = new Size(80, 52);
             buttonRegresa.TabIndex = 26;
             buttonRegresa.UseVisualStyleBackColor = true;
+            buttonRegresa.Click += buttonRegresa_Click;
             // 
             // label2
             // 

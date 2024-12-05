@@ -28,7 +28,6 @@ namespace Turnable_Tales_Proyecto
         private void buttonActualizar_Click(object sender, EventArgs e)
         {
             Datos obj = new Datos();
-            bool bRet = false;
             obj.EliminarUnRegistro(idEliminar);
             obj.Desconectar();
             this.Close();
@@ -36,7 +35,6 @@ namespace Turnable_Tales_Proyecto
 
         private void FormSeguridad_Load(object sender, EventArgs e)
         {
-            bool bRet = false;
             Datos datos = new Datos();
             Productos aux;
             aux = datos.ConsultarUnRegistro(idEliminar);

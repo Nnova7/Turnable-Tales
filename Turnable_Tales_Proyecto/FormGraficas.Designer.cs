@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGraficas));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             pictureBox1 = new PictureBox();
             buttonRegresar = new Button();
             buttonMusica = new Button();
@@ -39,7 +41,9 @@
             labelFrase = new Label();
             labelMenu = new Label();
             button1 = new Button();
+            chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)chart1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -82,7 +86,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(421, 113);
             label2.Name = "label2";
-            label2.Size = new Size(371, 41);
+            label2.Size = new Size(455, 50);
             label2.TabIndex = 61;
             label2.Text = "A D M I N I S T R A D O R\r\n";
             label2.TextAlign = ContentAlignment.TopCenter;
@@ -120,7 +124,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(400, 10);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(398, 41);
+            labelTitulo.Size = new Size(493, 50);
             labelTitulo.TabIndex = 56;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -132,7 +136,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(521, 65);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(190, 15);
+            labelFrase.Size = new Size(237, 20);
             labelFrase.TabIndex = 57;
             labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
             // 
@@ -144,7 +148,7 @@
             labelMenu.ForeColor = Color.White;
             labelMenu.Location = new Point(493, 197);
             labelMenu.Name = "labelMenu";
-            labelMenu.Size = new Size(233, 28);
+            labelMenu.Size = new Size(287, 36);
             labelMenu.TabIndex = 55;
             labelMenu.Text = "GRAFICA EN VENTAS";
             // 
@@ -161,11 +165,27 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // chart1
+            // 
+            chart1.BackColor = SystemColors.ActiveCaptionText;
+            chartArea1.Name = "ChartArea1";
+            chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            chart1.Legends.Add(legend1);
+            chart1.Location = new Point(383, 237);
+            chart1.Name = "chart1";
+            chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            chart1.Size = new Size(689, 384);
+            chart1.TabIndex = 191;
+            chart1.Text = "chart1";
+            chart1.Click += chart1_Click;
+            // 
             // FormGraficas
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 633);
+            Controls.Add(chart1);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
             Controls.Add(buttonRegresar);
@@ -180,7 +200,9 @@
             Name = "FormGraficas";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormGraficas";
+            Load += FormGraficas_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)chart1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -197,5 +219,6 @@
         private Label labelFrase;
         private Label labelMenu;
         private Button button1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }

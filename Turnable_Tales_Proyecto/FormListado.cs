@@ -20,17 +20,40 @@ namespace Turnable_Tales_Proyecto
         private void button1_Click(object sender, EventArgs e)
         {
             MostrarNombre mostrar = new MostrarNombre(); //se crea instancia
-            //this.Hide();
             mostrar.Show(); // Mostrar
-            this.Close(); // Cerrar el formulario actual 
         }
 
         private void buttonRegresar_Click(object sender, EventArgs e)
         {
-            FormMenuAdmin menu = new FormMenuAdmin(); //se crea instancia
-            this.Hide();
-            menu.Show(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
+        }
+
+        private void FormListado_Load(object sender, EventArgs e)
+        {
+            listView1.View = View.LargeIcon;//Configurar el ListView para mostrar iconos grandes
+            listView1.LargeImageList = imageListDiscos;//Asociar el ImageList al ListView
+
+            List<Productos> lista;//Crear una lista para almacenar los productos obtenidos de la base de datos
+
+            //Instanciar un objeto de la clase Datos y consultar todos los productos
+            Datos obj = new Datos();
+            lista = obj.ConsultarTodos();
+
+            //Ordenar la lista de productos por la cantidad de menor a mayor
+            var listaOrdenada = lista.OrderBy(producto => producto.Cantidad).ToList();
+
+            //Recorrer la lista ordenada y agregar cada producto al ListView
+            foreach (var dato in listaOrdenada)
+            {
+                //Crear un nuevo ítem para el ListView con el ID y las existencias del producto
+                ListViewItem item = new ListViewItem($"ID: {dato.Id}\nExistencias: {dato.Cantidad}");
+
+                //Asociar la clave de la imagen al ítem
+                item.ImageKey = dato.Imagen;
+
+                //Agregar el ítem al ListView
+                listView1.Items.Add(item);
+            }
         }
     }
 }

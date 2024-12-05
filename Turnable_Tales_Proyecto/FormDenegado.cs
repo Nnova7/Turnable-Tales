@@ -27,5 +27,10 @@ namespace Turnable_Tales_Proyecto
         {
 
         }
+
+        private void buttonRegresa_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

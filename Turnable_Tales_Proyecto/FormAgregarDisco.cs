@@ -87,6 +87,13 @@ namespace Turnable_Tales_Proyecto
                 return;//Sale de la funcion (no se continua el programa)
             }//if
 
+            if (!int.TryParse(this.textBoxId.Text, out int id))
+            {
+                FormDenegado formDenegado2 = new FormDenegado("EL ID DEBE SER UN NUMERO");
+                formDenegado2.ShowDialog();
+                return;
+            }
+
             if (obj.numDeRegistros() < 10)
             {//Si se pueden agregar discos
                 bool simon = false;
