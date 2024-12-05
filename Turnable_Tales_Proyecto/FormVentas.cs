@@ -20,17 +20,35 @@ namespace Turnable_Tales_Proyecto
         private void button1_Click(object sender, EventArgs e)
         {
             MostrarNombre mostrar = new MostrarNombre(); //se crea instancia
-            //this.Hide();
-            mostrar.Show(); // Mostrar
-            this.Close(); // Cerrar el formulario actual 
+            mostrar.ShowDialog(); // MostraR
         }
+
+        private void FormVentas_Load(object sender, EventArgs e)
+        {
+            this.labeltxtVentas.Text = "EL TOTAL DE VENTAS ES DE $" + this.totalVentas();
+        }//FormVentas_Load
+
+        public int totalVentas()
+        {
+            int suma = 0;
+            Datos obj = new Datos();
+            List<Usuarios> lista = new List<Usuarios>();
+            lista = obj.ConsultarTodosUsuarios();
+
+            foreach (var item in lista)
+            {
+                suma += item.Monto;
+
+            }
+            obj.Desconectar();
+            return suma;
+        }//totalVentas
 
         private void buttonRegresar_Click(object sender, EventArgs e)
         {
-            FormMenuAdmin menu = new FormMenuAdmin(); //se crea instancia
-            this.Hide();
-            menu.Show(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
+
+        
     }
 }

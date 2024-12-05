@@ -40,6 +40,7 @@
             labelFrase = new Label();
             labelMenu = new Label();
             buttonRegresar = new Button();
+            labeltxtVentas = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -94,7 +95,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(421, 103);
             label2.Name = "label2";
-            label2.Size = new Size(371, 41);
+            label2.Size = new Size(455, 50);
             label2.TabIndex = 211;
             label2.Text = "A D M I N I S T R A D O R\r\n";
             label2.TextAlign = ContentAlignment.TopCenter;
@@ -132,7 +133,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(400, -6);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(398, 41);
+            labelTitulo.Size = new Size(493, 50);
             labelTitulo.TabIndex = 205;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -144,7 +145,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(521, 49);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(190, 15);
+            labelFrase.Size = new Size(237, 20);
             labelFrase.TabIndex = 206;
             labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
             // 
@@ -156,7 +157,7 @@
             labelMenu.ForeColor = Color.White;
             labelMenu.Location = new Point(521, 177);
             labelMenu.Name = "labelMenu";
-            labelMenu.Size = new Size(194, 28);
+            labelMenu.Size = new Size(239, 36);
             labelMenu.TabIndex = 204;
             labelMenu.Text = "VENTAS TOTALES\r\n";
             // 
@@ -171,11 +172,24 @@
             buttonRegresar.UseVisualStyleBackColor = true;
             buttonRegresar.Click += buttonRegresar_Click;
             // 
+            // labeltxtVentas
+            // 
+            labeltxtVentas.AutoSize = true;
+            labeltxtVentas.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            labeltxtVentas.ForeColor = Color.White;
+            labeltxtVentas.Location = new Point(348, 328);
+            labeltxtVentas.Name = "labeltxtVentas";
+            labeltxtVentas.Size = new Size(566, 54);
+            labeltxtVentas.TabIndex = 214;
+            labeltxtVentas.Text = "EL TOTAL DE VENTAS ES DE $\r\n";
+            labeltxtVentas.TextAlign = ContentAlignment.TopCenter;
+            // 
             // FormVentas
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 633);
+            Controls.Add(labeltxtVentas);
             Controls.Add(button1);
             Controls.Add(buttonMusica);
             Controls.Add(buttonUsuario);
@@ -191,6 +205,7 @@
             Name = "FormVentas";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormVentas";
+            Load += FormVentas_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -209,5 +224,6 @@
         private Label labelFrase;
         private Label labelMenu;
         private Button buttonRegresar;
+        private Label labeltxtVentas;
     }
 }

@@ -20,16 +20,11 @@ namespace Turnable_Tales_Proyecto
         private void button1_Click(object sender, EventArgs e)
         {
             MostrarNombre mostrar = new MostrarNombre(); //se crea instancia
-            //this.Hide();
-            mostrar.Show(); // Mostrar
-            this.Close(); // Cerrar el formulario actual 
+            mostrar.ShowDialog(); // Mostrar
         }
 
         private void buttonRegresar_Click(object sender, EventArgs e)
         {
-            FormMenuAdmin menu = new FormMenuAdmin(); //se crea instancia
-            this.Hide();
-            menu.Show(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
 
