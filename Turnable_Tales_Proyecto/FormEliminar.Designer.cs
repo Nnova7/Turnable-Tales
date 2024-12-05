@@ -42,6 +42,7 @@
             buttonMusica = new Button();
             button1 = new Button();
             textBoxId = new TextBox();
+            buttonLimpiar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -65,6 +66,7 @@
             buttonEnter.Size = new Size(196, 56);
             buttonEnter.TabIndex = 61;
             buttonEnter.UseVisualStyleBackColor = true;
+            buttonEnter.Click += buttonEnter_Click;
             // 
             // labeltxtDiscoaEliminar
             // 
@@ -73,7 +75,7 @@
             labeltxtDiscoaEliminar.ForeColor = Color.White;
             labeltxtDiscoaEliminar.Location = new Point(410, 287);
             labeltxtDiscoaEliminar.Name = "labeltxtDiscoaEliminar";
-            labeltxtDiscoaEliminar.Size = new Size(582, 61);
+            labeltxtDiscoaEliminar.Size = new Size(481, 50);
             labeltxtDiscoaEliminar.TabIndex = 59;
             labeltxtDiscoaEliminar.Text = "ID DEL DISCO A ELIMINAR";
             labeltxtDiscoaEliminar.TextAlign = ContentAlignment.TopCenter;
@@ -86,7 +88,7 @@
             labeltxtEliminardisco.ForeColor = Color.White;
             labeltxtEliminardisco.Location = new Point(531, 199);
             labeltxtEliminardisco.Name = "labeltxtEliminardisco";
-            labeltxtEliminardisco.Size = new Size(298, 42);
+            labeltxtEliminardisco.Size = new Size(239, 36);
             labeltxtEliminardisco.TabIndex = 51;
             labeltxtEliminardisco.Text = "ELIMINAR DISCO\r\n";
             // 
@@ -97,7 +99,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(531, 64);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(288, 25);
+            labelFrase.Size = new Size(237, 20);
             labelFrase.TabIndex = 53;
             labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
             // 
@@ -108,7 +110,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(410, 9);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(595, 61);
+            labelTitulo.Size = new Size(493, 50);
             labelTitulo.TabIndex = 52;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -121,7 +123,7 @@
             labelLinea.ForeColor = Color.White;
             labelLinea.Location = new Point(203, 92);
             labelLinea.Name = "labelLinea";
-            labelLinea.Size = new Size(1784, 4);
+            labelLinea.Size = new Size(893, 3);
             labelLinea.TabIndex = 55;
             labelLinea.Text = resources.GetString("labelLinea.Text");
             labelLinea.TextAlign = ContentAlignment.TopCenter;
@@ -134,7 +136,7 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(203, 183);
             label1.Name = "label1";
-            label1.Size = new Size(1784, 4);
+            label1.Size = new Size(893, 3);
             label1.TabIndex = 56;
             label1.Text = resources.GetString("label1.Text");
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -146,7 +148,7 @@
             labelAdministrador.ForeColor = Color.White;
             labelAdministrador.Location = new Point(431, 112);
             labelAdministrador.Name = "labelAdministrador";
-            labelAdministrador.Size = new Size(551, 61);
+            labelAdministrador.Size = new Size(455, 50);
             labelAdministrador.TabIndex = 57;
             labelAdministrador.Text = "A D M I N I S T R A D O R\r\n";
             labelAdministrador.TextAlign = ContentAlignment.TopCenter;
@@ -191,15 +193,27 @@
             textBoxId.Location = new Point(431, 357);
             textBoxId.Name = "textBoxId";
             textBoxId.PlaceholderText = "INTRODUZCA UN DATO";
-            textBoxId.Size = new Size(428, 31);
+            textBoxId.Size = new Size(428, 27);
             textBoxId.TabIndex = 190;
             textBoxId.TextAlign = HorizontalAlignment.Center;
+            // 
+            // buttonLimpiar
+            // 
+            buttonLimpiar.FlatStyle = FlatStyle.Popup;
+            buttonLimpiar.Image = (Image)resources.GetObject("buttonLimpiar.Image");
+            buttonLimpiar.Location = new Point(503, 520);
+            buttonLimpiar.Name = "buttonLimpiar";
+            buttonLimpiar.Size = new Size(294, 54);
+            buttonLimpiar.TabIndex = 223;
+            buttonLimpiar.UseVisualStyleBackColor = true;
+            buttonLimpiar.Click += buttonLimpiar_Click;
             // 
             // FormEliminar
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 633);
+            Controls.Add(buttonLimpiar);
             Controls.Add(textBoxId);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
@@ -237,5 +251,6 @@
         private Button buttonMusica;
         private Button button1;
         private TextBox textBoxId;
+        private Button buttonLimpiar;
     }
 }

@@ -69,6 +69,7 @@
             buttonActualizar.Size = new Size(337, 55);
             buttonActualizar.TabIndex = 85;
             buttonActualizar.UseVisualStyleBackColor = true;
+            buttonActualizar.Click += buttonActualizar_Click;
             // 
             // labelShowExistencias
             // 
@@ -132,7 +133,7 @@
             labeltxtExistencias.ForeColor = Color.White;
             labeltxtExistencias.Location = new Point(326, 320);
             labeltxtExistencias.Name = "labeltxtExistencias";
-            labeltxtExistencias.Size = new Size(77, 13);
+            labeltxtExistencias.Size = new Size(92, 17);
             labeltxtExistencias.TabIndex = 79;
             labeltxtExistencias.Text = "EXISTENCIAS:";
             labeltxtExistencias.TextAlign = ContentAlignment.TopCenter;
@@ -144,7 +145,7 @@
             labeltxtPrecio.ForeColor = Color.White;
             labeltxtPrecio.Location = new Point(326, 264);
             labeltxtPrecio.Name = "labeltxtPrecio";
-            labeltxtPrecio.Size = new Size(70, 21);
+            labeltxtPrecio.Size = new Size(86, 28);
             labeltxtPrecio.TabIndex = 78;
             labeltxtPrecio.Text = "PRECIO:";
             labeltxtPrecio.TextAlign = ContentAlignment.TopCenter;
@@ -156,7 +157,7 @@
             labeltxtGenero.ForeColor = Color.White;
             labeltxtGenero.Location = new Point(322, 220);
             labeltxtGenero.Name = "labeltxtGenero";
-            labeltxtGenero.Size = new Size(78, 21);
+            labeltxtGenero.Size = new Size(97, 28);
             labeltxtGenero.TabIndex = 77;
             labeltxtGenero.Text = "GENERO:";
             labeltxtGenero.TextAlign = ContentAlignment.TopCenter;
@@ -168,7 +169,7 @@
             labeltxtArtista.ForeColor = Color.White;
             labeltxtArtista.Location = new Point(326, 176);
             labeltxtArtista.Name = "labeltxtArtista";
-            labeltxtArtista.Size = new Size(77, 21);
+            labeltxtArtista.Size = new Size(98, 28);
             labeltxtArtista.TabIndex = 76;
             labeltxtArtista.Text = "ARTISTA:";
             labeltxtArtista.TextAlign = ContentAlignment.TopCenter;
@@ -180,7 +181,7 @@
             labeltxtTitulo.ForeColor = Color.White;
             labeltxtTitulo.Location = new Point(326, 126);
             labeltxtTitulo.Name = "labeltxtTitulo";
-            labeltxtTitulo.Size = new Size(69, 21);
+            labeltxtTitulo.Size = new Size(86, 28);
             labeltxtTitulo.TabIndex = 75;
             labeltxtTitulo.Text = "TITULO:";
             labeltxtTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -212,7 +213,7 @@
             labeltxtId.ForeColor = Color.White;
             labeltxtId.Location = new Point(326, 80);
             labeltxtId.Name = "labeltxtId";
-            labeltxtId.Size = new Size(31, 21);
+            labeltxtId.Size = new Size(38, 28);
             labeltxtId.TabIndex = 72;
             labeltxtId.Text = "ID:";
             labeltxtId.TextAlign = ContentAlignment.TopCenter;
@@ -254,6 +255,7 @@
             Name = "FormSeguridad";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Seguridad";
+            Load += FormSeguridad_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBoxImagen).EndInit();
             ResumeLayout(false);
             PerformLayout();
