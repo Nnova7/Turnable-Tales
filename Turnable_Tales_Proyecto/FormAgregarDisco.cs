@@ -15,7 +15,7 @@ namespace Turnable_Tales_Proyecto
         public FormAgregarDisco()
         {
             InitializeComponent();
-        }
+        }//Constructor
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -36,6 +36,107 @@ namespace Turnable_Tales_Proyecto
         private void FormAgregarDisco_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void agregar()
+        {
+            Datos obj = new Datos();
+
+            string artista = this.textBoxArtista.Text;
+            string genero = this.textBoxGenero.Text;
+            string nombre = this.textBoxTitulo.Text;
+            string imagen = this.textBoxImagen.Text;
+            string descripcion = this.textBoxDescripcion.Text;
+
+            if (!int.TryParse(this.textBoxId.Text, out int id))
+            {
+                FormDenegado formDenegado2 = new FormDenegado("EL ID DEBE SER UN NUMERO");
+                formDenegado2.ShowDialog();
+                return;
+            }
+
+            if (!int.TryParse(this.textBoxPrecio.Text, out int precio))
+            {
+                FormDenegado formDenegado2 = new FormDenegado("EL PRECIO DEBE SER UN NUMERO");
+                formDenegado2.ShowDialog();
+                return;
+            }
+
+            if (!int.TryParse(this.textBoxExistencias.Text, out int cantidad))
+            {
+                FormDenegado formDenegado2 = new FormDenegado("LA CANTIDAD DEBE SER UN NUMERO");
+                formDenegado2.ShowDialog();
+                return;
+            }
+
+            obj.Insertar(id, artista, genero, nombre, precio, cantidad, imagen, descripcion);
+            obj.Desconectar();
+        }//agregar
+        private void buttonActualiza_Click(object sender, EventArgs e)
+        {
+            Datos obj = new Datos();
+
+            //Revisa que se hallan llenado todos los campo
+            if (string.IsNullOrEmpty(textBoxId.Text)
+                || string.IsNullOrEmpty(textBoxArtista.Text)
+                || string.IsNullOrEmpty(textBoxDescripcion.Text)
+                || string.IsNullOrEmpty(textBoxExistencias.Text)
+                || string.IsNullOrEmpty(textBoxGenero.Text)
+                || string.IsNullOrEmpty(textBoxImagen.Text)
+                || string.IsNullOrEmpty(textBoxPrecio.Text)
+                || string.IsNullOrEmpty(textBoxTitulo.Text)
+                )
+            {//En caso de que no hallan sido llenados
+                FormDenegado form = new FormDenegado("ASEGURESE DE LLENAR TODOS LOS CAMPOS");
+                form.ShowDialog();
+                return;//Sale de la funcion (no se continua el programa)
+            }//if
+
+            if (obj.numDeRegistros() < 10)
+            {//Si se pueden agregar discos
+                bool simon = false;
+                List<Productos> list = new List<Productos>();
+                list = obj.ConsultarTodos();
+                foreach (Productos p in list)
+                {
+                    if (p.Id == Convert.ToInt32(textBoxId.Text))
+                    {
+                        simon = true;
+                    }//if
+                }//foreach
+
+                if (!simon)//Si no se repite el id
+                {
+                    this.agregar();
+                }//if
+                else
+                {
+                    FormDenegado formDenegado = new FormDenegado("EL ID YA HA SIDO UTILIZADO");
+                    formDenegado.ShowDialog();
+                }//else
+            }
+            else//en caso de que no se puedan agregar discos
+            {
+                FormDenegado formDenegado = new FormDenegado("SE ALCANZO EL NUMERO MAXIMO DE VINILOS");
+                formDenegado.ShowDialog();
+            }//else
+        }//buttonActualiza_Click
+
+        private void Limpiar()
+        {
+            this.textBoxId.Text = string.Empty;
+            this.textBoxArtista.Text = string.Empty;
+            this.textBoxGenero.Text = string.Empty;
+            this.textBoxTitulo.Text = string.Empty;
+            this.textBoxPrecio.Text = string.Empty;
+            this.textBoxExistencias.Text = string.Empty;
+            this.textBoxImagen.Text = string.Empty;
+            this.textBoxDescripcion.Text = string.Empty;
+        }//limpiar
+
+        private void buttonLimpiar_Click(object sender, EventArgs e)
+        {
+            this.Limpiar();
         }
     }
 }
