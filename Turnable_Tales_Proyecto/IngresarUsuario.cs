@@ -68,7 +68,7 @@ namespace Turnable_Tales_Proyecto
                 MessageBox.Show("Bienvenido", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Abrir Form de bienvenido
-                Bienvenido bienvenido = new Bienvenido();
+                Bienvenido bienvenido = new Bienvenido(true);
                 bienvenido.Show();//mostrar
                 //this.Hide();//ocultar
             }

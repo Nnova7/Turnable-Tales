@@ -71,7 +71,7 @@ namespace Turnable_Tales_Proyecto
                 MessageBox.Show("Bienvenido", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Mostrar Form de Bienvenido y ocultar el formulario actual
-                Bienvenido bienvenido = new Bienvenido();
+                Bienvenido bienvenido = new Bienvenido(false);
                 this.Hide();//Oculta
                 bienvenido.Show();//Muestra
                 this.Close();

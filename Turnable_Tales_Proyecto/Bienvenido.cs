@@ -12,10 +12,19 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class Bienvenido : Form
     {
+        private bool Abrir;
         public Bienvenido()
         {
             InitializeComponent();
         }
+
+        public Bienvenido(bool a)
+        {
+            InitializeComponent();
+            this.Abrir = a;
+        }
+        
+
         /// <summary>
         /// Con el boton siguiente nos dirige a la lista de Generos.
         /// </summary>
@@ -23,9 +32,18 @@ namespace Turnable_Tales_Proyecto
         /// <param name="e"></param>
         private void buttonSiguiente_Click(object sender, EventArgs e)
         {
-            ListaGeneros listaGeneros = new ListaGeneros(); //Crear instancia de ListaGeneros
-            listaGeneros.Show(); //Mostrar el formulario ListaGeneros
-            this.Close(); //Cerrar el formulario actual (Bienvenido)
+            if(Abrir){
+                ListaGeneros listaGeneros = new ListaGeneros(); //Crear instancia de ListaGeneros
+                listaGeneros.Show(); //Mostrar el formulario ListaGeneros
+                this.Close(); //Cerrar el formulario actual (Bienvenido)
+            }
+            else
+            {
+                FormMenuAdmin formMenuAdmin = new FormMenuAdmin();
+                formMenuAdmin.Show();
+                this.Close();
+            }
+            
         }
     }
 }

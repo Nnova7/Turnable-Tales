@@ -86,7 +86,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(421, 103);
             label2.Name = "label2";
-            label2.Size = new Size(371, 41);
+            label2.Size = new Size(455, 50);
             label2.TabIndex = 35;
             label2.Text = "A D M I N I S T R A D O R\r\n";
             label2.TextAlign = ContentAlignment.TopCenter;
@@ -124,7 +124,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(400, -6);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(398, 41);
+            labelTitulo.Size = new Size(493, 50);
             labelTitulo.TabIndex = 29;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -136,7 +136,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(521, 49);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(190, 15);
+            labelFrase.Size = new Size(237, 20);
             labelFrase.TabIndex = 30;
             labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
             // 
@@ -144,7 +144,7 @@
             // 
             buttonListado.FlatStyle = FlatStyle.Popup;
             buttonListado.Image = (Image)resources.GetObject("buttonListado.Image");
-            buttonListado.Location = new Point(704, 397);
+            buttonListado.Location = new Point(746, 448);
             buttonListado.Name = "buttonListado";
             buttonListado.Size = new Size(247, 102);
             buttonListado.TabIndex = 27;
@@ -156,7 +156,7 @@
             // 
             buttonGraficas.FlatStyle = FlatStyle.Popup;
             buttonGraficas.Image = (Image)resources.GetObject("buttonGraficas.Image");
-            buttonGraficas.Location = new Point(348, 397);
+            buttonGraficas.Location = new Point(302, 448);
             buttonGraficas.Name = "buttonGraficas";
             buttonGraficas.Size = new Size(247, 102);
             buttonGraficas.TabIndex = 26;
@@ -168,7 +168,7 @@
             // 
             buttonEliminaDisco.FlatStyle = FlatStyle.Popup;
             buttonEliminaDisco.Image = (Image)resources.GetObject("buttonEliminaDisco.Image");
-            buttonEliminaDisco.Location = new Point(841, 254);
+            buttonEliminaDisco.Location = new Point(940, 254);
             buttonEliminaDisco.Name = "buttonEliminaDisco";
             buttonEliminaDisco.Size = new Size(245, 102);
             buttonEliminaDisco.TabIndex = 25;
@@ -192,7 +192,7 @@
             // 
             buttonAgregarDisco.FlatStyle = FlatStyle.Popup;
             buttonAgregarDisco.Image = (Image)resources.GetObject("buttonAgregarDisco.Image");
-            buttonAgregarDisco.Location = new Point(182, 254);
+            buttonAgregarDisco.Location = new Point(118, 254);
             buttonAgregarDisco.Name = "buttonAgregarDisco";
             buttonAgregarDisco.Size = new Size(247, 102);
             buttonAgregarDisco.TabIndex = 22;
@@ -208,7 +208,7 @@
             labelMenu.ForeColor = Color.White;
             labelMenu.Location = new Point(603, 191);
             labelMenu.Name = "labelMenu";
-            labelMenu.Size = new Size(64, 28);
+            labelMenu.Size = new Size(79, 36);
             labelMenu.TabIndex = 23;
             labelMenu.Text = "MENU";
             // 

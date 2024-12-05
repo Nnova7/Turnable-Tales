@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace Turnable_Tales_Proyecto
 {
-    public partial class FormMenuAdmin : Form
+    public partial class FormMenuAdmin : Form//MENU PRINCIPAL DEL ADMINISTRADOR
     {
         public FormMenuAdmin()
         {
             InitializeComponent();
-        }
+        }//CONSTRUCTOR
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -29,6 +29,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonAgregarDisco_Click(object sender, EventArgs e)
         {
+
             FormAgregarDisco agregarDisc = new FormAgregarDisco(); //se crea instancia
             this.Hide();
             agregarDisc.Show(); // Mostrar
