@@ -212,6 +212,7 @@
             Name = "FormListado";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            TopMost = true;
             Load += FormListado_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
