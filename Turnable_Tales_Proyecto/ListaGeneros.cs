@@ -12,6 +12,7 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class ListaGeneros : Form
     {
+        //Pare recibir el nombre
         public string nombreUsuario { get; set;  }
         public ListaGeneros()
         {
@@ -21,11 +22,11 @@ namespace Turnable_Tales_Proyecto
         {
             InitializeComponent();
             nombreUsuario = n;
-        }
+        }//constructor para recibir el nombre
 
         private void buttonUsuario_Click(object sender, EventArgs e)
         {
-            MostrarNombre mostrar = new MostrarNombre(); //se crea instancia
+            MostrarNombre mostrar = new MostrarNombre(nombreUsuario); //se crea instancia
             //this.Hide();
             mostrar.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 

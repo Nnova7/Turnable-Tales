@@ -12,14 +12,22 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class Carmen : Form
     {
+        public string nombreUsuario { get; set; }
         public Carmen()
         {
             InitializeComponent();
         }
 
+        public Carmen(string n)
+        {
+            InitializeComponent();
+            nombreUsuario = n;
+        }
+
+
         private void buttonUsuario_Click(object sender, EventArgs e)
         {
-            MostrarNombre mostrar = new MostrarNombre(); //se crea instancia
+            MostrarNombre mostrar = new MostrarNombre(nombreUsuario); //se crea instancia
             //this.Hide();
             mostrar.Show(); // Mostrar
             this.Close(); // Cerrar el formulario actual
