@@ -12,14 +12,23 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class FormAgregarDisco : Form
     {
+        public string nombreUsuario { get; set; }
+
         public FormAgregarDisco()
         {
             InitializeComponent();
         }//Constructor
 
+        //constructor para pasarle el nombre
+        public FormAgregarDisco(string n)
+        {
+            InitializeComponent();
+            nombreUsuario = n;
+        }//Constructor
+
         private void button1_Click(object sender, EventArgs e)
         {
-            MostrarNombre mostrar = new MostrarNombre(); //se crea instancia
+            MostrarNombre mostrar = new MostrarNombre(nombreUsuario); //se crea instancia
             mostrar.ShowDialog(); // Mostrar
         }
 
