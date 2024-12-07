@@ -47,6 +47,7 @@
             textBoxFecha = new TextBox();
             textBoxUsuario = new TextBox();
             timer1 = new System.Windows.Forms.Timer(components);
+            cerrarSesion = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -237,11 +238,23 @@
             timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
             // 
+            // cerrarSesion
+            // 
+            cerrarSesion.BackColor = SystemColors.ActiveCaptionText;
+            cerrarSesion.ForeColor = SystemColors.ButtonHighlight;
+            cerrarSesion.Location = new Point(1066, 564);
+            cerrarSesion.Name = "cerrarSesion";
+            cerrarSesion.Size = new Size(209, 46);
+            cerrarSesion.TabIndex = 243;
+            cerrarSesion.Text = "C E R R A R  S E S I Ó N";
+            cerrarSesion.UseVisualStyleBackColor = false;
+            // 
             // FormEliminar
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 633);
+            Controls.Add(cerrarSesion);
             Controls.Add(textBoxHora);
             Controls.Add(textBoxFecha);
             Controls.Add(textBoxUsuario);
@@ -286,5 +299,6 @@
         private TextBox textBoxFecha;
         private TextBox textBoxUsuario;
         private System.Windows.Forms.Timer timer1;
+        private Button cerrarSesion;
     }
 }

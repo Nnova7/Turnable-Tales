@@ -87,5 +87,10 @@ namespace Turnable_Tales_Proyecto
                 textBoxUsuario.Text = "Usuario desconocido";
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
