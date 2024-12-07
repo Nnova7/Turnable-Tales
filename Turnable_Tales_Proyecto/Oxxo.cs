@@ -45,7 +45,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonTicket_Click(object sender, EventArgs e)
         {
-            Ticket ticket = new Ticket(); //se crea instancia
+            Ticket ticket = new Ticket(nombreUsuario); //se crea instancia
             this.Hide();
             ticket.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 

@@ -64,7 +64,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonOxxo_Click(object sender, EventArgs e)
         {
-            Oxxo oxxo = new Oxxo(); //se crea instancia
+            Oxxo oxxo = new Oxxo(nombreUsuario); //se crea instancia
             this.Hide();
             oxxo.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 

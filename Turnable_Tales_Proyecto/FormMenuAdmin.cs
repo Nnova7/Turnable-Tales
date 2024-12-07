@@ -49,7 +49,7 @@ namespace Turnable_Tales_Proyecto
             Datos obj = new Datos();
             if (obj.numDeRegistros() < 10)//En caso de que se puedan agregar discos
             {
-                FormAgregarDisco formAgregarDisco = new FormAgregarDisco();
+                FormAgregarDisco formAgregarDisco = new FormAgregarDisco(nombreUsuario);
                 this.Hide();
                 formAgregarDisco.ShowDialog();
                 this.Show();
@@ -63,7 +63,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonVentasTotales_Click(object sender, EventArgs e)
         {
-            FormVentas ventas = new FormVentas(); //se crea instancia
+            FormVentas ventas = new FormVentas(nombreUsuario); //se crea instancia
             this.Hide();
             ventas.ShowDialog();
             this.Show();
@@ -74,7 +74,7 @@ namespace Turnable_Tales_Proyecto
             Datos obj = new Datos();
             if (obj.numDeRegistros() > 6)//Si se pueden eliminar discos
             {
-                FormEliminar formEliminar = new FormEliminar();
+                FormEliminar formEliminar = new FormEliminar(nombreUsuario);
                 this.Hide();
                 formEliminar.ShowDialog();
                 this.Show();
@@ -88,7 +88,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonGraficas_Click(object sender, EventArgs e)
         {
-            FormGraficas graficas = new FormGraficas(); //se crea instancia
+            FormGraficas graficas = new FormGraficas(nombreUsuario); //se crea instancia
             this.Hide();
             graficas.ShowDialog(); // Mostrar
             this.Show(); // Cerrar el formulario actual 
@@ -96,7 +96,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonListado_Click(object sender, EventArgs e)
         {
-            FormListado listado = new FormListado(); //se crea instancia
+            FormListado listado = new FormListado(nombreUsuario); //se crea instancia
             this.Hide();
             listado.ShowDialog(); // Mostrar
             this.Show(); // Cerrar el formulario actual 
