@@ -51,10 +51,12 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonSiguiente_Click(object sender, EventArgs e)
         {
-            // Si los campos están vacios
+            string cuentaIngresada = textBoxCuentaA.Text.Trim();
+            string contraseñaIngresada = textBoxContraA.Text.Trim();
+
+            // Validar si los campos están vacíos
             if (string.IsNullOrEmpty(cuentaIngresada) || string.IsNullOrEmpty(contraseñaIngresada))
             {
-                // Muestra un mensaje 
                 MessageBox.Show("Por favor ingrese una cuenta y una contraseña", "Campos vacíos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -62,28 +64,22 @@ namespace Turnable_Tales_Proyecto
             // Crear objeto de la clase Datos
             Datos obj = new Datos();
 
-            // Verificar si la cuenta y contraseña son válidas
-            bool accesoPermitido = obj.ConsultarCuentaContraAdmin(cuentaIngresada, contraseñaIngresada);
+            // Verificar cuenta y contraseña
+            string nombreUsuario = obj.ConsultarCuentaContraAdmin(cuentaIngresada, contraseñaIngresada);
 
-            //Si lo que recibe en acceso permitido es correcto entonces realiza la siguiente acción
-            if (accesoPermitido)
+            // Verificar si el nombre de usuario no es nulo ni vacío
+            if (!string.IsNullOrEmpty(nombreUsuario))
             {
-                MessageBox.Show("Bienvenido", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"Bienvenido, {nombreUsuario}", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Mostrar Form de Bienvenido y ocultar el formulario actual
-                Bienvenido bienvenido = new Bienvenido(false);
-                this.Hide();//Oculta
-                bienvenido.Show();//Muestra
-                this.Close();
+                // Abrir Form7
+                FormMenuAdmin formAdmin = new FormMenuAdmin(nombreUsuario);
+                formAdmin.Show();
+                this.Hide();
             }
             else
             {
-                // Muestra un mensaje
-                MessageBox.Show("Cuenta o contraseña incorrectas", "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                AccesoNoAutorizado noautorizado = new AccesoNoAutorizado();
-                //this.Hide();
-                noautorizado.ShowDialog();
-                this.Close();
+                MessageBox.Show("Acceso denegado. Cuenta o contraseña incorrecta.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
