@@ -12,9 +12,16 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class IngresarUsuario : Form
     {
+        public string nombreUsuario { get; set; }
+        //Constructor para recibir los datos
         public IngresarUsuario()
         {
             InitializeComponent();
+        }
+        public IngresarUsuario(string n)
+        {
+            InitializeComponent();
+            nombreUsuario = n;
         }
 
         /// <summary>
@@ -47,38 +54,35 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonSiguiente_Click(object sender, EventArgs e)
         {
-            // Obtener el texto ingresado en los cuadros de texto y eliminar espacios en blanco
             string cuentaIngresada = textBoxCuentaU.Text.Trim();
             string contraseñaIngresada = textBoxContraU.Text.Trim();
-            //Si los campos están vacios
-            if (string.IsNullOrEmpty(cuentaIngresada) || string.IsNullOrEmpty(contraIngresada))
+
+            // Validar si los campos están vacíos
+            if (string.IsNullOrEmpty(cuentaIngresada) || string.IsNullOrEmpty(contraseñaIngresada))
             {
-                // Mostrar un mensaje de advertencia indicando que los campos no pueden estar vacíos
                 MessageBox.Show("Por favor ingrese una cuenta y una contraseña", "Campos vacíos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;//Salir
+                return;
             }
 
-            // Crear una instancia de la clase Datos para interactuar con la base de datos
+            // Crear objeto de la clase Datos
             Datos obj = new Datos();
 
             // Verificar cuenta y contraseña
-            if (obj.ConsultarCuentaContraUsuario(cuentaIngresada, contraseñaIngresada))
-            {
-                //si es así muestra un mensaje
-                MessageBox.Show("Bienvenido", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            string nombreUsuario = obj.ConsultarCuentaContraUsuario(cuentaIngresada, contraseñaIngresada);
 
-                // Abrir Form de bienvenido
-                Bienvenido bienvenido = new Bienvenido(true);
-                bienvenido.Show();//mostrar
-                //this.Hide();//ocultar
+            // Verificar si el nombre de usuario no es nulo ni vacío
+            if (!string.IsNullOrEmpty(nombreUsuario))
+            {
+                MessageBox.Show($"Bienvenido, {nombreUsuario}", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                /// Abrir Form de Lista de generos
+                ListaGeneros formGeneros = new ListaGeneros(nombreUsuario);
+                formGeneros.Show();
+                this.Hide();
             }
             else
             {
                 MessageBox.Show("Acceso denegado. Cuenta o contraseña incorrecta.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                AccesoNoAutorizado noautorizado = new AccesoNoAutorizado();
-                //this.Hide();
-                noautorizado.ShowDialog();
-                this.Close();
             }
         }
     }
