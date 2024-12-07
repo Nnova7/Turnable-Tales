@@ -39,7 +39,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonRock1_Click(object sender, EventArgs e)
         {
-            Eureka eurekaForm = new Eureka();//crea instancia
+            Eureka eurekaForm = new Eureka(nombreUsuario);//crea instancia
             this.Hide();//oculta
             eurekaForm.ShowDialog();//muestra
             this.Close();//cierra
@@ -47,7 +47,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonRock2_Click(object sender, EventArgs e)
         {
-            Silencio silencioForm = new Silencio();//crea instancia
+            Silencio silencioForm = new Silencio(nombreUsuario);//crea instancia
             this.Hide();//oculta
             silencioForm.ShowDialog();//muestra
             this.Close();//cierra
@@ -55,7 +55,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonCorridos1_Click(object sender, EventArgs e)
         {
-            Incomodo incomodoForm = new Incomodo();//creainstancia
+            Incomodo incomodoForm = new Incomodo(nombreUsuario);//creainstancia
             this.Hide();//oculta
             incomodoForm.ShowDialog();//muestra
             this.Close();//cierra
@@ -63,7 +63,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonCorridos2_Click(object sender, EventArgs e)
         {
-            Sad sadForm = new Sad();//crea instancia
+            Sad sadForm = new Sad(nombreUsuario);//crea instancia
             this.Hide();//oculta
             sadForm.ShowDialog();//muestra
             this.Close();//cierra
@@ -71,7 +71,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonClasica1_Click(object sender, EventArgs e)
         {
-            Carmen carmenForm = new Carmen();//se crea instancia
+            Carmen carmenForm = new Carmen(nombreUsuario);//se crea instancia
             this.Hide();//esconde el form anterior
             carmenForm.ShowDialog();//muestra
             this.Close();//cierra
@@ -79,7 +79,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonClasica2_Click(object sender, EventArgs e)
         {
-            Vestila vestiForm = new Vestila();//se crea instancia
+            Vestila vestiForm = new Vestila(nombreUsuario);//se crea instancia
             this.Hide();//esconde el form anterior
             vestiForm.ShowDialog();//muestra
             this.Close();//cierra
@@ -87,7 +87,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonPop1_Click(object sender, EventArgs e)
         {
-            TheWorld WorldForm = new TheWorld();//se crea instancia
+            TheWorld WorldForm = new TheWorld(nombreUsuario);//se crea instancia
             this.Hide();//esconde el form anterior
             WorldForm.ShowDialog();//muestra
             this.Close();//cierra
@@ -95,7 +95,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonPop2_Click(object sender, EventArgs e)
         {
-            Love loveForm = new Love();//se crea instancia
+            Love loveForm = new Love(nombreUsuario);//se crea instancia
             this.Hide();//esconde el form anterior
             loveForm.ShowDialog();//muestra
             this.Close();//cierra

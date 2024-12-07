@@ -354,11 +354,11 @@ namespace Turnable_Tales_Proyecto
         /// <returns></returns>
         public string ConsultarCuentaContraInv(string cuenta, string contraseña)
         {
-            // Define las credenciales válidas
+            // Define las claves válidas
             string cuentaValida = "guest";
             string contraseñaValida = "ennemie";
 
-            // Compara las credenciales ingresadas con las válidas
+            // Compara las claves ingresadas con las válidas
             if (cuenta == cuentaValida && contraseña == contraseñaValida)
                 return "Invitado";
 

@@ -65,7 +65,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(55, 67);
             label2.Name = "label2";
-            label2.Size = new Size(287, 93);
+            label2.Size = new Size(355, 114);
             label2.TabIndex = 25;
             label2.Text = " NO SE LOGRO REALIZAR \r\n  LA ACCION\r\n\r\n";
             label2.TextAlign = ContentAlignment.TopCenter;
@@ -82,6 +82,7 @@
             Name = "FormDenegado";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormDenegado";
+            Load += FormDenegado_Load;
             ResumeLayout(false);
             PerformLayout();
         }

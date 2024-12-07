@@ -32,5 +32,10 @@ namespace Turnable_Tales_Proyecto
         {
             this.Close();
         }
+
+        private void FormDenegado_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

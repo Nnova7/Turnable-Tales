@@ -47,7 +47,7 @@ namespace Turnable_Tales_Proyecto
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-            ListaGeneros lista = new ListaGeneros(); //Crea instancia
+            ListaGeneros lista = new ListaGeneros(NombreUsuario); //Crea instancia
             this.Hide();// Oculta el Form de atras
             lista.ShowDialog(); //Muestra
             this.Close(); //Cierra
