@@ -446,6 +446,7 @@
             Name = "Love";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Love";
+            Load += Love_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);

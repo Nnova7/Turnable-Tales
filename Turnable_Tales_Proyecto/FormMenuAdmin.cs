@@ -25,7 +25,14 @@ namespace Turnable_Tales_Proyecto
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            if (!string.IsNullOrEmpty(nombreUsuario))
+            {
+                textBoxUsuario.Text = nombreUsuario;
+            }
+            else
+            {
+                textBoxUsuario.Text = "Usuario desconocido";
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

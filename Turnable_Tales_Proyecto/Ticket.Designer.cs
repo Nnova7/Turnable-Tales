@@ -157,6 +157,7 @@
             Name = "Ticket";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Ticket";
+            Load += Ticket_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBoxTicket).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
             ResumeLayout(false);

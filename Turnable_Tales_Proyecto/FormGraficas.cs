@@ -59,6 +59,15 @@ namespace Turnable_Tales_Proyecto
                 serie.Label = puntos[j].ToString();
                 serie.Points.Add(puntos[j]);
             }//for
+
+            if (!string.IsNullOrEmpty(nombreUsuario))
+            {
+                textBoxUsuario.Text = nombreUsuario;
+            }
+            else
+            {
+                textBoxUsuario.Text = "Usuario desconocido";
+            }//if
         }//FormGraficas_Load
 
         private void chart1_Click(object sender, EventArgs e)

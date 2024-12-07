@@ -39,7 +39,14 @@ namespace Turnable_Tales_Proyecto
 
         private void FormAgregarDisco_Load(object sender, EventArgs e)
         {
-
+            if (!string.IsNullOrEmpty(nombreUsuario))
+            {
+                textBoxUsuario.Text = nombreUsuario;
+            }
+            else
+            {
+                textBoxUsuario.Text = "Usuario desconocido";
+            }
         }
 
         private void agregar()

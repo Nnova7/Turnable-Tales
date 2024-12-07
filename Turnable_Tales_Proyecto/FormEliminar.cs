@@ -37,7 +37,14 @@ namespace Turnable_Tales_Proyecto
 
         private void FormEliminar_Load(object sender, EventArgs e)
         {
-
+            if (!string.IsNullOrEmpty(nombreUsuario))
+            {
+                textBoxUsuario.Text = nombreUsuario;
+            }
+            else
+            {
+                textBoxUsuario.Text = "Usuario desconocido";
+            }
         }
 
         private void buttonEnter_Click(object sender, EventArgs e)

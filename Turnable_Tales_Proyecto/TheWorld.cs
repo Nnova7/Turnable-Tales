@@ -69,5 +69,17 @@ namespace Turnable_Tales_Proyecto
             textBoxHora.Text = DateTime.Now.ToShortTimeString();
             textBoxFecha.Text = DateTime.Now.ToShortDateString();
         }
+
+        private void TheWorld_Load(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(nombreUsuario))
+            {
+                textBoxUsuario.Text = nombreUsuario;
+            }
+            else
+            {
+                textBoxUsuario.Text = "Usuario desconocido";
+            }
+        }
     }
 }

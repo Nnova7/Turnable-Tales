@@ -33,6 +33,14 @@ namespace Turnable_Tales_Proyecto
         private void FormVentas_Load(object sender, EventArgs e)
         {
             this.labeltxtVentas.Text = "EL TOTAL DE VENTAS ES DE $" + this.totalVentas();
+            if (!string.IsNullOrEmpty(nombreUsuario))
+            {
+                textBoxUsuario.Text = nombreUsuario;
+            }
+            else
+            {
+                textBoxUsuario.Text = "Usuario desconocido";
+            }
         }//FormVentas_Load
 
         public int totalVentas()

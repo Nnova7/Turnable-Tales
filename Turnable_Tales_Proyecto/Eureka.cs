@@ -41,7 +41,14 @@ namespace Turnable_Tales_Proyecto
 
         private void Eureka_Load(object sender, EventArgs e)
         {
-
+            if (!string.IsNullOrEmpty(nombreUsuario))
+            {
+                textBoxUsuario.Text = nombreUsuario;
+            }
+            else
+            {
+                textBoxUsuario.Text = "Usuario desconocido";
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

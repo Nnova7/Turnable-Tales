@@ -445,6 +445,7 @@
             Name = "Incomodo";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Incomodo";
+            Load += Incomodo_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);

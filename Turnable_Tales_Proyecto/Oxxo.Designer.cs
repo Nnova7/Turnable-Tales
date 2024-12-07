@@ -313,6 +313,7 @@
             Controls.Add(buttonRegresar);
             Name = "Oxxo";
             Text = "Oxxo";
+            Load += Oxxo_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBoxCuadInfo).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxInstruction).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

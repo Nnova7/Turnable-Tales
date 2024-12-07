@@ -447,6 +447,7 @@
             Name = "Tarjeta";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Tarjeta";
+            Load += Tarjeta_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
             ResumeLayout(false);

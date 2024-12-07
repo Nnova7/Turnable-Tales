@@ -447,6 +447,7 @@
             Name = "Vestila";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Vestila";
+            Load += Vestila_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
