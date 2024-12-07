@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Carmen));
             label1 = new Label();
             labelLinea = new Label();
             pictureBox1 = new PictureBox();
             buttonSonido = new Button();
-            buttonUsuario = new Button();
             labelTitulo = new Label();
             labelFrase = new Label();
             pictureBox2 = new PictureBox();
@@ -56,6 +56,10 @@
             label3 = new Label();
             label12 = new Label();
             descripcionCarmen = new RichTextBox();
+            textBoxHora = new TextBox();
+            textBoxFecha = new TextBox();
+            textBoxUsuario = new TextBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -100,24 +104,11 @@
             // 
             buttonSonido.FlatStyle = FlatStyle.Popup;
             buttonSonido.Image = (Image)resources.GetObject("buttonSonido.Image");
-            buttonSonido.Location = new Point(1051, 12);
+            buttonSonido.Location = new Point(227, 12);
             buttonSonido.Name = "buttonSonido";
             buttonSonido.Size = new Size(93, 89);
             buttonSonido.TabIndex = 205;
             buttonSonido.UseVisualStyleBackColor = true;
-            // 
-            // buttonUsuario
-            // 
-            buttonUsuario.BackColor = Color.Transparent;
-            buttonUsuario.FlatStyle = FlatStyle.Flat;
-            buttonUsuario.Image = Properties.Resources.Imagen1_removebg_preview;
-            buttonUsuario.ImageAlign = ContentAlignment.MiddleRight;
-            buttonUsuario.Location = new Point(1167, 12);
-            buttonUsuario.Name = "buttonUsuario";
-            buttonUsuario.Size = new Size(93, 89);
-            buttonUsuario.TabIndex = 204;
-            buttonUsuario.UseVisualStyleBackColor = false;
-            buttonUsuario.Click += buttonUsuario_Click;
             // 
             // labelTitulo
             // 
@@ -381,11 +372,51 @@
             descripcionCarmen.TabIndex = 232;
             descripcionCarmen.Text = " D E S C R I P C I Ó N:                                                   Es una pieza de música clásica compuesta por Arturo Márquez en 1994, inspirada en el género tradicional del danzón mexicano.";
             // 
+            // textBoxHora
+            // 
+            textBoxHora.BackColor = SystemColors.InactiveCaptionText;
+            textBoxHora.BorderStyle = BorderStyle.None;
+            textBoxHora.Enabled = false;
+            textBoxHora.ForeColor = Color.White;
+            textBoxHora.Location = new Point(1093, 82);
+            textBoxHora.Name = "textBoxHora";
+            textBoxHora.Size = new Size(197, 24);
+            textBoxHora.TabIndex = 236;
+            // 
+            // textBoxFecha
+            // 
+            textBoxFecha.BackColor = SystemColors.InactiveCaptionText;
+            textBoxFecha.BorderStyle = BorderStyle.None;
+            textBoxFecha.Enabled = false;
+            textBoxFecha.ForeColor = Color.White;
+            textBoxFecha.Location = new Point(1093, 46);
+            textBoxFecha.Name = "textBoxFecha";
+            textBoxFecha.Size = new Size(197, 24);
+            textBoxFecha.TabIndex = 235;
+            // 
+            // textBoxUsuario
+            // 
+            textBoxUsuario.BackColor = SystemColors.InactiveCaptionText;
+            textBoxUsuario.BorderStyle = BorderStyle.None;
+            textBoxUsuario.Enabled = false;
+            textBoxUsuario.ForeColor = Color.White;
+            textBoxUsuario.Location = new Point(1093, 9);
+            textBoxUsuario.Name = "textBoxUsuario";
+            textBoxUsuario.Size = new Size(197, 24);
+            textBoxUsuario.TabIndex = 234;
+            // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick;
+            // 
             // Carmen
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 612);
+            Controls.Add(textBoxHora);
+            Controls.Add(textBoxFecha);
+            Controls.Add(textBoxUsuario);
             Controls.Add(descripcionCarmen);
             Controls.Add(label12);
             Controls.Add(pictureBox2);
@@ -410,12 +441,12 @@
             Controls.Add(labelLinea);
             Controls.Add(pictureBox1);
             Controls.Add(buttonSonido);
-            Controls.Add(buttonUsuario);
             Controls.Add(labelTitulo);
             Controls.Add(labelFrase);
             Name = "Carmen";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Carmen";
+            Load += Carmen_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
@@ -428,7 +459,6 @@
         private Label labelLinea;
         private PictureBox pictureBox1;
         private Button buttonSonido;
-        private Button buttonUsuario;
         private Label labelTitulo;
         private Label labelFrase;
         private PictureBox pictureBox2;
@@ -451,5 +481,9 @@
         private Label label3;
         private Label label12;
         private RichTextBox descripcionCarmen;
+        private TextBox textBoxHora;
+        private TextBox textBoxFecha;
+        private TextBox textBoxUsuario;
+        private System.Windows.Forms.Timer timer1;
     }
 }

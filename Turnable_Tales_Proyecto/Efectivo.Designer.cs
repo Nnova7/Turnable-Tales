@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Efectivo));
             buttonRegresar = new Button();
             labelTitulo = new Label();
@@ -35,7 +36,6 @@
             labelLinea = new Label();
             label1 = new Label();
             labelNomDiap = new Label();
-            buttonUsuario = new Button();
             buttonMusica = new Button();
             pictureBoxDatos = new PictureBox();
             buttonCambio = new Button();
@@ -47,6 +47,10 @@
             textBoxCam = new TextBox();
             textBoxPagoCon = new TextBox();
             pictureBoxLogo = new PictureBox();
+            textBoxHora = new TextBox();
+            textBoxFecha = new TextBox();
+            textBoxUsuario = new TextBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBoxDatos).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             SuspendLayout();
@@ -72,7 +76,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(400, 10);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(398, 41);
+            labelTitulo.Size = new Size(595, 61);
             labelTitulo.TabIndex = 57;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -84,7 +88,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(521, 65);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(190, 15);
+            labelFrase.Size = new Size(288, 25);
             labelFrase.TabIndex = 58;
             labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
             // 
@@ -96,7 +100,7 @@
             labelLinea.ForeColor = Color.White;
             labelLinea.Location = new Point(193, 184);
             labelLinea.Name = "labelLinea";
-            labelLinea.Size = new Size(893, 3);
+            labelLinea.Size = new Size(1784, 4);
             labelLinea.TabIndex = 60;
             labelLinea.Text = resources.GetString("labelLinea.Text");
             labelLinea.TextAlign = ContentAlignment.TopCenter;
@@ -107,9 +111,9 @@
             label1.BackColor = Color.White;
             label1.Font = new Font("Consolas", 1.2F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(193, 93);
+            label1.Location = new Point(193, 108);
             label1.Name = "label1";
-            label1.Size = new Size(893, 3);
+            label1.Size = new Size(1784, 4);
             label1.TabIndex = 61;
             label1.Text = resources.GetString("label1.Text");
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -122,30 +126,17 @@
             labelNomDiap.ForeColor = Color.White;
             labelNomDiap.Location = new Point(474, 112);
             labelNomDiap.Name = "labelNomDiap";
-            labelNomDiap.Size = new Size(293, 41);
+            labelNomDiap.Size = new Size(437, 61);
             labelNomDiap.TabIndex = 62;
             labelNomDiap.Text = "PAGO EN EFECTIVO";
             labelNomDiap.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // buttonUsuario
-            // 
-            buttonUsuario.BackColor = Color.Transparent;
-            buttonUsuario.FlatStyle = FlatStyle.Popup;
-            buttonUsuario.Image = Properties.Resources.Imagen1_removebg_preview;
-            buttonUsuario.Location = new Point(994, 2);
-            buttonUsuario.Margin = new Padding(2);
-            buttonUsuario.Name = "buttonUsuario";
-            buttonUsuario.Size = new Size(92, 78);
-            buttonUsuario.TabIndex = 191;
-            buttonUsuario.UseVisualStyleBackColor = false;
-            buttonUsuario.Click += buttonUsuario_Click;
             // 
             // buttonMusica
             // 
             buttonMusica.BackColor = Color.Transparent;
             buttonMusica.FlatStyle = FlatStyle.Popup;
             buttonMusica.Image = (Image)resources.GetObject("buttonMusica.Image");
-            buttonMusica.Location = new Point(905, -2);
+            buttonMusica.Location = new Point(246, 4);
             buttonMusica.Name = "buttonMusica";
             buttonMusica.Size = new Size(84, 86);
             buttonMusica.TabIndex = 192;
@@ -189,7 +180,7 @@
             textBoxNPedido.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxNPedido.Location = new Point(647, 244);
             textBoxNPedido.Name = "textBoxNPedido";
-            textBoxNPedido.Size = new Size(151, 26);
+            textBoxNPedido.Size = new Size(151, 35);
             textBoxNPedido.TabIndex = 196;
             textBoxNPedido.TextAlign = HorizontalAlignment.Center;
             // 
@@ -200,7 +191,7 @@
             textBoxSub.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxSub.Location = new Point(647, 284);
             textBoxSub.Name = "textBoxSub";
-            textBoxSub.Size = new Size(151, 26);
+            textBoxSub.Size = new Size(151, 35);
             textBoxSub.TabIndex = 197;
             textBoxSub.TextAlign = HorizontalAlignment.Center;
             // 
@@ -211,7 +202,7 @@
             textBoxImp.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxImp.Location = new Point(647, 319);
             textBoxImp.Name = "textBoxImp";
-            textBoxImp.Size = new Size(151, 26);
+            textBoxImp.Size = new Size(151, 35);
             textBoxImp.TabIndex = 198;
             textBoxImp.TextAlign = HorizontalAlignment.Center;
             // 
@@ -222,7 +213,7 @@
             textBoxTot.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxTot.Location = new Point(647, 357);
             textBoxTot.Name = "textBoxTot";
-            textBoxTot.Size = new Size(151, 26);
+            textBoxTot.Size = new Size(151, 35);
             textBoxTot.TabIndex = 199;
             textBoxTot.TextAlign = HorizontalAlignment.Center;
             // 
@@ -233,7 +224,7 @@
             textBoxCam.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxCam.Location = new Point(647, 534);
             textBoxCam.Name = "textBoxCam";
-            textBoxCam.Size = new Size(151, 26);
+            textBoxCam.Size = new Size(151, 35);
             textBoxCam.TabIndex = 200;
             textBoxCam.TextAlign = HorizontalAlignment.Center;
             // 
@@ -243,7 +234,7 @@
             textBoxPagoCon.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxPagoCon.Location = new Point(647, 441);
             textBoxPagoCon.Name = "textBoxPagoCon";
-            textBoxPagoCon.Size = new Size(151, 26);
+            textBoxPagoCon.Size = new Size(151, 35);
             textBoxPagoCon.TabIndex = 201;
             textBoxPagoCon.TextAlign = HorizontalAlignment.Center;
             // 
@@ -258,11 +249,51 @@
             pictureBoxLogo.TabIndex = 202;
             pictureBoxLogo.TabStop = false;
             // 
+            // textBoxHora
+            // 
+            textBoxHora.BackColor = SystemColors.InactiveCaptionText;
+            textBoxHora.BorderStyle = BorderStyle.None;
+            textBoxHora.Enabled = false;
+            textBoxHora.ForeColor = Color.White;
+            textBoxHora.Location = new Point(1059, 77);
+            textBoxHora.Name = "textBoxHora";
+            textBoxHora.Size = new Size(197, 24);
+            textBoxHora.TabIndex = 239;
+            // 
+            // textBoxFecha
+            // 
+            textBoxFecha.BackColor = SystemColors.InactiveCaptionText;
+            textBoxFecha.BorderStyle = BorderStyle.None;
+            textBoxFecha.Enabled = false;
+            textBoxFecha.ForeColor = Color.White;
+            textBoxFecha.Location = new Point(1059, 41);
+            textBoxFecha.Name = "textBoxFecha";
+            textBoxFecha.Size = new Size(197, 24);
+            textBoxFecha.TabIndex = 238;
+            // 
+            // textBoxUsuario
+            // 
+            textBoxUsuario.BackColor = SystemColors.InactiveCaptionText;
+            textBoxUsuario.BorderStyle = BorderStyle.None;
+            textBoxUsuario.Enabled = false;
+            textBoxUsuario.ForeColor = Color.White;
+            textBoxUsuario.Location = new Point(1059, 4);
+            textBoxUsuario.Name = "textBoxUsuario";
+            textBoxUsuario.Size = new Size(197, 24);
+            textBoxUsuario.TabIndex = 237;
+            // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick;
+            // 
             // Efectivo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(textBoxHora);
+            Controls.Add(textBoxFecha);
+            Controls.Add(textBoxUsuario);
             Controls.Add(pictureBoxLogo);
             Controls.Add(textBoxPagoCon);
             Controls.Add(textBoxCam);
@@ -274,7 +305,6 @@
             Controls.Add(buttonCambio);
             Controls.Add(pictureBoxDatos);
             Controls.Add(buttonMusica);
-            Controls.Add(buttonUsuario);
             Controls.Add(labelNomDiap);
             Controls.Add(label1);
             Controls.Add(labelLinea);
@@ -285,6 +315,7 @@
             Name = "Efectivo";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Efectivo";
+            Load += Efectivo_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBoxDatos).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
             ResumeLayout(false);
@@ -299,7 +330,6 @@
         private Label labelLinea;
         private Label label1;
         private Label labelNomDiap;
-        private Button buttonUsuario;
         private Button buttonMusica;
         private PictureBox pictureBoxDatos;
         private Button buttonCambio;
@@ -311,5 +341,9 @@
         private TextBox textBoxCam;
         private TextBox textBoxPagoCon;
         private PictureBox pictureBoxLogo;
+        private TextBox textBoxHora;
+        private TextBox textBoxFecha;
+        private TextBox textBoxUsuario;
+        private System.Windows.Forms.Timer timer1;
     }
 }

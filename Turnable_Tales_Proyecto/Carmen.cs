@@ -12,7 +12,12 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class Carmen : Form
     {
-        public string nombreUsuario { get; set; }
+        public string nombreUsuario
+        {
+            get { return textBoxUsuario.Text; }
+            set { textBoxUsuario.Text = value; }
+        } // Propiedad para recibir el nombre
+        //public string nombreUsuario { get; set; }
         public Carmen()
         {
             InitializeComponent();
@@ -35,7 +40,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonAtras_Click(object sender, EventArgs e)
         {
-            ListaGeneros discos = new ListaGeneros(); //Crea instancia
+            ListaGeneros discos = new ListaGeneros(nombreUsuario); //Crea instancia
             this.Hide(); //Oculta el form de atras
             discos.Show(); // Muestra
             this.Close(); //Oculta
@@ -43,7 +48,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonTarjeta_Click(object sender, EventArgs e)
         {
-            Tarjeta tarjeta = new Tarjeta(); //se crea instancia
+            Tarjeta tarjeta = new Tarjeta(nombreUsuario); //se crea instancia
             this.Hide();
             tarjeta.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
@@ -51,7 +56,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonEfectivo_Click(object sender, EventArgs e)
         {
-            Efectivo efectivo = new Efectivo(); //se crea instancia
+            Efectivo efectivo = new Efectivo(nombreUsuario); //se crea instancia
             this.Hide();
             efectivo.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
@@ -63,6 +68,24 @@ namespace Turnable_Tales_Proyecto
             this.Hide();
             oxxo.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            textBoxHora.Text = DateTime.Now.ToShortTimeString();
+            textBoxFecha.Text = DateTime.Now.ToShortDateString();
+        }
+
+        private void Carmen_Load(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(nombreUsuario))
+            {
+                textBoxUsuario.Text = nombreUsuario;
+            }
+            else
+            {
+                textBoxUsuario.Text = "Usuario desconocido";
+            }
         }
     }
 }
