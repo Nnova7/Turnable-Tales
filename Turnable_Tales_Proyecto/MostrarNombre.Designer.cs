@@ -88,7 +88,7 @@
             labelHora.ForeColor = Color.White;
             labelHora.Location = new Point(26, 301);
             labelHora.Name = "labelHora";
-            labelHora.Size = new Size(53, 15);
+            labelHora.Size = new Size(85, 25);
             labelHora.TabIndex = 69;
             labelHora.Text = "H O R A:";
             // 
@@ -100,7 +100,7 @@
             labelFecha.ForeColor = Color.White;
             labelFecha.Location = new Point(26, 207);
             labelFecha.Name = "labelFecha";
-            labelFecha.Size = new Size(58, 15);
+            labelFecha.Size = new Size(94, 25);
             labelFecha.TabIndex = 68;
             labelFecha.Text = "F E C H A:";
             // 
@@ -112,7 +112,7 @@
             labelUsuario.ForeColor = Color.White;
             labelUsuario.Location = new Point(26, 119);
             labelUsuario.Name = "labelUsuario";
-            labelUsuario.Size = new Size(82, 15);
+            labelUsuario.Size = new Size(128, 25);
             labelUsuario.TabIndex = 67;
             labelUsuario.Text = "U S U A R I O:";
             // 
@@ -121,7 +121,7 @@
             textBoxUsuario.Enabled = false;
             textBoxUsuario.Location = new Point(160, 119);
             textBoxUsuario.Name = "textBoxUsuario";
-            textBoxUsuario.Size = new Size(197, 23);
+            textBoxUsuario.Size = new Size(197, 31);
             textBoxUsuario.TabIndex = 73;
             textBoxUsuario.TextChanged += textBoxUsuario_TextChanged;
             // 
@@ -130,7 +130,7 @@
             textBoxFecha.Enabled = false;
             textBoxFecha.Location = new Point(160, 207);
             textBoxFecha.Name = "textBoxFecha";
-            textBoxFecha.Size = new Size(197, 23);
+            textBoxFecha.Size = new Size(197, 31);
             textBoxFecha.TabIndex = 74;
             textBoxFecha.TextChanged += textBoxFecha_TextChanged;
             // 
@@ -139,7 +139,7 @@
             textBoxHora.Enabled = false;
             textBoxHora.Location = new Point(160, 301);
             textBoxHora.Name = "textBoxHora";
-            textBoxHora.Size = new Size(197, 23);
+            textBoxHora.Size = new Size(197, 31);
             textBoxHora.TabIndex = 75;
             // 
             // horafecha
@@ -166,6 +166,7 @@
             Name = "MostrarNombre";
             StartPosition = FormStartPosition.Manual;
             Text = "MostrarNombre";
+            Load += MostrarNombre_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBoxUsuario).EndInit();
             ResumeLayout(false);
             PerformLayout();

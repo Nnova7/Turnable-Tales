@@ -12,10 +12,22 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class MostrarNombre : Form
     {
+        public string NombreUsuario
+        {
+            get { return textBoxUsuario.Text; }
+            set { textBoxUsuario.Text = value; }
+        } // Propiedad para recibir el nombre
+
+        public MostrarNombre(string n)
+        {
+            InitializeComponent();
+            NombreUsuario = n;
+        }
         public MostrarNombre()
         {
             InitializeComponent();
         }
+
         /// <summary>
         /// Regresa a la portada principal del proyecto cuando seleccione cerrar sesión.
         /// </summary>
@@ -58,7 +70,19 @@ namespace Turnable_Tales_Proyecto
 
         private void textBoxUsuario_TextChanged(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void MostrarNombre_Load(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(NombreUsuario))
+            {
+                textBoxUsuario.Text = NombreUsuario;
+            }
+            else
+            {
+                textBoxUsuario.Text = "Usuario desconocido";
+            }
         }
     }
 }
