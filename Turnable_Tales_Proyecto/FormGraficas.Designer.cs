@@ -30,8 +30,8 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGraficas));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             pictureBox1 = new PictureBox();
             buttonRegresar = new Button();
             buttonMusica = new Button();
@@ -159,10 +159,10 @@
             // chart1
             // 
             chart1.BackColor = SystemColors.ActiveCaptionText;
-            chartArea3.Name = "ChartArea1";
-            chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            chart1.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            chart1.Legends.Add(legend1);
             chart1.Location = new Point(383, 237);
             chart1.Name = "chart1";
             chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
@@ -206,6 +206,7 @@
             // 
             // timer1
             // 
+            timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
             // 
             // FormGraficas

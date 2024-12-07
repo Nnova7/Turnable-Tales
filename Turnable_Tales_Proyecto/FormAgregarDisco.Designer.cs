@@ -426,6 +426,7 @@
             // 
             // timer1
             // 
+            timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
             // 
             // FormAgregarDisco
