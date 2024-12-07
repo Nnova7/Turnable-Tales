@@ -305,14 +305,17 @@ namespace Turnable_Tales_Proyecto
         /// <param name="cuenta"></param>
         /// <param name="contraseña"></param>
         /// <returns></returns>
-        public bool ConsultarCuentaContraAdmin(string cuenta, string contraseña)
+        public string ConsultarCuentaContraAdmin(string cuenta, string contraseña)
         {
-            // Define las cuentas válidas
+            // Define las credenciales válidas
             string cuentaValida = "admin";
             string contraseñaValida = "meilleure";
 
             // Compara las cuentas ingresadas con las válidas
-            return cuenta == cuentaValida && contraseña == contraseñaValida;
+            if (cuenta == cuentaValida && contraseña == contraseñaValida)
+                return "Administrador";
+
+            return null; // Si no coincide, retorna null
         }//consultarCuentaContraAdmin
 
         /// <summary>
@@ -327,25 +330,20 @@ namespace Turnable_Tales_Proyecto
             if ((cuenta == "admin" && contraseña == "meilleure") ||
                 (cuenta == "guest" && contraseña == "ennemie"))
             {
-                return false; // Bloquear el acceso
+                return null; // Bloquear el acceso
             }
-            try
-            {
-                string query = "SELECT * FROM usuarios WHERE cuenta = cuenta AND contraseña = contraseña";
-                MySqlCommand command = new MySqlCommand(query, this.conexion);
-                command.Parameters.AddWithValue("cuenta", cuenta);
-                command.Parameters.AddWithValue("contraseña", contraseña);
 
-                MySqlDataReader reader = command.ExecuteReader();
-                bool existe = reader.HasRows;
-                reader.Close();
-                return existe;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al verificar cuenta y contraseña: " + ex.Message);
-                return false;
-            }
+            // Validar cuentas específicas permitidas
+            if (cuenta == "dulceAnd" && contraseña == "abcdario123")
+                return "Dulce Mariana Andrade Olvera";
+            if (cuenta == "Egad Delarte" && contraseña == "MotoPerro73")
+                return "Elia Guadalupe Arteaga Delgado";
+            if (cuenta == "valeriR" && contraseña == "vAlram23")
+                return "Valeria Ramos Lopez";
+            if (cuenta == "CalzaGlez" && contraseña == "SuperNnova")
+                return "Georgina Guadalupe Calzada González";
+
+            return null; // Si no coincide con ninguna cuenta, denegar acceso
         }//consultarCuentaContraUsuario
 
         /// <summary>
@@ -356,12 +354,15 @@ namespace Turnable_Tales_Proyecto
         /// <returns></returns>
         public bool ConsultarCuentaContraInv(string cuenta, string contraseña)
         {
-            // Define las cuentas válidas
+            // Define las credenciales válidas
             string cuentaValida = "guest";
             string contraseñaValida = "ennemie";
 
-            // Compara las cuentas ingresadas con las válidas
-            return cuenta == cuentaValida && contraseña == contraseñaValida;
+            // Compara las credenciales ingresadas con las válidas
+            if (cuenta == cuentaValida && contraseña == contraseñaValida)
+                return "Invitado";
+
+            return null; // Si no coincide, retorna null
         }//consultarCuentaContraAdmin
     }//clase
 }//namespace
