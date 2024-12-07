@@ -17,14 +17,24 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class Ticket : Form
     {
+        public string nombreUsuario
+        {
+            get { return textBoxUsuario.Text; }
+            set { textBoxUsuario.Text = value; }
+        } // Propiedad para recibir el nombre
         public Ticket()
         {
             InitializeComponent();
         }
+        public Ticket(string n)
+        {
+            InitializeComponent();
+            nombreUsuario = n;
+        }
 
         private void buttonUsuario_Click(object sender, EventArgs e)
         {
-            MostrarNombre mostrar = new MostrarNombre(); //se crea instancia
+            MostrarNombre mostrar = new MostrarNombre(nombreUsuario); //se crea instancia
             //this.Hide();
             mostrar.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
@@ -32,7 +42,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonRegresar_Click(object sender, EventArgs e)
         {
-            ListaGeneros listageneros = new ListaGeneros(); //se crea instancia
+            ListaGeneros listageneros = new ListaGeneros(nombreUsuario); //se crea instancia
             this.Hide();
             listageneros.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 

@@ -45,15 +45,6 @@ namespace Turnable_Tales_Proyecto
             this.labelShowPrecio.Text = Convert.ToString(aux.Precio);
             this.labelShowExistencias.Text = Convert.ToString(aux.Cantidad);
 
-            if (!string.IsNullOrEmpty(nombreUsuario))
-            {
-                textBoxUsuario.Text = nombreUsuario;
-            }
-            else
-            {
-                textBoxUsuario.Text = "Usuario desconocido";
-            }
-
         }
     }
 }

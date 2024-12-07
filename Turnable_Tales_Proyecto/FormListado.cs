@@ -12,7 +12,11 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class FormListado : Form
     {
-        public string nombreUsuario { get; set; }
+        public string nombreUsuario
+        {
+            get { return textBoxUsuario.Text; }
+            set { textBoxUsuario.Text = value; }
+        } // Propiedad para recibir el nombre
         public FormListado()
         {
             InitializeComponent();

@@ -13,7 +13,11 @@ namespace Turnable_Tales_Proyecto
     public partial class ListaGeneros : Form
     {
         //Pare recibir el nombre
-        public string nombreUsuario { get; set; }
+        public string nombreUsuario
+        {
+            get { return textBoxUsuario.Text; }
+            set { textBoxUsuario.Text = value; }
+        } // Propiedad para recibir el nombre
         public ListaGeneros()
         {
             InitializeComponent();

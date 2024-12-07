@@ -19,14 +19,7 @@ namespace Turnable_Tales_Proyecto
 
         private void FormAgregado_Load(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(nombreUsuario))
-            {
-                textBoxUsuario.Text = nombreUsuario;
-            }
-            else
-            {
-                textBoxUsuario.Text = "Usuario desconocido";
-            }
+           
         }
 
         private void buttonRegresa_Click(object sender, EventArgs e)

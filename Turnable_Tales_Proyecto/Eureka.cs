@@ -12,7 +12,12 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class Eureka : Form
     {
-        public string nombreUsuario { get; set; }
+        public string nombreUsuario
+        {
+            get { return textBoxUsuario.Text; }
+            set { textBoxUsuario.Text = value; }
+        } // Propiedad para recibir el nombre
+        //public string nombreUsuario { get; set; }
         public Eureka()
         {
             InitializeComponent();
@@ -33,7 +38,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonAtras_Click(object sender, EventArgs e)
         {
-            ListaGeneros discos = new ListaGeneros(); //Crea instancia
+            ListaGeneros discos = new ListaGeneros(nombreUsuario); //Crea instancia
             this.Hide(); //Oculta el form de atras
             discos.Show(); //Muestra
             this.Close(); //Cierra
@@ -69,7 +74,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonEfectivo_Click(object sender, EventArgs e)
         {
-            Efectivo efectivo = new Efectivo(); //se crea instancia
+            Efectivo efectivo = new Efectivo(nombreUsuario); //se crea instancia
             this.Hide();
             efectivo.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 

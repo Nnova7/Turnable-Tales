@@ -12,11 +12,16 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class TheWorld : Form
     {
-        public string nombreUsuario { get; set; }
+        public string nombreUsuario
+        {
+            get { return textBoxUsuario.Text; }
+            set { textBoxUsuario.Text = value; }
+        } // Propiedad para recibir el nombre
         public TheWorld()
         {
             InitializeComponent();
         }
+
         //Constructor para pasar nombre
         public TheWorld(string n)
         {
@@ -34,7 +39,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonAtras_Click(object sender, EventArgs e)
         {
-            ListaGeneros discos = new ListaGeneros();//se crea instancia
+            ListaGeneros discos = new ListaGeneros(nombreUsuario);//se crea instancia
             this.Hide();//esconde el form de atras
             discos.Show();//muestra
             this.Close();//cierra
@@ -42,7 +47,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonTarjeta_Click(object sender, EventArgs e)
         {
-            Tarjeta tarjeta = new Tarjeta(); //se crea instancia
+            Tarjeta tarjeta = new Tarjeta(nombreUsuario); //se crea instancia
             this.Hide();
             tarjeta.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
@@ -50,7 +55,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonEfectivo_Click(object sender, EventArgs e)
         {
-            Efectivo efectivo = new Efectivo(); //se crea instancia
+            Efectivo efectivo = new Efectivo(nombreUsuario); //se crea instancia
             this.Hide();
             efectivo.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
