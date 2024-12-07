@@ -62,7 +62,7 @@ namespace Turnable_Tales_Proyecto
             Datos obj = new Datos();
 
             // Verificar cuenta y contraseña
-            string nombreUsuario = obj.ConsultarCuentaContraUsuario(cuentaIngresada, contraseñaIngresada);
+            string nombreUsuario = obj.ConsultarCuentaContraInv(cuentaIngresada, contraseñaIngresada);
 
             // Verificar si el nombre de usuario no es nulo ni vacío
             if (!string.IsNullOrEmpty(nombreUsuario))
@@ -78,6 +78,11 @@ namespace Turnable_Tales_Proyecto
             {
                 MessageBox.Show("Acceso denegado. Cuenta o contraseña incorrecta.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void IngresarInvitado_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

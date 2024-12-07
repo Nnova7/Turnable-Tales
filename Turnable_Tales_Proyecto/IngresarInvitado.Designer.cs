@@ -200,6 +200,7 @@
             Name = "IngresarInvitado";
             StartPosition = FormStartPosition.Manual;
             Text = "IngresarInvitado";
+            Load += IngresarInvitado_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }
