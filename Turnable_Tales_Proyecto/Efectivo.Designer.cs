@@ -298,6 +298,7 @@
             cerrarSesion.TabIndex = 240;
             cerrarSesion.Text = "C E R R A R  S E S I Ó N";
             cerrarSesion.UseVisualStyleBackColor = false;
+            cerrarSesion.Click += cerrarSesion_Click;
             // 
             // Efectivo
             // 

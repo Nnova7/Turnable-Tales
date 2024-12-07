@@ -90,7 +90,10 @@ namespace Turnable_Tales_Proyecto
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            PortadaProyecto portada = new PortadaProyecto();
+            this.Hide();
+            portada.ShowDialog();
+            this.Close();
         }
     }
 }

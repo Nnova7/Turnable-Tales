@@ -86,5 +86,13 @@ namespace Turnable_Tales_Proyecto
                 textBoxUsuario.Text = "Usuario desconocido";
             }
         }
+
+        private void cerrarSesion_Click(object sender, EventArgs e)
+        {
+            PortadaProyecto portada = new PortadaProyecto();
+            this.Hide();
+            portada.ShowDialog();
+            this.Close();
+        }
     }
 }

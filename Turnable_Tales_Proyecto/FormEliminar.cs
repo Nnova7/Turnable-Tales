@@ -113,5 +113,13 @@ namespace Turnable_Tales_Proyecto
             textBoxHora.Text = DateTime.Now.ToShortTimeString();
             textBoxFecha.Text = DateTime.Now.ToShortDateString();
         }
+
+        private void cerrarSesion_Click(object sender, EventArgs e)
+        {
+            PortadaProyecto portada = new PortadaProyecto();
+            this.Hide();
+            portada.ShowDialog();
+            this.Close();
+        }
     }
 }
