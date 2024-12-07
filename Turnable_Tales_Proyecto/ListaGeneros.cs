@@ -12,9 +12,15 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class ListaGeneros : Form
     {
+        public string nombreUsuario { get; set;  }
         public ListaGeneros()
         {
             InitializeComponent();
+        }
+        public ListaGeneros(string n)
+        {
+            InitializeComponent();
+            nombreUsuario = n;
         }
 
         private void buttonUsuario_Click(object sender, EventArgs e)
@@ -92,6 +98,11 @@ namespace Turnable_Tales_Proyecto
             this.Hide();//esconde el form anterior
             loveForm.ShowDialog();//muestra
             this.Close();//cierra
+        }
+
+        private void ListaGeneros_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
