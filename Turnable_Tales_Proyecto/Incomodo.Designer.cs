@@ -33,7 +33,6 @@
             labelLinea = new Label();
             pictureBox1 = new PictureBox();
             buttonSonido = new Button();
-            buttonUsuario = new Button();
             labelTitulo = new Label();
             labelFrase = new Label();
             pictureBox2 = new PictureBox();
@@ -56,6 +55,9 @@
             label3 = new Label();
             label12 = new Label();
             descripcionIncomodo = new RichTextBox();
+            textBoxHora = new TextBox();
+            textBoxFecha = new TextBox();
+            textBoxUsuario = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -100,24 +102,11 @@
             // 
             buttonSonido.FlatStyle = FlatStyle.Popup;
             buttonSonido.Image = (Image)resources.GetObject("buttonSonido.Image");
-            buttonSonido.Location = new Point(1055, 12);
+            buttonSonido.Location = new Point(240, 12);
             buttonSonido.Name = "buttonSonido";
             buttonSonido.Size = new Size(93, 89);
             buttonSonido.TabIndex = 205;
             buttonSonido.UseVisualStyleBackColor = true;
-            // 
-            // buttonUsuario
-            // 
-            buttonUsuario.BackColor = Color.Transparent;
-            buttonUsuario.FlatStyle = FlatStyle.Flat;
-            buttonUsuario.Image = Properties.Resources.Imagen1_removebg_preview;
-            buttonUsuario.ImageAlign = ContentAlignment.MiddleRight;
-            buttonUsuario.Location = new Point(1171, 12);
-            buttonUsuario.Name = "buttonUsuario";
-            buttonUsuario.Size = new Size(93, 89);
-            buttonUsuario.TabIndex = 204;
-            buttonUsuario.UseVisualStyleBackColor = false;
-            buttonUsuario.Click += buttonUsuario_Click;
             // 
             // labelTitulo
             // 
@@ -380,11 +369,47 @@
             descripcionIncomodo.TabIndex = 233;
             descripcionIncomodo.Text = " D E S C R I P C I Ó N:                                                   Es un álbum de corridos lanzado por Tito  Double P, destacando por su estilo  auténtico y letras directas.";
             // 
+            // textBoxHora
+            // 
+            textBoxHora.BackColor = SystemColors.InactiveCaptionText;
+            textBoxHora.BorderStyle = BorderStyle.None;
+            textBoxHora.Enabled = false;
+            textBoxHora.ForeColor = Color.White;
+            textBoxHora.Location = new Point(1067, 82);
+            textBoxHora.Name = "textBoxHora";
+            textBoxHora.Size = new Size(197, 24);
+            textBoxHora.TabIndex = 242;
+            // 
+            // textBoxFecha
+            // 
+            textBoxFecha.BackColor = SystemColors.InactiveCaptionText;
+            textBoxFecha.BorderStyle = BorderStyle.None;
+            textBoxFecha.Enabled = false;
+            textBoxFecha.ForeColor = Color.White;
+            textBoxFecha.Location = new Point(1067, 46);
+            textBoxFecha.Name = "textBoxFecha";
+            textBoxFecha.Size = new Size(197, 24);
+            textBoxFecha.TabIndex = 241;
+            // 
+            // textBoxUsuario
+            // 
+            textBoxUsuario.BackColor = SystemColors.InactiveCaptionText;
+            textBoxUsuario.BorderStyle = BorderStyle.None;
+            textBoxUsuario.Enabled = false;
+            textBoxUsuario.ForeColor = Color.White;
+            textBoxUsuario.Location = new Point(1067, 9);
+            textBoxUsuario.Name = "textBoxUsuario";
+            textBoxUsuario.Size = new Size(197, 24);
+            textBoxUsuario.TabIndex = 240;
+            // 
             // Incomodo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 633);
+            Controls.Add(textBoxHora);
+            Controls.Add(textBoxFecha);
+            Controls.Add(textBoxUsuario);
             Controls.Add(descripcionIncomodo);
             Controls.Add(label12);
             Controls.Add(pictureBox2);
@@ -409,7 +434,6 @@
             Controls.Add(labelLinea);
             Controls.Add(pictureBox1);
             Controls.Add(buttonSonido);
-            Controls.Add(buttonUsuario);
             Controls.Add(labelTitulo);
             Controls.Add(labelFrase);
             Name = "Incomodo";
@@ -427,7 +451,6 @@
         private Label labelLinea;
         private PictureBox pictureBox1;
         private Button buttonSonido;
-        private Button buttonUsuario;
         private Label labelTitulo;
         private Label labelFrase;
         private PictureBox pictureBox2;
@@ -450,5 +473,8 @@
         private Label label3;
         private Label label12;
         private RichTextBox descripcionIncomodo;
+        private TextBox textBoxHora;
+        private TextBox textBoxFecha;
+        private TextBox textBoxUsuario;
     }
 }

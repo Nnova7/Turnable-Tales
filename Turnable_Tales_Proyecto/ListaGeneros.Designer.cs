@@ -35,7 +35,6 @@
             label6 = new Label();
             label5 = new Label();
             buttonSonido = new Button();
-            buttonUsuario = new Button();
             label2 = new Label();
             label1 = new Label();
             labelLinea = new Label();
@@ -77,6 +76,9 @@
             label23 = new Label();
             label22 = new Label();
             label25 = new Label();
+            textBoxHora = new TextBox();
+            textBoxFecha = new TextBox();
+            textBoxUsuario = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxRock1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxRock2).BeginInit();
@@ -144,24 +146,11 @@
             // 
             buttonSonido.FlatStyle = FlatStyle.Popup;
             buttonSonido.Image = (Image)resources.GetObject("buttonSonido.Image");
-            buttonSonido.Location = new Point(1085, 9);
+            buttonSonido.Location = new Point(249, 5);
             buttonSonido.Name = "buttonSonido";
             buttonSonido.Size = new Size(93, 89);
             buttonSonido.TabIndex = 112;
             buttonSonido.UseVisualStyleBackColor = true;
-            // 
-            // buttonUsuario
-            // 
-            buttonUsuario.BackColor = Color.Transparent;
-            buttonUsuario.BackgroundImage = Properties.Resources.Imagen1_removebg_preview;
-            buttonUsuario.FlatStyle = FlatStyle.Flat;
-            buttonUsuario.ImageAlign = ContentAlignment.MiddleRight;
-            buttonUsuario.Location = new Point(1178, 12);
-            buttonUsuario.Name = "buttonUsuario";
-            buttonUsuario.Size = new Size(93, 89);
-            buttonUsuario.TabIndex = 108;
-            buttonUsuario.UseVisualStyleBackColor = false;
-            buttonUsuario.Click += buttonUsuario_Click;
             // 
             // label2
             // 
@@ -642,11 +631,47 @@
             label25.TabIndex = 201;
             label25.Text = "\"LOVE YOURSELF\"";
             // 
+            // textBoxHora
+            // 
+            textBoxHora.BackColor = SystemColors.InactiveCaptionText;
+            textBoxHora.BorderStyle = BorderStyle.None;
+            textBoxHora.Enabled = false;
+            textBoxHora.ForeColor = Color.White;
+            textBoxHora.Location = new Point(1075, 78);
+            textBoxHora.Name = "textBoxHora";
+            textBoxHora.Size = new Size(197, 24);
+            textBoxHora.TabIndex = 242;
+            // 
+            // textBoxFecha
+            // 
+            textBoxFecha.BackColor = SystemColors.InactiveCaptionText;
+            textBoxFecha.BorderStyle = BorderStyle.None;
+            textBoxFecha.Enabled = false;
+            textBoxFecha.ForeColor = Color.White;
+            textBoxFecha.Location = new Point(1075, 42);
+            textBoxFecha.Name = "textBoxFecha";
+            textBoxFecha.Size = new Size(197, 24);
+            textBoxFecha.TabIndex = 241;
+            // 
+            // textBoxUsuario
+            // 
+            textBoxUsuario.BackColor = SystemColors.InactiveCaptionText;
+            textBoxUsuario.BorderStyle = BorderStyle.None;
+            textBoxUsuario.Enabled = false;
+            textBoxUsuario.ForeColor = Color.White;
+            textBoxUsuario.Location = new Point(1075, 5);
+            textBoxUsuario.Name = "textBoxUsuario";
+            textBoxUsuario.Size = new Size(197, 24);
+            textBoxUsuario.TabIndex = 240;
+            // 
             // ListaGeneros
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 633);
+            Controls.Add(textBoxHora);
+            Controls.Add(textBoxFecha);
+            Controls.Add(textBoxUsuario);
             Controls.Add(label22);
             Controls.Add(label25);
             Controls.Add(label20);
@@ -688,7 +713,6 @@
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(buttonSonido);
-            Controls.Add(buttonUsuario);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(labelLinea);
@@ -723,7 +747,6 @@
         private Label label6;
         private Label label5;
         private Button buttonSonido;
-        private Button buttonUsuario;
         private Label label2;
         private Label label1;
         private Label labelLinea;
@@ -765,5 +788,8 @@
         private Label label23;
         private Label label22;
         private Label label25;
+        private TextBox textBoxHora;
+        private TextBox textBoxFecha;
+        private TextBox textBoxUsuario;
     }
 }

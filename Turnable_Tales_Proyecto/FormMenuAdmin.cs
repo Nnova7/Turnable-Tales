@@ -45,7 +45,7 @@ namespace Turnable_Tales_Proyecto
             }//if
             else//En caso de que este lleno sale la restriccion
             {
-                FormDenegado formDenegado=new FormDenegado("SE ALCANZO EL NUMERO MAXIMO DE VINILOS");
+                FormDenegado formDenegado = new FormDenegado("SE ALCANZO EL NUMERO MAXIMO DE VINILOS");
                 formDenegado.ShowDialog();
             }//else
         }//buttonAgregarDisco_Click
@@ -54,14 +54,14 @@ namespace Turnable_Tales_Proyecto
         {
             FormVentas ventas = new FormVentas(); //se crea instancia
             this.Hide();
-            ventas.ShowDialog(); 
-            this.Show(); 
+            ventas.ShowDialog();
+            this.Show();
         }
 
         private void buttonEliminaDisco_Click(object sender, EventArgs e)
         {
             Datos obj = new Datos();
-            if(obj.numDeRegistros() > 6)//Si se pueden eliminar discos
+            if (obj.numDeRegistros() > 6)//Si se pueden eliminar discos
             {
                 FormEliminar formEliminar = new FormEliminar();
                 this.Hide();
@@ -100,6 +100,11 @@ namespace Turnable_Tales_Proyecto
         {
             MostrarNombre mostrar = new MostrarNombre(nombreUsuario); //se crea instancia
             mostrar.ShowDialog(); // Mostrar
+        }
+
+        private void buttonUsuario_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

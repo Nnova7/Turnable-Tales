@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Oxxo));
             buttonRegresar = new Button();
             buttonMusica = new Button();
-            buttonUsuario = new Button();
             buttonTicket = new Button();
             labelTitulo = new Label();
             labelFrase = new Label();
@@ -47,6 +46,9 @@
             textBoxFechaCrea = new TextBox();
             label2 = new Label();
             pictureBoxLogo = new PictureBox();
+            textBoxHora = new TextBox();
+            textBoxFecha = new TextBox();
+            textBoxUsuario = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxCuadInfo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxInstruction).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -71,24 +73,11 @@
             buttonMusica.BackColor = Color.Transparent;
             buttonMusica.FlatStyle = FlatStyle.Popup;
             buttonMusica.Image = (Image)resources.GetObject("buttonMusica.Image");
-            buttonMusica.Location = new Point(905, -2);
+            buttonMusica.Location = new Point(246, 4);
             buttonMusica.Name = "buttonMusica";
             buttonMusica.Size = new Size(84, 86);
             buttonMusica.TabIndex = 193;
             buttonMusica.UseVisualStyleBackColor = false;
-            // 
-            // buttonUsuario
-            // 
-            buttonUsuario.BackColor = Color.Transparent;
-            buttonUsuario.FlatStyle = FlatStyle.Popup;
-            buttonUsuario.Image = Properties.Resources.Imagen1_removebg_preview;
-            buttonUsuario.Location = new Point(994, 2);
-            buttonUsuario.Margin = new Padding(2);
-            buttonUsuario.Name = "buttonUsuario";
-            buttonUsuario.Size = new Size(92, 78);
-            buttonUsuario.TabIndex = 194;
-            buttonUsuario.UseVisualStyleBackColor = false;
-            buttonUsuario.Click += buttonUsuario_Click;
             // 
             // buttonTicket
             // 
@@ -109,7 +98,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(400, 10);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(398, 41);
+            labelTitulo.Size = new Size(595, 61);
             labelTitulo.TabIndex = 197;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -121,7 +110,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(521, 65);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(190, 15);
+            labelFrase.Size = new Size(288, 25);
             labelFrase.TabIndex = 198;
             labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
             // 
@@ -133,7 +122,7 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(193, 93);
             label1.Name = "label1";
-            label1.Size = new Size(893, 3);
+            label1.Size = new Size(1784, 4);
             label1.TabIndex = 199;
             label1.Text = resources.GetString("label1.Text");
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -146,7 +135,7 @@
             labelNomDiap.ForeColor = Color.White;
             labelNomDiap.Location = new Point(505, 111);
             labelNomDiap.Name = "labelNomDiap";
-            labelNomDiap.Size = new Size(240, 41);
+            labelNomDiap.Size = new Size(358, 61);
             labelNomDiap.TabIndex = 200;
             labelNomDiap.Text = "PAGO EN OXXO";
             labelNomDiap.TextAlign = ContentAlignment.TopCenter;
@@ -159,7 +148,7 @@
             labelLinea.ForeColor = Color.White;
             labelLinea.Location = new Point(193, 184);
             labelLinea.Name = "labelLinea";
-            labelLinea.Size = new Size(893, 3);
+            labelLinea.Size = new Size(1784, 4);
             labelLinea.TabIndex = 201;
             labelLinea.Text = resources.GetString("labelLinea.Text");
             labelLinea.TextAlign = ContentAlignment.TopCenter;
@@ -198,7 +187,7 @@
             textBoxNPedido.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxNPedido.Location = new Point(953, 371);
             textBoxNPedido.Name = "textBoxNPedido";
-            textBoxNPedido.Size = new Size(179, 26);
+            textBoxNPedido.Size = new Size(179, 35);
             textBoxNPedido.TabIndex = 205;
             textBoxNPedido.TextAlign = HorizontalAlignment.Center;
             // 
@@ -209,7 +198,7 @@
             textBoxPagAntes.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxPagAntes.Location = new Point(566, 255);
             textBoxPagAntes.Name = "textBoxPagAntes";
-            textBoxPagAntes.Size = new Size(179, 26);
+            textBoxPagAntes.Size = new Size(179, 35);
             textBoxPagAntes.TabIndex = 206;
             textBoxPagAntes.TextAlign = HorizontalAlignment.Center;
             // 
@@ -220,7 +209,7 @@
             textBoxValor.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxValor.Location = new Point(151, 255);
             textBoxValor.Name = "textBoxValor";
-            textBoxValor.Size = new Size(179, 26);
+            textBoxValor.Size = new Size(179, 35);
             textBoxValor.TabIndex = 207;
             textBoxValor.TextAlign = HorizontalAlignment.Center;
             // 
@@ -231,7 +220,7 @@
             textBoxFechaCrea.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxFechaCrea.Location = new Point(359, 255);
             textBoxFechaCrea.Name = "textBoxFechaCrea";
-            textBoxFechaCrea.Size = new Size(179, 26);
+            textBoxFechaCrea.Size = new Size(179, 35);
             textBoxFechaCrea.TabIndex = 208;
             textBoxFechaCrea.TextAlign = HorizontalAlignment.Center;
             // 
@@ -243,7 +232,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(953, 345);
             label2.Name = "label2";
-            label2.Size = new Size(162, 18);
+            label2.Size = new Size(241, 27);
             label2.TabIndex = 209;
             label2.Text = "NUMERO DEL PEDIDO";
             // 
@@ -258,11 +247,47 @@
             pictureBoxLogo.TabIndex = 210;
             pictureBoxLogo.TabStop = false;
             // 
+            // textBoxHora
+            // 
+            textBoxHora.BackColor = SystemColors.InactiveCaptionText;
+            textBoxHora.BorderStyle = BorderStyle.None;
+            textBoxHora.Enabled = false;
+            textBoxHora.ForeColor = Color.White;
+            textBoxHora.Location = new Point(1061, 77);
+            textBoxHora.Name = "textBoxHora";
+            textBoxHora.Size = new Size(197, 24);
+            textBoxHora.TabIndex = 242;
+            // 
+            // textBoxFecha
+            // 
+            textBoxFecha.BackColor = SystemColors.InactiveCaptionText;
+            textBoxFecha.BorderStyle = BorderStyle.None;
+            textBoxFecha.Enabled = false;
+            textBoxFecha.ForeColor = Color.White;
+            textBoxFecha.Location = new Point(1061, 41);
+            textBoxFecha.Name = "textBoxFecha";
+            textBoxFecha.Size = new Size(197, 24);
+            textBoxFecha.TabIndex = 241;
+            // 
+            // textBoxUsuario
+            // 
+            textBoxUsuario.BackColor = SystemColors.InactiveCaptionText;
+            textBoxUsuario.BorderStyle = BorderStyle.None;
+            textBoxUsuario.Enabled = false;
+            textBoxUsuario.ForeColor = Color.White;
+            textBoxUsuario.Location = new Point(1061, 4);
+            textBoxUsuario.Name = "textBoxUsuario";
+            textBoxUsuario.Size = new Size(197, 24);
+            textBoxUsuario.TabIndex = 240;
+            // 
             // Oxxo
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1286, 594);
+            Controls.Add(textBoxHora);
+            Controls.Add(textBoxFecha);
+            Controls.Add(textBoxUsuario);
             Controls.Add(pictureBoxLogo);
             Controls.Add(label2);
             Controls.Add(textBoxFechaCrea);
@@ -278,7 +303,6 @@
             Controls.Add(labelFrase);
             Controls.Add(labelTitulo);
             Controls.Add(buttonTicket);
-            Controls.Add(buttonUsuario);
             Controls.Add(buttonMusica);
             Controls.Add(buttonRegresar);
             Name = "Oxxo";
@@ -295,7 +319,6 @@
 
         private Button buttonRegresar;
         private Button buttonMusica;
-        private Button buttonUsuario;
         private Button buttonTicket;
         private Label labelTitulo;
         private Label labelFrase;
@@ -311,5 +334,8 @@
         private TextBox textBoxFechaCrea;
         private Label label2;
         private PictureBox pictureBoxLogo;
+        private TextBox textBoxHora;
+        private TextBox textBoxFecha;
+        private TextBox textBoxUsuario;
     }
 }

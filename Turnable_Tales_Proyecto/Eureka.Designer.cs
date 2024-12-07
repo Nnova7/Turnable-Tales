@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Eureka));
             label1 = new Label();
             labelLinea = new Label();
             pictureBox1 = new PictureBox();
             buttonSonido = new Button();
-            buttonUsuario = new Button();
             labelTitulo = new Label();
             labelFrase = new Label();
             pictureBox2 = new PictureBox();
@@ -56,6 +56,10 @@
             label3 = new Label();
             label12 = new Label();
             descripcionCarmen = new RichTextBox();
+            textBoxHora = new TextBox();
+            textBoxFecha = new TextBox();
+            textBoxUsuario = new TextBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -100,24 +104,11 @@
             // 
             buttonSonido.FlatStyle = FlatStyle.Popup;
             buttonSonido.Image = (Image)resources.GetObject("buttonSonido.Image");
-            buttonSonido.Location = new Point(1051, 12);
+            buttonSonido.Location = new Point(220, 12);
             buttonSonido.Name = "buttonSonido";
             buttonSonido.Size = new Size(93, 89);
             buttonSonido.TabIndex = 205;
             buttonSonido.UseVisualStyleBackColor = true;
-            // 
-            // buttonUsuario
-            // 
-            buttonUsuario.BackColor = Color.Transparent;
-            buttonUsuario.FlatStyle = FlatStyle.Flat;
-            buttonUsuario.Image = Properties.Resources.Imagen1_removebg_preview;
-            buttonUsuario.ImageAlign = ContentAlignment.MiddleRight;
-            buttonUsuario.Location = new Point(1167, 12);
-            buttonUsuario.Name = "buttonUsuario";
-            buttonUsuario.Size = new Size(93, 89);
-            buttonUsuario.TabIndex = 204;
-            buttonUsuario.UseVisualStyleBackColor = false;
-            buttonUsuario.Click += buttonUsuario_Click;
             // 
             // labelTitulo
             // 
@@ -380,11 +371,51 @@
             descripcionCarmen.TabIndex = 233;
             descripcionCarmen.Text = " D E S C R I P C I Ó N:                                                   Es el tercer álbum de estudio lanzado por Mother Mother y fue publicado el 15 de marzo de 2011.";
             // 
+            // textBoxHora
+            // 
+            textBoxHora.BackColor = SystemColors.InactiveCaptionText;
+            textBoxHora.BorderStyle = BorderStyle.None;
+            textBoxHora.Enabled = false;
+            textBoxHora.ForeColor = Color.White;
+            textBoxHora.Location = new Point(1087, 85);
+            textBoxHora.Name = "textBoxHora";
+            textBoxHora.Size = new Size(197, 24);
+            textBoxHora.TabIndex = 239;
+            // 
+            // textBoxFecha
+            // 
+            textBoxFecha.BackColor = SystemColors.InactiveCaptionText;
+            textBoxFecha.BorderStyle = BorderStyle.None;
+            textBoxFecha.Enabled = false;
+            textBoxFecha.ForeColor = Color.White;
+            textBoxFecha.Location = new Point(1087, 49);
+            textBoxFecha.Name = "textBoxFecha";
+            textBoxFecha.Size = new Size(197, 24);
+            textBoxFecha.TabIndex = 238;
+            // 
+            // textBoxUsuario
+            // 
+            textBoxUsuario.BackColor = SystemColors.InactiveCaptionText;
+            textBoxUsuario.BorderStyle = BorderStyle.None;
+            textBoxUsuario.Enabled = false;
+            textBoxUsuario.ForeColor = Color.White;
+            textBoxUsuario.Location = new Point(1087, 12);
+            textBoxUsuario.Name = "textBoxUsuario";
+            textBoxUsuario.Size = new Size(197, 24);
+            textBoxUsuario.TabIndex = 237;
+            // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick;
+            // 
             // Eureka
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 633);
+            Controls.Add(textBoxHora);
+            Controls.Add(textBoxFecha);
+            Controls.Add(textBoxUsuario);
             Controls.Add(descripcionCarmen);
             Controls.Add(label12);
             Controls.Add(pictureBox2);
@@ -409,7 +440,6 @@
             Controls.Add(labelLinea);
             Controls.Add(pictureBox1);
             Controls.Add(buttonSonido);
-            Controls.Add(buttonUsuario);
             Controls.Add(labelTitulo);
             Controls.Add(labelFrase);
             Name = "Eureka";
@@ -428,7 +458,6 @@
         private Label labelLinea;
         private PictureBox pictureBox1;
         private Button buttonSonido;
-        private Button buttonUsuario;
         private Label labelTitulo;
         private Label labelFrase;
         private PictureBox pictureBox2;
@@ -451,5 +480,9 @@
         private Label label3;
         private Label label12;
         private RichTextBox descripcionCarmen;
+        private TextBox textBoxHora;
+        private TextBox textBoxFecha;
+        private TextBox textBoxUsuario;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -63,5 +63,10 @@ namespace Turnable_Tales_Proyecto
             oxxo.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
         }
+
+        private void buttonSonido_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

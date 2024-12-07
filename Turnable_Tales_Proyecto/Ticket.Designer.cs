@@ -30,11 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ticket));
             pictureBoxTicket = new PictureBox();
-            buttonUsuario = new Button();
             buttonMusica = new Button();
             buttonRegresar = new Button();
             pictureBoxLogo = new PictureBox();
             buttonTicket = new Button();
+            textBoxHora = new TextBox();
+            textBoxFecha = new TextBox();
+            textBoxUsuario = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxTicket).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             SuspendLayout();
@@ -42,33 +44,22 @@
             // pictureBoxTicket
             // 
             pictureBoxTicket.BackgroundImage = Properties.Resources.WhatsApp_Image_2024_12_03_at_9_15_30_AM;
-            pictureBoxTicket.Location = new Point(346, 12);
+            pictureBoxTicket.Location = new Point(494, 20);
+            pictureBoxTicket.Margin = new Padding(4, 5, 4, 5);
             pictureBoxTicket.Name = "pictureBoxTicket";
-            pictureBoxTicket.Size = new Size(392, 555);
+            pictureBoxTicket.Size = new Size(560, 925);
             pictureBoxTicket.TabIndex = 0;
             pictureBoxTicket.TabStop = false;
-            // 
-            // buttonUsuario
-            // 
-            buttonUsuario.BackColor = Color.Transparent;
-            buttonUsuario.FlatStyle = FlatStyle.Popup;
-            buttonUsuario.Image = Properties.Resources.Imagen1_removebg_preview;
-            buttonUsuario.Location = new Point(994, 2);
-            buttonUsuario.Margin = new Padding(2);
-            buttonUsuario.Name = "buttonUsuario";
-            buttonUsuario.Size = new Size(92, 78);
-            buttonUsuario.TabIndex = 192;
-            buttonUsuario.UseVisualStyleBackColor = false;
-            buttonUsuario.Click += buttonUsuario_Click;
             // 
             // buttonMusica
             // 
             buttonMusica.BackColor = Color.Transparent;
             buttonMusica.FlatStyle = FlatStyle.Popup;
             buttonMusica.Image = (Image)resources.GetObject("buttonMusica.Image");
-            buttonMusica.Location = new Point(905, -2);
+            buttonMusica.Location = new Point(1139, -3);
+            buttonMusica.Margin = new Padding(4, 5, 4, 5);
             buttonMusica.Name = "buttonMusica";
-            buttonMusica.Size = new Size(84, 86);
+            buttonMusica.Size = new Size(120, 143);
             buttonMusica.TabIndex = 193;
             buttonMusica.UseVisualStyleBackColor = false;
             // 
@@ -77,10 +68,10 @@
             buttonRegresar.BackColor = Color.Transparent;
             buttonRegresar.BackgroundImage = Properties.Resources.flechaizq;
             buttonRegresar.FlatStyle = FlatStyle.Popup;
-            buttonRegresar.Location = new Point(9, 296);
+            buttonRegresar.Location = new Point(13, 493);
             buttonRegresar.Margin = new Padding(0);
             buttonRegresar.Name = "buttonRegresar";
-            buttonRegresar.Size = new Size(60, 67);
+            buttonRegresar.Size = new Size(86, 112);
             buttonRegresar.TabIndex = 194;
             buttonRegresar.UseVisualStyleBackColor = false;
             buttonRegresar.Click += buttonRegresar_Click;
@@ -89,9 +80,10 @@
             // 
             pictureBoxLogo.BackgroundImageLayout = ImageLayout.None;
             pictureBoxLogo.Image = (Image)resources.GetObject("pictureBoxLogo.Image");
-            pictureBoxLogo.Location = new Point(12, 13);
+            pictureBoxLogo.Location = new Point(17, 22);
+            pictureBoxLogo.Margin = new Padding(4, 5, 4, 5);
             pictureBoxLogo.Name = "pictureBoxLogo";
-            pictureBoxLogo.Size = new Size(175, 174);
+            pictureBoxLogo.Size = new Size(250, 290);
             pictureBoxLogo.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBoxLogo.TabIndex = 203;
             pictureBoxLogo.TabStop = false;
@@ -100,40 +92,80 @@
             // 
             buttonTicket.BackColor = Color.Transparent;
             buttonTicket.BackgroundImage = Properties.Resources.descargarticket;
-            buttonTicket.Location = new Point(1083, 515);
+            buttonTicket.Location = new Point(1547, 858);
+            buttonTicket.Margin = new Padding(4, 5, 4, 5);
             buttonTicket.Name = "buttonTicket";
-            buttonTicket.Size = new Size(175, 58);
+            buttonTicket.Size = new Size(250, 97);
             buttonTicket.TabIndex = 204;
             buttonTicket.UseVisualStyleBackColor = false;
             buttonTicket.Click += buttonTicket_Click;
             // 
+            // textBoxHora
+            // 
+            textBoxHora.BackColor = SystemColors.InactiveCaptionText;
+            textBoxHora.BorderStyle = BorderStyle.None;
+            textBoxHora.Enabled = false;
+            textBoxHora.ForeColor = Color.White;
+            textBoxHora.Location = new Point(1302, 95);
+            textBoxHora.Name = "textBoxHora";
+            textBoxHora.Size = new Size(197, 24);
+            textBoxHora.TabIndex = 242;
+            // 
+            // textBoxFecha
+            // 
+            textBoxFecha.BackColor = SystemColors.InactiveCaptionText;
+            textBoxFecha.BorderStyle = BorderStyle.None;
+            textBoxFecha.Enabled = false;
+            textBoxFecha.ForeColor = Color.White;
+            textBoxFecha.Location = new Point(1302, 59);
+            textBoxFecha.Name = "textBoxFecha";
+            textBoxFecha.Size = new Size(197, 24);
+            textBoxFecha.TabIndex = 241;
+            // 
+            // textBoxUsuario
+            // 
+            textBoxUsuario.BackColor = SystemColors.InactiveCaptionText;
+            textBoxUsuario.BorderStyle = BorderStyle.None;
+            textBoxUsuario.Enabled = false;
+            textBoxUsuario.ForeColor = Color.White;
+            textBoxUsuario.Location = new Point(1302, 22);
+            textBoxUsuario.Name = "textBoxUsuario";
+            textBoxUsuario.Size = new Size(197, 24);
+            textBoxUsuario.TabIndex = 240;
+            // 
             // Ticket
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
-            ClientSize = new Size(1286, 594);
+            ClientSize = new Size(1837, 990);
+            Controls.Add(textBoxHora);
+            Controls.Add(textBoxFecha);
+            Controls.Add(textBoxUsuario);
             Controls.Add(buttonTicket);
             Controls.Add(pictureBoxLogo);
             Controls.Add(buttonRegresar);
             Controls.Add(buttonMusica);
-            Controls.Add(buttonUsuario);
             Controls.Add(pictureBoxTicket);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Ticket";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Ticket";
             ((System.ComponentModel.ISupportInitialize)pictureBoxTicket).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private PictureBox pictureBoxTicket;
-        private Button buttonUsuario;
         private Button buttonMusica;
         private Button buttonRegresar;
         private PictureBox pictureBoxLogo;
         private Button buttonTicket;
+        private TextBox textBoxHora;
+        private TextBox textBoxFecha;
+        private TextBox textBoxUsuario;
     }
 }

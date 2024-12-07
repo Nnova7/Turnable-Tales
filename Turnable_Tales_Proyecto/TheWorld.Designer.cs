@@ -33,7 +33,6 @@
             labelLinea = new Label();
             pictureBox1 = new PictureBox();
             buttonSonido = new Button();
-            buttonUsuario = new Button();
             labelTitulo = new Label();
             labelFrase = new Label();
             pictureBox2 = new PictureBox();
@@ -56,6 +55,9 @@
             label3 = new Label();
             label12 = new Label();
             descripcionWorld = new RichTextBox();
+            textBoxHora = new TextBox();
+            textBoxFecha = new TextBox();
+            textBoxUsuario = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -103,26 +105,12 @@
             // 
             buttonSonido.FlatStyle = FlatStyle.Popup;
             buttonSonido.Image = (Image)resources.GetObject("buttonSonido.Image");
-            buttonSonido.Location = new Point(1052, 12);
+            buttonSonido.Location = new Point(238, 12);
             buttonSonido.Margin = new Padding(2);
             buttonSonido.Name = "buttonSonido";
             buttonSonido.Size = new Size(92, 89);
             buttonSonido.TabIndex = 205;
             buttonSonido.UseVisualStyleBackColor = true;
-            // 
-            // buttonUsuario
-            // 
-            buttonUsuario.BackColor = Color.Transparent;
-            buttonUsuario.FlatStyle = FlatStyle.Flat;
-            buttonUsuario.Image = Properties.Resources.Imagen1_removebg_preview;
-            buttonUsuario.ImageAlign = ContentAlignment.MiddleRight;
-            buttonUsuario.Location = new Point(1169, 12);
-            buttonUsuario.Margin = new Padding(2);
-            buttonUsuario.Name = "buttonUsuario";
-            buttonUsuario.Size = new Size(92, 89);
-            buttonUsuario.TabIndex = 204;
-            buttonUsuario.UseVisualStyleBackColor = false;
-            buttonUsuario.Click += buttonUsuario_Click;
             // 
             // labelTitulo
             // 
@@ -408,11 +396,47 @@
             descripcionWorld.TabIndex = 235;
             descripcionWorld.Text = " D E S C R I P C I Ó N:                                                   Es un álbum de K-pop lanzado por ATEEZ el 29 de julio de 2022, marcando el inicio de su serie The World.";
             // 
+            // textBoxHora
+            // 
+            textBoxHora.BackColor = SystemColors.InactiveCaptionText;
+            textBoxHora.BorderStyle = BorderStyle.None;
+            textBoxHora.Enabled = false;
+            textBoxHora.ForeColor = Color.White;
+            textBoxHora.Location = new Point(1078, 82);
+            textBoxHora.Name = "textBoxHora";
+            textBoxHora.Size = new Size(197, 24);
+            textBoxHora.TabIndex = 242;
+            // 
+            // textBoxFecha
+            // 
+            textBoxFecha.BackColor = SystemColors.InactiveCaptionText;
+            textBoxFecha.BorderStyle = BorderStyle.None;
+            textBoxFecha.Enabled = false;
+            textBoxFecha.ForeColor = Color.White;
+            textBoxFecha.Location = new Point(1078, 46);
+            textBoxFecha.Name = "textBoxFecha";
+            textBoxFecha.Size = new Size(197, 24);
+            textBoxFecha.TabIndex = 241;
+            // 
+            // textBoxUsuario
+            // 
+            textBoxUsuario.BackColor = SystemColors.InactiveCaptionText;
+            textBoxUsuario.BorderStyle = BorderStyle.None;
+            textBoxUsuario.Enabled = false;
+            textBoxUsuario.ForeColor = Color.White;
+            textBoxUsuario.Location = new Point(1078, 9);
+            textBoxUsuario.Name = "textBoxUsuario";
+            textBoxUsuario.Size = new Size(197, 24);
+            textBoxUsuario.TabIndex = 240;
+            // 
             // TheWorld
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 632);
+            Controls.Add(textBoxHora);
+            Controls.Add(textBoxFecha);
+            Controls.Add(textBoxUsuario);
             Controls.Add(descripcionWorld);
             Controls.Add(label12);
             Controls.Add(pictureBox2);
@@ -437,7 +461,6 @@
             Controls.Add(labelLinea);
             Controls.Add(pictureBox1);
             Controls.Add(buttonSonido);
-            Controls.Add(buttonUsuario);
             Controls.Add(labelTitulo);
             Controls.Add(labelFrase);
             Margin = new Padding(2);
@@ -456,7 +479,6 @@
         private Label labelLinea;
         private PictureBox pictureBox1;
         private Button buttonSonido;
-        private Button buttonUsuario;
         private Label labelTitulo;
         private Label labelFrase;
         private PictureBox pictureBox2;
@@ -479,5 +501,8 @@
         private Label label3;
         private Label label12;
         private RichTextBox descripcionWorld;
+        private TextBox textBoxHora;
+        private TextBox textBoxFecha;
+        private TextBox textBoxUsuario;
     }
 }

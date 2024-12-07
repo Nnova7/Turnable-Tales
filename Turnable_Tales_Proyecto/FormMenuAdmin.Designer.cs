@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenuAdmin));
             buttonMusica = new Button();
-            buttonUsuario = new Button();
             pictureBox1 = new PictureBox();
             label2 = new Label();
             label1 = new Label();
@@ -43,7 +42,9 @@
             buttonVentasTotales = new Button();
             buttonAgregarDisco = new Button();
             labelMenu = new Label();
-            button1 = new Button();
+            textBoxHora = new TextBox();
+            textBoxFecha = new TextBox();
+            textBoxUsuario = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -51,21 +52,11 @@
             // 
             buttonMusica.FlatStyle = FlatStyle.Popup;
             buttonMusica.Image = (Image)resources.GetObject("buttonMusica.Image");
-            buttonMusica.Location = new Point(1092, 30);
+            buttonMusica.Location = new Point(252, 39);
             buttonMusica.Name = "buttonMusica";
             buttonMusica.Size = new Size(93, 89);
             buttonMusica.TabIndex = 36;
             buttonMusica.UseVisualStyleBackColor = true;
-            // 
-            // buttonUsuario
-            // 
-            buttonUsuario.FlatStyle = FlatStyle.Popup;
-            buttonUsuario.ForeColor = SystemColors.ButtonFace;
-            buttonUsuario.Location = new Point(1181, 30);
-            buttonUsuario.Name = "buttonUsuario";
-            buttonUsuario.Size = new Size(93, 89);
-            buttonUsuario.TabIndex = 31;
-            buttonUsuario.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -86,7 +77,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(421, 103);
             label2.Name = "label2";
-            label2.Size = new Size(455, 50);
+            label2.Size = new Size(551, 61);
             label2.TabIndex = 35;
             label2.Text = "A D M I N I S T R A D O R\r\n";
             label2.TextAlign = ContentAlignment.TopCenter;
@@ -99,7 +90,7 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(193, 174);
             label1.Name = "label1";
-            label1.Size = new Size(893, 3);
+            label1.Size = new Size(1784, 4);
             label1.TabIndex = 34;
             label1.Text = resources.GetString("label1.Text");
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -112,7 +103,7 @@
             labelLinea.ForeColor = Color.White;
             labelLinea.Location = new Point(193, 89);
             labelLinea.Name = "labelLinea";
-            labelLinea.Size = new Size(893, 3);
+            labelLinea.Size = new Size(1784, 4);
             labelLinea.TabIndex = 33;
             labelLinea.Text = resources.GetString("labelLinea.Text");
             labelLinea.TextAlign = ContentAlignment.TopCenter;
@@ -124,7 +115,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(400, -6);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(493, 50);
+            labelTitulo.Size = new Size(595, 61);
             labelTitulo.TabIndex = 29;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -136,7 +127,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(521, 49);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(237, 20);
+            labelFrase.Size = new Size(288, 25);
             labelFrase.TabIndex = 30;
             labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
             // 
@@ -208,31 +199,52 @@
             labelMenu.ForeColor = Color.White;
             labelMenu.Location = new Point(603, 191);
             labelMenu.Name = "labelMenu";
-            labelMenu.Size = new Size(79, 36);
+            labelMenu.Size = new Size(98, 42);
             labelMenu.TabIndex = 23;
             labelMenu.Text = "MENU";
             // 
-            // button1
+            // textBoxHora
             // 
-            button1.BackColor = Color.Transparent;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Image = Properties.Resources.Imagen1_removebg_preview;
-            button1.Location = new Point(1176, 30);
-            button1.Margin = new Padding(2);
-            button1.Name = "button1";
-            button1.Size = new Size(97, 89);
-            button1.TabIndex = 188;
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            textBoxHora.BackColor = SystemColors.InactiveCaptionText;
+            textBoxHora.BorderStyle = BorderStyle.None;
+            textBoxHora.Enabled = false;
+            textBoxHora.ForeColor = Color.White;
+            textBoxHora.Location = new Point(1093, 112);
+            textBoxHora.Name = "textBoxHora";
+            textBoxHora.Size = new Size(197, 24);
+            textBoxHora.TabIndex = 242;
+            // 
+            // textBoxFecha
+            // 
+            textBoxFecha.BackColor = SystemColors.InactiveCaptionText;
+            textBoxFecha.BorderStyle = BorderStyle.None;
+            textBoxFecha.Enabled = false;
+            textBoxFecha.ForeColor = Color.White;
+            textBoxFecha.Location = new Point(1093, 76);
+            textBoxFecha.Name = "textBoxFecha";
+            textBoxFecha.Size = new Size(197, 24);
+            textBoxFecha.TabIndex = 241;
+            // 
+            // textBoxUsuario
+            // 
+            textBoxUsuario.BackColor = SystemColors.InactiveCaptionText;
+            textBoxUsuario.BorderStyle = BorderStyle.None;
+            textBoxUsuario.Enabled = false;
+            textBoxUsuario.ForeColor = Color.White;
+            textBoxUsuario.Location = new Point(1093, 39);
+            textBoxUsuario.Name = "textBoxUsuario";
+            textBoxUsuario.Size = new Size(197, 24);
+            textBoxUsuario.TabIndex = 240;
             // 
             // FormMenuAdmin
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 633);
-            Controls.Add(button1);
+            Controls.Add(textBoxHora);
+            Controls.Add(textBoxFecha);
+            Controls.Add(textBoxUsuario);
             Controls.Add(buttonMusica);
-            Controls.Add(buttonUsuario);
             Controls.Add(pictureBox1);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -258,7 +270,6 @@
         #endregion
 
         private Button buttonMusica;
-        private Button buttonUsuario;
         private PictureBox pictureBox1;
         private Label label2;
         private Label label1;
@@ -271,6 +282,8 @@
         private Button buttonVentasTotales;
         private Button buttonAgregarDisco;
         private Label labelMenu;
-        private Button button1;
+        private TextBox textBoxHora;
+        private TextBox textBoxFecha;
+        private TextBox textBoxUsuario;
     }
 }
