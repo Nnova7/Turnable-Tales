@@ -48,10 +48,12 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonSiguiente_Click(object sender, EventArgs e)
         {
-            //Si los campos están vacios
+            string cuentaIngresada = textBoxCuentaI.Text.Trim();
+            string contraseñaIngresada = textBoxContraA.Text.Trim();
+
+            // Validar si los campos están vacíos
             if (string.IsNullOrEmpty(cuentaIngresada) || string.IsNullOrEmpty(contraseñaIngresada))
             {
-                //Manda un mensaje
                 MessageBox.Show("Por favor ingrese una cuenta y una contraseña", "Campos vacíos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -59,27 +61,22 @@ namespace Turnable_Tales_Proyecto
             // Crear objeto de la clase Datos
             Datos obj = new Datos();
 
-            // Verificar si la cuenta y contraseña son válidas
-            bool accesoPermitido = obj.ConsultarCuentaContraInv(cuentaIngresada, contraseñaIngresada);
+            // Verificar cuenta y contraseña
+            string nombreUsuario = obj.ConsultarCuentaContraUsuario(cuentaIngresada, contraseñaIngresada);
 
-            //Si lo que recibe en acceso permitido es correcto entonces realiza la siguiente acción
-            if (accesoPermitido)
+            // Verificar si el nombre de usuario no es nulo ni vacío
+            if (!string.IsNullOrEmpty(nombreUsuario))
             {
-                MessageBox.Show("Bienvenido", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"Bienvenido, {nombreUsuario}", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Mostrar Form de Bienvenido y ocultar el formulario actual
-                Bienvenido bienvenido = new Bienvenido();
-                bienvenido.Show();//mostrar
-                this.Hide();//ocultar
+                /// Abrir Form de Lista de generos
+                ListaGeneros formGeneros = new ListaGeneros(nombreUsuario);
+                formGeneros.Show();
+                this.Hide();
             }
             else
             {
-                // Muestra un mensaje
-                MessageBox.Show("Cuenta o contraseña incorrectas", "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                AccesoNoAutorizado noautorizado = new AccesoNoAutorizado();
-                //this.Hide();
-                noautorizado.ShowDialog();
-                this.Close();
+                MessageBox.Show("Acceso denegado. Cuenta o contraseña incorrecta.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

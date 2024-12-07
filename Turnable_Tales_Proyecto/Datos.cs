@@ -324,7 +324,7 @@ namespace Turnable_Tales_Proyecto
         /// <param name="cuenta"></param>
         /// <param name="contraseña"></param>
         /// <returns></returns>
-        public bool ConsultarCuentaContraUsuario(string cuenta, string contraseña)
+        public string ConsultarCuentaContraUsuario(string cuenta, string contraseña)
         {
             // Bloquear cuentas específicas
             if ((cuenta == "admin" && contraseña == "meilleure") ||
@@ -352,7 +352,7 @@ namespace Turnable_Tales_Proyecto
         /// <param name="cuenta"></param>
         /// <param name="contraseña"></param>
         /// <returns></returns>
-        public bool ConsultarCuentaContraInv(string cuenta, string contraseña)
+        public string ConsultarCuentaContraInv(string cuenta, string contraseña)
         {
             // Define las credenciales válidas
             string cuentaValida = "guest";
