@@ -12,10 +12,16 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class FormMenuAdmin : Form//MENU PRINCIPAL DEL ADMINISTRADOR
     {
+        public string nombreUsuario { get; set; }
         public FormMenuAdmin()
         {
             InitializeComponent();
         }//CONSTRUCTOR
+        public FormMenuAdmin(string n)
+        {
+            InitializeComponent();
+            nombreUsuario = n;
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -92,7 +98,7 @@ namespace Turnable_Tales_Proyecto
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MostrarNombre mostrar = new MostrarNombre(); //se crea instancia
+            MostrarNombre mostrar = new MostrarNombre(nombreUsuario); //se crea instancia
             mostrar.ShowDialog(); // Mostrar
         }
     }
