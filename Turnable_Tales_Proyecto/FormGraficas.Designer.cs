@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGraficas));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             pictureBox1 = new PictureBox();
             buttonRegresar = new Button();
             buttonMusica = new Button();
@@ -44,6 +45,7 @@
             textBoxHora = new TextBox();
             textBoxFecha = new TextBox();
             textBoxUsuario = new TextBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)chart1).BeginInit();
             SuspendLayout();
@@ -157,10 +159,10 @@
             // chart1
             // 
             chart1.BackColor = SystemColors.ActiveCaptionText;
-            chartArea2.Name = "ChartArea1";
-            chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            chart1.Legends.Add(legend2);
+            chartArea3.Name = "ChartArea1";
+            chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            chart1.Legends.Add(legend3);
             chart1.Location = new Point(383, 237);
             chart1.Name = "chart1";
             chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
@@ -201,6 +203,10 @@
             textBoxUsuario.Name = "textBoxUsuario";
             textBoxUsuario.Size = new Size(197, 24);
             textBoxUsuario.TabIndex = 240;
+            // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick;
             // 
             // FormGraficas
             // 
@@ -246,5 +252,6 @@
         private TextBox textBoxHora;
         private TextBox textBoxFecha;
         private TextBox textBoxUsuario;
+        private System.Windows.Forms.Timer timer1;
     }
 }

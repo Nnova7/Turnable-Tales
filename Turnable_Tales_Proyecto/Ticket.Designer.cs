@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ticket));
             pictureBoxTicket = new PictureBox();
             buttonMusica = new Button();
@@ -37,6 +38,7 @@
             textBoxHora = new TextBox();
             textBoxFecha = new TextBox();
             textBoxUsuario = new TextBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBoxTicket).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             SuspendLayout();
@@ -133,6 +135,10 @@
             textBoxUsuario.Size = new Size(197, 24);
             textBoxUsuario.TabIndex = 240;
             // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick;
+            // 
             // Ticket
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -167,5 +173,6 @@
         private TextBox textBoxHora;
         private TextBox textBoxFecha;
         private TextBox textBoxUsuario;
+        private System.Windows.Forms.Timer timer1;
     }
 }

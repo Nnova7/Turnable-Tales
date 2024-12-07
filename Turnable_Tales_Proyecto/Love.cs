@@ -12,7 +12,7 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class Love : Form
     {
-        public string nombreUsuario { get; set; } 
+        public string nombreUsuario { get; set; }
         public Love()
         {
             InitializeComponent();
@@ -61,6 +61,12 @@ namespace Turnable_Tales_Proyecto
             this.Hide();
             oxxo.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            textBoxHora.Text = DateTime.Now.ToShortTimeString();
+            textBoxFecha.Text = DateTime.Now.ToShortDateString();
         }
     }
 }

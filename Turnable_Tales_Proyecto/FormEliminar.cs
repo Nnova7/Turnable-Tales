@@ -96,5 +96,11 @@ namespace Turnable_Tales_Proyecto
         {
             this.textBoxId.Text = string.Empty;
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            textBoxHora.Text = DateTime.Now.ToShortTimeString();
+            textBoxFecha.Text = DateTime.Now.ToShortDateString();
+        }
     }
 }

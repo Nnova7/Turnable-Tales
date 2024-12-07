@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TheWorld));
             label1 = new Label();
             labelLinea = new Label();
@@ -58,6 +59,7 @@
             textBoxHora = new TextBox();
             textBoxFecha = new TextBox();
             textBoxUsuario = new TextBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -429,6 +431,10 @@
             textBoxUsuario.Size = new Size(197, 24);
             textBoxUsuario.TabIndex = 240;
             // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick;
+            // 
             // TheWorld
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -504,5 +510,6 @@
         private TextBox textBoxHora;
         private TextBox textBoxFecha;
         private TextBox textBoxUsuario;
+        private System.Windows.Forms.Timer timer1;
     }
 }

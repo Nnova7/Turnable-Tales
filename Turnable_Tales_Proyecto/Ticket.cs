@@ -184,5 +184,11 @@ namespace Turnable_Tales_Proyecto
                 new Impresion { Cantidad = 1, Articulo = "Disco 2", Precio = 200 }
             };
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            textBoxHora.Text = DateTime.Now.ToShortTimeString();
+            textBoxFecha.Text = DateTime.Now.ToShortDateString();
+        }
     }
 }

@@ -62,5 +62,11 @@ namespace Turnable_Tales_Proyecto
                 listView1.Items.Add(item);
             }
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            textBoxHora.Text = DateTime.Now.ToShortTimeString();
+            textBoxFecha.Text = DateTime.Now.ToShortDateString();
+        }
     }
 }

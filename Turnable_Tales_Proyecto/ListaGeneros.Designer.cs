@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListaGeneros));
             pictureBox1 = new PictureBox();
             label8 = new Label();
@@ -79,6 +80,7 @@
             textBoxHora = new TextBox();
             textBoxFecha = new TextBox();
             textBoxUsuario = new TextBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxRock1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxRock2).BeginInit();
@@ -664,6 +666,10 @@
             textBoxUsuario.Size = new Size(197, 24);
             textBoxUsuario.TabIndex = 240;
             // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick;
+            // 
             // ListaGeneros
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -791,5 +797,6 @@
         private TextBox textBoxHora;
         private TextBox textBoxFecha;
         private TextBox textBoxUsuario;
+        private System.Windows.Forms.Timer timer1;
     }
 }
