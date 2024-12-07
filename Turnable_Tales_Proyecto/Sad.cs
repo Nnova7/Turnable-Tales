@@ -12,14 +12,21 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class Sad : Form
     {
+        public string nombreUsuario{ get; set;}
         public Sad()
         {
             InitializeComponent();
         }
+        //Constructor para pasar el nombre
+        public Sad(string n)
+        {
+            InitializeComponent();
+            nombreUsuario = n;
+        }
 
         private void buttonUsuario_Click(object sender, EventArgs e)
         {
-            MostrarNombre mostrar = new MostrarNombre(); //se crea instancia
+            MostrarNombre mostrar = new MostrarNombre(nombreUsuario); //se crea instancia
             //this.Hide();
             mostrar.Show(); // Mostrar
             this.Close(); // Cerrar el formulario actual 

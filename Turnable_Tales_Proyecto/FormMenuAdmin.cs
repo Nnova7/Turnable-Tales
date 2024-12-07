@@ -21,7 +21,7 @@ namespace Turnable_Tales_Proyecto
         {
             InitializeComponent();
             nombreUsuario = n;
-        }
+        }//constructor para pasarle el nombre
 
         private void Form1_Load(object sender, EventArgs e)
         {

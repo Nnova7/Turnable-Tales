@@ -12,14 +12,21 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class Vestila : Form
     {
+        public string nombreUsuario { get; set; }
         public Vestila()
         {
             InitializeComponent();
         }
+        //Constructor para pasar el nombre
+        public Vestila(string n)
+        {
+            InitializeComponent();
+            nombreUsuario = n;
+        }
 
         private void buttonUsuario_Click(object sender, EventArgs e)
         {
-            MostrarNombre mostrar = new MostrarNombre(); //se crea instancia
+            MostrarNombre mostrar = new MostrarNombre(nombreUsuario); //se crea instancia
             //this.Hide();
             mostrar.Show(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
