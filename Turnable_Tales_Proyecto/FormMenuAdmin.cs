@@ -107,11 +107,11 @@ namespace Turnable_Tales_Proyecto
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        /*private void button1_Click(object sender, EventArgs e)
         {
             MostrarNombre mostrar = new MostrarNombre(nombreUsuario); //se crea instancia
             mostrar.ShowDialog(); // Mostrar
-        }
+        }*/
 
         private void buttonUsuario_Click(object sender, EventArgs e)
         {

@@ -28,11 +28,11 @@ namespace Turnable_Tales_Proyecto
             nombreUsuario = n;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        /*private void button1_Click(object sender, EventArgs e)
         {
             MostrarNombre mostrar = new MostrarNombre(nombreUsuario); //se crea instancia
             mostrar.Show(); // Mostrar
-        }
+        }*/
 
         private void buttonRegresar_Click(object sender, EventArgs e)
         {

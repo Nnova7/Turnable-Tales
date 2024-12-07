@@ -27,13 +27,13 @@ namespace Turnable_Tales_Proyecto
             nombreUsuario = n;
         }
 
-        private void buttonUsuario_Click(object sender, EventArgs e)
+        /*private void buttonUsuario_Click(object sender, EventArgs e)
         {
             MostrarNombre mostrar = new MostrarNombre(nombreUsuario); //se crea instancia
             //this.Hide();
             mostrar.ShowDialog(); // Mostrar
             this.Close(); // Cerrar el formulario actual 
-        }
+        }*/
 
         private void buttonRegresar_Click(object sender, EventArgs e)
         {
