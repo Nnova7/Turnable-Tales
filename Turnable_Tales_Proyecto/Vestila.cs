@@ -97,6 +97,7 @@ namespace Turnable_Tales_Proyecto
             this.Hide();
             portada.ShowDialog();
             this.Close();
+
         }
     }
 }
