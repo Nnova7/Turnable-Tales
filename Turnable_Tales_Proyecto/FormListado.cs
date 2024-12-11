@@ -88,5 +88,10 @@ namespace Turnable_Tales_Proyecto
             portada.ShowDialog();
             this.Close();
         }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

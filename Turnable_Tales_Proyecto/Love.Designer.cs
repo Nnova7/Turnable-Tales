@@ -61,6 +61,7 @@
             textBoxUsuario = new TextBox();
             timer1 = new System.Windows.Forms.Timer(components);
             cerrarSesion = new Button();
+            buttonEliminarTodo = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -73,7 +74,7 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(185, 130);
             label1.Name = "label1";
-            label1.Size = new Size(1784, 4);
+            label1.Size = new Size(893, 3);
             label1.TabIndex = 208;
             label1.Text = resources.GetString("label1.Text");
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -86,7 +87,7 @@
             labelLinea.ForeColor = Color.White;
             labelLinea.Location = new Point(185, 116);
             labelLinea.Name = "labelLinea";
-            labelLinea.Size = new Size(1784, 4);
+            labelLinea.Size = new Size(893, 3);
             labelLinea.TabIndex = 207;
             labelLinea.Text = resources.GetString("labelLinea.Text");
             labelLinea.TextAlign = ContentAlignment.TopCenter;
@@ -118,7 +119,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(376, 9);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(595, 61);
+            labelTitulo.Size = new Size(493, 50);
             labelTitulo.TabIndex = 202;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -130,7 +131,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(506, 70);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(288, 25);
+            labelFrase.Size = new Size(237, 20);
             labelFrase.TabIndex = 203;
             labelFrase.Text = "\"TU VIDA, TU MÚSICA, TU VINILO.\"\r\n";
             // 
@@ -142,6 +143,7 @@
             pictureBox2.Size = new Size(383, 401);
             pictureBox2.TabIndex = 226;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // label11
             // 
@@ -151,7 +153,7 @@
             label11.ForeColor = Color.White;
             label11.Location = new Point(1104, 181);
             label11.Name = "label11";
-            label11.Size = new Size(24, 26);
+            label11.Size = new Size(20, 24);
             label11.TabIndex = 225;
             label11.Text = "4";
             // 
@@ -163,7 +165,7 @@
             label10.ForeColor = Color.White;
             label10.Location = new Point(784, 187);
             label10.Name = "label10";
-            label10.Size = new Size(42, 20);
+            label10.Size = new Size(35, 17);
             label10.TabIndex = 224;
             label10.Text = "BTS";
             // 
@@ -175,7 +177,7 @@
             label9.ForeColor = Color.White;
             label9.Location = new Point(773, 217);
             label9.Name = "label9";
-            label9.Size = new Size(55, 20);
+            label9.Size = new Size(47, 17);
             label9.TabIndex = 223;
             label9.Text = "K-Pop";
             label9.TextAlign = ContentAlignment.TopCenter;
@@ -187,7 +189,7 @@
             label8.ForeColor = Color.White;
             label8.Location = new Point(680, 237);
             label8.Name = "label8";
-            label8.Size = new Size(459, 61);
+            label8.Size = new Size(378, 50);
             label8.TabIndex = 222;
             label8.Text = "Love Youself Answer";
             label8.TextAlign = ContentAlignment.TopCenter;
@@ -246,6 +248,7 @@
             buttonAgregar.TabIndex = 218;
             buttonAgregar.Text = "AGREGAR AL CARRITO";
             buttonAgregar.UseVisualStyleBackColor = false;
+            buttonAgregar.Click += buttonAgregar_Click;
             // 
             // textBoxNumero
             // 
@@ -254,7 +257,7 @@
             textBoxNumero.ForeColor = SystemColors.MenuBar;
             textBoxNumero.Location = new Point(698, 460);
             textBoxNumero.Name = "textBoxNumero";
-            textBoxNumero.Size = new Size(81, 31);
+            textBoxNumero.Size = new Size(81, 27);
             textBoxNumero.TabIndex = 217;
             textBoxNumero.Text = "7";
             textBoxNumero.TextAlign = HorizontalAlignment.Center;
@@ -267,7 +270,7 @@
             label7.ForeColor = Color.White;
             label7.Location = new Point(689, 432);
             label7.Name = "label7";
-            label7.Size = new Size(149, 25);
+            label7.Size = new Size(122, 20);
             label7.TabIndex = 216;
             label7.Text = "EN EXISTENCIA:";
             // 
@@ -277,8 +280,9 @@
             domainUpDownCantidad.ForeColor = SystemColors.InactiveBorder;
             domainUpDownCantidad.Location = new Point(698, 393);
             domainUpDownCantidad.Name = "domainUpDownCantidad";
-            domainUpDownCantidad.Size = new Size(81, 31);
+            domainUpDownCantidad.Size = new Size(81, 27);
             domainUpDownCantidad.TabIndex = 215;
+            domainUpDownCantidad.SelectedItemChanged += domainUpDownCantidad_SelectedItemChanged;
             // 
             // label6
             // 
@@ -288,7 +292,7 @@
             label6.ForeColor = Color.White;
             label6.Location = new Point(689, 355);
             label6.Name = "label6";
-            label6.Size = new Size(111, 25);
+            label6.Size = new Size(92, 20);
             label6.TabIndex = 214;
             label6.Text = "CANTIDAD:";
             // 
@@ -300,7 +304,7 @@
             label5.ForeColor = Color.White;
             label5.Location = new Point(686, 213);
             label5.Name = "label5";
-            label5.Size = new Size(90, 25);
+            label5.Size = new Size(73, 20);
             label5.TabIndex = 213;
             label5.Text = "GÉNERO:";
             // 
@@ -312,7 +316,7 @@
             label4.ForeColor = Color.White;
             label4.Location = new Point(686, 183);
             label4.Name = "label4";
-            label4.Size = new Size(92, 25);
+            label4.Size = new Size(75, 20);
             label4.TabIndex = 212;
             label4.Text = "ARTISTA:";
             // 
@@ -324,7 +328,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(1070, 179);
             label2.Name = "label2";
-            label2.Size = new Size(36, 25);
+            label2.Size = new Size(29, 20);
             label2.TabIndex = 211;
             label2.Text = "ID:";
             // 
@@ -347,7 +351,7 @@
             label3.ForeColor = Color.White;
             label3.Location = new Point(588, 179);
             label3.Name = "label3";
-            label3.Size = new Size(0, 42);
+            label3.Size = new Size(0, 36);
             label3.TabIndex = 209;
             // 
             // label12
@@ -358,7 +362,7 @@
             label12.ForeColor = Color.White;
             label12.Location = new Point(689, 298);
             label12.Name = "label12";
-            label12.Size = new Size(105, 38);
+            label12.Size = new Size(91, 32);
             label12.TabIndex = 228;
             label12.Text = "$1,430";
             // 
@@ -381,7 +385,7 @@
             textBoxHora.ForeColor = Color.White;
             textBoxHora.Location = new Point(1080, 82);
             textBoxHora.Name = "textBoxHora";
-            textBoxHora.Size = new Size(197, 24);
+            textBoxHora.Size = new Size(197, 20);
             textBoxHora.TabIndex = 242;
             // 
             // textBoxFecha
@@ -392,7 +396,7 @@
             textBoxFecha.ForeColor = Color.White;
             textBoxFecha.Location = new Point(1080, 46);
             textBoxFecha.Name = "textBoxFecha";
-            textBoxFecha.Size = new Size(197, 24);
+            textBoxFecha.Size = new Size(197, 20);
             textBoxFecha.TabIndex = 241;
             // 
             // textBoxUsuario
@@ -403,7 +407,7 @@
             textBoxUsuario.ForeColor = Color.White;
             textBoxUsuario.Location = new Point(1080, 9);
             textBoxUsuario.Name = "textBoxUsuario";
-            textBoxUsuario.Size = new Size(197, 24);
+            textBoxUsuario.Size = new Size(197, 20);
             textBoxUsuario.TabIndex = 240;
             // 
             // timer1
@@ -423,11 +427,26 @@
             cerrarSesion.UseVisualStyleBackColor = false;
             cerrarSesion.Click += cerrarSesion_Click;
             // 
+            // buttonEliminarTodo
+            // 
+            buttonEliminarTodo.BackColor = Color.Maroon;
+            buttonEliminarTodo.FlatStyle = FlatStyle.Popup;
+            buttonEliminarTodo.Font = new Font("Segoe UI Black", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonEliminarTodo.ForeColor = Color.WhiteSmoke;
+            buttonEliminarTodo.Location = new Point(1104, 508);
+            buttonEliminarTodo.Name = "buttonEliminarTodo";
+            buttonEliminarTodo.Size = new Size(166, 46);
+            buttonEliminarTodo.TabIndex = 244;
+            buttonEliminarTodo.Text = "ELIMINAR TODO";
+            buttonEliminarTodo.UseVisualStyleBackColor = false;
+            buttonEliminarTodo.Click += buttonEliminarTodo_Click;
+            // 
             // Love
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 633);
+            Controls.Add(buttonEliminarTodo);
             Controls.Add(cerrarSesion);
             Controls.Add(textBoxHora);
             Controls.Add(textBoxFecha);
@@ -501,5 +520,6 @@
         private TextBox textBoxUsuario;
         private System.Windows.Forms.Timer timer1;
         private Button cerrarSesion;
+        private Button buttonEliminarTodo;
     }
 }

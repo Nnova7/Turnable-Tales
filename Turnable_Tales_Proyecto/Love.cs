@@ -17,15 +17,20 @@ namespace Turnable_Tales_Proyecto
             get { return textBoxUsuario.Text; }
             set { textBoxUsuario.Text = value; }
         } // Propiedad para recibir el nombre
-        public Love()
+
+        public int id;
+        public Love(int id)
         {
+
             InitializeComponent();
+            this.id = id;
         }
         //constructor para pasar el nombre
-        public Love(string n)
+        public Love(string n, int id)
         {
             InitializeComponent();
             nombreUsuario = n;
+            id = id;
         }
 
         /*private void buttonUsuario_Click(object sender, EventArgs e)
@@ -83,6 +88,14 @@ namespace Turnable_Tales_Proyecto
             {
                 textBoxUsuario.Text = "Usuario desconocido";
             }
+            Productos p = new Productos();
+            Datos d = new Datos();
+            
+            p=d.ConsultarUnRegistro(id);
+            label10.Text = p.Artista;
+
+
+          
         }
 
         private void cerrarSesion_Click(object sender, EventArgs e)
@@ -91,6 +104,27 @@ namespace Turnable_Tales_Proyecto
             this.Hide();
             portada.ShowDialog();
             this.Close();
+        }
+
+        private void buttonEliminarTodo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void buttonAgregar_Click(object sender, EventArgs e)
+        {
+            //Hacer lista de carrito con varieble o vector de todo * cantidad de discos
+
+        }
+
+        private void domainUpDownCantidad_SelectedItemChanged(object sender, EventArgs e)
+        {
+            //cantidad de discos valor
         }
     }
 }
