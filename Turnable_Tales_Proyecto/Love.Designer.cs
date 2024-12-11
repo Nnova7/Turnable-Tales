@@ -168,6 +168,7 @@
             label10.Size = new Size(35, 17);
             label10.TabIndex = 224;
             label10.Text = "BTS";
+            label10.Click += label10_Click;
             // 
             // label9
             // 
@@ -181,6 +182,7 @@
             label9.TabIndex = 223;
             label9.Text = "K-Pop";
             label9.TextAlign = ContentAlignment.TopCenter;
+            label9.Click += label9_Click;
             // 
             // label8
             // 

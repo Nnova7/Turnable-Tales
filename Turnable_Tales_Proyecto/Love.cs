@@ -90,12 +90,17 @@ namespace Turnable_Tales_Proyecto
             }
             Productos p = new Productos();
             Datos d = new Datos();
-            
-            p=d.ConsultarUnRegistro(id);
+
+            p = d.ConsultarUnRegistro(id);
             label10.Text = p.Artista;
+            label9.Text = p.Genero;
+            label8.Text = p.Nombre;
+            label12.Text = p.Precio.ToString();
+            label11.Text = p.Id.ToString();
+            domainUpDownCantidad.Text = p.Cantidad.ToString();                                                
+            descripcionLove.Text = p.Descripcion;
+            //textBoxNumero (es el numero de existencias)
 
-
-          
         }
 
         private void cerrarSesion_Click(object sender, EventArgs e)
@@ -113,7 +118,7 @@ namespace Turnable_Tales_Proyecto
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void buttonAgregar_Click(object sender, EventArgs e)
@@ -125,6 +130,16 @@ namespace Turnable_Tales_Proyecto
         private void domainUpDownCantidad_SelectedItemChanged(object sender, EventArgs e)
         {
             //cantidad de discos valor
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
