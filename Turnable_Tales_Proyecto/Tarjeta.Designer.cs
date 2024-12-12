@@ -276,6 +276,7 @@
             buttonGuardar.Size = new Size(112, 55);
             buttonGuardar.TabIndex = 213;
             buttonGuardar.UseVisualStyleBackColor = false;
+            buttonGuardar.Click += buttonGuardar_Click;
             // 
             // labelNTarjeta
             // 
@@ -348,6 +349,7 @@
             textBoxCVV.Size = new Size(144, 35);
             textBoxCVV.TabIndex = 219;
             textBoxCVV.TextAlign = HorizontalAlignment.Center;
+            textBoxCVV.TextChanged += textBoxCVV_TextChanged;
             // 
             // textBoxAnio
             // 
