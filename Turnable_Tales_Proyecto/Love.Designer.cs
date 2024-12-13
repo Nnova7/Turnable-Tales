@@ -63,6 +63,7 @@
             cerrarSesion = new Button();
             buttonEliminarTodo = new Button();
             labelDescripcion = new Label();
+            imageList1 = new ImageList(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -139,9 +140,10 @@
             // pictureBox2
             // 
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.Location = new Point(236, 179);
+            pictureBox2.Location = new Point(212, 213);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(383, 401);
+            pictureBox2.Size = new Size(320, 320);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 226;
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click;
@@ -457,6 +459,21 @@
             labelDescripcion.Text = "DESCRIPCION:";
             labelDescripcion.Click += label13_Click;
             // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = ColorDepth.Depth32Bit;
+            imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
+            imageList1.TransparentColor = Color.Transparent;
+            imageList1.Images.SetKeyName(0, "wwwwwwwwwwwwwwwwwww.png");
+            imageList1.Images.SetKeyName(1, "Imagen de WhatsApp 2024-12-13 a las 14.03.53_de930dfc.jpg");
+            imageList1.Images.SetKeyName(2, "Imagen de WhatsApp 2024-12-13 a las 14.03.53_90016d81.jpg");
+            imageList1.Images.SetKeyName(3, "Imagen de WhatsApp 2024-12-13 a las 14.03.53_5893c67c.jpg");
+            imageList1.Images.SetKeyName(4, "Imagen de WhatsApp 2024-12-13 a las 14.03.53_3a0e73e5.jpg");
+            imageList1.Images.SetKeyName(5, "Rock.jpg");
+            imageList1.Images.SetKeyName(6, "Imagen de WhatsApp 2024-12-13 a las 14.03.53_b6d87c31.jpg");
+            imageList1.Images.SetKeyName(7, "Imagen de WhatsApp 2024-12-13 a las 14.03.53_9753bfde.jpg");
+            imageList1.Images.SetKeyName(8, "Imagen de WhatsApp 2024-12-13 a las 14.03.53_11f856ed.jpg");
+            // 
             // Love
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -539,5 +556,6 @@
         private Button cerrarSesion;
         private Button buttonEliminarTodo;
         private Label labelDescripcion;
+        private ImageList imageList1;
     }
 }

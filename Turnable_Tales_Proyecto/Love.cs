@@ -91,17 +91,26 @@ namespace Turnable_Tales_Proyecto
             Productos p = new Productos();
             Datos d = new Datos();
 
+            string nombrei = p.Imagen;
+
             p = d.ConsultarUnRegistro(this.id);
             this.label10.Text = p.Artista;
             this.label9.Text = p.Genero;
             this.label8.Text = p.Nombre;
             this.label12.Text = p.Precio.ToString();
             this.label11.Text = p.Id.ToString();
-
             this.descripcionLove.Text = p.Descripcion;
             this.textBoxNumero.Text = p.Cantidad.ToString();
 
+            if (p.Id == 6)
+            {
+                pictureBox2.Image = Properties.Resources.Caifanes;
+              
+            }
+
+
             // domainUpDownCantidad.Text = p.Cantidad.ToString();
+            //pictureBox2.Image = Image.FromFile(p.Imagen);
 
         }
 
@@ -120,7 +129,7 @@ namespace Turnable_Tales_Proyecto
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void buttonAgregar_Click(object sender, EventArgs e)
