@@ -97,10 +97,11 @@ namespace Turnable_Tales_Proyecto
             this.label8.Text = p.Nombre;
             this.label12.Text = p.Precio.ToString();
             this.label11.Text = p.Id.ToString();
-            domainUpDownCantidad.Text = p.Cantidad.ToString();
-            this.descripcionLove.Text = p.Descripcion;
-            //textBoxNumero (es el numero de existencias)
 
+            this.descripcionLove.Text = p.Descripcion;
+            this.textBoxNumero.Text = p.Cantidad.ToString();
+
+            // domainUpDownCantidad.Text = p.Cantidad.ToString();
 
         }
 
@@ -180,6 +181,9 @@ namespace Turnable_Tales_Proyecto
                 }
             }
         }
+
+        //agregar id y depues string
+
 
         private void label13_Click(object sender, EventArgs e)
         {
