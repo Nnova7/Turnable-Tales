@@ -60,28 +60,16 @@ namespace Turnable_Tales_Proyecto
                 // Crear un nuevo ítem para el ListView con el ID y las existencias del producto
                 ListViewItem item = new ListViewItem($"ID: {dato.Id}\nExistencias: {dato.Cantidad}");
 
-                // Asegurarse de que la imagen exista en el ImageList
-                if (!string.IsNullOrEmpty(dato.Imagen))
+                // Verificar que el nombre de la imagen existe en el ImageList
+                if (!string.IsNullOrEmpty(dato.Imagen) && imageListDiscos.Images.ContainsKey(dato.Imagen))
                 {
-                    // Verificar si la imagen ya está en el ImageList
-                    if (!imageListDiscos.Images.ContainsKey(dato.Imagen))
-                    {
-                        // Cargar la imagen de los recursos usando el nombre de imagen
-                        Image imagen = (Image)Properties.Resources.ResourceManager.GetObject(dato.Imagen);
-                        if (imagen != null)
-                        {
-                            // Añadir la imagen al ImageList si no existe
-                            imageListDiscos.Images.Add(dato.Imagen, imagen);
-                        }
-                        else
-                        {
-                            // Si la imagen no se encuentra en los recursos, mostrar un mensaje
-                            MessageBox.Show($"Imagen '{dato.Imagen}' no encontrada en los recursos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                    }
-
-                    // Asociar la clave de la imagen al ítem
+                    // Asociar la clave de la imagen al ítem usando la clave correspondiente en el ImageList
                     item.ImageKey = dato.Imagen;
+                }
+                else
+                {
+                    // Si no se encuentra la imagen en el ImageList, asignar una imagen por defecto o manejar el error
+                    item.ImageKey = "default";  // Asegúrate de que "default" esté presente en el ImageList
                 }
 
                 // Agregar el ítem al ListView
