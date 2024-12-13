@@ -97,7 +97,7 @@ namespace Turnable_Tales_Proyecto
             this.label8.Text = p.Nombre;
             this.label12.Text = p.Precio.ToString();
             this.label11.Text = p.Id.ToString();
-            domainUpDownCantidad.Text = p.Cantidad.ToString();                                                
+            domainUpDownCantidad.Text = p.Cantidad.ToString();
             this.descripcionLove.Text = p.Descripcion;
             //textBoxNumero (es el numero de existencias)
 
@@ -139,6 +139,49 @@ namespace Turnable_Tales_Proyecto
         }
 
         private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        //para poder asignar valores y mandar valores
+        public class Elemento
+        {
+            public int Id { get; set; }
+            public int Cantidad { get; set; }
+            public string Descripcion { get; set; }
+
+            public Elemento(int id, int cantidad, string descripcion)
+            {
+                Id = id;
+                Cantidad = cantidad;
+                Descripcion = descripcion;
+            }
+
+
+            //lista que se le manda a vale  
+            public override string ToString()
+            {
+                return $"ID: {Id}, Cantidad: {Cantidad}, Descripcion: {Descripcion}";
+            }
+            public static class ListaGlobal
+            {
+                private static List<Elemento> miLista = new List<Elemento>();
+
+                public static void Insertar(int id, int cantidad, string descripcion)
+                {
+                    miLista.Add(new Elemento(id, cantidad, descripcion));
+                }
+
+                public static List<Elemento> ObtenerLista()
+                {
+                    return miLista;
+                }
+            }
+        }
+
+        private void label13_Click(object sender, EventArgs e)
         {
 
         }

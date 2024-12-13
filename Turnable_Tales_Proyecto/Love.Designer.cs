@@ -62,6 +62,7 @@
             timer1 = new System.Windows.Forms.Timer(components);
             cerrarSesion = new Button();
             buttonEliminarTodo = new Button();
+            labelDescripcion = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -149,11 +150,11 @@
             // 
             label11.AutoSize = true;
             label11.BackColor = Color.Transparent;
-            label11.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
             label11.ForeColor = Color.White;
-            label11.Location = new Point(1104, 181);
+            label11.Location = new Point(1104, 183);
             label11.Name = "label11";
-            label11.Size = new Size(20, 24);
+            label11.Size = new Size(14, 16);
             label11.TabIndex = 225;
             label11.Text = "4";
             // 
@@ -443,11 +444,25 @@
             buttonEliminarTodo.UseVisualStyleBackColor = false;
             buttonEliminarTodo.Click += buttonEliminarTodo_Click;
             // 
+            // labelDescripcion
+            // 
+            labelDescripcion.AutoSize = true;
+            labelDescripcion.BackColor = Color.Transparent;
+            labelDescripcion.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            labelDescripcion.ForeColor = Color.White;
+            labelDescripcion.Location = new Point(884, 300);
+            labelDescripcion.Name = "labelDescripcion";
+            labelDescripcion.Size = new Size(110, 20);
+            labelDescripcion.TabIndex = 245;
+            labelDescripcion.Text = "DESCRIPCION:";
+            labelDescripcion.Click += label13_Click;
+            // 
             // Love
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 633);
+            Controls.Add(labelDescripcion);
             Controls.Add(buttonEliminarTodo);
             Controls.Add(cerrarSesion);
             Controls.Add(textBoxHora);
@@ -523,5 +538,6 @@
         private System.Windows.Forms.Timer timer1;
         private Button cerrarSesion;
         private Button buttonEliminarTodo;
+        private Label labelDescripcion;
     }
 }
