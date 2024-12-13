@@ -18,7 +18,7 @@ namespace Turnable_Tales_Proyecto
             set { textBoxUsuario.Text = value; }
         } // Propiedad para recibir el nombre
 
-        public int id;
+        private int id;
         public Love(int id)
         {
 
@@ -30,7 +30,7 @@ namespace Turnable_Tales_Proyecto
         {
             InitializeComponent();
             nombreUsuario = n;
-            id = id;
+            this.id = id;
         }
 
         /*private void buttonUsuario_Click(object sender, EventArgs e)
@@ -91,15 +91,16 @@ namespace Turnable_Tales_Proyecto
             Productos p = new Productos();
             Datos d = new Datos();
 
-            p = d.ConsultarUnRegistro(id);
-            label10.Text = p.Artista;
-            label9.Text = p.Genero;
-            label8.Text = p.Nombre;
-            label12.Text = p.Precio.ToString();
-            label11.Text = p.Id.ToString();
+            p = d.ConsultarUnRegistro(this.id);
+            this.label10.Text = p.Artista;
+            this.label9.Text = p.Genero;
+            this.label8.Text = p.Nombre;
+            this.label12.Text = p.Precio.ToString();
+            this.label11.Text = p.Id.ToString();
             domainUpDownCantidad.Text = p.Cantidad.ToString();                                                
-            descripcionLove.Text = p.Descripcion;
+            this.descripcionLove.Text = p.Descripcion;
             //textBoxNumero (es el numero de existencias)
+
 
         }
 

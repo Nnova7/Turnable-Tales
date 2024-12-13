@@ -124,37 +124,42 @@ namespace Turnable_Tales_Proyecto
         public Productos ConsultarUnRegistro(int idBuscado)
         {
             Productos aux = null;
-            int id = 0, precio = 0, cantidad = 0;
-            string artista, genero, nombre, imagen, descripcion;
 
             try
             {
-                string query = "SELECT * FROM discos where id=" + idBuscado + ";";//Consultar sql con filtro de id
-                MySqlCommand command = new MySqlCommand(query, this.conexion);//Prepara el comando
-                MySqlDataReader reader = command.ExecuteReader();//Ejecuta la consulta
-                while (reader.Read())//lee el unico registro encontrado
-                {
-                    id = Convert.ToInt32(reader["id"]);
-                    precio = Convert.ToInt32(reader["precio"]);
-                    cantidad = Convert.ToInt32(reader["cantidad"]);
-                    artista = Convert.ToString(reader["artista"]) ?? "";
-                    genero = Convert.ToString(reader["genero"]) ?? "";
-                    nombre = Convert.ToString(reader["nombre"]) ?? "";
-                    imagen = Convert.ToString(reader["imagen"]) ?? "";
-                    descripcion = Convert.ToString(reader["descripcion"]) ?? "";
+                // Consulta parametrizada para evitar SQL Injection
+                string query = "SELECT * FROM discos WHERE id = @idBuscado";
+                MySqlCommand command = new MySqlCommand(query, this.conexion);
+                command.Parameters.AddWithValue("@idBuscado", idBuscado);
 
-                    aux = new Productos(id, artista, genero, nombre, precio, cantidad, imagen, descripcion);
-                }//while
-                reader.Close();
-            }//try
+                // Usar 'using' para asegurar el cierre de recursos
+                using (MySqlDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.Read()) // Lee el único registro si existe
+                    {
+                        int id = Convert.ToInt32(reader["id"]);
+                        int precio = Convert.ToInt32(reader["precio"]);
+                        int cantidad = Convert.ToInt32(reader["cantidad"]);
+                        string artista = reader["artista"]?.ToString() ?? string.Empty;
+                        string genero = reader["genero"]?.ToString() ?? string.Empty;
+                        string nombre = reader["nombre"]?.ToString() ?? string.Empty;
+                        string imagen = reader["imagen"]?.ToString() ?? string.Empty;
+                        string descripcion = reader["descripcion"]?.ToString() ?? string.Empty;
+
+                        aux = new Productos(id, artista, genero, nombre, precio, cantidad, imagen, descripcion);
+                    }
+                }
+            }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al leer la base de datos: " + ex.Message);
-                this.Desconectar();
-            }//catch
+                MessageBox.Show("Error al leer la base de datos. Contacte al administrador.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Opcional: Registrar el error para depuración
+                Console.WriteLine("Error al consultar el registro: " + ex.Message);
+            }
 
             return aux;
-        }//consultarUnRegistro
+        }
+
 
         /// <summary>
         /// Eliminar un registro por medio de un id
