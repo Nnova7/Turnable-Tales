@@ -105,7 +105,7 @@ namespace Turnable_Tales_Proyecto
             if (p.Id == 6)
             {
                 pictureBox2.Image = Properties.Resources.Caifanes;
-              
+
             }
 
 
@@ -129,14 +129,47 @@ namespace Turnable_Tales_Proyecto
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void buttonAgregar_Click(object sender, EventArgs e)
         {
-            //Hacer lista de carrito con varieble o vector de todo * cantidad de discos
+            try
+            {
+                // Obtener la cantidad seleccionada por el usuario
+                int cantidadSeleccionada = Convert.ToInt32(this.domainUpDownCantidad.Text);
 
+                // Consultar el producto en la base de datos
+                Datos datos = new Datos();
+                Productos productos = datos.ConsultarUnRegistro(id);
+
+                // Verificar si el producto tiene suficiente stock
+                if (productos.Cantidad == 0 || productos.Cantidad < cantidadSeleccionada)
+                {
+                    MessageBox.Show("Disco Agotado o Insuficiente Stock", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    // Agregar el producto al carrito global con la cantidad seleccionada
+                    ListaGlobal.Insertar(productos.Id, cantidadSeleccionada, productos.Nombre);
+
+                    // Actualizar la cantidad del producto en la base de datos
+                    datos.ActualizarCantidad(id, productos.Cantidad - cantidadSeleccionada);
+
+                    // Consultar nuevamente el producto para obtener el stock actualizado
+                    productos = datos.ConsultarUnRegistro(id);
+
+                    // Actualizar el campo textBoxNumero con la cantidad restante
+                    textBoxNumero.Text = productos.Cantidad.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Información", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+
 
         private void domainUpDownCantidad_SelectedItemChanged(object sender, EventArgs e)
         {
@@ -197,6 +230,15 @@ namespace Turnable_Tales_Proyecto
         private void label13_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ListaGlobal.EliminarLista();
+            Productos productos = new Productos();
+            Datos datos = new Datos();
+            productos = datos.ConsultarUnRegistro(id);
+            textBoxNumero.Text = productos.Cantidad.ToString();
         }
     }
 }

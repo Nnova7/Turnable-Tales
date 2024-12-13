@@ -223,6 +223,27 @@ namespace Turnable_Tales_Proyecto
             }//catch
         }//actualizar
 
+
+
+        public void ActualizarCantidad(int id, int cantidad)
+        {
+            try
+            {
+                string query = "UPDATE discos SET cantidad=" + cantidad
+                             + " WHERE id=" + id + ";";
+
+                MySqlCommand cmd = new MySqlCommand(query, conexion); //prepara el comando
+                cmd.ExecuteNonQuery(); //Ejecuta el comando
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en la actualizacion: " + ex.Message); //Manejo de errores
+                this.Desconectar(); //Desconecta la base de datos
+
+            }
+        }
+
+
         /// <summary>
         /// Establece la conexion con la base de datos
         /// </summary>

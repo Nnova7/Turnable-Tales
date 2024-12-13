@@ -61,9 +61,9 @@
             textBoxUsuario = new TextBox();
             timer1 = new System.Windows.Forms.Timer(components);
             cerrarSesion = new Button();
-            buttonEliminarTodo = new Button();
             labelDescripcion = new Label();
             imageList1 = new ImageList(components);
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -432,20 +432,6 @@
             cerrarSesion.UseVisualStyleBackColor = false;
             cerrarSesion.Click += cerrarSesion_Click;
             // 
-            // buttonEliminarTodo
-            // 
-            buttonEliminarTodo.BackColor = Color.Maroon;
-            buttonEliminarTodo.FlatStyle = FlatStyle.Popup;
-            buttonEliminarTodo.Font = new Font("Segoe UI Black", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonEliminarTodo.ForeColor = Color.WhiteSmoke;
-            buttonEliminarTodo.Location = new Point(1104, 508);
-            buttonEliminarTodo.Name = "buttonEliminarTodo";
-            buttonEliminarTodo.Size = new Size(166, 46);
-            buttonEliminarTodo.TabIndex = 244;
-            buttonEliminarTodo.Text = "ELIMINAR TODO";
-            buttonEliminarTodo.UseVisualStyleBackColor = false;
-            buttonEliminarTodo.Click += buttonEliminarTodo_Click;
-            // 
             // labelDescripcion
             // 
             labelDescripcion.AutoSize = true;
@@ -474,13 +460,27 @@
             imageList1.Images.SetKeyName(7, "Imagen de WhatsApp 2024-12-13 a las 14.03.53_9753bfde.jpg");
             imageList1.Images.SetKeyName(8, "Imagen de WhatsApp 2024-12-13 a las 14.03.53_11f856ed.jpg");
             // 
+            // button4
+            // 
+            button4.BackColor = Color.Maroon;
+            button4.FlatStyle = FlatStyle.Popup;
+            button4.Font = new Font("Segoe UI Black", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.ForeColor = Color.WhiteSmoke;
+            button4.Location = new Point(1044, 508);
+            button4.Name = "button4";
+            button4.Size = new Size(166, 46);
+            button4.TabIndex = 246;
+            button4.Text = "ELIMINAR TODO";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
             // Love
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(1302, 633);
+            Controls.Add(button4);
             Controls.Add(labelDescripcion);
-            Controls.Add(buttonEliminarTodo);
             Controls.Add(cerrarSesion);
             Controls.Add(textBoxHora);
             Controls.Add(textBoxFecha);
@@ -554,8 +554,8 @@
         private TextBox textBoxUsuario;
         private System.Windows.Forms.Timer timer1;
         private Button cerrarSesion;
-        private Button buttonEliminarTodo;
         private Label labelDescripcion;
         private ImageList imageList1;
+        private Button button4;
     }
 }
