@@ -181,6 +181,7 @@
             textBoxNPedido.BackColor = Color.Black;
             textBoxNPedido.Enabled = false;
             textBoxNPedido.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxNPedido.ForeColor = SystemColors.Menu;
             textBoxNPedido.Location = new Point(647, 244);
             textBoxNPedido.Name = "textBoxNPedido";
             textBoxNPedido.Size = new Size(151, 35);
@@ -192,6 +193,7 @@
             textBoxSub.BackColor = Color.Black;
             textBoxSub.Enabled = false;
             textBoxSub.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxSub.ForeColor = SystemColors.Menu;
             textBoxSub.Location = new Point(647, 284);
             textBoxSub.Name = "textBoxSub";
             textBoxSub.Size = new Size(151, 35);
@@ -203,6 +205,7 @@
             textBoxImp.BackColor = Color.Black;
             textBoxImp.Enabled = false;
             textBoxImp.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxImp.ForeColor = SystemColors.Menu;
             textBoxImp.Location = new Point(647, 319);
             textBoxImp.Name = "textBoxImp";
             textBoxImp.Size = new Size(151, 35);
@@ -214,6 +217,7 @@
             textBoxTot.BackColor = Color.Black;
             textBoxTot.Enabled = false;
             textBoxTot.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxTot.ForeColor = SystemColors.Menu;
             textBoxTot.Location = new Point(647, 357);
             textBoxTot.Name = "textBoxTot";
             textBoxTot.Size = new Size(151, 35);
@@ -225,6 +229,7 @@
             textBoxCam.BackColor = Color.Black;
             textBoxCam.Enabled = false;
             textBoxCam.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxCam.ForeColor = SystemColors.Menu;
             textBoxCam.Location = new Point(647, 534);
             textBoxCam.Name = "textBoxCam";
             textBoxCam.Size = new Size(151, 35);
@@ -235,6 +240,7 @@
             // 
             textBoxPagoCon.BackColor = Color.Black;
             textBoxPagoCon.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxPagoCon.ForeColor = SystemColors.Menu;
             textBoxPagoCon.Location = new Point(647, 441);
             textBoxPagoCon.Name = "textBoxPagoCon";
             textBoxPagoCon.Size = new Size(151, 35);
@@ -328,6 +334,7 @@
             Controls.Add(labelFrase);
             Controls.Add(labelTitulo);
             Controls.Add(buttonRegresar);
+            ForeColor = SystemColors.ButtonHighlight;
             Margin = new Padding(4, 5, 4, 5);
             Name = "Efectivo";
             StartPosition = FormStartPosition.CenterScreen;

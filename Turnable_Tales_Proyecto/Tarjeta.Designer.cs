@@ -109,7 +109,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(400, 10);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(493, 50);
+            labelTitulo.Size = new Size(595, 61);
             labelTitulo.TabIndex = 198;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -121,7 +121,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(521, 65);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(237, 20);
+            labelFrase.Size = new Size(288, 25);
             labelFrase.TabIndex = 199;
             labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
             // 
@@ -133,7 +133,7 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(193, 93);
             label1.Name = "label1";
-            label1.Size = new Size(893, 3);
+            label1.Size = new Size(1784, 4);
             label1.TabIndex = 200;
             label1.Text = resources.GetString("label1.Text");
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -146,7 +146,7 @@
             labelNomDiap.ForeColor = Color.White;
             labelNomDiap.Location = new Point(466, 109);
             labelNomDiap.Name = "labelNomDiap";
-            labelNomDiap.Size = new Size(374, 50);
+            labelNomDiap.Size = new Size(455, 61);
             labelNomDiap.TabIndex = 201;
             labelNomDiap.Text = "PAGO CON TARJETA";
             labelNomDiap.TextAlign = ContentAlignment.TopCenter;
@@ -159,7 +159,7 @@
             labelLinea.ForeColor = Color.White;
             labelLinea.Location = new Point(193, 184);
             labelLinea.Name = "labelLinea";
-            labelLinea.Size = new Size(893, 3);
+            labelLinea.Size = new Size(1784, 4);
             labelLinea.TabIndex = 202;
             labelLinea.Text = resources.GetString("labelLinea.Text");
             labelLinea.TextAlign = ContentAlignment.TopCenter;
@@ -218,9 +218,10 @@
             textBoxNPedido.BackColor = Color.Black;
             textBoxNPedido.Enabled = false;
             textBoxNPedido.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxNPedido.ForeColor = SystemColors.Menu;
             textBoxNPedido.Location = new Point(1083, 280);
             textBoxNPedido.Name = "textBoxNPedido";
-            textBoxNPedido.Size = new Size(151, 30);
+            textBoxNPedido.Size = new Size(151, 35);
             textBoxNPedido.TabIndex = 208;
             textBoxNPedido.TextAlign = HorizontalAlignment.Center;
             // 
@@ -229,9 +230,10 @@
             textBoxSub.BackColor = Color.Black;
             textBoxSub.Enabled = false;
             textBoxSub.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxSub.ForeColor = SystemColors.Menu;
             textBoxSub.Location = new Point(1083, 361);
             textBoxSub.Name = "textBoxSub";
-            textBoxSub.Size = new Size(151, 30);
+            textBoxSub.Size = new Size(151, 35);
             textBoxSub.TabIndex = 209;
             textBoxSub.TextAlign = HorizontalAlignment.Center;
             // 
@@ -240,9 +242,10 @@
             textBoxImp.BackColor = Color.Black;
             textBoxImp.Enabled = false;
             textBoxImp.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxImp.ForeColor = SystemColors.Menu;
             textBoxImp.Location = new Point(1083, 401);
             textBoxImp.Name = "textBoxImp";
-            textBoxImp.Size = new Size(151, 30);
+            textBoxImp.Size = new Size(151, 35);
             textBoxImp.TabIndex = 210;
             textBoxImp.TextAlign = HorizontalAlignment.Center;
             // 
@@ -251,9 +254,10 @@
             textBoxTot.BackColor = Color.Black;
             textBoxTot.Enabled = false;
             textBoxTot.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxTot.ForeColor = SystemColors.Menu;
             textBoxTot.Location = new Point(1083, 446);
             textBoxTot.Name = "textBoxTot";
-            textBoxTot.Size = new Size(151, 30);
+            textBoxTot.Size = new Size(151, 35);
             textBoxTot.TabIndex = 211;
             textBoxTot.TextAlign = HorizontalAlignment.Center;
             // 
@@ -262,9 +266,10 @@
             textBoxCosEnvio.BackColor = Color.Black;
             textBoxCosEnvio.Enabled = false;
             textBoxCosEnvio.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxCosEnvio.ForeColor = SystemColors.Menu;
             textBoxCosEnvio.Location = new Point(1083, 316);
             textBoxCosEnvio.Name = "textBoxCosEnvio";
-            textBoxCosEnvio.Size = new Size(151, 30);
+            textBoxCosEnvio.Size = new Size(151, 35);
             textBoxCosEnvio.TabIndex = 212;
             textBoxCosEnvio.TextAlign = HorizontalAlignment.Center;
             // 
@@ -287,7 +292,7 @@
             labelNTarjeta.ForeColor = Color.White;
             labelNTarjeta.Location = new Point(127, 314);
             labelNTarjeta.Name = "labelNTarjeta";
-            labelNTarjeta.Size = new Size(233, 23);
+            labelNTarjeta.Size = new Size(282, 27);
             labelNTarjeta.TabIndex = 214;
             labelNTarjeta.Text = "NUMERO DE LA TARJETA*";
             // 
@@ -299,7 +304,7 @@
             labelFCaducidad.ForeColor = Color.White;
             labelFCaducidad.Location = new Point(127, 387);
             labelFCaducidad.Name = "labelFCaducidad";
-            labelFCaducidad.Size = new Size(227, 23);
+            labelFCaducidad.Size = new Size(275, 27);
             labelFCaducidad.TabIndex = 215;
             labelFCaducidad.Text = "FECHA DE CADUCIDAD*";
             // 
@@ -311,7 +316,7 @@
             labelCSeguridad.ForeColor = Color.White;
             labelCSeguridad.Location = new Point(127, 454);
             labelCSeguridad.Name = "labelCSeguridad";
-            labelCSeguridad.Size = new Size(237, 23);
+            labelCSeguridad.Size = new Size(285, 27);
             labelCSeguridad.TabIndex = 216;
             labelCSeguridad.Text = "CODIGO DE SEGURIDAD*";
             // 
@@ -319,11 +324,12 @@
             // 
             textBoxNTarjeta.BackColor = Color.Black;
             textBoxNTarjeta.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxNTarjeta.ForeColor = SystemColors.Menu;
             textBoxNTarjeta.Location = new Point(127, 337);
             textBoxNTarjeta.MaxLength = 16;
             textBoxNTarjeta.Name = "textBoxNTarjeta";
             textBoxNTarjeta.PlaceholderText = "XXXX XXXX XXXX XXXX";
-            textBoxNTarjeta.Size = new Size(305, 30);
+            textBoxNTarjeta.Size = new Size(305, 35);
             textBoxNTarjeta.TabIndex = 217;
             textBoxNTarjeta.TextAlign = HorizontalAlignment.Center;
             // 
@@ -331,11 +337,12 @@
             // 
             textBoxMes.BackColor = Color.Black;
             textBoxMes.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxMes.ForeColor = SystemColors.Menu;
             textBoxMes.Location = new Point(127, 408);
             textBoxMes.MaxLength = 2;
             textBoxMes.Name = "textBoxMes";
             textBoxMes.PlaceholderText = "MES";
-            textBoxMes.Size = new Size(88, 30);
+            textBoxMes.Size = new Size(88, 35);
             textBoxMes.TabIndex = 218;
             textBoxMes.TextAlign = HorizontalAlignment.Center;
             // 
@@ -343,11 +350,12 @@
             // 
             textBoxCVV.BackColor = Color.Black;
             textBoxCVV.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxCVV.ForeColor = SystemColors.Menu;
             textBoxCVV.Location = new Point(127, 475);
             textBoxCVV.MaxLength = 3;
             textBoxCVV.Name = "textBoxCVV";
             textBoxCVV.PlaceholderText = "CVV/CVC/CID";
-            textBoxCVV.Size = new Size(144, 30);
+            textBoxCVV.Size = new Size(144, 35);
             textBoxCVV.TabIndex = 219;
             textBoxCVV.TextAlign = HorizontalAlignment.Center;
             textBoxCVV.TextChanged += textBoxCVV_TextChanged;
@@ -356,11 +364,12 @@
             // 
             textBoxAnio.BackColor = Color.Black;
             textBoxAnio.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxAnio.ForeColor = SystemColors.Menu;
             textBoxAnio.Location = new Point(255, 408);
             textBoxAnio.MaxLength = 2;
             textBoxAnio.Name = "textBoxAnio";
             textBoxAnio.PlaceholderText = "AÑO";
-            textBoxAnio.Size = new Size(83, 30);
+            textBoxAnio.Size = new Size(83, 35);
             textBoxAnio.TabIndex = 220;
             textBoxAnio.TextAlign = HorizontalAlignment.Center;
             // 
@@ -383,7 +392,7 @@
             textBoxHora.ForeColor = Color.White;
             textBoxHora.Location = new Point(1061, 77);
             textBoxHora.Name = "textBoxHora";
-            textBoxHora.Size = new Size(197, 20);
+            textBoxHora.Size = new Size(197, 24);
             textBoxHora.TabIndex = 242;
             // 
             // textBoxFecha
@@ -394,7 +403,7 @@
             textBoxFecha.ForeColor = Color.White;
             textBoxFecha.Location = new Point(1061, 41);
             textBoxFecha.Name = "textBoxFecha";
-            textBoxFecha.Size = new Size(197, 20);
+            textBoxFecha.Size = new Size(197, 24);
             textBoxFecha.TabIndex = 241;
             // 
             // textBoxUsuario
@@ -405,7 +414,7 @@
             textBoxUsuario.ForeColor = Color.White;
             textBoxUsuario.Location = new Point(1061, 4);
             textBoxUsuario.Name = "textBoxUsuario";
-            textBoxUsuario.Size = new Size(197, 20);
+            textBoxUsuario.Size = new Size(197, 24);
             textBoxUsuario.TabIndex = 240;
             // 
             // timer1

@@ -101,7 +101,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(400, 10);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(493, 50);
+            labelTitulo.Size = new Size(595, 61);
             labelTitulo.TabIndex = 197;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -113,7 +113,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(521, 65);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(237, 20);
+            labelFrase.Size = new Size(288, 25);
             labelFrase.TabIndex = 198;
             labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
             // 
@@ -125,7 +125,7 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(193, 93);
             label1.Name = "label1";
-            label1.Size = new Size(893, 3);
+            label1.Size = new Size(1784, 4);
             label1.TabIndex = 199;
             label1.Text = resources.GetString("label1.Text");
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -138,7 +138,7 @@
             labelNomDiap.ForeColor = Color.White;
             labelNomDiap.Location = new Point(505, 111);
             labelNomDiap.Name = "labelNomDiap";
-            labelNomDiap.Size = new Size(294, 50);
+            labelNomDiap.Size = new Size(358, 61);
             labelNomDiap.TabIndex = 200;
             labelNomDiap.Text = "PAGO EN OXXO";
             labelNomDiap.TextAlign = ContentAlignment.TopCenter;
@@ -151,7 +151,7 @@
             labelLinea.ForeColor = Color.White;
             labelLinea.Location = new Point(193, 184);
             labelLinea.Name = "labelLinea";
-            labelLinea.Size = new Size(893, 3);
+            labelLinea.Size = new Size(1784, 4);
             labelLinea.TabIndex = 201;
             labelLinea.Text = resources.GetString("labelLinea.Text");
             labelLinea.TextAlign = ContentAlignment.TopCenter;
@@ -188,9 +188,10 @@
             textBoxNPedido.BackColor = Color.Black;
             textBoxNPedido.Enabled = false;
             textBoxNPedido.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxNPedido.ForeColor = SystemColors.Menu;
             textBoxNPedido.Location = new Point(953, 371);
             textBoxNPedido.Name = "textBoxNPedido";
-            textBoxNPedido.Size = new Size(179, 30);
+            textBoxNPedido.Size = new Size(179, 35);
             textBoxNPedido.TabIndex = 205;
             textBoxNPedido.TextAlign = HorizontalAlignment.Center;
             // 
@@ -199,9 +200,10 @@
             textBoxPagAntes.BackColor = Color.Black;
             textBoxPagAntes.Enabled = false;
             textBoxPagAntes.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxPagAntes.ForeColor = SystemColors.Menu;
             textBoxPagAntes.Location = new Point(566, 255);
             textBoxPagAntes.Name = "textBoxPagAntes";
-            textBoxPagAntes.Size = new Size(179, 30);
+            textBoxPagAntes.Size = new Size(179, 35);
             textBoxPagAntes.TabIndex = 206;
             textBoxPagAntes.TextAlign = HorizontalAlignment.Center;
             // 
@@ -210,9 +212,10 @@
             textBoxValor.BackColor = Color.Black;
             textBoxValor.Enabled = false;
             textBoxValor.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxValor.ForeColor = SystemColors.Menu;
             textBoxValor.Location = new Point(151, 255);
             textBoxValor.Name = "textBoxValor";
-            textBoxValor.Size = new Size(179, 30);
+            textBoxValor.Size = new Size(179, 35);
             textBoxValor.TabIndex = 207;
             textBoxValor.TextAlign = HorizontalAlignment.Center;
             // 
@@ -221,9 +224,10 @@
             textBoxFechaCrea.BackColor = Color.Black;
             textBoxFechaCrea.Enabled = false;
             textBoxFechaCrea.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxFechaCrea.ForeColor = SystemColors.Menu;
             textBoxFechaCrea.Location = new Point(359, 255);
             textBoxFechaCrea.Name = "textBoxFechaCrea";
-            textBoxFechaCrea.Size = new Size(179, 30);
+            textBoxFechaCrea.Size = new Size(179, 35);
             textBoxFechaCrea.TabIndex = 208;
             textBoxFechaCrea.TextAlign = HorizontalAlignment.Center;
             // 
@@ -235,7 +239,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(953, 345);
             label2.Name = "label2";
-            label2.Size = new Size(200, 23);
+            label2.Size = new Size(241, 27);
             label2.TabIndex = 209;
             label2.Text = "NUMERO DEL PEDIDO";
             // 
@@ -258,7 +262,7 @@
             textBoxHora.ForeColor = Color.White;
             textBoxHora.Location = new Point(1061, 77);
             textBoxHora.Name = "textBoxHora";
-            textBoxHora.Size = new Size(197, 20);
+            textBoxHora.Size = new Size(197, 24);
             textBoxHora.TabIndex = 242;
             // 
             // textBoxFecha
@@ -269,7 +273,7 @@
             textBoxFecha.ForeColor = Color.White;
             textBoxFecha.Location = new Point(1061, 41);
             textBoxFecha.Name = "textBoxFecha";
-            textBoxFecha.Size = new Size(197, 20);
+            textBoxFecha.Size = new Size(197, 24);
             textBoxFecha.TabIndex = 241;
             // 
             // textBoxUsuario
@@ -280,7 +284,7 @@
             textBoxUsuario.ForeColor = Color.White;
             textBoxUsuario.Location = new Point(1061, 4);
             textBoxUsuario.Name = "textBoxUsuario";
-            textBoxUsuario.Size = new Size(197, 20);
+            textBoxUsuario.Size = new Size(197, 24);
             textBoxUsuario.TabIndex = 240;
             // 
             // timer1
