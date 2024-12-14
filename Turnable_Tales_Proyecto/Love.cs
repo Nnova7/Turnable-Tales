@@ -278,6 +278,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonSonido_Click(object sender, EventArgs e)
         {
+            //llama a la funcion de pausar y reproducir musica
             AudioPlayer.ToggleMusic();
         }
     }
