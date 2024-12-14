@@ -102,9 +102,44 @@ namespace Turnable_Tales_Proyecto
             this.descripcionLove.Text = p.Descripcion;
             this.textBoxNumero.Text = p.Cantidad.ToString();
 
+            if (p.Id == 1)
+            {
+                pictureBox2.Image = Properties.Resources.Clasicosegundo;
+
+            }
+            if (p.Id == 2)
+            {
+                pictureBox2.Image = Properties.Resources.Clasico2;
+
+            }
+            if (p.Id == 3)
+            {
+                pictureBox2.Image = Properties.Resources.the_world;
+
+            }
+            if (p.Id == 4)
+            {
+                pictureBox2.Image = Properties.Resources.BtsSEGUNDO;
+
+            }
+            if (p.Id == 5)
+            {
+                pictureBox2.Image = Properties.Resources.Eureka1;
+
+            }
             if (p.Id == 6)
             {
                 pictureBox2.Image = Properties.Resources.Caifanes;
+
+            }
+            if (p.Id == 7)
+            {
+                pictureBox2.Image = Properties.Resources.Incomodo;
+
+            }
+            if (p.Id == 8)
+            {
+                pictureBox2.Image = Properties.Resources.Sad;
 
             }
 
