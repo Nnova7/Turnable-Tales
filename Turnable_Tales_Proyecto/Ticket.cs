@@ -12,16 +12,60 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
 using System.Runtime.CompilerServices;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Turnable_Tales_Proyecto
 {
     public partial class Ticket : Form
     {
+        private List<Elemento> ticketList = new List<Elemento>(); // Lista de discos compras
+        private List<Productos> productosList = new List<Productos>(); // Lista de productos con precio
+
+        public Ticket(List<Elemento> tickets, List<Productos> productos)
+        {
+            InitializeComponent();
+            ticketList = tickets ?? new List<Elemento>();
+            productosList = productos ?? new List<Productos>();
+            PopulateTextBoxes();
+        }
+
         public string nombreUsuario
         {
             get { return textBoxUsuario.Text; }
             set { textBoxUsuario.Text = value; }
         } // Propiedad para recibir el nombre
+
+        private void PopulateTextBoxes()
+        {
+            double subtotal = 0;
+
+            // Llenar TextBox1 con la lista de discos
+            textBoxDato1.Clear();
+            foreach (var ticket in ticketList)
+            {
+                // Buscar el producto en la lista de productos
+                var producto = productosList.FirstOrDefault(p => p.Id == ticket.Id);
+                if (producto != null)
+                {
+                    // Calcular el importe del producto
+                    double importe = ticket.Cantidad * producto.Precio;
+
+                    // Acumular el subtotal
+                    subtotal += importe;
+
+                    // Agregar los datos del producto al TextBox
+                    textBoxDato1.AppendText($"{ticket.Cantidad}  {producto.Descripcion}  {importe:F2}\n");
+                }
+            }
+
+            // Calcular impuesto y total
+            double impuesto = subtotal * 0.06f;
+            double total = subtotal + impuesto;
+
+            // Llenar con el desglose
+            textBoxDato2.Text = $"SUBTOTAL: {subtotal:F2}\nIMPUESTO: {impuesto:F2}\nTOTAL: {total:F2}";
+        }
+ 
         public Ticket()
         {
             InitializeComponent();
@@ -118,13 +162,16 @@ namespace Turnable_Tales_Proyecto
             AddCellToTable(table, "ARTÍCULO", contentFont, Element.ALIGN_LEFT);
             AddCellToTable(table, "IMPORTE", contentFont, Element.ALIGN_RIGHT);
 
-            // Agregar datos dinámicos
-            List<Impresion> tickets = GetSampleTickets(); // Obtener datos
-            foreach (var ticket in tickets)
+            //agregar datos dinámicos
+            foreach (var ticket in ticketList)
             {
-                AddCellToTable(table, ticket.Cantidad.ToString(), contentFont, Element.ALIGN_CENTER);
-                AddCellToTable(table, ticket.Articulo, contentFont, Element.ALIGN_LEFT);
-                AddCellToTable(table, ticket.Precio.ToString("F2"), contentFont, Element.ALIGN_RIGHT);
+                var producto = productosList.FirstOrDefault(p => p.Id == ticket.Id);
+                if (producto != null)
+                {
+                    AddCellToTable(table, ticket.Cantidad.ToString(), contentFont, Element.ALIGN_CENTER);
+                    AddCellToTable(table, producto.Descripcion, contentFont, Element.ALIGN_LEFT);
+                    AddCellToTable(table, (producto.Precio * ticket.Cantidad).ToString("F2"), contentFont, Element.ALIGN_RIGHT);
+                }
             }
             doc.Add(table);
 
@@ -132,12 +179,8 @@ namespace Turnable_Tales_Proyecto
             doc.Add(Chunk.NEWLINE);
 
             // Totales
-            double subtotal = 0;
-            foreach (var ticket in tickets)
-            {
-                subtotal += ticket.Precio * ticket.Cantidad;
-            }
-            double impuesto = subtotal * 0.06; // 6% de impuesto
+            double subtotal = ticketList.Sum(t => productosList.FirstOrDefault(p => p.Id == t.Id)?.Precio * t.Cantidad ?? 0);
+            double impuesto = subtotal * 0.06;
             double total = subtotal + impuesto;
 
             Paragraph totals = new Paragraph(
@@ -151,16 +194,14 @@ namespace Turnable_Tales_Proyecto
             // Espaciado
             doc.Add(Chunk.NEWLINE);
 
-            // Opciones de pago
-            Paragraph paymentOptions = new Paragraph("PAGO EN OXXO", contentFont)
+            // Espaciado
+            doc.Add(Chunk.NEWLINE);
+
+            // Hora
+            Paragraph timeParagraph = new Paragraph($"{textBoxHora.Text} {textBoxFecha.Text}", contentFont)
             {
                 Alignment = Element.ALIGN_RIGHT
             };
-            paymentOptions.IndentationRight = 6; // Espaciado desde la derecha
-            doc.Add(paymentOptions);
-
-            // Espaciado
-            doc.Add(Chunk.NEWLINE);
 
             // Mensaje final
             Paragraph footer = new Paragraph("GRACIAS POR SU COMPRA", contentFont)
@@ -175,6 +216,7 @@ namespace Turnable_Tales_Proyecto
 
             MessageBox.Show("Documento generado satisfactoriamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
         // Método para agregar celdas a la tabla
         static void AddCellToTable(PdfPTable table, string text, iTextSharp.text.Font font, int alignament)
         {
@@ -203,6 +245,10 @@ namespace Turnable_Tales_Proyecto
 
         private void Ticket_Load(object sender, EventArgs e)
         {
+            // Establecer la hora de la compra
+            textBoxHora.Text = DateTime.Now.ToString("HH:mm:ss");
+            textBoxFecha.Text = DateTime.Now.ToString("yyyy-MM-dd");
+
             if (!string.IsNullOrEmpty(nombreUsuario))
             {
                 textBoxUsuario.Text = nombreUsuario;
