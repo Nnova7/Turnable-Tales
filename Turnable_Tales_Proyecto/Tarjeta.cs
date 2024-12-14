@@ -16,6 +16,51 @@ namespace Turnable_Tales_Proyecto
     public partial class Tarjeta : Form
     {
         private bool optionSelected = false; // Indica si se presionó algún botón de opción
+        private List<Elemento> ticketList = new List<Elemento>(); // Lista de discos comprados
+        private List<Productos> productosList = new List<Productos>(); // Lista de productos con precios
+        public Tarjeta(List<Elemento> tickets, List<Productos> productos)
+        {
+            InitializeComponent();
+            ticketList = tickets ?? new List<Elemento>();
+            productosList = productos ?? new List<Productos>();
+            PopulateTextBoxes();
+        }
+
+        private void PopulateTextBoxes()
+        {
+            double subtotal = 0;
+
+            // Iterar sobre la lista de tickets para calcular el subtotal
+            foreach (var ticket in ticketList)
+            {
+                // Buscar el producto correspondiente en la lista de productos
+                var producto = productosList.FirstOrDefault(p => p.Id == ticket.Id);
+                if (producto != null)
+                {
+                    // Calcular el importe
+                    double importe = ticket.Cantidad * producto.Precio;
+
+                    // Acumular el subtotal
+                    subtotal += importe;
+
+                }
+            }
+            //obtener y agregar el costo de envio
+            if (decimal.TryParse(textBoxCosEnvio.Text, out decimal randomCost))
+            {
+                subtotal += (double)randomCost;
+            }
+
+            // Calcular impuestos y total
+            double impuesto = subtotal * 0.06; // 6% de impuesto
+            double total = subtotal + impuesto;
+
+            // Mostrar resultados en los TextBoxes correspondientes
+            textBoxSub.Text = subtotal.ToString("F2");
+            textBoxImp.Text = impuesto.ToString("F2");
+            textBoxTot.Text = total.ToString("F2");
+        }
+
         public string nombreUsuario
         {
             get { return textBoxUsuario.Text; }
@@ -158,7 +203,7 @@ namespace Turnable_Tales_Proyecto
             {
                 MessageBox.Show("Por favor, ingrese valores numéricos válidos en los campos.", "Error de formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
+ 
         }
 
         private void textBoxCVV_TextChanged(object sender, EventArgs e)
