@@ -275,5 +275,10 @@ namespace Turnable_Tales_Proyecto
             productos = datos.ConsultarUnRegistro(id);
             textBoxNumero.Text = productos.Cantidad.ToString();
         }
+
+        private void buttonSonido_Click(object sender, EventArgs e)
+        {
+            AudioPlayer.ToggleMusic();
+        }
     }
 }

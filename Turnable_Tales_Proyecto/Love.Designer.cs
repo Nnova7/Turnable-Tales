@@ -113,6 +113,7 @@
             buttonSonido.Size = new Size(93, 89);
             buttonSonido.TabIndex = 205;
             buttonSonido.UseVisualStyleBackColor = true;
+            buttonSonido.Click += buttonSonido_Click;
             // 
             // labelTitulo
             // 
