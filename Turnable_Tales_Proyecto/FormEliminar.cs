@@ -121,5 +121,11 @@ namespace Turnable_Tales_Proyecto
             portada.ShowDialog();
             this.Close();
         }
+
+        private void buttonMusica_Click(object sender, EventArgs e)
+        {
+            //llama a la funcion de pausar y reproducir musica
+            AudioPlayer.ToggleMusic();
+        }
     }
 }

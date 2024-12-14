@@ -96,6 +96,7 @@
             buttonMusica.Size = new Size(93, 89);
             buttonMusica.TabIndex = 197;
             buttonMusica.UseVisualStyleBackColor = true;
+            buttonMusica.Click += buttonMusica_Click;
             // 
             // pictureBox1
             // 
@@ -115,7 +116,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(421, 118);
             label2.Name = "label2";
-            label2.Size = new Size(551, 61);
+            label2.Size = new Size(455, 50);
             label2.TabIndex = 196;
             label2.Text = "A D M I N I S T R A D O R\r\n";
             label2.TextAlign = ContentAlignment.TopCenter;
@@ -128,7 +129,7 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(193, 189);
             label1.Name = "label1";
-            label1.Size = new Size(1784, 4);
+            label1.Size = new Size(893, 3);
             label1.TabIndex = 195;
             label1.Text = resources.GetString("label1.Text");
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -141,7 +142,7 @@
             labelLinea.ForeColor = Color.White;
             labelLinea.Location = new Point(193, 104);
             labelLinea.Name = "labelLinea";
-            labelLinea.Size = new Size(1784, 4);
+            labelLinea.Size = new Size(893, 3);
             labelLinea.TabIndex = 194;
             labelLinea.Text = resources.GetString("labelLinea.Text");
             labelLinea.TextAlign = ContentAlignment.TopCenter;
@@ -153,7 +154,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(400, 9);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(595, 61);
+            labelTitulo.Size = new Size(493, 50);
             labelTitulo.TabIndex = 190;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -165,7 +166,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(521, 64);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(288, 25);
+            labelFrase.Size = new Size(237, 20);
             labelFrase.TabIndex = 191;
             labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
             // 
@@ -177,7 +178,7 @@
             labelMenu.ForeColor = Color.White;
             labelMenu.Location = new Point(521, 192);
             labelMenu.Name = "labelMenu";
-            labelMenu.Size = new Size(278, 42);
+            labelMenu.Size = new Size(223, 36);
             labelMenu.TabIndex = 189;
             labelMenu.Text = "AGREGAR DISCO";
             // 
@@ -189,7 +190,7 @@
             textBoxImagen.Location = new Point(225, 494);
             textBoxImagen.Name = "textBoxImagen";
             textBoxImagen.PlaceholderText = "INTRODUZCA UN DATO";
-            textBoxImagen.Size = new Size(221, 31);
+            textBoxImagen.Size = new Size(221, 27);
             textBoxImagen.TabIndex = 236;
             textBoxImagen.Tag = "";
             textBoxImagen.TextAlign = HorizontalAlignment.Center;
@@ -202,7 +203,7 @@
             textBoxDescripcion.Location = new Point(727, 494);
             textBoxDescripcion.Name = "textBoxDescripcion";
             textBoxDescripcion.PlaceholderText = "INTRODUZCA UN DATO";
-            textBoxDescripcion.Size = new Size(547, 31);
+            textBoxDescripcion.Size = new Size(547, 27);
             textBoxDescripcion.TabIndex = 235;
             textBoxDescripcion.Tag = "";
             textBoxDescripcion.TextAlign = HorizontalAlignment.Center;
@@ -214,7 +215,7 @@
             label3.ForeColor = Color.White;
             label3.Location = new Point(497, 480);
             label3.Name = "label3";
-            label3.Size = new Size(263, 96);
+            label3.Size = new Size(224, 82);
             label3.TabIndex = 234;
             label3.Text = "DESCRIPCION:\r\n\r\n";
             label3.TextAlign = ContentAlignment.TopCenter;
@@ -226,7 +227,7 @@
             label4.ForeColor = Color.White;
             label4.Location = new Point(72, 480);
             label4.Name = "label4";
-            label4.Size = new Size(173, 48);
+            label4.Size = new Size(147, 41);
             label4.TabIndex = 233;
             label4.Text = "IMAGEN:";
             label4.TextAlign = ContentAlignment.TopCenter;
@@ -239,7 +240,7 @@
             textBoxPrecio.Location = new Point(611, 384);
             textBoxPrecio.Name = "textBoxPrecio";
             textBoxPrecio.PlaceholderText = "INTRODUZCA UN DATO";
-            textBoxPrecio.Size = new Size(221, 31);
+            textBoxPrecio.Size = new Size(221, 27);
             textBoxPrecio.TabIndex = 232;
             textBoxPrecio.Tag = "";
             textBoxPrecio.TextAlign = HorizontalAlignment.Center;
@@ -252,7 +253,7 @@
             textBoxTitulo.Location = new Point(225, 384);
             textBoxTitulo.Name = "textBoxTitulo";
             textBoxTitulo.PlaceholderText = "INTRODUZCA UN DATO";
-            textBoxTitulo.Size = new Size(221, 31);
+            textBoxTitulo.Size = new Size(221, 27);
             textBoxTitulo.TabIndex = 231;
             textBoxTitulo.Tag = "";
             textBoxTitulo.TextAlign = HorizontalAlignment.Center;
@@ -265,7 +266,7 @@
             textBoxExistencias.Location = new Point(1069, 384);
             textBoxExistencias.Name = "textBoxExistencias";
             textBoxExistencias.PlaceholderText = "INTRODUZCA UN DATO";
-            textBoxExistencias.Size = new Size(221, 31);
+            textBoxExistencias.Size = new Size(221, 27);
             textBoxExistencias.TabIndex = 230;
             textBoxExistencias.Tag = "";
             textBoxExistencias.TextAlign = HorizontalAlignment.Center;
@@ -278,7 +279,7 @@
             textBoxGenero.Location = new Point(1053, 271);
             textBoxGenero.Name = "textBoxGenero";
             textBoxGenero.PlaceholderText = "INTRODUZCA UN DATO";
-            textBoxGenero.Size = new Size(221, 31);
+            textBoxGenero.Size = new Size(221, 27);
             textBoxGenero.TabIndex = 229;
             textBoxGenero.Tag = "";
             textBoxGenero.TextAlign = HorizontalAlignment.Center;
@@ -291,7 +292,7 @@
             textBoxArtista.Location = new Point(623, 271);
             textBoxArtista.Name = "textBoxArtista";
             textBoxArtista.PlaceholderText = "INTRODUZCA UN DATO";
-            textBoxArtista.Size = new Size(221, 31);
+            textBoxArtista.Size = new Size(221, 27);
             textBoxArtista.TabIndex = 228;
             textBoxArtista.Tag = "";
             textBoxArtista.TextAlign = HorizontalAlignment.Center;
@@ -304,7 +305,7 @@
             textBoxId.Location = new Point(195, 271);
             textBoxId.Name = "textBoxId";
             textBoxId.PlaceholderText = "INTRODUZCA UN DATO";
-            textBoxId.Size = new Size(221, 31);
+            textBoxId.Size = new Size(221, 27);
             textBoxId.TabIndex = 227;
             textBoxId.Tag = "";
             textBoxId.TextAlign = HorizontalAlignment.Center;
@@ -316,7 +317,7 @@
             labeltxtId.ForeColor = Color.White;
             labeltxtId.Location = new Point(124, 257);
             labeltxtId.Name = "labeltxtId";
-            labeltxtId.Size = new Size(68, 48);
+            labeltxtId.Size = new Size(58, 41);
             labeltxtId.TabIndex = 226;
             labeltxtId.Text = "ID:";
             labeltxtId.TextAlign = ContentAlignment.TopCenter;
@@ -328,7 +329,7 @@
             labeltxtExistencias.ForeColor = Color.White;
             labeltxtExistencias.Location = new Point(859, 375);
             labeltxtExistencias.Name = "labeltxtExistencias";
-            labeltxtExistencias.Size = new Size(251, 48);
+            labeltxtExistencias.Size = new Size(215, 41);
             labeltxtExistencias.TabIndex = 225;
             labeltxtExistencias.Text = "EXISTENCIAS:\r\n";
             labeltxtExistencias.TextAlign = ContentAlignment.TopCenter;
@@ -340,7 +341,7 @@
             labeltxtPrecio.ForeColor = Color.White;
             labeltxtPrecio.Location = new Point(473, 375);
             labeltxtPrecio.Name = "labeltxtPrecio";
-            labeltxtPrecio.Size = new Size(155, 48);
+            labeltxtPrecio.Size = new Size(132, 41);
             labeltxtPrecio.TabIndex = 224;
             labeltxtPrecio.Text = "PRECIO:";
             labeltxtPrecio.TextAlign = ContentAlignment.TopCenter;
@@ -352,7 +353,7 @@
             labeltxtGenero.ForeColor = Color.White;
             labeltxtGenero.Location = new Point(901, 257);
             labeltxtGenero.Name = "labeltxtGenero";
-            labeltxtGenero.Size = new Size(173, 48);
+            labeltxtGenero.Size = new Size(146, 41);
             labeltxtGenero.TabIndex = 223;
             labeltxtGenero.Text = "GÉNERO:\r\n";
             labeltxtGenero.TextAlign = ContentAlignment.TopCenter;
@@ -364,7 +365,7 @@
             labeltxtArtista.ForeColor = Color.White;
             labeltxtArtista.Location = new Point(469, 257);
             labeltxtArtista.Name = "labeltxtArtista";
-            labeltxtArtista.Size = new Size(173, 48);
+            labeltxtArtista.Size = new Size(148, 41);
             labeltxtArtista.TabIndex = 222;
             labeltxtArtista.Text = "ARTISTA:\r\n";
             labeltxtArtista.TextAlign = ContentAlignment.TopCenter;
@@ -376,7 +377,7 @@
             labeltxtTitulo.ForeColor = Color.White;
             labeltxtTitulo.Location = new Point(89, 375);
             labeltxtTitulo.Name = "labeltxtTitulo";
-            labeltxtTitulo.Size = new Size(153, 48);
+            labeltxtTitulo.Size = new Size(131, 41);
             labeltxtTitulo.TabIndex = 221;
             labeltxtTitulo.Text = "TÍTULO:\r\n";
             labeltxtTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -400,7 +401,7 @@
             textBoxHora.ForeColor = Color.White;
             textBoxHora.Location = new Point(1069, 122);
             textBoxHora.Name = "textBoxHora";
-            textBoxHora.Size = new Size(197, 24);
+            textBoxHora.Size = new Size(197, 20);
             textBoxHora.TabIndex = 242;
             // 
             // textBoxFecha
@@ -411,7 +412,7 @@
             textBoxFecha.ForeColor = Color.White;
             textBoxFecha.Location = new Point(1069, 86);
             textBoxFecha.Name = "textBoxFecha";
-            textBoxFecha.Size = new Size(197, 24);
+            textBoxFecha.Size = new Size(197, 20);
             textBoxFecha.TabIndex = 241;
             // 
             // textBoxUsuario
@@ -422,7 +423,7 @@
             textBoxUsuario.ForeColor = Color.White;
             textBoxUsuario.Location = new Point(1069, 49);
             textBoxUsuario.Name = "textBoxUsuario";
-            textBoxUsuario.Size = new Size(197, 24);
+            textBoxUsuario.Size = new Size(197, 20);
             textBoxUsuario.TabIndex = 240;
             // 
             // timer1

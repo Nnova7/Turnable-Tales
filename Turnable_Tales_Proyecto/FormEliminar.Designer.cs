@@ -80,7 +80,7 @@
             labeltxtDiscoaEliminar.ForeColor = Color.White;
             labeltxtDiscoaEliminar.Location = new Point(410, 287);
             labeltxtDiscoaEliminar.Name = "labeltxtDiscoaEliminar";
-            labeltxtDiscoaEliminar.Size = new Size(582, 61);
+            labeltxtDiscoaEliminar.Size = new Size(481, 50);
             labeltxtDiscoaEliminar.TabIndex = 59;
             labeltxtDiscoaEliminar.Text = "ID DEL DISCO A ELIMINAR";
             labeltxtDiscoaEliminar.TextAlign = ContentAlignment.TopCenter;
@@ -93,7 +93,7 @@
             labeltxtEliminardisco.ForeColor = Color.White;
             labeltxtEliminardisco.Location = new Point(531, 199);
             labeltxtEliminardisco.Name = "labeltxtEliminardisco";
-            labeltxtEliminardisco.Size = new Size(298, 42);
+            labeltxtEliminardisco.Size = new Size(239, 36);
             labeltxtEliminardisco.TabIndex = 51;
             labeltxtEliminardisco.Text = "ELIMINAR DISCO\r\n";
             // 
@@ -104,7 +104,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(531, 64);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(288, 25);
+            labelFrase.Size = new Size(237, 20);
             labelFrase.TabIndex = 53;
             labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
             // 
@@ -115,7 +115,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(410, 9);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(595, 61);
+            labelTitulo.Size = new Size(493, 50);
             labelTitulo.TabIndex = 52;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -128,7 +128,7 @@
             labelLinea.ForeColor = Color.White;
             labelLinea.Location = new Point(203, 92);
             labelLinea.Name = "labelLinea";
-            labelLinea.Size = new Size(1784, 4);
+            labelLinea.Size = new Size(893, 3);
             labelLinea.TabIndex = 55;
             labelLinea.Text = resources.GetString("labelLinea.Text");
             labelLinea.TextAlign = ContentAlignment.TopCenter;
@@ -141,7 +141,7 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(203, 183);
             label1.Name = "label1";
-            label1.Size = new Size(1784, 4);
+            label1.Size = new Size(893, 3);
             label1.TabIndex = 56;
             label1.Text = resources.GetString("label1.Text");
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -153,7 +153,7 @@
             labelAdministrador.ForeColor = Color.White;
             labelAdministrador.Location = new Point(431, 112);
             labelAdministrador.Name = "labelAdministrador";
-            labelAdministrador.Size = new Size(551, 61);
+            labelAdministrador.Size = new Size(455, 50);
             labelAdministrador.TabIndex = 57;
             labelAdministrador.Text = "A D M I N I S T R A D O R\r\n";
             labelAdministrador.TextAlign = ContentAlignment.TopCenter;
@@ -178,6 +178,7 @@
             buttonMusica.Size = new Size(93, 89);
             buttonMusica.TabIndex = 58;
             buttonMusica.UseVisualStyleBackColor = true;
+            buttonMusica.Click += buttonMusica_Click;
             // 
             // textBoxId
             // 
@@ -185,7 +186,7 @@
             textBoxId.Location = new Point(431, 357);
             textBoxId.Name = "textBoxId";
             textBoxId.PlaceholderText = "INTRODUZCA UN DATO";
-            textBoxId.Size = new Size(428, 31);
+            textBoxId.Size = new Size(428, 27);
             textBoxId.TabIndex = 190;
             textBoxId.TextAlign = HorizontalAlignment.Center;
             // 
@@ -208,7 +209,7 @@
             textBoxHora.ForeColor = Color.White;
             textBoxHora.Location = new Point(1078, 110);
             textBoxHora.Name = "textBoxHora";
-            textBoxHora.Size = new Size(197, 24);
+            textBoxHora.Size = new Size(197, 20);
             textBoxHora.TabIndex = 242;
             // 
             // textBoxFecha
@@ -219,7 +220,7 @@
             textBoxFecha.ForeColor = Color.White;
             textBoxFecha.Location = new Point(1078, 74);
             textBoxFecha.Name = "textBoxFecha";
-            textBoxFecha.Size = new Size(197, 24);
+            textBoxFecha.Size = new Size(197, 20);
             textBoxFecha.TabIndex = 241;
             // 
             // textBoxUsuario
@@ -230,7 +231,7 @@
             textBoxUsuario.ForeColor = Color.White;
             textBoxUsuario.Location = new Point(1078, 37);
             textBoxUsuario.Name = "textBoxUsuario";
-            textBoxUsuario.Size = new Size(197, 24);
+            textBoxUsuario.Size = new Size(197, 20);
             textBoxUsuario.TabIndex = 240;
             // 
             // timer1

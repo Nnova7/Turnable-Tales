@@ -47,10 +47,10 @@
             // pictureBoxTicket
             // 
             pictureBoxTicket.BackgroundImage = Properties.Resources.WhatsApp_Image_2024_12_03_at_9_15_30_AM;
-            pictureBoxTicket.Location = new Point(494, 20);
-            pictureBoxTicket.Margin = new Padding(4, 5, 4, 5);
+            pictureBoxTicket.Location = new Point(395, 16);
+            pictureBoxTicket.Margin = new Padding(3, 4, 3, 4);
             pictureBoxTicket.Name = "pictureBoxTicket";
-            pictureBoxTicket.Size = new Size(560, 925);
+            pictureBoxTicket.Size = new Size(448, 740);
             pictureBoxTicket.TabIndex = 0;
             pictureBoxTicket.TabStop = false;
             // 
@@ -59,22 +59,23 @@
             buttonMusica.BackColor = Color.Transparent;
             buttonMusica.FlatStyle = FlatStyle.Popup;
             buttonMusica.Image = (Image)resources.GetObject("buttonMusica.Image");
-            buttonMusica.Location = new Point(1139, -3);
-            buttonMusica.Margin = new Padding(4, 5, 4, 5);
+            buttonMusica.Location = new Point(911, -2);
+            buttonMusica.Margin = new Padding(3, 4, 3, 4);
             buttonMusica.Name = "buttonMusica";
-            buttonMusica.Size = new Size(120, 143);
+            buttonMusica.Size = new Size(96, 114);
             buttonMusica.TabIndex = 193;
             buttonMusica.UseVisualStyleBackColor = false;
+            buttonMusica.Click += buttonMusica_Click;
             // 
             // buttonRegresar
             // 
             buttonRegresar.BackColor = Color.Transparent;
             buttonRegresar.BackgroundImage = Properties.Resources.flechaizq;
             buttonRegresar.FlatStyle = FlatStyle.Popup;
-            buttonRegresar.Location = new Point(13, 493);
+            buttonRegresar.Location = new Point(10, 394);
             buttonRegresar.Margin = new Padding(0);
             buttonRegresar.Name = "buttonRegresar";
-            buttonRegresar.Size = new Size(86, 112);
+            buttonRegresar.Size = new Size(69, 90);
             buttonRegresar.TabIndex = 194;
             buttonRegresar.UseVisualStyleBackColor = false;
             buttonRegresar.Click += buttonRegresar_Click;
@@ -83,10 +84,10 @@
             // 
             pictureBoxLogo.BackgroundImageLayout = ImageLayout.None;
             pictureBoxLogo.Image = (Image)resources.GetObject("pictureBoxLogo.Image");
-            pictureBoxLogo.Location = new Point(17, 22);
-            pictureBoxLogo.Margin = new Padding(4, 5, 4, 5);
+            pictureBoxLogo.Location = new Point(14, 18);
+            pictureBoxLogo.Margin = new Padding(3, 4, 3, 4);
             pictureBoxLogo.Name = "pictureBoxLogo";
-            pictureBoxLogo.Size = new Size(250, 290);
+            pictureBoxLogo.Size = new Size(200, 232);
             pictureBoxLogo.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBoxLogo.TabIndex = 203;
             pictureBoxLogo.TabStop = false;
@@ -95,10 +96,10 @@
             // 
             buttonTicket.BackColor = Color.Transparent;
             buttonTicket.BackgroundImage = Properties.Resources.descargarticket;
-            buttonTicket.Location = new Point(1547, 858);
-            buttonTicket.Margin = new Padding(4, 5, 4, 5);
+            buttonTicket.Location = new Point(1238, 686);
+            buttonTicket.Margin = new Padding(3, 4, 3, 4);
             buttonTicket.Name = "buttonTicket";
-            buttonTicket.Size = new Size(250, 97);
+            buttonTicket.Size = new Size(200, 78);
             buttonTicket.TabIndex = 204;
             buttonTicket.UseVisualStyleBackColor = false;
             buttonTicket.Click += buttonTicket_Click;
@@ -109,9 +110,10 @@
             textBoxHora.BorderStyle = BorderStyle.None;
             textBoxHora.Enabled = false;
             textBoxHora.ForeColor = Color.White;
-            textBoxHora.Location = new Point(1302, 95);
+            textBoxHora.Location = new Point(1042, 76);
+            textBoxHora.Margin = new Padding(2, 2, 2, 2);
             textBoxHora.Name = "textBoxHora";
-            textBoxHora.Size = new Size(197, 24);
+            textBoxHora.Size = new Size(158, 20);
             textBoxHora.TabIndex = 242;
             // 
             // textBoxFecha
@@ -120,9 +122,10 @@
             textBoxFecha.BorderStyle = BorderStyle.None;
             textBoxFecha.Enabled = false;
             textBoxFecha.ForeColor = Color.White;
-            textBoxFecha.Location = new Point(1302, 59);
+            textBoxFecha.Location = new Point(1042, 47);
+            textBoxFecha.Margin = new Padding(2, 2, 2, 2);
             textBoxFecha.Name = "textBoxFecha";
-            textBoxFecha.Size = new Size(197, 24);
+            textBoxFecha.Size = new Size(158, 20);
             textBoxFecha.TabIndex = 241;
             // 
             // textBoxUsuario
@@ -131,9 +134,10 @@
             textBoxUsuario.BorderStyle = BorderStyle.None;
             textBoxUsuario.Enabled = false;
             textBoxUsuario.ForeColor = Color.White;
-            textBoxUsuario.Location = new Point(1302, 22);
+            textBoxUsuario.Location = new Point(1042, 18);
+            textBoxUsuario.Margin = new Padding(2, 2, 2, 2);
             textBoxUsuario.Name = "textBoxUsuario";
-            textBoxUsuario.Size = new Size(197, 24);
+            textBoxUsuario.Size = new Size(158, 20);
             textBoxUsuario.TabIndex = 240;
             // 
             // timer1
@@ -145,9 +149,10 @@
             // 
             cerrarSesion.BackColor = SystemColors.ActiveCaptionText;
             cerrarSesion.ForeColor = SystemColors.ButtonHighlight;
-            cerrarSesion.Location = new Point(1302, 585);
+            cerrarSesion.Location = new Point(1042, 468);
+            cerrarSesion.Margin = new Padding(2, 2, 2, 2);
             cerrarSesion.Name = "cerrarSesion";
-            cerrarSesion.Size = new Size(209, 46);
+            cerrarSesion.Size = new Size(167, 37);
             cerrarSesion.TabIndex = 243;
             cerrarSesion.Text = "C E R R A R  S E S I Ó N";
             cerrarSesion.UseVisualStyleBackColor = false;
@@ -155,10 +160,10 @@
             // 
             // Ticket
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
-            ClientSize = new Size(1837, 990);
+            ClientSize = new Size(1470, 792);
             Controls.Add(cerrarSesion);
             Controls.Add(textBoxHora);
             Controls.Add(textBoxFecha);
@@ -168,7 +173,7 @@
             Controls.Add(buttonRegresar);
             Controls.Add(buttonMusica);
             Controls.Add(pictureBoxTicket);
-            Margin = new Padding(4, 5, 4, 5);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Ticket";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Ticket";

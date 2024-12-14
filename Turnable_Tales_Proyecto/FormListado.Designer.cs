@@ -82,6 +82,7 @@
             buttonMusica.Size = new Size(105, 102);
             buttonMusica.TabIndex = 59;
             buttonMusica.UseVisualStyleBackColor = true;
+            buttonMusica.Click += buttonMusica_Click;
             // 
             // pictureBox1
             // 

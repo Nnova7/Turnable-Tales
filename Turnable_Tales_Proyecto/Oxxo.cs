@@ -68,5 +68,11 @@ namespace Turnable_Tales_Proyecto
                 textBoxUsuario.Text = "Usuario desconocido";
             }
         }
+
+        private void buttonMusica_Click(object sender, EventArgs e)
+        {
+            //llama a la funcion de pausar y reproducir musica
+            AudioPlayer.ToggleMusic();
+        }
     }
 }

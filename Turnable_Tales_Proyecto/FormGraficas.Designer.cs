@@ -30,8 +30,8 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGraficas));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             pictureBox1 = new PictureBox();
             buttonRegresar = new Button();
             buttonMusica = new Button();
@@ -82,6 +82,7 @@
             buttonMusica.Size = new Size(93, 89);
             buttonMusica.TabIndex = 62;
             buttonMusica.UseVisualStyleBackColor = true;
+            buttonMusica.Click += buttonMusica_Click;
             // 
             // label2
             // 
@@ -91,7 +92,7 @@
             label2.ForeColor = Color.White;
             label2.Location = new Point(421, 113);
             label2.Name = "label2";
-            label2.Size = new Size(551, 61);
+            label2.Size = new Size(455, 50);
             label2.TabIndex = 61;
             label2.Text = "A D M I N I S T R A D O R\r\n";
             label2.TextAlign = ContentAlignment.TopCenter;
@@ -104,7 +105,7 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(193, 184);
             label1.Name = "label1";
-            label1.Size = new Size(1784, 4);
+            label1.Size = new Size(893, 3);
             label1.TabIndex = 60;
             label1.Text = resources.GetString("label1.Text");
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -117,7 +118,7 @@
             labelLinea.ForeColor = Color.White;
             labelLinea.Location = new Point(193, 93);
             labelLinea.Name = "labelLinea";
-            labelLinea.Size = new Size(1784, 4);
+            labelLinea.Size = new Size(893, 3);
             labelLinea.TabIndex = 59;
             labelLinea.Text = resources.GetString("labelLinea.Text");
             labelLinea.TextAlign = ContentAlignment.TopCenter;
@@ -129,7 +130,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(400, 10);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(595, 61);
+            labelTitulo.Size = new Size(493, 50);
             labelTitulo.TabIndex = 56;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -141,7 +142,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(521, 65);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(288, 25);
+            labelFrase.Size = new Size(237, 20);
             labelFrase.TabIndex = 57;
             labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
             // 
@@ -153,17 +154,17 @@
             labelMenu.ForeColor = Color.White;
             labelMenu.Location = new Point(493, 197);
             labelMenu.Name = "labelMenu";
-            labelMenu.Size = new Size(358, 42);
+            labelMenu.Size = new Size(287, 36);
             labelMenu.TabIndex = 55;
             labelMenu.Text = "GRAFICA EN VENTAS";
             // 
             // chart1
             // 
             chart1.BackColor = SystemColors.ActiveCaptionText;
-            chartArea2.Name = "ChartArea1";
-            chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            chart1.Legends.Add(legend1);
             chart1.Location = new Point(383, 237);
             chart1.Name = "chart1";
             chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
@@ -180,7 +181,7 @@
             textBoxHora.ForeColor = Color.White;
             textBoxHora.Location = new Point(1084, 120);
             textBoxHora.Name = "textBoxHora";
-            textBoxHora.Size = new Size(197, 24);
+            textBoxHora.Size = new Size(197, 20);
             textBoxHora.TabIndex = 242;
             // 
             // textBoxFecha
@@ -191,7 +192,7 @@
             textBoxFecha.ForeColor = Color.White;
             textBoxFecha.Location = new Point(1084, 84);
             textBoxFecha.Name = "textBoxFecha";
-            textBoxFecha.Size = new Size(197, 24);
+            textBoxFecha.Size = new Size(197, 20);
             textBoxFecha.TabIndex = 241;
             // 
             // textBoxUsuario
@@ -202,7 +203,7 @@
             textBoxUsuario.ForeColor = Color.White;
             textBoxUsuario.Location = new Point(1084, 47);
             textBoxUsuario.Name = "textBoxUsuario";
-            textBoxUsuario.Size = new Size(197, 24);
+            textBoxUsuario.Size = new Size(197, 20);
             textBoxUsuario.TabIndex = 240;
             // 
             // timer1
