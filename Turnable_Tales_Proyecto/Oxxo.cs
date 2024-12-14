@@ -12,6 +12,42 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class Oxxo : Form
     {
+        private List<Elemento> ticketList = new List<Elemento>(); // Lista de discos compras
+        private List<Productos> productosList = new List<Productos>(); // Lista de productos con precio
+        public Oxxo(List<Elemento> tickets, List<Productos> productos)
+        {
+            InitializeComponent();
+            ticketList = tickets ?? new List<Elemento>();
+            productosList = productos ?? new List<Productos>();
+            PopulateTextBoxes();
+        }
+
+        private void PopulateTextBoxes()
+        {
+            double subtotal = 0;
+
+            // Iterar sobre la lista de tickets para calcular el subtotal
+            foreach (var ticket in ticketList)
+            {
+                //buscar el producto correspondiente en la lista de productos
+                var producto = productosList.FirstOrDefault(p => p.Id == ticket.Id);
+                if (producto != null)
+                {
+                    //calcular el importe
+                    double importe = ticket.Cantidad * producto.Precio;
+
+                    //acumular el subtotal
+                    subtotal += importe;
+                }
+            }
+
+            //calcular impuestos y total
+            double impuesto = subtotal * 0.06; // 6% de impuesto
+            double total = subtotal + impuesto;
+
+            //mostrar resultados en los TextBoxes correspondientes
+            textBoxValor.Text = total.ToString("F2");
+        }
         public string nombreUsuario
         {
             get { return textBoxUsuario.Text; }
@@ -59,6 +95,13 @@ namespace Turnable_Tales_Proyecto
 
         private void Oxxo_Load(object sender, EventArgs e)
         {
+            GenerateRandomValues();
+
+            // Establecer las fechas en los TextBox
+            textBoxFechaCrea.Text = DateTime.Now.ToString("dd/MM/yy"); //fecha actual
+            textBoxPagAntes.Text = DateTime.Now.AddDays(3).ToString("dd/MM/yy"); //fecha 3 días despues
+
+
             if (!string.IsNullOrEmpty(nombreUsuario))
             {
                 textBoxUsuario.Text = nombreUsuario;
@@ -69,6 +112,14 @@ namespace Turnable_Tales_Proyecto
             }
         }
 
+        private void GenerateRandomValues()
+        {
+            Random random = new Random();
+
+            // Generar número de pedido
+            int randomNum = random.Next(1000, 10000);
+            textBoxNPedido.Text = randomNum.ToString();
+        }
         private void buttonMusica_Click(object sender, EventArgs e)
         {
             //llama a la funcion de pausar y reproducir musica
