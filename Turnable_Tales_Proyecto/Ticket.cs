@@ -95,7 +95,7 @@ namespace Turnable_Tales_Proyecto
         private void buttonTicket_Click(object sender, EventArgs e)
         {
             // Ruta para guardar el PDF
-            FileStream fs = new FileStream(@"C:\Users\valer\Downloads\Ticket_TT.pdf", FileMode.Create);
+            FileStream fs = new FileStream(@"C:\Users\Ticket_TT.pdf", FileMode.Create);
             Document doc = new Document(PageSize.A6, 19, 20, 20, 20);
             PdfWriter pw = PdfWriter.GetInstance(doc, fs);
 
@@ -228,14 +228,14 @@ namespace Turnable_Tales_Proyecto
             };
             table.AddCell(cell);
         }
-        private List<Impresion> GetSampleTickets()
+        /*private List<Impresion> GetSampleTickets()
         {
             return new List<Impresion>
             {
                 new Impresion { Cantidad = 1, Articulo = "Disco 1", Precio = 400 },
                 new Impresion { Cantidad = 1, Articulo = "Disco 2", Precio = 200 }
             };
-        }
+        }*/
 
         private void timer1_Tick(object sender, EventArgs e)
         {
