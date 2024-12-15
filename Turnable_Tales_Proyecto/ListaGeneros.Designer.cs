@@ -745,6 +745,7 @@
             Name = "ListaGeneros";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ListaGeneros";
+            TopMost = true;
             Load += ListaGeneros_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxRock1).EndInit();

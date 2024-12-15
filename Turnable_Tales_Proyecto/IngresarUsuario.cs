@@ -85,5 +85,10 @@ namespace Turnable_Tales_Proyecto
                 MessageBox.Show("Acceso denegado. Cuenta o contraseña incorrecta.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void IngresarUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

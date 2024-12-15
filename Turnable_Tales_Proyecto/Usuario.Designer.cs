@@ -41,7 +41,7 @@
             buttonAtras.BackColor = Color.Transparent;
             buttonAtras.FlatStyle = FlatStyle.Popup;
             buttonAtras.Image = Properties.Resources.flechaizq;
-            buttonAtras.Location = new Point(13, 286);
+            buttonAtras.Location = new Point(11, 256);
             buttonAtras.Name = "buttonAtras";
             buttonAtras.Size = new Size(68, 72);
             buttonAtras.TabIndex = 49;
@@ -53,7 +53,7 @@
             buttonUsuario.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             buttonUsuario.ForeColor = SystemColors.ButtonHighlight;
             buttonUsuario.Image = Properties.Resources.cafe;
-            buttonUsuario.Location = new Point(143, 316);
+            buttonUsuario.Location = new Point(122, 254);
             buttonUsuario.Name = "buttonUsuario";
             buttonUsuario.Size = new Size(364, 78);
             buttonUsuario.TabIndex = 48;
@@ -66,7 +66,7 @@
             buttonInvitado.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             buttonInvitado.ForeColor = SystemColors.ButtonHighlight;
             buttonInvitado.Image = Properties.Resources.cafe;
-            buttonInvitado.Location = new Point(143, 462);
+            buttonInvitado.Location = new Point(122, 383);
             buttonInvitado.Name = "buttonInvitado";
             buttonInvitado.Size = new Size(364, 78);
             buttonInvitado.TabIndex = 47;
@@ -80,7 +80,7 @@
             buttonAdministrador.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             buttonAdministrador.ForeColor = SystemColors.ButtonHighlight;
             buttonAdministrador.Image = Properties.Resources.cafe;
-            buttonAdministrador.Location = new Point(143, 165);
+            buttonAdministrador.Location = new Point(122, 129);
             buttonAdministrador.Name = "buttonAdministrador";
             buttonAdministrador.Size = new Size(364, 78);
             buttonAdministrador.TabIndex = 46;
@@ -94,9 +94,9 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 7F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ButtonFace;
-            label3.Location = new Point(193, 83);
+            label3.Location = new Point(208, 78);
             label3.Name = "label3";
-            label3.Size = new Size(167, 12);
+            label3.Size = new Size(186, 15);
             label3.TabIndex = 45;
             label3.Text = "I N I C I A R  S E S I Ó N  C O M O:";
             // 
@@ -106,9 +106,9 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI Variable Display", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = SystemColors.ButtonFace;
-            label4.Location = new Point(143, 46);
+            label4.Location = new Point(158, 41);
             label4.Name = "label4";
-            label4.Size = new Size(224, 26);
+            label4.Size = new Size(294, 32);
             label4.TabIndex = 44;
             label4.Text = "I N I C I O  D E  S E S I Ó N";
             // 
@@ -116,7 +116,7 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.cafe;
-            ClientSize = new Size(585, 633);
+            ClientSize = new Size(587, 511);
             Controls.Add(buttonAtras);
             Controls.Add(buttonUsuario);
             Controls.Add(buttonInvitado);
@@ -126,8 +126,10 @@
             FormBorderStyle = FormBorderStyle.None;
             Location = new Point(750, 55);
             Name = "Usuario";
-            StartPosition = FormStartPosition.Manual;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Usuario";
+            TopMost = true;
+            Load += Usuario_Load;
             ResumeLayout(false);
             PerformLayout();
         }

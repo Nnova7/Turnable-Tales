@@ -57,7 +57,7 @@ namespace Turnable_Tales_Proyecto
         {
             IngresarUsuario usuario = new IngresarUsuario(); //crea instanci
             this.Hide();
-            usuario.ShowDialog();//muestra
+            usuario.Show();//muestra
             this.Close();//cierra
         }
 
@@ -67,6 +67,11 @@ namespace Turnable_Tales_Proyecto
             this.Hide();
             invitado.ShowDialog();//Muestra
             this.Close();//Cierra
+        }
+
+        private void Usuario_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

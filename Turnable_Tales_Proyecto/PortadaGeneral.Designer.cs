@@ -380,7 +380,7 @@
             label51.ForeColor = Color.White;
             label51.Location = new Point(885, 311);
             label51.Name = "label51";
-            label51.Size = new Size(0, 21);
+            label51.Size = new Size(0, 27);
             label51.TabIndex = 182;
             // 
             // label52
@@ -511,7 +511,7 @@
             label62.ForeColor = Color.White;
             label62.Location = new Point(885, 285);
             label62.Name = "label62";
-            label62.Size = new Size(0, 21);
+            label62.Size = new Size(0, 27);
             label62.TabIndex = 171;
             // 
             // label63
@@ -642,7 +642,7 @@
             label74.ForeColor = Color.White;
             label74.Location = new Point(885, 256);
             label74.Name = "label74";
-            label74.Size = new Size(0, 21);
+            label74.Size = new Size(0, 27);
             label74.TabIndex = 160;
             // 
             // label31
@@ -773,7 +773,7 @@
             label41.ForeColor = Color.White;
             label41.Location = new Point(456, 299);
             label41.Name = "label41";
-            label41.Size = new Size(0, 21);
+            label41.Size = new Size(0, 27);
             label41.TabIndex = 149;
             // 
             // label20
@@ -904,7 +904,7 @@
             label30.ForeColor = Color.White;
             label30.Location = new Point(456, 268);
             label30.Name = "label30";
-            label30.Size = new Size(0, 21);
+            label30.Size = new Size(0, 27);
             label30.TabIndex = 138;
             // 
             // label19
@@ -1045,9 +1045,9 @@
             labelSlogan2.BackColor = Color.Transparent;
             labelSlogan2.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point);
             labelSlogan2.ForeColor = Color.White;
-            labelSlogan2.Location = new Point(571, 290);
+            labelSlogan2.Location = new Point(582, 292);
             labelSlogan2.Name = "labelSlogan2";
-            labelSlogan2.Size = new Size(138, 21);
+            labelSlogan2.Size = new Size(167, 27);
             labelSlogan2.TabIndex = 126;
             labelSlogan2.Text = "T U  V I N I L O.\"";
             // 
@@ -1057,9 +1057,9 @@
             labelFecha.BackColor = Color.Transparent;
             labelFecha.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold, GraphicsUnit.Point);
             labelFecha.ForeColor = SystemColors.ButtonFace;
-            labelFecha.Location = new Point(405, 589);
+            labelFecha.Location = new Point(450, 586);
             labelFecha.Name = "labelFecha";
-            labelFecha.Size = new Size(370, 20);
+            labelFecha.Size = new Size(477, 25);
             labelFecha.TabIndex = 125;
             labelFecha.Text = "AGS. AGUASCALIENTES A 15 DE DICIEMBRE DEL 2024";
             // 
@@ -1069,9 +1069,9 @@
             labelNombres.BackColor = Color.Transparent;
             labelNombres.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             labelNombres.ForeColor = SystemColors.ButtonFace;
-            labelNombres.Location = new Point(477, 473);
+            labelNombres.Location = new Point(506, 473);
             labelNombres.Name = "labelNombres";
-            labelNombres.Size = new Size(259, 60);
+            labelNombres.Size = new Size(328, 80);
             labelNombres.TabIndex = 124;
             labelNombres.Text = "DULCE MARIANA ANDRADE OLVERA \nELIA GUADALUPE ARTEAGA DELGADO\nGEORGINA GUADALUPE CALZADA GONZÁLEZ \nVALERIA RAMOS LÓPEZ";
             labelNombres.TextAlign = ContentAlignment.MiddleCenter;
@@ -1082,9 +1082,9 @@
             labelIntegrantes.BackColor = Color.Transparent;
             labelIntegrantes.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold, GraphicsUnit.Point);
             labelIntegrantes.ForeColor = SystemColors.ButtonFace;
-            labelIntegrantes.Location = new Point(547, 441);
+            labelIntegrantes.Location = new Point(563, 446);
             labelIntegrantes.Name = "labelIntegrantes";
-            labelIntegrantes.Size = new Size(159, 21);
+            labelIntegrantes.Size = new Size(202, 27);
             labelIntegrantes.TabIndex = 123;
             labelIntegrantes.Text = "I N T E G R A N T E S:";
             // 
@@ -1094,9 +1094,9 @@
             labelMestra.BackColor = Color.Transparent;
             labelMestra.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             labelMestra.ForeColor = SystemColors.ButtonFace;
-            labelMestra.Location = new Point(447, 395);
+            labelMestra.Location = new Point(486, 390);
             labelMestra.Name = "labelMestra";
-            labelMestra.Size = new Size(286, 15);
+            labelMestra.Size = new Size(359, 20);
             labelMestra.TabIndex = 122;
             labelMestra.Text = "PROFESORA:  DRA.  GEORGINA  SALAZAR  PARTIDA";
             // 
@@ -1106,9 +1106,9 @@
             labelMateria.BackColor = Color.Transparent;
             labelMateria.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
             labelMateria.ForeColor = SystemColors.ButtonHighlight;
-            labelMateria.Location = new Point(567, 367);
+            labelMateria.Location = new Point(582, 367);
             labelMateria.Name = "labelMateria";
-            labelMateria.Size = new Size(138, 19);
+            labelMateria.Size = new Size(167, 23);
             labelMateria.TabIndex = 121;
             labelMateria.Text = "PROGRAMACIÓN  II";
             // 
@@ -1118,9 +1118,9 @@
             labelTitulo.BackColor = Color.Transparent;
             labelTitulo.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
             labelTitulo.ForeColor = Color.White;
-            labelTitulo.Location = new Point(354, 170);
+            labelTitulo.Location = new Point(418, 174);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(398, 41);
+            labelTitulo.Size = new Size(493, 50);
             labelTitulo.TabIndex = 119;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -1131,9 +1131,9 @@
             labelSlogan.BackColor = Color.Transparent;
             labelSlogan.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point);
             labelSlogan.ForeColor = Color.White;
-            labelSlogan.Location = new Point(477, 254);
+            labelSlogan.Location = new Point(506, 256);
             labelSlogan.Name = "labelSlogan";
-            labelSlogan.Size = new Size(255, 21);
+            labelSlogan.Size = new Size(312, 27);
             labelSlogan.TabIndex = 120;
             labelSlogan.Text = "\"T U  V I D A,  T U  M Ú S I C A, ";
             // 
@@ -1142,7 +1142,7 @@
             label1.AutoSize = true;
             label1.Location = new Point(547, 198);
             label1.Name = "label1";
-            label1.Size = new Size(0, 15);
+            label1.Size = new Size(0, 20);
             label1.TabIndex = 118;
             // 
             // buttonSiguiente
@@ -1151,7 +1151,7 @@
             buttonSiguiente.FlatStyle = FlatStyle.Flat;
             buttonSiguiente.Font = new Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSiguiente.Image = (Image)resources.GetObject("buttonSiguiente.Image");
-            buttonSiguiente.Location = new Point(1224, 271);
+            buttonSiguiente.Location = new Point(1194, 272);
             buttonSiguiente.Name = "buttonSiguiente";
             buttonSiguiente.Size = new Size(66, 85);
             buttonSiguiente.TabIndex = 204;

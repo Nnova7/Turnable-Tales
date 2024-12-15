@@ -54,7 +54,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonSalir_Click(object sender, EventArgs e)
         {
-            this.Close();//cierra
+            Application.Exit();
         }
     }
 }

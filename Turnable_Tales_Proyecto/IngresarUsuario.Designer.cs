@@ -46,7 +46,7 @@
             buttonSiguiente.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             buttonSiguiente.ForeColor = SystemColors.ButtonHighlight;
             buttonSiguiente.Image = Properties.Resources.cafe;
-            buttonSiguiente.Location = new Point(203, 521);
+            buttonSiguiente.Location = new Point(189, 433);
             buttonSiguiente.Name = "buttonSiguiente";
             buttonSiguiente.Size = new Size(198, 36);
             buttonSiguiente.TabIndex = 65;
@@ -57,11 +57,11 @@
             // textBoxContraU
             // 
             textBoxContraU.BackColor = Color.Silver;
-            textBoxContraU.Location = new Point(141, 423);
+            textBoxContraU.Location = new Point(117, 374);
             textBoxContraU.Name = "textBoxContraU";
             textBoxContraU.PasswordChar = '*';
             textBoxContraU.PlaceholderText = "Ingresa la contraseña";
-            textBoxContraU.Size = new Size(341, 31);
+            textBoxContraU.Size = new Size(341, 27);
             textBoxContraU.TabIndex = 64;
             textBoxContraU.TextAlign = HorizontalAlignment.Center;
             textBoxContraU.TextChanged += textBoxContraU_TextChanged;
@@ -69,10 +69,10 @@
             // textBoxCuentaU
             // 
             textBoxCuentaU.BackColor = Color.Silver;
-            textBoxCuentaU.Location = new Point(141, 294);
+            textBoxCuentaU.Location = new Point(117, 267);
             textBoxCuentaU.Name = "textBoxCuentaU";
             textBoxCuentaU.PlaceholderText = "Ingresa tu cuenta";
-            textBoxCuentaU.Size = new Size(341, 31);
+            textBoxCuentaU.Size = new Size(341, 27);
             textBoxCuentaU.TabIndex = 63;
             textBoxCuentaU.TextAlign = HorizontalAlignment.Center;
             textBoxCuentaU.TextChanged += textBoxCuentaU_TextChanged;
@@ -95,9 +95,9 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(141, 381);
+            label2.Location = new Point(117, 332);
             label2.Name = "label2";
-            label2.Size = new Size(184, 25);
+            label2.Size = new Size(150, 20);
             label2.TabIndex = 61;
             label2.Text = "C O N T R A S E Ñ A:";
             // 
@@ -107,9 +107,9 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(141, 253);
+            label1.Location = new Point(117, 226);
             label1.Name = "label1";
-            label1.Size = new Size(114, 25);
+            label1.Size = new Size(93, 20);
             label1.TabIndex = 60;
             label1.Text = "C U E N T A:";
             // 
@@ -118,7 +118,7 @@
             button1.BackgroundImage = Properties.Resources.cafe;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(134, 119);
+            button1.Location = new Point(103, 104);
             button1.Name = "button1";
             button1.Size = new Size(364, 78);
             button1.TabIndex = 59;
@@ -133,7 +133,7 @@
             label3.ForeColor = SystemColors.ButtonFace;
             label3.Location = new Point(189, 67);
             label3.Name = "label3";
-            label3.Size = new Size(229, 19);
+            label3.Size = new Size(186, 15);
             label3.TabIndex = 58;
             label3.Text = "I N I C I A R  S E S I Ó N  C O M O:";
             // 
@@ -145,7 +145,7 @@
             label4.ForeColor = SystemColors.ButtonFace;
             label4.Location = new Point(141, 35);
             label4.Name = "label4";
-            label4.Size = new Size(348, 37);
+            label4.Size = new Size(294, 32);
             label4.TabIndex = 57;
             label4.Text = "I N I C I O  D E  S E S I Ó N";
             // 
@@ -153,7 +153,7 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.cafe;
-            ClientSize = new Size(585, 633);
+            ClientSize = new Size(587, 511);
             Controls.Add(buttonSiguiente);
             Controls.Add(textBoxContraU);
             Controls.Add(textBoxCuentaU);
@@ -166,8 +166,10 @@
             FormBorderStyle = FormBorderStyle.None;
             Location = new Point(750, 55);
             Name = "IngresarUsuario";
-            StartPosition = FormStartPosition.Manual;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "IngresarUsuario";
+            TopMost = true;
+            Load += IngresarUsuario_Load;
             ResumeLayout(false);
             PerformLayout();
         }
