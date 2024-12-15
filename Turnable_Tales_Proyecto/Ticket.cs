@@ -18,16 +18,8 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class Ticket : Form
     {
-        private List<Elemento> ticketList = ListaGlobal.ObtenerLista();
-        private List<Productos> productosList = new List<Productos>(); // Lista de productos con precio
-
-        public Ticket(List<Elemento> tickets, List<Productos> productos)
-        {
-            InitializeComponent();
-            ticketList = tickets ?? new List<Elemento>();
-            productosList = productos ?? new List<Productos>();
-            PopulateTextBoxes();
-        }
+        private List<Elemento> ticketList;
+        private List<Productos> productosList; // Lista de productos con precio
 
         public string nombreUsuario
         {
@@ -54,7 +46,7 @@ namespace Turnable_Tales_Proyecto
                     subtotal += importe;
 
                     // Agregar los datos del producto al TextBox
-                    textBoxDato1.AppendText($"{ticket.Cantidad}  {producto.Descripcion}  {importe:F2}\n");
+                    textBoxDato1.AppendText($"{ticket.Cantidad}  {producto.Nombre}  {importe:F2}\n");
                 }
             }
 
@@ -74,6 +66,11 @@ namespace Turnable_Tales_Proyecto
         {
             InitializeComponent();
             nombreUsuario = n;
+            ticketList = ListaGlobal.ObtenerLista() ?? new List<Elemento>();
+            // Crear una instancia de ProductosGlobal para obtener la lista de productos
+            var Datos = new Datos();
+            productosList = Datos.ConsultarTodos() ?? new List<Productos>(); // Asume que tienes una fuente global para los productos
+            PopulateTextBoxes();
         }
 
         /*private void buttonUsuario_Click(object sender, EventArgs e)
@@ -184,7 +181,7 @@ namespace Turnable_Tales_Proyecto
                             if (producto != null)
                             {
                                 AddCellToTable(table, ticket.Cantidad.ToString(), contentFont, Element.ALIGN_CENTER);
-                                AddCellToTable(table, producto.Descripcion, contentFont, Element.ALIGN_LEFT);
+                                AddCellToTable(table, producto.Nombre, contentFont, Element.ALIGN_LEFT);
                                 AddCellToTable(table, (producto.Precio * ticket.Cantidad).ToString("F2"), contentFont, Element.ALIGN_RIGHT);
                             }
                         }

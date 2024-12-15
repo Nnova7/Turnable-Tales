@@ -77,7 +77,7 @@
             labelTitulo.ForeColor = Color.White;
             labelTitulo.Location = new Point(400, 10);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(595, 61);
+            labelTitulo.Size = new Size(493, 50);
             labelTitulo.TabIndex = 57;
             labelTitulo.Text = "T U R N T A B L E   T A L E S";
             labelTitulo.TextAlign = ContentAlignment.TopCenter;
@@ -89,7 +89,7 @@
             labelFrase.ForeColor = Color.White;
             labelFrase.Location = new Point(521, 65);
             labelFrase.Name = "labelFrase";
-            labelFrase.Size = new Size(288, 25);
+            labelFrase.Size = new Size(237, 20);
             labelFrase.TabIndex = 58;
             labelFrase.Text = "\"TU VIDA, TU MUSICA, TU VINILO.\"\r\n";
             // 
@@ -101,7 +101,7 @@
             labelLinea.ForeColor = Color.White;
             labelLinea.Location = new Point(193, 184);
             labelLinea.Name = "labelLinea";
-            labelLinea.Size = new Size(1784, 4);
+            labelLinea.Size = new Size(893, 3);
             labelLinea.TabIndex = 60;
             labelLinea.Text = resources.GetString("labelLinea.Text");
             labelLinea.TextAlign = ContentAlignment.TopCenter;
@@ -114,7 +114,7 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(193, 108);
             label1.Name = "label1";
-            label1.Size = new Size(1784, 4);
+            label1.Size = new Size(893, 3);
             label1.TabIndex = 61;
             label1.Text = resources.GetString("label1.Text");
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -127,7 +127,7 @@
             labelNomDiap.ForeColor = Color.White;
             labelNomDiap.Location = new Point(474, 112);
             labelNomDiap.Name = "labelNomDiap";
-            labelNomDiap.Size = new Size(437, 61);
+            labelNomDiap.Size = new Size(361, 50);
             labelNomDiap.TabIndex = 62;
             labelNomDiap.Text = "PAGO EN EFECTIVO";
             labelNomDiap.TextAlign = ContentAlignment.TopCenter;
@@ -158,7 +158,7 @@
             // 
             buttonCambio.BackColor = Color.Transparent;
             buttonCambio.BackgroundImage = Properties.Resources.cambio;
-            buttonCambio.Location = new Point(567, 470);
+            buttonCambio.Location = new Point(661, 490);
             buttonCambio.Name = "buttonCambio";
             buttonCambio.Size = new Size(126, 38);
             buttonCambio.TabIndex = 194;
@@ -184,7 +184,7 @@
             textBoxNPedido.ForeColor = SystemColors.Menu;
             textBoxNPedido.Location = new Point(647, 244);
             textBoxNPedido.Name = "textBoxNPedido";
-            textBoxNPedido.Size = new Size(151, 35);
+            textBoxNPedido.Size = new Size(151, 30);
             textBoxNPedido.TabIndex = 196;
             textBoxNPedido.TextAlign = HorizontalAlignment.Center;
             // 
@@ -196,7 +196,7 @@
             textBoxSub.ForeColor = SystemColors.Menu;
             textBoxSub.Location = new Point(647, 284);
             textBoxSub.Name = "textBoxSub";
-            textBoxSub.Size = new Size(151, 35);
+            textBoxSub.Size = new Size(151, 30);
             textBoxSub.TabIndex = 197;
             textBoxSub.TextAlign = HorizontalAlignment.Center;
             // 
@@ -208,7 +208,7 @@
             textBoxImp.ForeColor = SystemColors.Menu;
             textBoxImp.Location = new Point(647, 319);
             textBoxImp.Name = "textBoxImp";
-            textBoxImp.Size = new Size(151, 35);
+            textBoxImp.Size = new Size(151, 30);
             textBoxImp.TabIndex = 198;
             textBoxImp.TextAlign = HorizontalAlignment.Center;
             // 
@@ -220,7 +220,7 @@
             textBoxTot.ForeColor = SystemColors.Menu;
             textBoxTot.Location = new Point(647, 357);
             textBoxTot.Name = "textBoxTot";
-            textBoxTot.Size = new Size(151, 35);
+            textBoxTot.Size = new Size(151, 30);
             textBoxTot.TabIndex = 199;
             textBoxTot.TextAlign = HorizontalAlignment.Center;
             // 
@@ -232,7 +232,7 @@
             textBoxCam.ForeColor = SystemColors.Menu;
             textBoxCam.Location = new Point(647, 534);
             textBoxCam.Name = "textBoxCam";
-            textBoxCam.Size = new Size(151, 35);
+            textBoxCam.Size = new Size(151, 30);
             textBoxCam.TabIndex = 200;
             textBoxCam.TextAlign = HorizontalAlignment.Center;
             // 
@@ -243,7 +243,7 @@
             textBoxPagoCon.ForeColor = SystemColors.Menu;
             textBoxPagoCon.Location = new Point(647, 441);
             textBoxPagoCon.Name = "textBoxPagoCon";
-            textBoxPagoCon.Size = new Size(151, 35);
+            textBoxPagoCon.Size = new Size(151, 30);
             textBoxPagoCon.TabIndex = 201;
             textBoxPagoCon.TextAlign = HorizontalAlignment.Center;
             // 
@@ -266,7 +266,7 @@
             textBoxHora.ForeColor = Color.White;
             textBoxHora.Location = new Point(1059, 77);
             textBoxHora.Name = "textBoxHora";
-            textBoxHora.Size = new Size(197, 24);
+            textBoxHora.Size = new Size(197, 20);
             textBoxHora.TabIndex = 239;
             // 
             // textBoxFecha
@@ -277,7 +277,7 @@
             textBoxFecha.ForeColor = Color.White;
             textBoxFecha.Location = new Point(1059, 41);
             textBoxFecha.Name = "textBoxFecha";
-            textBoxFecha.Size = new Size(197, 24);
+            textBoxFecha.Size = new Size(197, 20);
             textBoxFecha.TabIndex = 238;
             // 
             // textBoxUsuario
@@ -288,7 +288,7 @@
             textBoxUsuario.ForeColor = Color.White;
             textBoxUsuario.Location = new Point(1059, 4);
             textBoxUsuario.Name = "textBoxUsuario";
-            textBoxUsuario.Size = new Size(197, 24);
+            textBoxUsuario.Size = new Size(197, 20);
             textBoxUsuario.TabIndex = 237;
             // 
             // timer1

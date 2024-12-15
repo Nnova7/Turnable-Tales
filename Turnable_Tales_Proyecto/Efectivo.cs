@@ -14,13 +14,7 @@ namespace Turnable_Tales_Proyecto
     {
         private List<Elemento> ticketList = new List<Elemento>(); // Lista de discos compras
         private List<Productos> productosList = new List<Productos>(); // Lista de productos con precio
-        public Efectivo(List<Elemento> tickets, List<Productos> productos)
-        {
-            InitializeComponent();
-            ticketList = tickets ?? new List<Elemento>();
-            productosList = productos ?? new List<Productos>();
-            PopulateTextBoxes();
-        }
+        
 
         private void PopulateTextBoxes()
         {
@@ -63,6 +57,11 @@ namespace Turnable_Tales_Proyecto
         {
             InitializeComponent();
             nombreUsuario = n;
+            ticketList = ListaGlobal.ObtenerLista() ?? new List<Elemento>();
+            // Crear una instancia de ProductosGlobal para obtener la lista de productos
+            var Datos = new Datos();
+            productosList = Datos.ConsultarTodos() ?? new List<Productos>(); // Asume que tienes una fuente global para los productos
+            PopulateTextBoxes();
         }
 
         /*private void buttonUsuario_Click(object sender, EventArgs e)
@@ -88,6 +87,8 @@ namespace Turnable_Tales_Proyecto
             ticket.ShowDialog(); //mostrar
             this.Close(); //cerrar el formulario actual 
         }
+
+
 
         private void Efectivo_Load(object sender, EventArgs e)
         {
@@ -121,13 +122,6 @@ namespace Turnable_Tales_Proyecto
             //verifica si TextBoxPagoCon tiene datos
             buttonCambio.Enabled = !string.IsNullOrWhiteSpace(textBoxPagoCon.Text);
         }
-
-        private void buttonMusica_Click(object sender, EventArgs e)
-        {
-            //llama a la funcion de pausar y reproducir musica
-            AudioPlayer.ToggleMusic();
-        }
-
         private void buttonCambio_Click(object sender, EventArgs e)
         {
             //realiza la resta y muestra el resultado
@@ -148,6 +142,14 @@ namespace Turnable_Tales_Proyecto
                 MessageBox.Show("Por favor, ingrese valores numéricos en los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void buttonMusica_Click(object sender, EventArgs e)
+        {
+            //llama a la funcion de pausar y reproducir musica
+            AudioPlayer.ToggleMusic();
+        }
+
+
 
         private void GenerateRandomValues()
         {

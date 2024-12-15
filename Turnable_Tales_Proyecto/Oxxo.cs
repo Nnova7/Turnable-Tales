@@ -14,13 +14,6 @@ namespace Turnable_Tales_Proyecto
     {
         private List<Elemento> ticketList = new List<Elemento>(); // Lista de discos compras
         private List<Productos> productosList = new List<Productos>(); // Lista de productos con precio
-        public Oxxo(List<Elemento> tickets, List<Productos> productos)
-        {
-            InitializeComponent();
-            ticketList = tickets ?? new List<Elemento>();
-            productosList = productos ?? new List<Productos>();
-            PopulateTextBoxes();
-        }
 
         private void PopulateTextBoxes()
         {
@@ -61,6 +54,11 @@ namespace Turnable_Tales_Proyecto
         {
             InitializeComponent();
             nombreUsuario = n;
+            ticketList = ListaGlobal.ObtenerLista() ?? new List<Elemento>();
+            // Crear una instancia de ProductosGlobal para obtener la lista de productos
+            var Datos = new Datos();
+            productosList = Datos.ConsultarTodos() ?? new List<Productos>(); // Asume que tienes una fuente global para los productos
+            PopulateTextBoxes();
         }
 
         /*private void buttonUsuario_Click(object sender, EventArgs e)
