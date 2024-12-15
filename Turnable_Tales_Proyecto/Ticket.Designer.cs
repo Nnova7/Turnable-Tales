@@ -101,7 +101,7 @@
             buttonTicket.Location = new Point(1238, 686);
             buttonTicket.Margin = new Padding(3, 4, 3, 4);
             buttonTicket.Name = "buttonTicket";
-            buttonTicket.Size = new Size(200, 78);
+            buttonTicket.Size = new Size(173, 60);
             buttonTicket.TabIndex = 204;
             buttonTicket.UseVisualStyleBackColor = false;
             buttonTicket.Click += buttonTicket_Click;
@@ -151,10 +151,10 @@
             // 
             cerrarSesion.BackColor = SystemColors.ActiveCaptionText;
             cerrarSesion.ForeColor = SystemColors.ButtonHighlight;
-            cerrarSesion.Location = new Point(1086, 547);
+            cerrarSesion.Location = new Point(1238, 615);
             cerrarSesion.Margin = new Padding(2);
             cerrarSesion.Name = "cerrarSesion";
-            cerrarSesion.Size = new Size(167, 37);
+            cerrarSesion.Size = new Size(177, 37);
             cerrarSesion.TabIndex = 243;
             cerrarSesion.Text = "C E R R A R  S E S I Ó N";
             cerrarSesion.UseVisualStyleBackColor = false;
@@ -163,7 +163,7 @@
             // textBoxDato1
             // 
             textBoxDato1.Location = new Point(433, 182);
-            textBoxDato1.Margin = new Padding(2, 2, 2, 2);
+            textBoxDato1.Margin = new Padding(2);
             textBoxDato1.Name = "textBoxDato1";
             textBoxDato1.Size = new Size(236, 27);
             textBoxDato1.TabIndex = 244;
@@ -171,10 +171,11 @@
             // textBoxDato2
             // 
             textBoxDato2.Location = new Point(608, 308);
-            textBoxDato2.Margin = new Padding(2, 2, 2, 2);
+            textBoxDato2.Margin = new Padding(2);
             textBoxDato2.Name = "textBoxDato2";
             textBoxDato2.Size = new Size(69, 27);
             textBoxDato2.TabIndex = 245;
+            textBoxDato2.TextChanged += textBoxDato2_TextChanged;
             // 
             // Ticket
             // 

@@ -65,7 +65,7 @@ namespace Turnable_Tales_Proyecto
             // Llenar con el desglose
             textBoxDato2.Text = $"SUBTOTAL: {subtotal:F2}\nIMPUESTO: {impuesto:F2}\nTOTAL: {total:F2}";
         }
- 
+
         public Ticket()
         {
             InitializeComponent();
@@ -94,127 +94,153 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonTicket_Click(object sender, EventArgs e)
         {
-            // Ruta para guardar el PDF
-            FileStream fs = new FileStream(@"C:\Users\Ticket_TT.pdf", FileMode.Create);
-            Document doc = new Document(PageSize.A6, 19, 20, 20, 20);
-            PdfWriter pw = PdfWriter.GetInstance(doc, fs);
-
-            // Abrir documento
-            doc.Open();
-
-            //Crear borde carmin redondeado
-
-            PdfContentByte canvas = pw.DirectContent;
-
-            // Configurar color y ancho del borde
-            canvas.SetColorStroke(new BaseColor(150, 0, 24)); // carmin
-            canvas.SetLineWidth(2); // Ancho del borde
-
-            // Dibujar rectángulo redondeado
-            float margin = 0.5f; // Márgenes internos
-            float radius = 15; // Radio de las esquinas
-            canvas.RoundRectangle(
-                doc.Left + margin,   // Coordenada X inicial
-                doc.Bottom + margin, // Coordenada Y inicial
-                doc.Right - doc.Left - 0 * margin, // Ancho
-                doc.Top - doc.Bottom - 1 * margin, // Altura
-                radius               // Radio de esquinas
-            );
-
-            // Aplicar el borde
-            canvas.Stroke();
-
-            // Fuentes
-            var titleFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 14, iTextSharp.text.Font.BOLD, BaseColor.BLACK);
-            var contentFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 8, iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
-
-            // Agregar espacio antes de la imagen
-            doc.Add(new Paragraph(" ", new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 7)));
-
-            //logo
-            using (MemoryStream ms = new MemoryStream())
+            // Crear un SaveFileDialog para que el usuario seleccione la ubicación y nombre del archivo
+            SaveFileDialog saveFileDialog = new SaveFileDialog
             {
-                Properties.Resources.TurntableTi.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
-                iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(ms.ToArray());
-                img.ScaleToFit(70f, 70f);
-                img.Alignment = Element.ALIGN_CENTER;
-                doc.Add(img);
-            }
-
-
-            // Encabezado
-            Paragraph header = new Paragraph("Tu vida, tu música, tu vinilo", titleFont)
-            {
-                Alignment = Element.ALIGN_CENTER
+                Filter = "Archivo PDF (.pdf)|.pdf", // Solo permite guardar como PDF
+                Title = "Guardar Ticket como PDF",
+                FileName = "Ticket_TT.pdf" // Nombre sugerido por defecto
             };
-            doc.Add(header);
 
-            // Espaciado
-            doc.Add(Chunk.NEWLINE);
-
-            // Tabla de datos de compra
-            PdfPTable table = new PdfPTable(3);
-            table.WidthPercentage = 98;
-            table.SetWidths(new float[] { 0.5f, 4f, 2f });
-
-            // Encabezados de la tabla
-            AddCellToTable(table, " ", contentFont, Element.ALIGN_CENTER);
-            AddCellToTable(table, "ARTÍCULO", contentFont, Element.ALIGN_LEFT);
-            AddCellToTable(table, "IMPORTE", contentFont, Element.ALIGN_RIGHT);
-
-            //agregar datos dinámicos
-            foreach (var ticket in ticketList)
+            // Mostrar el diálogo y verificar si el usuario presionó "Guardar"
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                var producto = productosList.FirstOrDefault(p => p.Id == ticket.Id);
-                if (producto != null)
+                try
                 {
-                    AddCellToTable(table, ticket.Cantidad.ToString(), contentFont, Element.ALIGN_CENTER);
-                    AddCellToTable(table, producto.Descripcion, contentFont, Element.ALIGN_LEFT);
-                    AddCellToTable(table, (producto.Precio * ticket.Cantidad).ToString("F2"), contentFont, Element.ALIGN_RIGHT);
+                    // Obtener la ruta seleccionada por el usuario
+                    string filePath = saveFileDialog.FileName;
+
+                    // Crear el archivo PDF en la ruta seleccionada
+                    using (FileStream fs = new FileStream(filePath, FileMode.Create))
+                    {
+                        Document doc = new Document(PageSize.A6, 19, 20, 20, 20);
+                        PdfWriter pw = PdfWriter.GetInstance(doc, fs);
+
+                        // Abrir documento
+                        doc.Open();
+
+                        // Crear borde carmín redondeado
+                        PdfContentByte canvas = pw.DirectContent;
+
+                        // Configurar color y ancho del borde
+                        canvas.SetColorStroke(new BaseColor(150, 0, 24)); // Carmín
+                        canvas.SetLineWidth(2); // Ancho del borde
+
+                        // Dibujar rectángulo redondeado
+                        float margin = 0.5f; // Márgenes internos
+                        float radius = 15; // Radio de las esquinas
+                        canvas.RoundRectangle(
+                            doc.Left + margin,   // Coordenada X inicial
+                            doc.Bottom + margin, // Coordenada Y inicial
+                            doc.Right - doc.Left - 0 * margin, // Ancho
+                            doc.Top - doc.Bottom - 1 * margin, // Altura
+                            radius               // Radio de esquinas
+                        );
+
+                        // Aplicar el borde
+                        canvas.Stroke();
+
+                        // Fuentes
+                        var titleFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 14, iTextSharp.text.Font.BOLD, BaseColor.BLACK);
+                        var contentFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 8, iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
+
+                        // Agregar espacio antes de la imagen
+                        doc.Add(new Paragraph(" ", new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 7)));
+
+                        // Logo
+                        using (MemoryStream ms = new MemoryStream())
+                        {
+                            Properties.Resources.TurntableTi.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                            iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(ms.ToArray());
+                            img.ScaleToFit(70f, 70f);
+                            img.Alignment = Element.ALIGN_CENTER;
+                            doc.Add(img);
+                        }
+
+                        // Encabezado
+                        Paragraph header = new Paragraph("Tu vida, tu música, tu vinilo", titleFont)
+                        {
+                            Alignment = Element.ALIGN_CENTER
+                        };
+                        doc.Add(header);
+
+                        // Espaciado
+                        doc.Add(Chunk.NEWLINE);
+
+                        // Tabla de datos de compra
+                        PdfPTable table = new PdfPTable(3);
+                        table.WidthPercentage = 98;
+                        table.SetWidths(new float[] { 0.5f, 4f, 2f });
+
+                        // Encabezados de la tabla
+                        AddCellToTable(table, " ", contentFont, Element.ALIGN_CENTER);
+                        AddCellToTable(table, "ARTÍCULO", contentFont, Element.ALIGN_LEFT);
+                        AddCellToTable(table, "IMPORTE", contentFont, Element.ALIGN_RIGHT);
+
+                        // Agregar datos dinámicos
+                        foreach (var ticket in ticketList)
+                        {
+                            var producto = productosList.FirstOrDefault(p => p.Id == ticket.Id);
+                            if (producto != null)
+                            {
+                                AddCellToTable(table, ticket.Cantidad.ToString(), contentFont, Element.ALIGN_CENTER);
+                                AddCellToTable(table, producto.Descripcion, contentFont, Element.ALIGN_LEFT);
+                                AddCellToTable(table, (producto.Precio * ticket.Cantidad).ToString("F2"), contentFont, Element.ALIGN_RIGHT);
+                            }
+                        }
+                        doc.Add(table);
+
+                        // Espaciado
+                        doc.Add(Chunk.NEWLINE);
+
+                        // Totales
+                        double subtotal = ticketList.Sum(t => productosList.FirstOrDefault(p => p.Id == t.Id)?.Precio * t.Cantidad ?? 0);
+                        double impuesto = subtotal * 0.06;
+                        double total = subtotal + impuesto;
+
+                        Paragraph totals = new Paragraph(
+                            $"SUBTOTAL: {subtotal:F2}\nIMPUESTO: {impuesto:F2}\nTOTAL: {total:F2}", contentFont)
+                        {
+                            Alignment = Element.ALIGN_RIGHT
+                        };
+                        totals.IndentationRight = 6; // Espaciado desde la derecha
+                        doc.Add(totals);
+
+                        // Espaciado
+                        doc.Add(Chunk.NEWLINE);
+
+                        // Hora
+                        Paragraph timeParagraph = new Paragraph($"{textBoxHora.Text} {textBoxFecha.Text}", contentFont)
+                        {
+                            Alignment = Element.ALIGN_RIGHT
+                        };
+                        doc.Add(timeParagraph);
+
+                        // Mensaje final
+                        Paragraph footer = new Paragraph("GRACIAS POR SU COMPRA", contentFont)
+                        {
+                            Alignment = Element.ALIGN_CENTER
+                        };
+                        doc.Add(footer);
+
+                        // Cerrar documento
+                        doc.Close();
+                    }
+
+                    // Mensaje de éxito
+                    MessageBox.Show("Documento generado satisfactoriamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    // Mensaje de error
+                    MessageBox.Show($"Ocurrió un error al guardar el archivo: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            doc.Add(table);
-
-            // Espaciado
-            doc.Add(Chunk.NEWLINE);
-
-            // Totales
-            double subtotal = ticketList.Sum(t => productosList.FirstOrDefault(p => p.Id == t.Id)?.Precio * t.Cantidad ?? 0);
-            double impuesto = subtotal * 0.06;
-            double total = subtotal + impuesto;
-
-            Paragraph totals = new Paragraph(
-                $"SUBTOTAL: {subtotal:F2}\nIMPUESTO: {impuesto:F2}\nTOTAL: {total:F2}", contentFont)
+            else
             {
-                Alignment = Element.ALIGN_RIGHT
-            };
-            totals.IndentationRight = 6; // Espaciado desde la derecha
-            doc.Add(totals);
-
-            // Espaciado
-            doc.Add(Chunk.NEWLINE);
-
-            // Espaciado
-            doc.Add(Chunk.NEWLINE);
-
-            // Hora
-            Paragraph timeParagraph = new Paragraph($"{textBoxHora.Text} {textBoxFecha.Text}", contentFont)
-            {
-                Alignment = Element.ALIGN_RIGHT
-            };
-
-            // Mensaje final
-            Paragraph footer = new Paragraph("GRACIAS POR SU COMPRA", contentFont)
-            {
-                Alignment = Element.ALIGN_CENTER
-            };
-            doc.Add(footer);
-
-            // Cerrar documento
-            doc.Close();
-            fs.Close();
-
-            MessageBox.Show("Documento generado satisfactoriamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // Mensaje si el usuario canceló
+                MessageBox.Show("No se guardó el archivo.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         // Método para agregar celdas a la tabla
@@ -264,6 +290,11 @@ namespace Turnable_Tales_Proyecto
         {
             //llama a la funcion de pausar y reproducir musica
             AudioPlayer.ToggleMusic();
+        }
+
+        private void textBoxDato2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
