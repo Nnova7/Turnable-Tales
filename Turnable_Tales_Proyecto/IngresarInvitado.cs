@@ -62,7 +62,30 @@ namespace Turnable_Tales_Proyecto
             Datos obj = new Datos();
 
             // Verificar cuenta y contraseña
+            //////////////////////////////////////////////////////////////////////
+
+            List<Usuarios> lista = obj.ConsultarTodosUsuarios();
+            bool simon = false;
             string nombreUsuario = obj.ConsultarCuentaContraInv(cuentaIngresada, contraseñaIngresada);
+
+            foreach (Usuarios x in lista)
+            {
+                if (x.Cuenta == cuentaIngresada)
+                {
+                    if (x.Contraseña == contraseñaIngresada)
+                    {
+                        simon = true;
+                        nombreUsuario = x.NombreCompleto;
+                        break;
+                    }
+                }
+
+            }
+
+
+
+            /////////////////////////////////////////////////////////
+            ///
 
             // Verificar si el nombre de usuario no es nulo ni vacío
             if (!string.IsNullOrEmpty(nombreUsuario))

@@ -51,8 +51,8 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonSiguiente_Click(object sender, EventArgs e)
         {
-            string cuentaIngresada = textBoxCuentaA.Text.Trim();
-            string contraseñaIngresada = textBoxContraA.Text.Trim();
+            string cuentaIngresada = textBoxCuentaA.Text;
+            string contraseñaIngresada = textBoxContraA.Text;
 
             // Validar si los campos están vacíos
             if (string.IsNullOrEmpty(cuentaIngresada) || string.IsNullOrEmpty(contraseñaIngresada))
@@ -65,7 +65,31 @@ namespace Turnable_Tales_Proyecto
             Datos obj = new Datos();
 
             // Verificar cuenta y contraseña
+
+            //////////////////////////////////////////////////////////////////////
+
+            List<Usuarios> lista = obj.ConsultarTodosUsuarios();
+            bool band = false;
             string nombreUsuario = obj.ConsultarCuentaContraAdmin(cuentaIngresada, contraseñaIngresada);
+
+            foreach (Usuarios x in lista)
+            {
+                if (x.Cuenta == cuentaIngresada)
+                {
+                    if (x.Contraseña == contraseñaIngresada)
+                    {
+                        band = true;
+                        nombreUsuario = x.NombreCompleto;
+                        break;
+                    }
+                }
+
+            }
+
+            /////////////////////////////////////////////////////////
+            ///
+
+            // Verificar cuenta y contraseña
 
             // Verificar si el nombre de usuario no es nulo ni vacío
             if (!string.IsNullOrEmpty(nombreUsuario))

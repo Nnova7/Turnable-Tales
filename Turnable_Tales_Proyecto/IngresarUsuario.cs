@@ -73,7 +73,7 @@ namespace Turnable_Tales_Proyecto
 
             List<Usuarios> lista = obj.ConsultarTodosUsuarios();    
             bool simon=false;
-            string nombreUsuario="";//SE DECLARA AFUEEERA
+            string nombreUsuario = obj.ConsultarCuentaContraUsuario(cuentaIngresada, contraseñaIngresada);
 
             foreach (Usuarios x in lista)
             {
