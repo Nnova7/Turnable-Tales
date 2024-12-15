@@ -24,6 +24,9 @@ namespace Turnable_Tales_Proyecto
             return miLista;
         }
 
+
+        
+
         // Method to clear the list and restore quantities in the database
         public static void EliminarLista()
         {

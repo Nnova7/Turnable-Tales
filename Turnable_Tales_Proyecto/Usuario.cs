@@ -27,7 +27,7 @@ namespace Turnable_Tales_Proyecto
         {
             IngresarAdministrador administrador = new IngresarAdministrador();//Crea instancia
             this.Hide();
-            administrador.ShowDialog();//Muestra
+            administrador.Show();//Muestra
             this.Close();//Cierra
         }
         /// <summary>
@@ -65,7 +65,7 @@ namespace Turnable_Tales_Proyecto
         {
             IngresarInvitado invitado = new IngresarInvitado();//Crea instancia
             this.Hide();
-            invitado.ShowDialog();//Muestra
+            invitado.Show();//Muestra
             this.Close();//Cierra
         }
 

@@ -55,7 +55,7 @@
             // 
             buttonMusica.FlatStyle = FlatStyle.Popup;
             buttonMusica.Image = (Image)resources.GetObject("buttonMusica.Image");
-            buttonMusica.Location = new Point(252, 39);
+            buttonMusica.Location = new Point(247, -3);
             buttonMusica.Name = "buttonMusica";
             buttonMusica.Size = new Size(93, 89);
             buttonMusica.TabIndex = 36;
@@ -283,6 +283,7 @@
             Name = "FormMenuAdmin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            TopMost = true;
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

@@ -173,27 +173,13 @@
             imageListDiscos.ColorDepth = ColorDepth.Depth8Bit;
             imageListDiscos.ImageStream = (ImageListStreamer)resources.GetObject("imageListDiscos.ImageStream");
             imageListDiscos.TransparentColor = Color.Transparent;
-            imageListDiscos.Images.SetKeyName(0, "cafe.png");
-            imageListDiscos.Images.SetKeyName(1, "cafex2.png");
-            imageListDiscos.Images.SetKeyName(2, "DanzonNo2.jpg");
-            imageListDiscos.Images.SetKeyName(3, "ElSilencio.png");
-            imageListDiscos.Images.SetKeyName(4, "Equis.png");
-            imageListDiscos.Images.SetKeyName(5, "Eureka.png");
-            imageListDiscos.Images.SetKeyName(6, "flecha.png");
-            imageListDiscos.Images.SetKeyName(7, "flechaizq.png");
-            imageListDiscos.Images.SetKeyName(8, "Fondo.png");
-            imageListDiscos.Images.SetKeyName(9, "Imagen1-removebg-previewmaspequeña.png");
-            imageListDiscos.Images.SetKeyName(10, "Incomodo.png");
-            imageListDiscos.Images.SetKeyName(11, "IZQ.png");
-            imageListDiscos.Images.SetKeyName(12, "LOGO UAA.png");
-            imageListDiscos.Images.SetKeyName(13, "Logo(1).gif");
-            imageListDiscos.Images.SetKeyName(14, "Logosinfondo.png");
-            imageListDiscos.Images.SetKeyName(15, "LoveYourselfAnswer.png");
-            imageListDiscos.Images.SetKeyName(16, "SadBoyz4LifeII.png");
-            imageListDiscos.Images.SetKeyName(17, "TheWorldep1.png");
-            imageListDiscos.Images.SetKeyName(18, "UsSimple-removebg-preview.png");
-            imageListDiscos.Images.SetKeyName(19, "usuariosinfondo.png");
-            imageListDiscos.Images.SetKeyName(20, "VestiLaGiubba.jpg");
+            imageListDiscos.Images.SetKeyName(0, "SadBoys4Lifell.jpg");
+            imageListDiscos.Images.SetKeyName(1, "Incomodo.jpg");
+            imageListDiscos.Images.SetKeyName(2, "Caifanes.jpg");
+            imageListDiscos.Images.SetKeyName(3, "Eureka.jpg");
+            imageListDiscos.Images.SetKeyName(4, "LoveYourselfAnswer.jpg");
+            imageListDiscos.Images.SetKeyName(5, "TheWorldep1.jpeg");
+            imageListDiscos.Images.SetKeyName(6, "VestiLaGiubba.jpg");
             // 
             // textBoxHora
             // 
