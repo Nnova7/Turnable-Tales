@@ -172,7 +172,7 @@
             textBoxHora.BorderStyle = BorderStyle.None;
             textBoxHora.Enabled = false;
             textBoxHora.ForeColor = Color.White;
-            textBoxHora.Location = new Point(1093, 112);
+            textBoxHora.Location = new Point(1093, 89);
             textBoxHora.Name = "textBoxHora";
             textBoxHora.Size = new Size(197, 20);
             textBoxHora.TabIndex = 242;
@@ -183,7 +183,7 @@
             textBoxFecha.BorderStyle = BorderStyle.None;
             textBoxFecha.Enabled = false;
             textBoxFecha.ForeColor = Color.White;
-            textBoxFecha.Location = new Point(1093, 76);
+            textBoxFecha.Location = new Point(1093, 53);
             textBoxFecha.Name = "textBoxFecha";
             textBoxFecha.Size = new Size(197, 20);
             textBoxFecha.TabIndex = 241;
@@ -194,7 +194,7 @@
             textBoxUsuario.BorderStyle = BorderStyle.None;
             textBoxUsuario.Enabled = false;
             textBoxUsuario.ForeColor = Color.White;
-            textBoxUsuario.Location = new Point(1093, 39);
+            textBoxUsuario.Location = new Point(1093, 16);
             textBoxUsuario.Name = "textBoxUsuario";
             textBoxUsuario.Size = new Size(197, 20);
             textBoxUsuario.TabIndex = 240;

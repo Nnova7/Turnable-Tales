@@ -18,7 +18,7 @@ namespace Turnable_Tales_Proyecto
 {
     public partial class Ticket : Form
     {
-        private List<Elemento> ticketList = new List<Elemento>(); // Lista de discos compras
+        private List<Elemento> ticketList = ListaGlobal.ObtenerLista();
         private List<Productos> productosList = new List<Productos>(); // Lista de productos con precio
 
         public Ticket(List<Elemento> tickets, List<Productos> productos)

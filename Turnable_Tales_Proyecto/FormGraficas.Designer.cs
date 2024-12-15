@@ -30,8 +30,8 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGraficas));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             pictureBox1 = new PictureBox();
             buttonRegresar = new Button();
             buttonMusica = new Button();
@@ -77,7 +77,7 @@
             // 
             buttonMusica.FlatStyle = FlatStyle.Popup;
             buttonMusica.Image = (Image)resources.GetObject("buttonMusica.Image");
-            buttonMusica.Location = new Point(242, 52);
+            buttonMusica.Location = new Point(242, -4);
             buttonMusica.Name = "buttonMusica";
             buttonMusica.Size = new Size(93, 89);
             buttonMusica.TabIndex = 62;
@@ -161,10 +161,10 @@
             // chart1
             // 
             chart1.BackColor = SystemColors.ActiveCaptionText;
-            chartArea1.Name = "ChartArea1";
-            chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            chart1.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            chart1.Legends.Add(legend2);
             chart1.Location = new Point(383, 237);
             chart1.Name = "chart1";
             chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
@@ -179,7 +179,7 @@
             textBoxHora.BorderStyle = BorderStyle.None;
             textBoxHora.Enabled = false;
             textBoxHora.ForeColor = Color.White;
-            textBoxHora.Location = new Point(1084, 120);
+            textBoxHora.Location = new Point(1093, 86);
             textBoxHora.Name = "textBoxHora";
             textBoxHora.Size = new Size(197, 20);
             textBoxHora.TabIndex = 242;
@@ -190,7 +190,7 @@
             textBoxFecha.BorderStyle = BorderStyle.None;
             textBoxFecha.Enabled = false;
             textBoxFecha.ForeColor = Color.White;
-            textBoxFecha.Location = new Point(1084, 84);
+            textBoxFecha.Location = new Point(1093, 50);
             textBoxFecha.Name = "textBoxFecha";
             textBoxFecha.Size = new Size(197, 20);
             textBoxFecha.TabIndex = 241;
@@ -201,7 +201,7 @@
             textBoxUsuario.BorderStyle = BorderStyle.None;
             textBoxUsuario.Enabled = false;
             textBoxUsuario.ForeColor = Color.White;
-            textBoxUsuario.Location = new Point(1084, 47);
+            textBoxUsuario.Location = new Point(1093, 13);
             textBoxUsuario.Name = "textBoxUsuario";
             textBoxUsuario.Size = new Size(197, 20);
             textBoxUsuario.TabIndex = 240;

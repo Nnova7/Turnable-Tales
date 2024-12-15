@@ -126,7 +126,7 @@
             labelLinea.BackColor = Color.White;
             labelLinea.Font = new Font("Consolas", 1.2F, FontStyle.Regular, GraphicsUnit.Point);
             labelLinea.ForeColor = Color.White;
-            labelLinea.Location = new Point(203, 92);
+            labelLinea.Location = new Point(194, 90);
             labelLinea.Name = "labelLinea";
             labelLinea.Size = new Size(893, 3);
             labelLinea.TabIndex = 55;
@@ -173,7 +173,7 @@
             // 
             buttonMusica.FlatStyle = FlatStyle.Popup;
             buttonMusica.Image = (Image)resources.GetObject("buttonMusica.Image");
-            buttonMusica.Location = new Point(237, 42);
+            buttonMusica.Location = new Point(235, -1);
             buttonMusica.Name = "buttonMusica";
             buttonMusica.Size = new Size(93, 89);
             buttonMusica.TabIndex = 58;
@@ -207,7 +207,7 @@
             textBoxHora.BorderStyle = BorderStyle.None;
             textBoxHora.Enabled = false;
             textBoxHora.ForeColor = Color.White;
-            textBoxHora.Location = new Point(1078, 110);
+            textBoxHora.Location = new Point(1093, 85);
             textBoxHora.Name = "textBoxHora";
             textBoxHora.Size = new Size(197, 20);
             textBoxHora.TabIndex = 242;
@@ -218,7 +218,7 @@
             textBoxFecha.BorderStyle = BorderStyle.None;
             textBoxFecha.Enabled = false;
             textBoxFecha.ForeColor = Color.White;
-            textBoxFecha.Location = new Point(1078, 74);
+            textBoxFecha.Location = new Point(1093, 49);
             textBoxFecha.Name = "textBoxFecha";
             textBoxFecha.Size = new Size(197, 20);
             textBoxFecha.TabIndex = 241;
@@ -229,7 +229,7 @@
             textBoxUsuario.BorderStyle = BorderStyle.None;
             textBoxUsuario.Enabled = false;
             textBoxUsuario.ForeColor = Color.White;
-            textBoxUsuario.Location = new Point(1078, 37);
+            textBoxUsuario.Location = new Point(1093, 12);
             textBoxUsuario.Name = "textBoxUsuario";
             textBoxUsuario.Size = new Size(197, 20);
             textBoxUsuario.TabIndex = 240;

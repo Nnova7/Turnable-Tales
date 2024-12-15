@@ -175,11 +175,12 @@
             imageListDiscos.TransparentColor = Color.Transparent;
             imageListDiscos.Images.SetKeyName(0, "SadBoys4Lifell.jpg");
             imageListDiscos.Images.SetKeyName(1, "Incomodo.jpg");
-            imageListDiscos.Images.SetKeyName(2, "Caifanes.jpg");
+            imageListDiscos.Images.SetKeyName(2, "ElSilencio.jpg");
             imageListDiscos.Images.SetKeyName(3, "Eureka.jpg");
             imageListDiscos.Images.SetKeyName(4, "LoveYourselfAnswer.jpg");
-            imageListDiscos.Images.SetKeyName(5, "TheWorldep1.jpeg");
+            imageListDiscos.Images.SetKeyName(5, "TheWorldep1.jpg");
             imageListDiscos.Images.SetKeyName(6, "VestiLaGiubba.jpg");
+            imageListDiscos.Images.SetKeyName(7, "DanzonNo2.jpg");
             // 
             // textBoxHora
             // 
@@ -187,7 +188,7 @@
             textBoxHora.BorderStyle = BorderStyle.None;
             textBoxHora.Enabled = false;
             textBoxHora.ForeColor = Color.White;
-            textBoxHora.Location = new Point(1083, 110);
+            textBoxHora.Location = new Point(1104, 94);
             textBoxHora.Name = "textBoxHora";
             textBoxHora.Size = new Size(197, 20);
             textBoxHora.TabIndex = 242;
@@ -198,7 +199,7 @@
             textBoxFecha.BorderStyle = BorderStyle.None;
             textBoxFecha.Enabled = false;
             textBoxFecha.ForeColor = Color.White;
-            textBoxFecha.Location = new Point(1083, 74);
+            textBoxFecha.Location = new Point(1104, 58);
             textBoxFecha.Name = "textBoxFecha";
             textBoxFecha.Size = new Size(197, 20);
             textBoxFecha.TabIndex = 241;
@@ -209,7 +210,7 @@
             textBoxUsuario.BorderStyle = BorderStyle.None;
             textBoxUsuario.Enabled = false;
             textBoxUsuario.ForeColor = Color.White;
-            textBoxUsuario.Location = new Point(1083, 37);
+            textBoxUsuario.Location = new Point(1104, 21);
             textBoxUsuario.Name = "textBoxUsuario";
             textBoxUsuario.Size = new Size(197, 20);
             textBoxUsuario.TabIndex = 240;
