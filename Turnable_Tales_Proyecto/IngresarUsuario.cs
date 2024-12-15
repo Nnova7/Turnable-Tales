@@ -54,8 +54,8 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonSiguiente_Click(object sender, EventArgs e)
         {
-            string cuentaIngresada = textBoxCuentaU.Text.Trim();
-            string contraseñaIngresada = textBoxContraU.Text.Trim();
+            string cuentaIngresada = textBoxCuentaU.Text;
+            string contraseñaIngresada = textBoxContraU.Text;
 
             // Validar si los campos están vacíos
             if (string.IsNullOrEmpty(cuentaIngresada) || string.IsNullOrEmpty(contraseñaIngresada))
@@ -68,10 +68,35 @@ namespace Turnable_Tales_Proyecto
             Datos obj = new Datos();
 
             // Verificar cuenta y contraseña
-            string nombreUsuario = obj.ConsultarCuentaContraUsuario(cuentaIngresada, contraseñaIngresada);
+
+            //////////////////////////////////////////////////////////////////////
+
+            List<Usuarios> lista = obj.ConsultarTodosUsuarios();    
+            bool simon=false;
+            string nombreUsuario="";//SE DECLARA AFUEEERA
+
+            foreach (Usuarios x in lista)
+            {
+                if (x.Cuenta == cuentaIngresada)
+                {
+                    if (x.Contraseña == contraseñaIngresada)
+                    {
+                        simon = true;
+                        nombreUsuario = x.NombreCompleto;
+                        break;
+                    }
+                }
+
+            }
+
+
+
+            /////////////////////////////////////////////////////////
+            ///
+
 
             // Verificar si el nombre de usuario no es nulo ni vacío
-            if (!string.IsNullOrEmpty(nombreUsuario))
+            if (simon == true)
             {
                 MessageBox.Show($"Bienvenido, {nombreUsuario}", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
