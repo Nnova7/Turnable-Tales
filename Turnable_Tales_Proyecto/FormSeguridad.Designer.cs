@@ -58,6 +58,7 @@
             buttonCancelar.Size = new Size(258, 55);
             buttonCancelar.TabIndex = 86;
             buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
             // 
             // buttonActualizar
             // 

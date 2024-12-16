@@ -183,6 +183,7 @@
             // textBoxId
             // 
             textBoxId.BackColor = SystemColors.ActiveCaptionText;
+            textBoxId.ForeColor = SystemColors.InactiveBorder;
             textBoxId.Location = new Point(431, 357);
             textBoxId.Name = "textBoxId";
             textBoxId.PlaceholderText = "INTRODUZCA UN DATO";

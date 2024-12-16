@@ -46,5 +46,10 @@ namespace Turnable_Tales_Proyecto
             this.labelShowExistencias.Text = Convert.ToString(aux.Cantidad);
 
         }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
