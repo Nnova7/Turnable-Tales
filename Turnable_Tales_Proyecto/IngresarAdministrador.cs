@@ -97,14 +97,14 @@ namespace Turnable_Tales_Proyecto
                 }
             }
 
-            // Verificar si se logró validar correctamente el usuario
+            // Verificar si el nombre de usuario no es nulo ni vacío
             if (simon)
             {
                 MessageBox.Show($"Bienvenido, {nombreUsuario}", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Abrir Form de Lista de géneros
-                ListaGeneros formGeneros = new ListaGeneros(nombreUsuario);
-                formGeneros.Show();
+                // Abrir Form7
+                FormMenuAdmin formAdmin = new FormMenuAdmin(nombreUsuario);
+                formAdmin.Show();
                 this.Hide();
             }
             else
