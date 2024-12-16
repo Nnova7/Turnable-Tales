@@ -46,16 +46,21 @@ namespace Turnable_Tales_Proyecto
                     subtotal += importe;
 
                     // Agregar los datos del producto al TextBox
-                    textBoxDato1.AppendText($"{ticket.Cantidad}  {producto.Nombre}  {importe:F2}\n");
+                    textBoxDato1.AppendText($"{ticket.Cantidad}  {producto.Descripcion}  {importe:F2}\n");
                 }
             }
-
+            
             // Calcular impuesto y total
             double impuesto = subtotal * 0.06f;
             double total = subtotal + impuesto;
 
             // Llenar con el desglose
             textBoxDato2.Text = $"SUBTOTAL: {subtotal:F2}\nIMPUESTO: {impuesto:F2}\nTOTAL: {total:F2}";
+
+            Datos datos = new Datos();
+
+            // Actualizar el monto total del usuario
+            datos.ActualizarMontoPorNombre(nombreUsuario, Convert.ToInt32(total));
         }
 
         public Ticket()

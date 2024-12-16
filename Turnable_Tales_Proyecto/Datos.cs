@@ -223,6 +223,40 @@ namespace Turnable_Tales_Proyecto
             }//catch
         }//actualizar
 
+        public void ActualizarMontoPorNombre(string nombreCompleto, int nuevoMonto)
+        {
+            try
+            {
+                // Define la consulta SQL para actualizar el monto basado en el nombre completo
+                string query = "UPDATE usuarios SET monto = @nuevoMonto WHERE nombreCompleto = @nombreCompleto";
+
+                // Prepara el comando SQL con la conexión y la consulta
+                MySqlCommand command = new MySqlCommand(query, this.conexion);
+
+                // Agrega los parámetros a la consulta para evitar inyecciones SQL
+                command.Parameters.AddWithValue("@nuevoMonto", nuevoMonto);
+                command.Parameters.AddWithValue("@nombreCompleto", nombreCompleto);
+
+                // Ejecuta el comando de actualización
+                int filasAfectadas = command.ExecuteNonQuery();
+
+                // Verifica si la actualización se realizó
+                if (filasAfectadas > 0)
+                {
+                    Console.WriteLine("El monto se actualizó correctamente.");
+                }
+                else
+                {
+                    Console.WriteLine("No se encontró un usuario con ese nombre completo.");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejo de errores
+                MessageBox.Show("Error al actualizar el monto: " + ex.Message);
+            }
+        }
+
 
 
         public void ActualizarCantidad(int id, int cantidad)
