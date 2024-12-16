@@ -46,7 +46,7 @@ namespace Turnable_Tales_Proyecto
                     subtotal += importe;
 
                     // Agregar los datos del producto al TextBox
-                    textBoxDato1.AppendText($"{ticket.Cantidad}  {producto.Descripcion}  {importe:F2}\n");
+                    textBoxDato1.AppendText($"{ticket.Cantidad}  {producto.Nombre}  {importe:F2}\n");
                 }
             }
             
