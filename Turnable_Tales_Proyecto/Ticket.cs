@@ -207,7 +207,7 @@ namespace Turnable_Tales_Proyecto
                         };
                         totals.IndentationRight = 6; // Espaciado desde la derecha
                         doc.Add(totals);
-
+                        
                         // Espaciado
                         doc.Add(Chunk.NEWLINE);
 
@@ -278,6 +278,8 @@ namespace Turnable_Tales_Proyecto
             {
                 textBoxUsuario.Text = "Usuario desconocido";
             }
+
+            textBoxHF.Text = $"{DateTime.Now.ToString("yyyy-MM-dd")} {DateTime.Now.ToString("HH:mm:ss")}";
         }
 
         private void cerrarSesion_Click(object sender, EventArgs e)

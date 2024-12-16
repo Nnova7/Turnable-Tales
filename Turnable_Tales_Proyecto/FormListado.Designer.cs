@@ -251,7 +251,6 @@
             Controls.Add(labelTitulo);
             Controls.Add(labelFrase);
             Controls.Add(labelMenu);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "FormListado";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";

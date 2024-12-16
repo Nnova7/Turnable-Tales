@@ -235,7 +235,6 @@
             Controls.Add(labelFrase);
             Controls.Add(labelMenu);
             Controls.Add(buttonRegresar);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "FormVentas";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormVentas";

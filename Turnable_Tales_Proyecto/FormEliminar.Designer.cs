@@ -273,7 +273,6 @@
             Controls.Add(labelTitulo);
             Controls.Add(labelFrase);
             Controls.Add(labeltxtEliminardisco);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "FormEliminar";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";

@@ -42,6 +42,7 @@
             cerrarSesion = new Button();
             textBoxDato1 = new TextBox();
             textBoxDato2 = new TextBox();
+            textBoxHF = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxTicket).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             SuspendLayout();
@@ -52,7 +53,7 @@
             pictureBoxTicket.Location = new Point(395, 16);
             pictureBoxTicket.Margin = new Padding(3, 4, 3, 4);
             pictureBoxTicket.Name = "pictureBoxTicket";
-            pictureBoxTicket.Size = new Size(448, 740);
+            pictureBoxTicket.Size = new Size(390, 553);
             pictureBoxTicket.TabIndex = 0;
             pictureBoxTicket.TabStop = false;
             // 
@@ -177,12 +178,22 @@
             textBoxDato2.TabIndex = 245;
             textBoxDato2.TextChanged += textBoxDato2_TextChanged;
             // 
+            // textBoxHF
+            // 
+            textBoxHF.Location = new Point(560, 497);
+            textBoxHF.Multiline = true;
+            textBoxHF.Name = "textBoxHF";
+            textBoxHF.Size = new Size(191, 27);
+            textBoxHF.TabIndex = 246;
+            textBoxHF.TextAlign = HorizontalAlignment.Right;
+            // 
             // Ticket
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fondo;
             ClientSize = new Size(1470, 792);
+            Controls.Add(textBoxHF);
             Controls.Add(textBoxDato2);
             Controls.Add(textBoxDato1);
             Controls.Add(cerrarSesion);
@@ -219,5 +230,6 @@
         private Button cerrarSesion;
         private TextBox textBoxDato1;
         private TextBox textBoxDato2;
+        private TextBox textBoxHF;
     }
 }

@@ -279,7 +279,6 @@
             Controls.Add(buttonVentasTotales);
             Controls.Add(buttonAgregarDisco);
             Controls.Add(labelMenu);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "FormMenuAdmin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";

@@ -479,9 +479,8 @@
             Controls.Add(labelMenu);
             Controls.Add(buttonRegresar);
             Controls.Add(buttonActualiza);
-            FormBorderStyle = FormBorderStyle.None;
             Name = "FormAgregarDisco";
-            StartPosition = FormStartPosition.CenterScreen;
+            StartPosition = FormStartPosition.CenterParent;
             Text = "FormAgregarDisco";
             Load += FormAgregarDisco_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
