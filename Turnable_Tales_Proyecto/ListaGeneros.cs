@@ -50,6 +50,24 @@ namespace Turnable_Tales_Proyecto
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Love eurekaForm = new Love(nombreUsuario, 9);//crea instancia
+            this.Hide();//oculta
+            eurekaForm.ShowDialog();//muestra
+            this.Close();//cierra
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Love eurekaForm = new Love(nombreUsuario, 10);//crea instancia
+            this.Hide();//oculta
+            eurekaForm.ShowDialog();//muestra
+            this.Close();//cierra
+
+        }
+
         private void buttonRock2_Click(object sender, EventArgs e)
         {
             Love silencioForm = new Love(nombreUsuario, 6);//crea instancia
@@ -108,6 +126,122 @@ namespace Turnable_Tales_Proyecto
 
         private void ListaGeneros_Load(object sender, EventArgs e)
         {
+            if (!string.IsNullOrEmpty(nombreUsuario))
+            {
+                textBoxUsuario.Text = nombreUsuario;
+            }
+            else
+            {
+                textBoxUsuario.Text = "Usuario desconocido";
+            }
+
+            this.button1.Enabled = false;
+            this.button2.Enabled = false;
+            this.buttonClasica1.Enabled = false;
+            this.buttonClasica2.Enabled = false;
+            this.buttonCorridos1.Enabled = false;
+            this.buttonCorridos2.Enabled = false;
+            this.buttonRock1.Enabled = false;
+            this.buttonRock2.Enabled = false;
+            this.buttonPop1.Enabled = false;
+            this.buttonPop1.Enabled = false;
+
+            // Configurar el ListView para mostrar iconos grandes
+            listView1.View = View.LargeIcon;
+            listView1.LargeImageList = imageList1; // Asociar el ImageList al ListView
+            Image ResizeImage(Image img, int width, int height)
+            {
+                Bitmap bmp = new Bitmap(width, height);
+                using (Graphics g = Graphics.FromImage(bmp))
+                {
+                    g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                    g.DrawImage(img, 0, 0, width, height);
+                }
+                return bmp;
+            }
+
+            
+
+            List<Productos> lista; // Crear una lista para almacenar los productos obtenidos de la base de datos
+
+            // Instanciar un objeto de la clase Datos y consultar todos los productos
+            Datos obj = new Datos();
+            lista = obj.ConsultarTodos();
+
+            // Ordenar la lista de productos por la cantidad de menor a mayor
+            var listaOrdenada = lista.OrderBy(producto => producto.Cantidad).ToList();
+
+            // Recorrer la lista ordenada y agregar cada producto al ListView
+            foreach (var dato in listaOrdenada)
+            {
+                // Crear un nuevo ítem para el ListView con el ID y las existencias del producto
+                ListViewItem item = new ListViewItem($"NOMBRE: {dato.Nombre}\n\n");
+
+                // Verificar que el nombre de la imagen existe en el ImageList
+                if (!string.IsNullOrEmpty(dato.Imagen) && imageList1.Images.ContainsKey(dato.Imagen))
+                {
+                    // Asociar la clave de la imagen al ítem usando la clave correspondiente en el ImageList
+                    item.ImageKey = dato.Imagen;
+                }
+                else
+                {
+                    // Si no se encuentra la imagen en el ImageList, asignar una imagen por defecto o manejar el error
+                    item.ImageKey = "default";  // Asegúrate de que "default" esté presente en el ImageList
+                }
+
+
+                switch (dato.Id)
+                {
+                    case 1:
+                        buttonClasica2.Enabled = true;
+                        buttonClasica2.Text = dato.Nombre;
+                        break;
+                    case 2:
+                        buttonClasica1.Enabled = true;
+                        buttonClasica1.Text = dato.Nombre;
+                        break;
+                    case 3:
+                        buttonPop1.Enabled = true;
+                        buttonPop1.Text = dato.Nombre;
+                        break;
+                    case 4:
+                        buttonPop2.Enabled = true;
+                        buttonPop2.Text = dato.Nombre;
+                        break;
+                    case 5:
+                        buttonRock1.Enabled = true;
+                        buttonRock1.Text = dato.Nombre;
+                        break;
+                    case 6:
+                        buttonRock2.Enabled = true;
+                        buttonRock2.Text = dato.Nombre;
+                        break;
+                    case 7:
+                        buttonCorridos1.Enabled = true;
+                        buttonCorridos1.Text = dato.Nombre;
+                        break;
+                    case 8:
+                        buttonCorridos2.Enabled = true;
+                        buttonCorridos2.Text = dato.Nombre;
+                        break;
+                    case 9:
+                        button1.Enabled = true;
+                        button1.Text=dato.Nombre;
+                        break;
+                    case 10:
+                        button2.Enabled = true;
+                        button2.Text = dato.Nombre;
+                        break;
+                    default:
+                        // Manejar casos que no están definidos explícitamente
+                        break;
+                }
+
+                // Agregar el ítem al ListView
+                listView1.Items.Add(item);
+            }
+
+            // Mostrar el nombre de usuario en el TextBox si está disponible
             if (!string.IsNullOrEmpty(nombreUsuario))
             {
                 textBoxUsuario.Text = nombreUsuario;

@@ -41,11 +41,9 @@
             labeltxtGenero = new Label();
             labeltxtArtista = new Label();
             labeltxtTitulo = new Label();
-            pictureBoxImagen = new PictureBox();
             labelShowId = new Label();
             labeltxtId = new Label();
             labeltxtAviso = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxImagen).BeginInit();
             SuspendLayout();
             // 
             // buttonCancelar
@@ -76,7 +74,7 @@
             // 
             labelShowExistencias.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             labelShowExistencias.ForeColor = Color.White;
-            labelShowExistencias.Location = new Point(423, 306);
+            labelShowExistencias.Location = new Point(298, 308);
             labelShowExistencias.Name = "labelShowExistencias";
             labelShowExistencias.Size = new Size(311, 28);
             labelShowExistencias.TabIndex = 84;
@@ -87,7 +85,7 @@
             // 
             labelShowPrecio.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             labelShowPrecio.ForeColor = Color.White;
-            labelShowPrecio.Location = new Point(422, 258);
+            labelShowPrecio.Location = new Point(297, 260);
             labelShowPrecio.Name = "labelShowPrecio";
             labelShowPrecio.Size = new Size(311, 28);
             labelShowPrecio.TabIndex = 83;
@@ -98,7 +96,7 @@
             // 
             labelShowGenero.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             labelShowGenero.ForeColor = Color.White;
-            labelShowGenero.Location = new Point(422, 214);
+            labelShowGenero.Location = new Point(297, 216);
             labelShowGenero.Name = "labelShowGenero";
             labelShowGenero.Size = new Size(311, 28);
             labelShowGenero.TabIndex = 82;
@@ -109,7 +107,7 @@
             // 
             labelShowTitulo.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             labelShowTitulo.ForeColor = Color.White;
-            labelShowTitulo.Location = new Point(422, 120);
+            labelShowTitulo.Location = new Point(297, 122);
             labelShowTitulo.Name = "labelShowTitulo";
             labelShowTitulo.Size = new Size(311, 28);
             labelShowTitulo.TabIndex = 81;
@@ -120,7 +118,7 @@
             // 
             labelShowArtista.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             labelShowArtista.ForeColor = Color.White;
-            labelShowArtista.Location = new Point(422, 170);
+            labelShowArtista.Location = new Point(297, 172);
             labelShowArtista.Name = "labelShowArtista";
             labelShowArtista.Size = new Size(311, 28);
             labelShowArtista.TabIndex = 80;
@@ -132,7 +130,7 @@
             labeltxtExistencias.AutoSize = true;
             labeltxtExistencias.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
             labeltxtExistencias.ForeColor = Color.White;
-            labeltxtExistencias.Location = new Point(325, 314);
+            labeltxtExistencias.Location = new Point(200, 316);
             labeltxtExistencias.Name = "labeltxtExistencias";
             labeltxtExistencias.Size = new Size(92, 17);
             labeltxtExistencias.TabIndex = 79;
@@ -144,7 +142,7 @@
             labeltxtPrecio.AutoSize = true;
             labeltxtPrecio.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             labeltxtPrecio.ForeColor = Color.White;
-            labeltxtPrecio.Location = new Point(325, 258);
+            labeltxtPrecio.Location = new Point(200, 260);
             labeltxtPrecio.Name = "labeltxtPrecio";
             labeltxtPrecio.Size = new Size(86, 28);
             labeltxtPrecio.TabIndex = 78;
@@ -156,7 +154,7 @@
             labeltxtGenero.AutoSize = true;
             labeltxtGenero.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             labeltxtGenero.ForeColor = Color.White;
-            labeltxtGenero.Location = new Point(321, 214);
+            labeltxtGenero.Location = new Point(196, 216);
             labeltxtGenero.Name = "labeltxtGenero";
             labeltxtGenero.Size = new Size(97, 28);
             labeltxtGenero.TabIndex = 77;
@@ -168,7 +166,7 @@
             labeltxtArtista.AutoSize = true;
             labeltxtArtista.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             labeltxtArtista.ForeColor = Color.White;
-            labeltxtArtista.Location = new Point(325, 170);
+            labeltxtArtista.Location = new Point(200, 172);
             labeltxtArtista.Name = "labeltxtArtista";
             labeltxtArtista.Size = new Size(98, 28);
             labeltxtArtista.TabIndex = 76;
@@ -180,27 +178,18 @@
             labeltxtTitulo.AutoSize = true;
             labeltxtTitulo.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             labeltxtTitulo.ForeColor = Color.White;
-            labeltxtTitulo.Location = new Point(325, 120);
+            labeltxtTitulo.Location = new Point(200, 122);
             labeltxtTitulo.Name = "labeltxtTitulo";
             labeltxtTitulo.Size = new Size(86, 28);
             labeltxtTitulo.TabIndex = 75;
             labeltxtTitulo.Text = "TITULO:";
             labeltxtTitulo.TextAlign = ContentAlignment.TopCenter;
             // 
-            // pictureBoxImagen
-            // 
-            pictureBoxImagen.BorderStyle = BorderStyle.Fixed3D;
-            pictureBoxImagen.Location = new Point(47, 74);
-            pictureBoxImagen.Name = "pictureBoxImagen";
-            pictureBoxImagen.Size = new Size(260, 260);
-            pictureBoxImagen.TabIndex = 74;
-            pictureBoxImagen.TabStop = false;
-            // 
             // labelShowId
             // 
             labelShowId.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             labelShowId.ForeColor = Color.White;
-            labelShowId.Location = new Point(422, 74);
+            labelShowId.Location = new Point(297, 76);
             labelShowId.Name = "labelShowId";
             labelShowId.Size = new Size(311, 28);
             labelShowId.TabIndex = 73;
@@ -212,7 +201,7 @@
             labeltxtId.AutoSize = true;
             labeltxtId.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             labeltxtId.ForeColor = Color.White;
-            labeltxtId.Location = new Point(325, 74);
+            labeltxtId.Location = new Point(200, 76);
             labeltxtId.Name = "labeltxtId";
             labeltxtId.Size = new Size(38, 28);
             labeltxtId.TabIndex = 72;
@@ -248,7 +237,6 @@
             Controls.Add(labeltxtGenero);
             Controls.Add(labeltxtArtista);
             Controls.Add(labeltxtTitulo);
-            Controls.Add(pictureBoxImagen);
             Controls.Add(labelShowId);
             Controls.Add(labeltxtId);
             Controls.Add(labeltxtAviso);
@@ -257,7 +245,6 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Seguridad";
             Load += FormSeguridad_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBoxImagen).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -276,7 +263,6 @@
         private Label labeltxtGenero;
         private Label labeltxtArtista;
         private Label labeltxtTitulo;
-        private PictureBox pictureBoxImagen;
         private Label labelShowId;
         private Label labeltxtId;
         private Label labeltxtAviso;
