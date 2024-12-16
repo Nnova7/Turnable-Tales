@@ -144,7 +144,7 @@ namespace Turnable_Tales_Proyecto
             }
             if (p.Id == 9)
             {
-                pictureBox2.Image = Properties.Resources.bad;
+                pictureBox2.Image = Properties.Resources.corridos;
 
             }
 
