@@ -49,7 +49,7 @@ namespace Turnable_Tales_Proyecto
                     textBoxDato1.AppendText($"{ticket.Cantidad}  {producto.Nombre}  {importe:F2}\n");
                 }
             }
-            
+
             // Calcular impuesto y total
             double impuesto = subtotal * 0.06f;
             double total = subtotal + impuesto;
@@ -58,9 +58,15 @@ namespace Turnable_Tales_Proyecto
             textBoxDato2.Text = $"SUBTOTAL: {subtotal:F2}\nIMPUESTO: {impuesto:F2}\nTOTAL: {total:F2}";
 
             Datos datos = new Datos();
-
-            // Actualizar el monto total del usuario
-            datos.ActualizarMontoPorNombre(nombreUsuario, Convert.ToInt32(total));
+            List<Usuarios> lista = new List<Usuarios>();
+            lista = datos.ConsultarTodosUsuarios();
+            foreach (var usuario in lista)
+            {
+                if (usuario.NombreCompleto == nombreUsuario)
+                {
+                    datos.ActualizarMontoPorNombre(nombreUsuario, Convert.ToInt32(total) + usuario.Monto);
+                }
+            }
         }
 
         public Ticket()
