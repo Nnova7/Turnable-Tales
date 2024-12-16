@@ -352,6 +352,7 @@
             imageList1.Images.SetKeyName(4, "LoveYourselfAnswer.jpg");
             imageList1.Images.SetKeyName(5, "TheWorldep1.jpg");
             imageList1.Images.SetKeyName(6, "VestiLaGiubba.jpg");
+            imageList1.Images.SetKeyName(7, "Clasicoprimero.jpg");
             // 
             // ListaGeneros
             // 
