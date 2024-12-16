@@ -50,23 +50,8 @@ namespace Turnable_Tales_Proyecto
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Love eurekaForm = new Love(nombreUsuario, 9);//crea instancia
-            this.Hide();//oculta
-            eurekaForm.ShowDialog();//muestra
-            this.Close();//cierra
 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Love eurekaForm = new Love(nombreUsuario, 10);//crea instancia
-            this.Hide();//oculta
-            eurekaForm.ShowDialog();//muestra
-            this.Close();//cierra
-
-        }
+ 
 
         private void buttonRock2_Click(object sender, EventArgs e)
         {
@@ -160,7 +145,7 @@ namespace Turnable_Tales_Proyecto
                 return bmp;
             }
 
-            
+
 
             List<Productos> lista; // Crear una lista para almacenar los productos obtenidos de la base de datos
 
@@ -226,7 +211,7 @@ namespace Turnable_Tales_Proyecto
                         break;
                     case 9:
                         button1.Enabled = true;
-                        button1.Text=dato.Nombre;
+                        button1.Text = dato.Nombre;
                         break;
                     case 10:
                         button2.Enabled = true;
@@ -270,6 +255,22 @@ namespace Turnable_Tales_Proyecto
         {
             //llama a la funcion de pausar y reproducir musica
             AudioPlayer.ToggleMusic();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Love eurekaForm = new Love(nombreUsuario, 9);//crea instancia
+            this.Hide();//oculta
+            eurekaForm.ShowDialog();//muestra
+            this.Close();//cierra
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Love eurekaForm = new Love(nombreUsuario, 10);//crea instancia
+            this.Hide();//oculta
+            eurekaForm.ShowDialog();//muestra
+            this.Close();//cierra
         }
     }
 }

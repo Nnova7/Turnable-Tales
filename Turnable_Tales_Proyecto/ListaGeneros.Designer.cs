@@ -313,6 +313,7 @@
             button1.TabIndex = 244;
             button1.Text = "VER MÁS";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
             // 
             // button2
             // 
@@ -326,6 +327,7 @@
             button2.TabIndex = 245;
             button2.Text = "VER MÁS";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click_1;
             // 
             // listView1
             // 
