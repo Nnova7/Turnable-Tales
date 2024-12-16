@@ -30,6 +30,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Resources\bad.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Resources\music.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
