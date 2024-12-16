@@ -61,38 +61,45 @@ namespace Turnable_Tales_Proyecto
             // Crear objeto de la clase Datos
             Datos obj = new Datos();
 
-            // Verificar cuenta y contraseña
-            //////////////////////////////////////////////////////////////////////
-
+            // Consultar lista de usuarios
             List<Usuarios> lista = obj.ConsultarTodosUsuarios();
             bool simon = false;
-            string nombreUsuario = obj.ConsultarCuentaContraInv(cuentaIngresada, contraseñaIngresada);
+            string nombreUsuario = "";
 
-            foreach (Usuarios x in lista)
+            // Bloquear cuentas específicas
+            Dictionary<string, string> cuentasBloqueadas = new Dictionary<string, string>
             {
-                if (x.Cuenta == cuentaIngresada)
-                {
-                    if (x.Contraseña == contraseñaIngresada)
-                    {
-                        simon = true;
-                        nombreUsuario = x.NombreCompleto;
-                        break;
-                    }
-                }
+                { "dulceAnd", "abcedario123" },
+                { "Egad Delarte", "MotoPerro73" },
+                { "valeriR", "vAlram23" },
+                { "CalzaGlez", "SuperNnova" },
+                { "admin", "meilleure" }
+            };
 
+            // Verificar si la cuenta está bloqueada
+            if (cuentasBloqueadas.ContainsKey(cuentaIngresada) && cuentasBloqueadas[cuentaIngresada] == contraseñaIngresada)
+            {
+                MessageBox.Show("Acceso denegado.", "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Terminar la ejecución
             }
 
+            // Verificar cuenta y contraseña en la lista
+            foreach (Usuarios x in lista)
+            {
+                if (x.Cuenta == cuentaIngresada && x.Contraseña == contraseñaIngresada)
+                {
+                    simon = true;
+                    nombreUsuario = x.NombreCompleto;
+                    break;
+                }
+            }
 
-
-            /////////////////////////////////////////////////////////
-            ///
-
-            // Verificar si el nombre de usuario no es nulo ni vacío
-            if (!string.IsNullOrEmpty(nombreUsuario))
+            // Verificar si se logró validar correctamente el usuario
+            if (simon)
             {
                 MessageBox.Show($"Bienvenido, {nombreUsuario}", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                /// Abrir Form de Lista de generos
+                // Abrir Form de Lista de géneros
                 ListaGeneros formGeneros = new ListaGeneros(nombreUsuario);
                 formGeneros.Show();
                 this.Hide();

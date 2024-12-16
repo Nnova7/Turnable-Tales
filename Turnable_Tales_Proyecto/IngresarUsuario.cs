@@ -76,7 +76,7 @@ namespace Turnable_Tales_Proyecto
             if ((cuentaIngresada == "admin" && contraseñaIngresada == "meilleure") ||
                 (cuentaIngresada == "guest" && contraseñaIngresada == "ennemie"))
             {
-                MessageBox.Show("Esta cuenta está bloqueada.", "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Acceso denegado.", "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return; // Terminar la ejecución
             }
 
