@@ -67,40 +67,36 @@ namespace Turnable_Tales_Proyecto
             // Crear objeto de la clase Datos
             Datos obj = new Datos();
 
-            // Verificar cuenta y contraseña
+            // Consultar lista de usuarios
+            List<Usuarios> lista = obj.ConsultarTodosUsuarios();
+            bool simon = false;
+            string nombreUsuario = "";
 
-            //////////////////////////////////////////////////////////////////////
-
-            List<Usuarios> lista = obj.ConsultarTodosUsuarios();    
-            bool simon=false;
-            string nombreUsuario = obj.ConsultarCuentaContraUsuario(cuentaIngresada, contraseñaIngresada);
-
-            foreach (Usuarios x in lista)
+            // Bloquear cuentas específicas
+            if ((cuentaIngresada == "admin" && contraseñaIngresada == "meilleure") ||
+                (cuentaIngresada == "guest" && contraseñaIngresada == "ennemie"))
             {
-                if (x.Cuenta == cuentaIngresada)
-                {
-                    if (x.Contraseña == contraseñaIngresada)
-                    {
-                        simon = true;
-                        nombreUsuario = x.NombreCompleto;
-                        break;
-                    }
-                }
-
+                MessageBox.Show("Esta cuenta está bloqueada.", "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Terminar la ejecución
             }
 
+            // Verificar cuenta y contraseña
+            foreach (Usuarios x in lista)
+            {
+                if (x.Cuenta == cuentaIngresada && x.Contraseña == contraseñaIngresada)
+                {
+                    simon = true;
+                    nombreUsuario = x.NombreCompleto;
+                    break;
+                }
+            }
 
-
-            /////////////////////////////////////////////////////////
-            ///
-
-
-            // Verificar si el nombre de usuario no es nulo ni vacío
-            if (simon == true)
+            // Verificar si se logró validar correctamente el usuario
+            if (simon)
             {
                 MessageBox.Show($"Bienvenido, {nombreUsuario}", "Acceso permitido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                /// Abrir Form de Lista de generos
+                // Abrir Form de Lista de géneros
                 ListaGeneros formGeneros = new ListaGeneros(nombreUsuario);
                 formGeneros.Show();
                 this.Hide();
