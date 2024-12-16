@@ -142,6 +142,11 @@ namespace Turnable_Tales_Proyecto
                 pictureBox2.Image = Properties.Resources.Sad;
 
             }
+            if (p.Id == 9)
+            {
+                pictureBox2.Image = Properties.Resources.bad;
+
+            }
 
 
             // domainUpDownCantidad.Text = p.Cantidad.ToString();
