@@ -68,6 +68,7 @@
             Name = "FormAgregado";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            TopMost = true;
             Load += FormAgregado_Load;
             ResumeLayout(false);
             PerformLayout();
