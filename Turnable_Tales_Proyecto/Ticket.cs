@@ -94,6 +94,7 @@ namespace Turnable_Tales_Proyecto
 
         private void buttonRegresar_Click(object sender, EventArgs e)
         {
+            ticketList.Clear();
             ListaGeneros listageneros = new ListaGeneros(nombreUsuario); //se crea instancia
             this.Hide();
             listageneros.ShowDialog(); // Mostrar
